@@ -186,7 +186,7 @@
 		position:relative;
 		margin:0 auto;
 		padding:0 1rem;
-		max-width:1200px;
+		max-width:1280px;
 		height:5rem;
 		transition: all ease 0.3s;
 	}
@@ -242,6 +242,7 @@
 		vertical-align:middle;
 		width:120px;
 		cursor:pointer;
+		margin:0 40px 0 0;
 	}
 	header .header-logo .material-icons{
 		font-size:2.4rem;
@@ -268,13 +269,27 @@
 /* header-logo end */
 
 /* header-menu-box */
+	header .header_menu_area {
+		display:inline-block;
+		vertical-align:middle;
+		width:calc(100% - 160px);
+		cursor:pointer;
+	}
+	header .header_menu_area:after  {
+		content: "";
+		display: block;
+		clear: both;
+	}
 	header .header-menu-box {
 		display:inline-block;
 		vertical-align:middle;
-		width:calc(100% - 200px);
 		font-size:0;
-		text-align:right;
+		text-align:left;
 		background:transparent;
+		float:left;
+	}
+	header .header-menu-box.right {
+		float:right;
 	}
 	@media screen and (min-width: 0px) and (max-width: 840px) {
 		header .header-menu-box {
@@ -313,7 +328,8 @@
 		}
 	}
 	header .header-menu .txt{
-		font-size:1rem;
+		font-size:1.2rem;
+		font-weight: 400;
 		letter-spacing:1px;
 		color:#fff;
 		padding:0.6rem 0.3rem;

@@ -99,6 +99,9 @@
                         <div class="border"></div>
                     </a>
                 </nav>
+            </div>
+
+            <div class="header-menu-box right">
                 <nav class="header-menu">
                     <a href="#main" class="div">
                         <div class="txt">가입문의하기</div>
@@ -111,12 +114,9 @@
                         <div class="border"></div>
                     </a>
                 </nav>
-            </div>
-
-            <div class="header_util_menu">
                 <nav class="header-menu">
                     <a href="#main" class="div">
-                        <div class="txt">카드결제</div>
+                        <div class="txt">고객사 로그인</div>
                         <div class="border"></div>
                     </a>
                 </nav>
@@ -155,11 +155,76 @@
 
 <link href="./css/main.css" rel="stylesheet" type="text/css">
 
-<section>
+<section style="margin: 100px 0 0;">
     <article class="type-full-page">
-        <div class="full-page-bg"></div>
-        <div class="full-page-overlay"></div>
-        <div class="main_tit">쉽고 편리한 결제로 <em>구매 전환율</em>을 높이세요.</div>
+        <div class="swiper-container slider-main-pc">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-main-pc">
+                    <img src="/img/main/frame_pc_full.svg" alt="">
+                    first pc
+                </div>
+                <div class="swiper-slide slide-main-pc">
+                    <img src="/img/main/frame_pc_full.svg" alt="">
+                    second pc
+                </div>
+            </div>                    
+        </div>
+        <div class="swiper-container slider-main-mo">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-main-mo">
+                    <img src="img/main/frame_mo_white.svg" alt="">
+                    first mo
+                </div>
+                <div class="swiper-slide slide-main-mo">
+                    <img src="img/main/frame_mo_black.svg" alt="">
+                    second mo
+                </div>
+            </div>
+        </div>
+        <script>
+            var slider_main_pc = new Swiper('.slider-main-pc', {
+                //pagination: '.pager-coopertaion',
+                //paginationClickable: true,
+                //paginationType: 'bullets',
+                //prevButton: '.photo_slider_prev',
+                //nextButton: '.photo_slider_next',
+                slidesPerView: 1,
+                spaceBetween: 0,
+                autoplayDisableOnInteraction: false,
+                simulateTouch: false,
+                loop: true,
+                autoplay: 3000,
+                // effect:'fade',
+                // fade: {
+                //     crossFade: true
+                // },
+                speed:500
+            });
+            var slider_main_mo = new Swiper('.slider-main-mo', {
+                //pagination: '.pager-coopertaion',
+                //paginationClickable: true,
+                //paginationType: 'bullets',
+                //prevButton: '.photo_slider_prev',
+                //nextButton: '.photo_slider_next',
+                slidesPerView: 1,
+                spaceBetween: 0,
+                autoplayDisableOnInteraction: false,
+                simulateTouch: false,
+                loop: true,
+                autoplay: 3000,
+                // effect:'fade',
+                // fade: {
+                //     crossFade: true
+                // },
+                speed:500
+            });
+            slider_main_pc.controller.control = slider_main_mo;
+            slider_main_mo.controller.control = slider_main_pc;
+        </script>
+
+        <!-- <div class="full-page-bg"></div>
+        <div class="full-page-overlay"></div> -->
+        <div class="main_tit">쉽고 편리한 결제로<br/><em>구매 전환율</em>을 높이세요.</div>
         <div class="sub_tit">페이플은 쉽고 편리한 신용카드, 계좌이체 통합결제를 사용자에게 제공하면서 고객사의 구매 전환율을 높이는 것에만 집중합니다.</div>
         <div class="article-stripe"></div>
     </article>

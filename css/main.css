@@ -84,15 +84,15 @@
 	}
 	article.type-full-page .full-page-bg {
 		height:100%;
-		background:url(../img/main/main-temp-3.png) fixed no-repeat 50% 0;
-		background-size:cover;
+		/* background:url(../img/main/main-temp-3.png) fixed no-repeat 50% 0;
+		background-size:cover; */
 		/*transition: all ease 0.2s;
 		-moz-transition: all ease 0.2s;
 		-webkit-transition: all ease 0.2s;*/
 	}
 	@media screen and (min-width: 0px) and (max-width: 719px) {
 		article.type-full-page .full-page-bg {
-			background-position:50% 0 !important;
+			/* background-position:50% 0 !important; */
 			/*background-size:auto 120%;*/
 		}
 	}
