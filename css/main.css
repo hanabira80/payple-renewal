@@ -890,6 +890,8 @@
 
 /* card_list__visual */
 .card_list__visual {
+    margin:4rem auto 0;
+    max-width:1080px;
     font-size:0;
 }
 .card_list__visual li {
