@@ -477,7 +477,7 @@
 	footer {
 		position:relative;
 		background:#141414; /*variable*/
-		border-top:1px solid #ccc; /*variable*/
+		/* border-top:1px solid #ccc; */
 	}
 	footer .width-inner {
 		position:relative;
@@ -542,3 +542,82 @@
 		padding:1rem 0 0;
 	}
 /* footer end */
+
+
+/* bannner */
+.common_banner_link {
+    /* position:absolute;
+    bottom:1.2rem;
+    left:2rem; */
+    font-size:0;
+    color:#7852e8;
+    transition: all ease 0.2s;
+    /*padding:0.4rem 0.4rem;*/
+    /*border-bottom:2px solid transparent;*/
+}
+.common_banner_link .icn_txt {
+    /* font-weight:600; */
+    font-size:0.8rem;
+    font-weight: 500;
+}
+.common_banner_link .material-icons{
+    font-size:1.4rem;
+}
+.common_banner_link .material-icons.act2{
+    margin-left:-1rem;
+}
+    @media screen and (min-width: 0px) and (max-width: 880px) {
+        .common_banner_link {
+            display:none;
+        }
+    }
+    @media screen and (min-width: 720px) {	
+        .common_banner_link .material-icons{
+            font-size:1.4rem;
+            opacity:0;
+            transition: all ease 0.2s;
+            transition-delay:0.1s;
+            margin-left:1rem;
+        }
+        .common_banner_link .material-icons.act2{
+            margin-left:1rem;
+            transition-delay:0s;
+        }
+        .common_banner_link:hover {
+            color:#7852e8;
+        }
+        .common_banner_link:hover .material-icons{
+            opacity:1;
+            margin-left:0;
+            transition-delay:0s;
+        }
+        .common_banner_link:hover .material-icons.act2{
+            opacity:1;
+            margin-left:-1rem;
+            transition-delay:0.1s;
+        }
+    }
+.common_banner_mobile_link {
+    display:none;
+}
+    @media screen and (min-width: 0px) and (max-width: 880px) {
+        .common_banner_mobile_link {
+            display:block;
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+        }
+    }
+/* banner end */
+
+/* bg_box */
+.ratio_setter_hd {
+    padding-top:56.25%;
+    background-image: url(/img/common/empty.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* bg_box end */
