@@ -615,7 +615,7 @@
 /* bg_box */
 .ratio_setter_hd {
     padding-top:56.25%;
-    background-image: url(/img/common/empty.svg);
+    background-image: url(../img/common/empty.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
