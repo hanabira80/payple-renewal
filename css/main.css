@@ -1081,8 +1081,9 @@
     z-index: 100;
 }
 .item_list__random li:nth-child(2) {
-    animation: floatitem02 9s linear 1s infinite normal;
+    animation: floatitem02 9.9s linear 0.1s infinite normal;
     z-index: 100;
+    top:-2rem;
 }
 .item_list__random li:nth-child(10th + 3) {
 }
@@ -1127,26 +1128,26 @@
 }
 @keyframes floatitem02 {
     0%   {
-        transform: translate3d(130vw,1rem,0) scale(0.6);
+        transform: translate3d(130vw,-1rem,0) scale(0.6);
         opacity:1;
     }
     25%  {
-        transform: translate3d(90vw,-1rem,0) scale(0.6);
+        transform: translate3d(90vw,0.4rem,0) scale(0.6);
         opacity:1;
     }
     50%  {
-        transform: translate3d(50vw,1rem,0) scale(0.6);
+        transform: translate3d(50vw,-0.4rem,0) scale(0.6);
         opacity:1;
     }
     75%  {
-        transform: translate3d(10vw,-1rem,0) scale(0.6);
+        transform: translate3d(10vw,0.8rem,0) scale(0.6);
         opacity:1;
     }
     99% {
         opacity:1;
     }
     100% {
-        transform: translate3d(-30vw,1rem,0) scale(0.6);
+        transform: translate3d(-30vw,-0.4rem,0) scale(0.6);
         opacity:0;
     }
 }
