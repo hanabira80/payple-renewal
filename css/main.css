@@ -1052,11 +1052,11 @@
     font-size:0;
     height:24rem;
     background: pink;
-    padding:6rem 0;
 }
 .item_list__random .util_inner {
     white-space: nowrap;
     overflow:hidden;
+    padding:6rem 0;
 }
 .item_list__random li {
     display:inline-block;
