@@ -1072,11 +1072,17 @@
     font-size:2rem;
     color:#000;
     line-height: 12rem;
+
+    transform: translate3d(130vw,1rem,0);
+    opacity:1;
 }
 .item_list__random li:nth-child(1) {
-    animation: floatitem01 5s linear 0s infinite alternate;
+    animation: floatitem01 10s linear 0s infinite normal;
+    z-index: 100;
 }
-.item_list__random li:nth-child(10th + 2) {
+.item_list__random li:nth-child(2) {
+    animation: floatitem02 9s linear 1s infinite normal;
+    z-index: 100;
 }
 .item_list__random li:nth-child(10th + 3) {
 }
@@ -1095,31 +1101,53 @@
 .item_list__random li:nth-child(10th + 10) {
 }
 @keyframes floatitem01 {
-    from {
-        transform: translate3d(110vw,0,0);
-    }
-    to {
-        transform: translate3d(-110vw,0,0);
-    }    
     0%   {
-        background-color: red;
-        top:-2rem;
+        transform: translate3d(130vw,1rem,0);
+        opacity:1;
     }
     25%  {
-        background-color: yellow;
-        top:2rem;
+        transform: translate3d(90vw,-1rem,0);
+        opacity:1;
     }
     50%  {
-        background-color: blue;
-        top:-2rem;
+        transform: translate3d(50vw,1rem,0);
+        opacity:1;
     }
     75%  {
-        background-color: green;
-        top:-2rem;
+        transform: translate3d(10vw,-1rem,0);
+        opacity:1;
+    }
+    99% {
+        opacity:1;
     }
     100% {
-        background-color: red;
-        top:-2rem;
+        transform: translate3d(-30vw,1rem,0);
+        opacity:0;
+    }
+}
+@keyframes floatitem02 {
+    0%   {
+        transform: translate3d(130vw,1rem,0) scale(0.6);
+        opacity:1;
+    }
+    25%  {
+        transform: translate3d(90vw,-1rem,0) scale(0.6);
+        opacity:1;
+    }
+    50%  {
+        transform: translate3d(50vw,1rem,0) scale(0.6);
+        opacity:1;
+    }
+    75%  {
+        transform: translate3d(10vw,-1rem,0) scale(0.6);
+        opacity:1;
+    }
+    99% {
+        opacity:1;
+    }
+    100% {
+        transform: translate3d(-30vw,1rem,0) scale(0.6);
+        opacity:0;
     }
 }
 /* item_list__random end */
