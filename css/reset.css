@@ -114,7 +114,11 @@
 	img.res {
 		width:100%;
 		height:auto;
-	}
+    }
+    img.contain {
+        width:auto;
+        height:100%;
+    }
 	li, dl {
 		list-style:none
 	}

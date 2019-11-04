@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
     <!-- mobile setting -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
     <meta name="theme-color" content="#141414">
     <meta name="msapplication-navbutton-color" content="#141414">
     <meta name="apple-mobile-web-app-status-bar-style" content="#141414">
@@ -155,41 +155,52 @@
 
 <link href="./css/main.css" rel="stylesheet" type="text/css">
 
-<section style="margin: 100px 0 0;">
-    <article class="type-full-page">
-        <div class="swiper-container slider-main-pc">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide-main-pc">
-                    <img src="/img/main/frame_pc_full.svg" alt="">
-                    first pc
+<section>
+    <article class="type_full_page">
+        <div class="slider_main_pc_frame">
+            <div class="ratio_setter">
+                <div class="img_frame">
+                    <img class="res" src="../img/main/frame_pc_header.svg" alt="">
                 </div>
-                <div class="swiper-slide slide-main-pc">
-                    <img src="/img/main/frame_pc_full.svg" alt="">
-                    second pc
-                </div>
-            </div>                    
-        </div>
-        <div class="swiper-container slider-main-mo">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide slide-main-mo">
-                    <img src="img/main/frame_mo_white.svg" alt="">
-                    first mo
-                </div>
-                <div class="swiper-slide slide-main-mo">
-                    <img src="img/main/frame_mo_black.svg" alt="">
-                    second mo
+                <div class="swiper-container slider_main_pc">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="res" src="../img/main/temp_content_02.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="res" src="../img/main/temp_content_02.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="slider_main_mo_frame">
+            <div class="ratio_setter">
+                <div class="swiper-container slider_main_mo">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="res" src="../img/main/temp_content.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="res" src="../img/main/temp_content.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img_frame">
+                <img class="res" src="img/main/frame_mo_black.svg" alt="">
+            </div>
+        </div>
         <script>
-            var slider_main_pc = new Swiper('.slider-main-pc', {
+            var slider_main_pc = new Swiper('.slider_main_pc', {
                 //pagination: '.pager-coopertaion',
                 //paginationClickable: true,
                 //paginationType: 'bullets',
                 //prevButton: '.photo_slider_prev',
                 //nextButton: '.photo_slider_next',
                 slidesPerView: 1,
-                spaceBetween: 0,
+                spaceBetween: 20,
                 autoplayDisableOnInteraction: false,
                 simulateTouch: false,
                 loop: true,
@@ -200,7 +211,7 @@
                 // },
                 speed:500
             });
-            var slider_main_mo = new Swiper('.slider-main-mo', {
+            var slider_main_mo = new Swiper('.slider_main_mo', {
                 //pagination: '.pager-coopertaion',
                 //paginationClickable: true,
                 //paginationType: 'bullets',
@@ -222,21 +233,14 @@
             slider_main_mo.controller.control = slider_main_pc;
         </script>
 
-        <!-- <div class="full-page-bg"></div>
-        <div class="full-page-overlay"></div> -->
+        <!-- <div class="full-page-bg"></div>-->
+        <div class="full-page-overlay"></div>
         <div class="main_tit">쉽고 편리한 결제로<br/><em>구매 전환율</em>을 높이세요.</div>
         <div class="sub_tit">페이플은 쉽고 편리한 신용카드, 계좌이체 통합결제를 사용자에게 제공하면서 고객사의 구매 전환율을 높이는 것에만 집중합니다.</div>
         <div class="article-stripe"></div>
     </article>
 
     <article class="type-card-box">
-        <!--
-        <svg class="temp" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path d="M0 100 L100 100 L100 2 L0 100 Z" stroke-width="0" fill="#fff"></path>
-            <path d="M0 100 L100 100 L100 2 L0 100 Z" stroke-width="0"></path>
-        </svg>
-        -->
-
         <div class="article-tit">
             왜 페이플인가요?
         </div>
@@ -1080,7 +1084,7 @@
         }
         if (0 <= scrolled && winHeight >= scrolled) {
             $(".type-full-page .full-page-bg").css("background-position","50% "+ scrolled/7*-1 +"px");
-            $(".type-full-page .full-page-overlay").css("background","rgba(0,0,0,"+ scrolled/winHeight*0.8 +")")
+            $(".type_full_page .full-page-overlay").css("background","rgba(0,0,0,"+ scrolled/winHeight*0.8 +")")
         }
         if (totalHeight - winHeight - 40 <= scrolled) {
             $("footer .footer-logo").addClass("js-is-active");
