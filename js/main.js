@@ -149,7 +149,7 @@ $(document).ready(function(){
         autoplayDisableOnInteraction: false,
         simulateTouch: false,
         loop: true,
-        autoplay: 3000,
+        autoplay: 4000,
         // effect:'fade',
         // fade: {
         //     crossFade: true
@@ -167,7 +167,7 @@ $(document).ready(function(){
         autoplayDisableOnInteraction: false,
         simulateTouch: false,
         loop: true,
-        autoplay: 3000,
+        autoplay: 4000,
         // effect:'fade',
         // fade: {
         //     crossFade: true

@@ -331,13 +331,14 @@
 		font-size:1.2rem;
 		font-weight: 400;
 		letter-spacing:1px;
-		color:#fff;
+		/* color:#fff; */
 		padding:0.6rem 0.3rem;
 		text-align:center;
-		text-shadow:0 0 2px #444;
+		/* text-shadow:0 0 2px #444; */
 		transition: all ease 0.3s;
 	}
 		header.js-is-fix .header-menu .txt{
+            color:#fff;
 			text-shadow:none;
 			font-size:0.875rem;
 			transition: all ease 0.3s;
@@ -621,3 +622,12 @@
     background-size: cover;
 }
 /* bg_box end */
+
+/* logo_in_text */
+.logo_in_text__lg {
+    height:2.4rem;
+    width:auto;
+    vertical-align: middle;
+    margin:0 0 0.4rem;
+}
+/* logo_in_text end */
