@@ -145,7 +145,7 @@ $(document).ready(function(){
         //prevButton: '.photo_slider_prev',
         //nextButton: '.photo_slider_next',
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 0,
         autoplayDisableOnInteraction: false,
         simulateTouch: false,
         loop: true,
