@@ -320,11 +320,11 @@
     border-radius: 8px;
     -webkit-box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
     box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
-    width:600px;
+    width:400px;
     text-align: center;
 }
 .rooted-increment .cover {
-    height: 400px;
+    height: 200px;
     background-color: #58adee;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -351,6 +351,7 @@
     line-height: 32px;
     color: #424770;
     padding:0 30px;
+    text-align: left;
 }
 @media (min-width: 670px) {
     .common-IntroText {
@@ -363,6 +364,7 @@
     margin: 0 0 20px;
     color: #32325d;
     padding:0 30px;
+    text-align: left;
 }
 .common-BodyText {
     font-weight: 400;
@@ -370,6 +372,7 @@
     line-height: 28px;
     color: #525f7f;
     padding:0 30px;
+    text-align: left;
 }
 .common-Button {
     white-space: nowrap;
@@ -401,59 +404,75 @@
 }
 </style>
         <div class="width_limiter space_setter flex_model">
-            <div class="rooted-increment common-Card">
-                <div class="cover"></div>
-                <h2 class="common-IntroText">
-                    금융위원회 금융규제 샌드박스 혁신금융서비스
-                </h2>
-                <p class="common-BodyText">
-                    계좌이체시 필요한 ARS 출금동의 절차로 인해 고객사의 결제 전환율은 높지 않았습니다. 그래서 우리는 이 부분에 집중했고 휴대폰 본인확인만으로 출금동의까지 가능한 “SMS 인증방식의 온라인 간편결제 서비스” 로 고객사의 결제 전환율을 높였습니다. 
-                </p>
-                <a 
-                    href="" 
-                    target="_blank" 
-                    class="common-Button common-Button--default">
-                    금융규제 샌드박스란?
-                </a>
+            <div class="left_area">
+                <div class="rooted-increment common-Card">
+                    <div class="cover"></div>
+                    <h2 class="common-IntroText">
+                        금융위원회 금융규제 샌드박스 혁신금융서비스
+                    </h2>
+                    <p class="common-BodyText">
+                        계좌이체시 필요한 ARS 출금동의 절차로 인해 고객사의 결제 전환율은 높지 않았습니다. 그래서 우리는 이 부분에 집중했고 휴대폰 본인확인만으로 출금동의까지 가능한 “SMS 인증방식의 온라인 간편결제 서비스” 로 고객사의 결제 전환율을 높였습니다. 
+                    </p>
+                    <a 
+                        href="" 
+                        target="_blank" 
+                        class="common-Button common-Button--default">
+                        금융규제 샌드박스란?
+                    </a>
+                </div>
             </div>
 
-            <div>
+            <div class="right_area">
                 <ul class="list__thumb_m_01">
                     <li>
                         <div class="bg_box">
                             <div class="ratio_setter_sq"></div>
                         </div>
-                        <div class="time">
-                            2019년 4월 
-                        </div>
-                        <div class="main_tit">
-                            NH디지털챌린지플러스 1기 
-                        </div>
-                    </li>
-                    <li>
-                        <div class="bg_box">
-                            <div class="ratio_setter_sq"></div>
-                        </div>
-                        <div class="time">
-                            2019년 1월 
-                        </div>
-                        <div class="main_tit">
-                            한국핀테크지원센터 리더스랩 3기
+                        <div class="info_box">
+                            <div class="main_tit">
+                                2019년 4월 
+                            </div>
+                            <div class="sub_tit">
+                                NH디지털챌린지플러스 1기 
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div class="bg_box">
                             <div class="ratio_setter_sq"></div>
                         </div>
-                        <div class="time">
-                            2018년 4월 
+                        <div class="info_box">
+                            <div class="main_tit">
+                                2019년 1월 
+                            </div>
+                            <div class="sub_tit">
+                                한국핀테크지원센터 리더스랩 3기
+                            </div>
                         </div>
-                        <div class="main_tit">
-                            우리은행 위비핀테크랩 3기
+                    </li>
+                    <li>
+                        <div class="bg_box">
+                            <div class="ratio_setter_sq"></div>
+                        </div>
+                        <div class="info_box">
+                            <div class="main_tit">
+                                2018년 4월
+                            </div>
+                            <div class="sub_tit">
+                                우리은행 위비핀테크랩 3기
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
+            
+        </div>
+        <div style="width:300px; background: skyblue;">
+            <img class="res" src="img/common/fin_lab.png" alt="">
+            <br></br>
+            <img class="res" src="img/common/nh_lab.png" alt="">
+            <br></br>
+            <img class="res" src="img/common/wr_lab.png" alt="">
         </div>
     </article>
 

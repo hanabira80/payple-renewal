@@ -142,6 +142,14 @@
 		-moz-transform:translate(0,-50%);
 		-webkit-transform:translate(0,-50%);
 	}
+	.y_center {
+		position:relative;
+		top:50%;
+		transform:translate(0,-50%);
+		-ms-transform:translate(0,-50%);
+		-moz-transform:translate(0,-50%);
+		-webkit-transform:translate(0,-50%);
+	}
 	.xy-center {
 		position:relative;
 		top:50%;

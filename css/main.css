@@ -1376,3 +1376,23 @@
     }
 }
 /* item_list__random end */
+
+
+
+/* left_area */
+    .left_area {
+        
+    }
+    .right_area {
+        flex-basis: 40%;
+    }
+/* */
+
+
+article > .width_limiter {
+    max-width:1280px;
+    margin:0 auto;
+}
+article > .space_setter {
+    padding:6rem 1.2rem 4rem;
+}
