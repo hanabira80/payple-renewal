@@ -621,6 +621,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.ratio_setter_sq {
+    padding-top:100%;
+    background-image: url(../img/common/empty.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* bg_box end */
 
 /* logo_in_text */
@@ -631,3 +638,30 @@
     margin:0 0 0.4rem;
 }
 /* logo_in_text end */
+
+/* flex_model */
+.flex_model {
+    display: flex;
+}
+/* flex_model end */
+
+/* list__thumb_m_01 */
+.list__thumb_m_01 li{
+    padding:0.8rem 1.2rem 0 6rem;
+    max-width:600px; /**/
+}
+.list__thumb_m_01 li:after {
+    content: '';
+    position: absolute;
+    bottom:0;
+    left:20%;
+    width:60%;
+    height:1px;
+    background: #eee;
+}
+.list__thumb_m_01 .bg_box {
+    position: absolute;
+    left:1.2rem;
+    width:4rem;
+}
+/* list__thumb_m_01 end */
