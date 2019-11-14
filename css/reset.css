@@ -114,7 +114,11 @@
 	img.res {
 		width:100%;
 		height:auto;
-	}
+    }
+    img.contain {
+        width:auto;
+        height:100%;
+    }
 	li, dl {
 		list-style:none
 	}
@@ -131,6 +135,14 @@
 		-webkit-transform:translate(-50%,0);
 	}
 	.y-center {
+		position:relative;
+		top:50%;
+		transform:translate(0,-50%);
+		-ms-transform:translate(0,-50%);
+		-moz-transform:translate(0,-50%);
+		-webkit-transform:translate(0,-50%);
+	}
+	.y_center {
 		position:relative;
 		top:50%;
 		transform:translate(0,-50%);
@@ -155,11 +167,49 @@
 		vertical-align:middle;
 		font-size:inherit;
 	}
-	.icn-txt {
+	.icn_txt {
 		display:inline-block;
 		vertical-align:middle;
 		font-size:inherit;
-	}
+    }
+    .txt_ellipsis {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .txt_twoline {
+        display: -webkit-box;
+        overflow: hidden;
+        max-height: 2.8em;
+        line-height: 1.2em;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        word-wrap: keep-all;
+        white-space: normal;
+    }
+    .txt_three_line {
+        display: -webkit-box;
+        overflow: hidden;
+        max-height: 4em;
+        line-height: 1.2em;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+    .txt_five_line {
+        display: -webkit-box;
+        overflow: hidden;
+        max-height: 6.4em;
+        line-height: 1.2em;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;
+        white-space: normal;
+    }
 /* normalize end */
 
 /*form object */
@@ -708,7 +758,3 @@
 		font-size: 0 !important;
 	}
 /* marketing script visibility hidden end */
-
-a {
-	color:red !important;
-}
