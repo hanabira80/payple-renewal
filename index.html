@@ -1,728 +1,722 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>      BETA : 페이플 간편결제</title>
-    <!--link rel="shortcut icon" href="../img/common/favicon.ico"-->
-    <!-- <link rel="icon" type="image/svg" href="/img/common/logo_simple.svg" sizes="32x32"> -->
-    <link rel="icon" type="image/png" href="/img/common/favicon.png" sizes="32x32">
-    <meta http-equiv="Content-Type" content="charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <head>
+        <title>BETA : 페이플 간편결제</title>
+        <link rel="icon" type="image/png" href="/img/common/favicon.png" sizes="32x32" />
+        <meta http-equiv="Content-Type" content="charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- mobile setting -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#141414">
-    <meta name="msapplication-navbutton-color" content="#141414">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#141414">
-    <!-- mobile setting end-->
+        <!-- mobile setting -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta name="theme-color" content="#7852e8" />
+        <meta name="msapplication-navbutton-color" content="#7852e8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#7852e8" />
+        <!-- mobile setting end-->
 
-    <!-- cache setting -->
-    <meta http-equiv="Cache-Control" content="no-store"/>
-    <meta http-equiv="Expires" content="0"/>
-    <meta http-equiv="Pragma" content="no-cache"/>
-    <!-- cache setting end-->
+        <!-- cache setting -->
+        <meta http-equiv="Cache-Control" content="no-store" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <!-- cache setting end-->
 
-    <!-- open graph protocol -->
-    <meta id="og_type" property="og:type" content="website">
-    <meta id="og_title" property="og:title" content="">
-    <meta id="og_description" property="og:description" content="">
-    <meta id="og_image" property="og:image" content="">
-    <meta id="og_url" property="og:url" content="">
-    <!-- open graph protocol end -->
+        <!-- open graph protocol -->
+        <meta id="og_type" property="og:type" content="website" />
+        <meta id="og_title" property="og:title" content="" />
+        <meta id="og_description" property="og:description" content="" />
+        <meta id="og_image" property="og:image" content="" />
+        <meta id="og_url" property="og:url" content="" />
+        <!-- open graph protocol end -->
 
-    <!--font setting -->
-    <!-- <link href="//cdn.jsdelivr.net/font-nanum/1.0/nanumgothic/nanumgothic.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="//cdn.jsdelivr.net/font-nanum/1.0/nanumbarungothic/nanumbarungothiclight.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="//cdn.jsdelivr.net/font-nanumsquare/1.0.0/nanumsquare.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,500,700&display=swap" rel="stylesheet">
-    <link href="./css/material-icons/material-icons.css" rel="stylesheet" type="text/css">
-    <link href="./css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- font setting end-->
+        <!--font setting -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,500,700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+        <link href="./css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- font setting end-->
 
-    <link href="./css/reset.css" rel="stylesheet" type="text/css">
-    <link href="./css/common.css" rel="stylesheet" type="text/css">
-    <link href="./css/swiper.css" rel="stylesheet" type="text/css">
-    <script src="./js/jquery.js"></script>
-    <script src="./js/mq.genie.min.js"></script>
-    <script src="./js/ScrollMagic.min.js"></script>
-    <script src="./js/swiper.min.js"></script>
-    <script src="./js/main.js"></script>
-</head>
+        <!-- css setting -->
+        <link href="./css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="./css/swiper.css" rel="stylesheet" type="text/css" />
+        <link href="./css/common.css" rel="stylesheet" type="text/css" />
+        <!-- css setting end -->
 
-<body class="_js-is-limit"> <!-- 임시 막기 -->
+        <!-- js setting -->
+        <script src="./js/jquery.js"></script>
+        <script src="./js/mq.genie.min.js"></script>
+        <script src="./js/swiper.min.js"></script>
+        <script src="./js/main.js"></script>
+        <!-- js setting -->
+    </head>
 
-<div class="loader">
-    <div class="left-area"></div>
-    <div class="right-area"></div>
-    <div class="canvas-area sk-cube-grid xy-center">
-        <div class="sk-cube sk-cube1"></div>
-        <div class="sk-cube sk-cube2"></div>
-        <div class="sk-cube sk-cube3"></div>
-        <div class="sk-cube sk-cube4"></div>
-        <div class="sk-cube sk-cube5"></div>
-        <div class="sk-cube sk-cube6"></div>
-        <div class="sk-cube sk-cube7"></div>
-        <div class="sk-cube sk-cube8"></div>
-        <div class="sk-cube sk-cube9"></div>
-        <div class="bg">
-            <i class="material-icons">&#xE855;</i>
-        </div>
-    </div>
-</div>
-
-<header>
-    <div class="header-bg">
-        <div class="scroll-nav">
-            <div class="percent js-is-percent"></div>
-        </div>
-    </div>
-    <div class="width-inner">
-        <h1 class="header-logo">
-            <img src="./img/common/logo_full.svg" class="res" alt="">
-        </h1>
-        <div class="header_menu_area">
-            <div class="header-menu-box">
-                <nav class="header-menu">
-                    <a href="#main" class="div">
-                        <div class="txt">카드결제</div>
-                        <div class="border"></div>
-                    </a>
-                </nav>
-                <nav class="header-menu">
-                    <a href="#main" class="div">
-                        <div class="txt">계좌이체</div>
-                        <div class="border"></div>
-                    </a>
-                </nav>
-                <nav class="header-menu">
-                    <a href="#main" class="div">
-                        <div class="txt">URL 링크 결제</div>
-                        <div class="border"></div>
-                    </a>
-                </nav>
-            </div>
-
-            <div class="header-menu-box right">
-                <nav class="header-menu">
-                    <a href="#main" class="div">
-                        <div class="txt">가입문의하기</div>
-                        <div class="border"></div>
-                    </a>
-                </nav>
-                <nav class="header-menu">
-                    <a href="#main" class="div">
-                        <div class="txt">API링크</div>
-                        <div class="border"></div>
-                    </a>
-                </nav>
-                <nav class="header-menu">
-                    <a href="#main" class="div">
-                        <div class="txt">고객사 로그인</div>
-                        <div class="border"></div>
-                    </a>
-                </nav>
+    <body class="_js-is-limit"><!-- 임시 막기 -->
+        <div class="loader">
+            <div class="left-area"></div>
+            <div class="right-area"></div>
+            <div class="canvas-area sk-cube-grid xy-center">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+                <div class="bg">
+                    <i class="material-icons">
+                        alarm
+                    </i>
+                </div>
             </div>
         </div>
-        <div class="header-menu-icn y-center">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-            <div class="bar bar4"></div>
-        </div>
-    </div>
-</header>
 
-<link href="./css/main.css" rel="stylesheet" type="text/css">
-
-<section>
-    <article class="type_full_page">
-        <div class="width_limiter">
-            <div class="slider_main_pc_frame">
-                <div class="ratio_setter">
-                    <div class="img_frame">
-                        <img class="res" src="img/main/frame_pc_header.svg" alt="">
+        <header>
+            <div class="header-bg">
+                <div class="scroll-nav">
+                    <div class="percent js-is-percent"></div>
+                </div>
+            </div>
+            <div class="width-inner">
+                <h1 class="header-logo">
+                    <img src="./img/common/logo_full.svg" class="res" alt="" />
+                </h1>
+                <div class="header_menu_area">
+                    <div class="header-menu-box">
+                        <nav class="header-menu">
+                            <a href="#main" class="div">
+                                <div class="txt">카드결제</div>
+                                <div class="border"></div>
+                            </a>
+                        </nav>
+                        <nav class="header-menu">
+                            <a href="#main" class="div">
+                                <div class="txt">계좌이체</div>
+                                <div class="border"></div>
+                            </a>
+                        </nav>
+                        <nav class="header-menu">
+                            <a href="#main" class="div">
+                                <div class="txt">URL 링크 결제</div>
+                                <div class="border"></div>
+                            </a>
+                        </nav>
                     </div>
-                    <div class="swiper-container slider_main_pc">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img 
-                                    class="res" 
-                                    src="img/main/slider_main_pc_frame_01.png" 
-                                    alt="" />
+
+                    <div class="header-menu-box right">
+                        <nav class="header-menu">
+                            <a href="#main" class="div">
+                                <div class="txt">가입문의하기</div>
+                                <div class="border"></div>
+                            </a>
+                        </nav>
+                        <nav class="header-menu">
+                            <a href="#main" class="div">
+                                <div class="txt">API링크</div>
+                                <div class="border"></div>
+                            </a>
+                        </nav>
+                        <nav class="header-menu">
+                            <a href="#main" class="div">
+                                <div class="txt">고객사 로그인</div>
+                                <div class="border"></div>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-menu-icn y-center">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                    <div class="bar bar4"></div>
+                </div>
+            </div>
+        </header>
+
+        <link href="./css/main.css" rel="stylesheet" type="text/css" />
+
+        <section>
+            <article class="type_full_page">
+                <div class="width_limiter">
+                    <div class="slider_main_pc_frame">
+                        <div class="ratio_setter">
+                            <div class="img_frame">
+                                <img class="res" src="img/main/frame_pc_header.svg" alt="" />
                             </div>
-                            <div class="swiper-slide">
-                                <img 
-                                    class="res" 
-                                    src="img/main/slider_main_pc_frame_02.png" 
-                                    alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img 
-                                    class="res" 
-                                    src="img/main/slider_main_pc_frame_03.png" 
-                                    alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img 
-                                    class="res" 
-                                    src="img/main/slider_main_pc_frame_04.png" 
-                                    alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img 
-                                    class="res" 
-                                    src="img/main/slider_main_pc_frame_05.png" 
-                                    alt="" />
+                            <div class="swiper-container slider_main_pc">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_pc_frame_01.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_pc_frame_02.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_pc_frame_03.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_pc_frame_04.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_pc_frame_05.png" alt="" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="slider_main_mo_frame">
-                <div class="ratio_setter">
-                    <div class="swiper-container slider_main_mo">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img 
-                                    class="res" 
-                                    src="img/main/slider_main_mo_frame_01.png" 
-                                    alt="" />
+                    <div class="slider_main_mo_frame">
+                        <div class="ratio_setter">
+                            <div class="swiper-container slider_main_mo">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_01.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_02.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_03.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_04.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                    </div>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img 
-                                    class="res" 
-                                    src="img/main/slider_main_mo_frame_02.png" 
-                                    alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img 
-                                    class="res" 
-                                    src="img/main/slider_main_mo_frame_03.png" 
-                                    alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img 
-                                    class="res" 
-                                    src="img/main/slider_main_mo_frame_04.png" 
-                                    alt="" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img 
-                                    class="res" 
-                                    src="img/main/slider_main_mo_frame_05.png" 
-                                    alt="" />
-                            </div>
+                        </div>
+                        <div class="img_frame">
+                            <img class="res" src="img/main/frame_mo_black.svg" alt="" />
                         </div>
                     </div>
-                </div>
-                <div class="img_frame">
-                    <img class="res" src="img/main/frame_mo_black.svg" alt="">
-                </div>
-            </div>
 
-            <div class="main_tit">
-                쉽고 편리한 결제로<br/><em>구매 전환율</em>을 높이세요.
-            </div>
+                    <div class="main_tit">쉽고 편리한 결제로<br /><em>구매 전환율</em>을 높이세요.</div>
 
-            <div class="sub_tit">
-                페이플은 쉽고 편리한 신용카드, 계좌이체 통합결제를 사용자에게 제공하면서 고객사의 구매 전환율을 높이는 것에만 집중합니다.
-            </div>
+                    <div class="sub_tit">
+                        페이플은 쉽고 편리한 신용카드, 계좌이체 통합결제를 사용자에게 제공하면서 고객사의 구매 전환율을 높이는 것에만 집중합니다.
+                    </div>
 
-            <div class="full-page-overlay"></div>
-            <!-- <div class="article-stripe"></div> -->
-        </div>
-    </article>
+                    <div class="full-page-overlay"></div>
+                    <!-- <div class="article-stripe"></div> -->
+                </div>
+            </article>
 
-    <article class="type-card-box">
-        <div class="article-tit">
-            <img 
-                class="logo_in_text__lg"
-                src="img/common/logo_full.svg" 
-                alt="" />
-            무엇이 다를까요?
-        </div>
-        <div class="article-sub-tit">
-            페이플은 사용자의 편리한 결제를 방해하는 모든 요소를 제거한 신용카드, 계좌이체 통합결제서비스입니다.
-        </div>
-        <ul class="card-box">
-            <li class="card">
-                <div class="card-icn">
-                    <!-- <i class="fa fa-credit-card" aria-hidden="true"></i> -->
-                    <i class="fa fa-magic" aria-hidden="true"></i>
-                    <!-- <i class="fa fa-key" aria-hidden="true"></i> -->
-                    <!-- <i class="fa fa-cogs" aria-hidden="true"></i> -->
-                    <!-- <i class="fa fa-address-card-o" aria-hidden="true"></i> -->
+            <article class="type-card-box">
+                <div class="article-tit">
+                    <img class="logo_in_text__lg" src="img/common/logo_full.svg" alt="" />
+                    무엇이 다를까요?
                 </div>
-                <div class="card-tit">
-                    Convenient
+                <div class="article-sub-tit">
+                    페이플은 사용자의 편리한 결제를 방해하는 모든 요소를 제거한 신용카드, 계좌이체 통합결제서비스입니다.
                 </div>
-                <div class="card-ctn">
-                    별도 회원가입과 앱 설치, 공인인증서가 필요없습니다.
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-icn">
-                    <i class="fa fa-html5" aria-hidden="true"></i>
-                </div>
-                <div class="card-tit">
-                    Standard
-                </div>
-                <div class="card-ctn">
-                    페이플은 다양한 플랫폼에 적용 가능한 웹표준을 준수한 결제화면을 제공합니다.
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-icn">
-                    <!-- <i class="fa fa-thumbs-up" aria-hidden="true"></i> -->
-                    <!-- <i class="fa fa-puzzle-piece" aria-hidden="true"></i> -->
-                    <i class="fa fa-line-chart" aria-hidden="true"></i>
-                    <!-- <i class="fa fa-cogs" aria-hidden="true"></i> -->
-                </div>
-                <div class="card-tit">
-                    Experience
-                </div>
-                <div class="card-ctn">
-                    사용자는 페이플을 통해 편리한 결제를 경험할 수 있고 이는 고객사의 높은 결제 전환율로 이어집니다.
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-icn">
-                    <!-- <i class="fa fa-refresh" aria-hidden="true"></i> -->
-                    <!-- <i class="fa fa-gift" aria-hidden="true"></i> -->
-                    <i class="fa fa-money" aria-hidden="true"></i>
-                </div>
-                <div class="card-tit">
-                    Return
-                </div>
-                <div class="card-ctn">
-                    현금영수증 자동발행으로 신용카드보다 2배 높은 30% 소득공제가 가능합니다.
-                </div>
-            </li>
-        </ul>
-    </article>
-
-    <article class="type-card-box">
-        <div class="article-tit">
-            펜테크 업계에서 
-            <img 
-                class="logo_in_text__lg"
-                src="img/common/logo_full.svg" 
-                alt="" />
-            을 주목합니다.
-        </div>
-        <div class="article-sub-tit">
-            페이플은 금융위원회 금융규제 샌드박스 혁신금융서비스 1차에 지정 서비스이며, 많은 금융권의 관심과 지지를 받고 있습니다.  
-        </div>
-<style>
-.rooted-increment {
-    background-color: #fff;
-    border-radius: 8px;
-    -webkit-box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
-    box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 36px -8px rgba(0,0,0,.025);
-    width:400px;
-    text-align: center;
-}
-.rooted-increment .cover {
-    height: 200px;
-    background-color: #58adee;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    background-image: url(img/main/sand_box.png);
-    background-size: 80% auto;
-    background-position: left 60%;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-.rooted-increment .cover:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    left: 0;
-    top: 100%;
-    background-color: #fff;
-    transform: skewY(-12deg);
-    transform-origin: 0 0;
-}
-.common-IntroText {
-    font-weight: 300;
-    font-size: 21px;
-    line-height: 32px;
-    color: #424770;
-    padding:0 30px;
-    text-align: left;
-}
-@media (min-width: 670px) {
-    .common-IntroText {
-        font-size: 24px;
-        line-height: 36px;
-    }
-}
-
-.rooted-increment h2 {
-    margin: 0 0 20px;
-    color: #32325d;
-    padding:0 30px;
-    text-align: left;
-}
-.common-BodyText {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 28px;
-    color: #525f7f;
-    padding:0 30px;
-    text-align: left;
-}
-.common-Button {
-    white-space: nowrap;
-    display: inline-block;
-    
-    margin:30px 0;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 14px;
-    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-    background: #fff;
-    border-radius: 4px;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .025em;
-    color: #6772e5;
-    text-decoration: none;
-    -webkit-transition: all .15s ease;
-    transition: all .15s ease;
-}
-.common-Button--default {
-    color: #fff;
-    background: #6772e5;
-}
-.rooted-increment .common-Button--default {
-    
-}
-</style>
-        <div class="width_limiter space_setter flex_model">
-            <div class="left_area">
-                <div class="rooted-increment common-Card">
-                    <div class="cover"></div>
-                    <h2 class="common-IntroText">
-                        금융위원회 금융규제 샌드박스 혁신금융서비스
-                    </h2>
-                    <p class="common-BodyText">
-                        계좌이체시 필요한 ARS 출금동의 절차로 인해 고객사의 결제 전환율은 높지 않았습니다. 그래서 우리는 이 부분에 집중했고 휴대폰 본인확인만으로 출금동의까지 가능한 “SMS 인증방식의 온라인 간편결제 서비스” 로 고객사의 결제 전환율을 높였습니다. 
-                    </p>
-                    <a 
-                        href="" 
-                        target="_blank" 
-                        class="common-Button common-Button--default">
-                        금융규제 샌드박스란?
-                    </a>
-                </div>
-            </div>
-
-            <div class="right_area">
-                <ul class="list__thumb_m_02">
-                    <li>
-                        <div class="pin"></div>
-                        <div class="info_box">
-                            <div class="main_tit">
-                                NH디지털챌린지플러스 1기 
-                            </div>
-                            <div class="sub_tit">
-                                2019년 4월 
-                            </div>
+                <ul class="card-box">
+                    <li class="card">
+                        <div class="card-icn">
+                            <!-- <i class="fa fa-credit-card" aria-hidden="true"></i> -->
+                            <i class="fa fa-magic" aria-hidden="true"></i>
+                            <!-- <i class="fa fa-key" aria-hidden="true"></i> -->
+                            <!-- <i class="fa fa-cogs" aria-hidden="true"></i> -->
+                            <!-- <i class="fa fa-address-card-o" aria-hidden="true"></i> -->
                         </div>
-                        <div class="bg_box">
-                            <div class="ratio_setter_bn">
-                                <img class="xy-center" src="img/common/nh_lab.png" alt="">
-                            </div>
+                        <div class="card-tit">
+                            Convenient
+                        </div>
+                        <div class="card-ctn">
+                            별도 회원가입과 앱 설치, 공인인증서가 필요없습니다.
                         </div>
                     </li>
-                    <li>
-                        <div class="pin"></div>
-                        <div class="info_box">
-                            <div class="main_tit">
-                                한국핀테크지원센터 리더스랩 3기
-                            </div>
-                            <div class="sub_tit">
-                                2019년 1월 
-                            </div>
+                    <li class="card">
+                        <div class="card-icn">
+                            <i class="fa fa-html5" aria-hidden="true"></i>
                         </div>
-                        <div class="bg_box">
-                            <div class="ratio_setter_bn">
-                                <img class="xy-center" src="img/common/fin_lab.png" alt="">
-                            </div>
+                        <div class="card-tit">
+                            Standard
+                        </div>
+                        <div class="card-ctn">
+                            페이플은 다양한 플랫폼에 적용 가능한 웹표준을 준수한 결제화면을 제공합니다.
                         </div>
                     </li>
-                    <li>
-                        <div class="pin"></div>
-                        <div class="info_box">
-                            <div class="main_tit">
-                                우리은행 위비핀테크랩 3기
-                            </div>
-                            <div class="sub_tit">
-                                2018년 4월
-                            </div>
+                    <li class="card">
+                        <div class="card-icn">
+                            <!-- <i class="fa fa-thumbs-up" aria-hidden="true"></i> -->
+                            <!-- <i class="fa fa-puzzle-piece" aria-hidden="true"></i> -->
+                            <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            <!-- <i class="fa fa-cogs" aria-hidden="true"></i> -->
                         </div>
-                        <div class="bg_box">
-                            <div class="ratio_setter_bn">
-                                <img class="xy-center" src="img/common/wr_lab.png" alt="">     
-                            </div>
+                        <div class="card-tit">
+                            Experience
+                        </div>
+                        <div class="card-ctn">
+                            사용자는 페이플을 통해 편리한 결제를 경험할 수 있고 이는 고객사의 높은 결제 전환율로 이어집니다.
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-icn">
+                            <!-- <i class="fa fa-refresh" aria-hidden="true"></i> -->
+                            <!-- <i class="fa fa-gift" aria-hidden="true"></i> -->
+                            <i class="fa fa-money" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-tit">
+                            Return
+                        </div>
+                        <div class="card-ctn">
+                            현금영수증 자동발행으로 신용카드보다 2배 높은 30% 소득공제가 가능합니다.
                         </div>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </article>
+            </article>
 
-    <article class="type-video-bg">
-        <div class="video-bg">
-            <div class="ratio-inner xy-center">
-                <!-- <iframe src="https://www.youtube.com/embed/PdJa997mCUY?controls=0&showinfo=0&rel=0&autoplay=1&loop=0&playlist=PdJa997mCUY" frameborder='0' allowfullscreen></iframe> -->
-                <!--
+            <article class="type-card-box">
+                <div class="article-tit">
+                    펜테크 업계에서
+                    <img class="logo_in_text__lg" src="img/common/logo_full.svg" alt="" />
+                    을 주목합니다.
+                </div>
+                <div class="article-sub-tit">
+                    페이플은 금융위원회 금융규제 샌드박스 혁신금융서비스 1차에 지정 서비스이며, 많은 금융권의 관심과 지지를 받고 있습니다.
+                </div>
+                <style>
+                    .rooted-increment {
+                        background-color: #fff;
+                        border-radius: 8px;
+                        -webkit-box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+                            0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+                        box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+                        width: 400px;
+                        text-align: center;
+                    }
+                    .rooted-increment .cover {
+                        height: 200px;
+                        background-color: #58adee;
+                        border-top-left-radius: 4px;
+                        border-top-right-radius: 4px;
+                        background-image: url(img/main/sand_box.png);
+                        background-size: 80% auto;
+                        background-position: left 60%;
+                        background-repeat: no-repeat;
+                        overflow: hidden;
+                    }
+                    .rooted-increment .cover:after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 200px;
+                        left: 0;
+                        top: 100%;
+                        background-color: #fff;
+                        transform: skewY(-12deg);
+                        transform-origin: 0 0;
+                    }
+                    .common-IntroText {
+                        font-weight: 300;
+                        font-size: 21px;
+                        line-height: 32px;
+                        color: #424770;
+                        padding: 0 30px;
+                        text-align: left;
+                    }
+                    @media (min-width: 670px) {
+                        .common-IntroText {
+                            font-size: 24px;
+                            line-height: 36px;
+                        }
+                    }
+
+                    .rooted-increment h2 {
+                        margin: 0 0 20px;
+                        color: #32325d;
+                        padding: 0 30px;
+                        text-align: left;
+                    }
+                    .common-BodyText {
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 28px;
+                        color: #525f7f;
+                        padding: 0 30px;
+                        text-align: left;
+                    }
+                    .common-Button {
+                        white-space: nowrap;
+                        display: inline-block;
+
+                        margin: 30px 0;
+                        height: 40px;
+                        line-height: 40px;
+                        padding: 0 14px;
+                        -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+                        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+                        background: #fff;
+                        border-radius: 4px;
+                        font-size: 15px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 0.025em;
+                        color: #6772e5;
+                        text-decoration: none;
+                        -webkit-transition: all 0.15s ease;
+                        transition: all 0.15s ease;
+                    }
+                    .common-Button--default {
+                        color: #fff;
+                        background: #6772e5;
+                    }
+                    .rooted-increment .common-Button--default {
+                    }
+                </style>
+                <div class="width_limiter space_setter flex_model">
+                    <div class="left_area">
+                        <div class="rooted-increment common-Card">
+                            <div class="cover"></div>
+                            <h2 class="common-IntroText">
+                                금융위원회 금융규제 샌드박스 혁신금융서비스
+                            </h2>
+                            <p class="common-BodyText">
+                                계좌이체시 필요한 ARS 출금동의 절차로 인해 고객사의 결제 전환율은 높지 않았습니다. 그래서 우리는 이 부분에 집중했고 휴대폰
+                                본인확인만으로 출금동의까지 가능한 “SMS 인증방식의 온라인 간편결제 서비스” 로 고객사의 결제 전환율을 높였습니다.
+                            </p>
+                            <a href="" target="_blank" class="common-Button common-Button--default">
+                                금융규제 샌드박스란?
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="right_area">
+                        <ul class="list__thumb_m_02">
+                            <li>
+                                <div class="pin"></div>
+                                <div class="info_box">
+                                    <div class="main_tit">
+                                        NH디지털챌린지플러스 1기
+                                    </div>
+                                    <div class="sub_tit">
+                                        2019년 4월
+                                    </div>
+                                </div>
+                                <div class="bg_box">
+                                    <div class="ratio_setter_bn">
+                                        <img class="xy-center" src="img/common/nh_lab.png" alt="" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pin"></div>
+                                <div class="info_box">
+                                    <div class="main_tit">
+                                        한국핀테크지원센터 리더스랩 3기
+                                    </div>
+                                    <div class="sub_tit">
+                                        2019년 1월
+                                    </div>
+                                </div>
+                                <div class="bg_box">
+                                    <div class="ratio_setter_bn">
+                                        <img class="xy-center" src="img/common/fin_lab.png" alt="" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pin"></div>
+                                <div class="info_box">
+                                    <div class="main_tit">
+                                        우리은행 위비핀테크랩 3기
+                                    </div>
+                                    <div class="sub_tit">
+                                        2018년 4월
+                                    </div>
+                                </div>
+                                <div class="bg_box">
+                                    <div class="ratio_setter_bn">
+                                        <img class="xy-center" src="img/common/wr_lab.png" alt="" />
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="type-video-bg">
+                <div class="video-bg">
+                    <div class="ratio-inner xy-center">
+                        <!-- <iframe src="https://www.youtube.com/embed/PdJa997mCUY?controls=0&showinfo=0&rel=0&autoplay=1&loop=0&playlist=PdJa997mCUY" frameborder='0' allowfullscreen></iframe> -->
+                        <!--
                 <video autoplay preload="auto" loop>
                     <source src="./img/Everything-is-right.mp4" type="video/mp4">
                 </video>
                 -->
-            </div>
-        </div>
-        <div class="article-stripe"></div>
-    </article>
+                    </div>
+                </div>
+                <div class="article-stripe"></div>
+            </article>
 
-    <article class="type-tab-box">
-        <div class="article-tit">
-            메인 타이틀
-        </div>
-        <div class="article-sub-tit">
-            서브 타이틀
-        </div>
-        <ul class="tab-btn-box">
-            <li class="tab-btn js-target-tab-btn js-act-selected" kind="all">
-                첫번째 버튼
-            </li>
-            <li class="tab-btn js-target-tab-btn" kind="1">
-                두번째 버튼
-            </li>
-            <li class="tab-btn js-target-tab-btn" kind="2">
-                세번째 버튼
-            </li>
-            <li class="tab-btn js-target-tab-btn" kind="3">
-                네번째 버튼
-            </li>
-            <li class="tab-btn js-target-tab-btn" kind="4">
-                다섯번째 버튼
-            </li>
-            <li class="tab-btn js-target-tab-btn" kind="5">
-                여섯번째 버튼
-            </li>
-        </ul>
-        <ul class="tab-ctn-box  js-target-tab-ctn-box">
-            <li class="tab-ctn js-target-tab-ctn">
-                <div class="show-inner js-act-show" kind="1">
-                    <img src="./img/video/video_01.jpg" class="res">
-                    <div class="overlay"></div>
-                    <div class="tit">제목입니다.</div>
-                    <div class="icn">
-                        <i class="material-icons">&#xE639;</i>
-                    </div>
+            <article class="type-tab-box">
+                <div class="article-tit">
+                    메인 타이틀
                 </div>
-            </li>
-            <li class="tab-ctn js-target-tab-ctn">
-                <div class="show-inner js-act-show" kind="1">
-                    <img src="./img/video/video_01.jpg" class="res">
-                    <div class="overlay"></div>
-                    <div class="tit">제목입니다. 제목입니다. 제목입니다. 제목입니다. 제목입니다.</div>
-                    <div class="icn">
-                        <i class="material-icons">&#xE639;</i>
-                    </div>
+                <div class="article-sub-tit">
+                    서브 타이틀
                 </div>
-            </li>
-            <li class="tab-ctn js-target-tab-ctn">
-                <div class="show-inner js-act-show" kind="2">
-                    <img src="./img/video/video_01.jpg" class="res">
-                    <div class="overlay"></div>
-                    <div class="tit">제목입니다.</div>
-                    <div class="icn">
-                        <i class="material-icons">&#xE639;</i>
-                    </div>
-                </div>
-            </li>
-            <li class="tab-ctn js-target-tab-ctn">
-                <div class="show-inner js-act-show" kind="2">
-                    <img src="./img/video/video_01.jpg" class="res">
-                    <div class="overlay"></div>
-                    <div class="tit">제목입니다.</div>
-                    <div class="icn">
-                        <i class="material-icons">&#xE639;</i>
-                    </div>
-                </div>
-            </li>
-            <li class="tab-ctn js-target-tab-ctn">
-                <div class="show-inner js-act-show" kind="3">
-                    <img src="./img/video/video_01.jpg" class="res">
-                    <div class="overlay"></div>
-                    <div class="tit">제목입니다.</div>
-                    <div class="icn">
-                        <i class="material-icons">&#xE639;</i>
-                    </div>
-                </div>
-            </li>
-            <li class="tab-ctn js-target-tab-ctn">
-                <div class="show-inner js-act-show" kind="4">
-                    <img src="./img/video/video_01.jpg" class="res">
-                    <div class="overlay"></div>
-                    <div class="tit">제목입니다.</div>
-                    <div class="icn">
-                        <i class="material-icons">&#xE639;</i>
-                    </div>
-                </div>
-            </li>
-            <li class="tab-ctn js-target-tab-ctn">
-                <div class="show-inner js-act-show" kind="5">
-                    <img src="./img/video/video_01.jpg" class="res">
-                    <div class="overlay"></div>
-                    <div class="tit">제목입니다.</div>
-                    <div class="icn">
-                        <i class="material-icons">&#xE639;</i>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="article-stripe c2"></div>
-    </article>
+                <ul class="tab-btn-box">
+                    <li class="tab-btn js-target-tab-btn js-act-selected" kind="all">
+                        첫번째 버튼
+                    </li>
+                    <li class="tab-btn js-target-tab-btn" kind="1">
+                        두번째 버튼
+                    </li>
+                    <li class="tab-btn js-target-tab-btn" kind="2">
+                        세번째 버튼
+                    </li>
+                    <li class="tab-btn js-target-tab-btn" kind="3">
+                        네번째 버튼
+                    </li>
+                    <li class="tab-btn js-target-tab-btn" kind="4">
+                        다섯번째 버튼
+                    </li>
+                    <li class="tab-btn js-target-tab-btn" kind="5">
+                        여섯번째 버튼
+                    </li>
+                </ul>
+                <ul class="tab-ctn-box  js-target-tab-ctn-box">
+                    <li class="tab-ctn js-target-tab-ctn">
+                        <div class="show-inner js-act-show" kind="1">
+                            <img src="./img/video/video_01.jpg" class="res" />
+                            <div class="overlay"></div>
+                            <div class="tit">제목입니다.</div>
+                            <div class="icn">
+                                <i class="material-icons">&#xE639;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-ctn js-target-tab-ctn">
+                        <div class="show-inner js-act-show" kind="1">
+                            <img src="./img/video/video_01.jpg" class="res" />
+                            <div class="overlay"></div>
+                            <div class="tit">
+                                제목입니다. 제목입니다. 제목입니다. 제목입니다. 제목입니다.
+                            </div>
+                            <div class="icn">
+                                <i class="material-icons">&#xE639;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-ctn js-target-tab-ctn">
+                        <div class="show-inner js-act-show" kind="2">
+                            <img src="./img/video/video_01.jpg" class="res" />
+                            <div class="overlay"></div>
+                            <div class="tit">제목입니다.</div>
+                            <div class="icn">
+                                <i class="material-icons">&#xE639;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-ctn js-target-tab-ctn">
+                        <div class="show-inner js-act-show" kind="2">
+                            <img src="./img/video/video_01.jpg" class="res" />
+                            <div class="overlay"></div>
+                            <div class="tit">제목입니다.</div>
+                            <div class="icn">
+                                <i class="material-icons">&#xE639;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-ctn js-target-tab-ctn">
+                        <div class="show-inner js-act-show" kind="3">
+                            <img src="./img/video/video_01.jpg" class="res" />
+                            <div class="overlay"></div>
+                            <div class="tit">제목입니다.</div>
+                            <div class="icn">
+                                <i class="material-icons">&#xE639;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-ctn js-target-tab-ctn">
+                        <div class="show-inner js-act-show" kind="4">
+                            <img src="./img/video/video_01.jpg" class="res" />
+                            <div class="overlay"></div>
+                            <div class="tit">제목입니다.</div>
+                            <div class="icn">
+                                <i class="material-icons">&#xE639;</i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tab-ctn js-target-tab-ctn">
+                        <div class="show-inner js-act-show" kind="5">
+                            <img src="./img/video/video_01.jpg" class="res" />
+                            <div class="overlay"></div>
+                            <div class="tit">제목입니다.</div>
+                            <div class="icn">
+                                <i class="material-icons">&#xE639;</i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="article-stripe c2"></div>
+            </article>
 
-    <article class="type-text-column">
-        <div class="article-tit c2">
-            메인 타이틀
-        </div>
-        <div class="article-sub-tit c2">
-            서브 타이틀
-        </div>
-        <div class="text-column count-2">
-            박근혜 대통령이 헌법재판소에 낸 탄핵소추 답변서에는 난데없이 미국 정치권에서 쓰이는 ‘은어’가 등장한다. 박 대통령의 40년 지기 비선실세인 최순실씨의 국정개입에 대해 ‘미국 대통령도 다 그렇게 한다’며 물타기를 하려는 취지인데, 정치학자들은 “차원이 너무 달라서 비교 자체가 불가능하다”고 했다.
-            18일 국회가 공개한 답변서를 보면, 박 대통령 법률대리인들은 “대통령이 국정수행 과정에서 지인(최순실)의 의견을 들어 일부 반영했다고 하더라도, 이는 사회통념상 허용될 수 있는 일”이라며 ‘백악관 버블’(미국 대통령이 백악관에 갇혀 외부와 고립되는 상황)을 인용했다. 최씨의 역할이 ‘버블 안’에 갇힌 박 대통령을 바깥 민심과 연결하는 ‘출구’였다는 주장인 셈이다. 대리인단은 또 최씨가 대통령 연설물을 고친 것은 ‘국민 눈높이 자문’을 받은 것이라며 이를 “속칭 ‘키친 캐비닛’이라고 한다. 박 대통령이 최씨 의견을 들은 것도 같은 취지였다”고 주장했다. 박 대통령에게 최씨는 미국 대통령들의 ‘사적 고문단’과 동일하다는 것이다.
-            박원호 서울대 정치학과 교수는 “두 용어 모두 정치학 용어가 아닌 미국 정가의 은어”라며 “박 대통령의 경우에는 의견을 묻는 정도가 아니라 최씨가 ‘리얼 캐비닛’이었다는 것이 문제다. 그런 말들이 미국에 있다고 해서 정당화될 수 있는 상황이 아니다”라고 지적했다. ‘키친 캐비닛’이나 예비내각을 뜻하는 ‘섀도우 캐비닛’도 아닌, 실제 국정운영과 장차관 인사까지 좌지우지한 ‘내각 실세’처럼 최씨가 군림했다는 것이다.
-        </div>
-        <div class="sns-box">
-            <div class="sns facebook">
-                <i class="fa fa-facebook " aria-hidden="true"></i>
-            </div>
-            <div class="sns twitter">
-                <i class="fa fa-twitter " aria-hidden="true"></i>
-            </div>
-            <div class="sns instagram">
-                <i class="fa fa-instagram " aria-hidden="true"></i>
-            </div>
-            <div class="sns kakao">
+            <article class="type-text-column">
+                <div class="article-tit c2">
+                    메인 타이틀
+                </div>
+                <div class="article-sub-tit c2">
+                    서브 타이틀
+                </div>
+                <div class="text-column count-2">
+                    박근혜 대통령이 헌법재판소에 낸 탄핵소추 답변서에는 난데없이 미국 정치권에서 쓰이는 ‘은어’가 등장한다. 박 대통령의 40년 지기 비선실세인
+                    최순실씨의 국정개입에 대해 ‘미국 대통령도 다 그렇게 한다’며 물타기를 하려는 취지인데, 정치학자들은 “차원이 너무 달라서 비교 자체가
+                    불가능하다”고 했다. 18일 국회가 공개한 답변서를 보면, 박 대통령 법률대리인들은 “대통령이 국정수행 과정에서 지인(최순실)의 의견을 들어 일부
+                    반영했다고 하더라도, 이는 사회통념상 허용될 수 있는 일”이라며 ‘백악관 버블’(미국 대통령이 백악관에 갇혀 외부와 고립되는 상황)을 인용했다.
+                    최씨의 역할이 ‘버블 안’에 갇힌 박 대통령을 바깥 민심과 연결하는 ‘출구’였다는 주장인 셈이다. 대리인단은 또 최씨가 대통령 연설물을 고친 것은
+                    ‘국민 눈높이 자문’을 받은 것이라며 이를 “속칭 ‘키친 캐비닛’이라고 한다. 박 대통령이 최씨 의견을 들은 것도 같은 취지였다”고 주장했다. 박
+                    대통령에게 최씨는 미국 대통령들의 ‘사적 고문단’과 동일하다는 것이다. 박원호 서울대 정치학과 교수는 “두 용어 모두 정치학 용어가 아닌 미국
+                    정가의 은어”라며 “박 대통령의 경우에는 의견을 묻는 정도가 아니라 최씨가 ‘리얼 캐비닛’이었다는 것이 문제다. 그런 말들이 미국에 있다고 해서
+                    정당화될 수 있는 상황이 아니다”라고 지적했다. ‘키친 캐비닛’이나 예비내각을 뜻하는 ‘섀도우 캐비닛’도 아닌, 실제 국정운영과 장차관 인사까지
+                    좌지우지한 ‘내각 실세’처럼 최씨가 군림했다는 것이다.
+                </div>
+                <div class="sns-box">
+                    <div class="sns facebook">
+                        <i class="fa fa-facebook " aria-hidden="true"></i>
+                    </div>
+                    <div class="sns twitter">
+                        <i class="fa fa-twitter " aria-hidden="true"></i>
+                    </div>
+                    <div class="sns instagram">
+                        <i class="fa fa-instagram " aria-hidden="true"></i>
+                    </div>
+                    <div class="sns kakao"></div>
+                </div>
+                <div class="article-stripe"></div>
+            </article>
 
-            </div>
-        </div>
-        <div class="article-stripe"></div>
-    </article>
+            <article class="type-text-column">
+                <div class="article-tit c2">
+                    메인 타이틀
+                </div>
+                <div class="article-sub-tit c2">
+                    서브 타이틀
+                </div>
+                <div style="display: flex; justify-content: space-around; align-content: space-around;">
+                    <div class="text-column count-2 " style="display:flex;">
+                        박근혜 대통령이 헌법재판소에 낸 탄핵소추 답변서에는 난데없이 미국 정치권에서 쓰이는 ‘은어’가 등장한다. 박 대통령의 40년 지기 비선실세인
+                        최순실씨의 국정개입에 대해 ‘미국 대통령도 다 그렇게 한다’며 물타기를 하려는 취지인데, 정치학자들은 “차원이 너무 달라서 비교 자체가
+                        불가능하다”고 했다. 18일 국회가 공개한 답변서를 보면, 박 대통령 법률대리인들은 “대통령이 국정수행 과정에서 지인(최순실)의 의견을 들어
+                        일부 반영했다고 하더라도, 이는 사회통념상 허용될 수 있는 일”이라며 ‘백악관 버블’(미국 대통령이 백악관에 갇혀 외부와 고립되는 상황)을
+                        인용했다. 최씨의 역할이 ‘버블 안’에 갇힌 박 대통령을 바깥 민심과 연결하는 ‘출구’였다는 주장인 셈이다. 대리인단은 또 최씨가 대통령
+                        연설물을 고친 것은 ‘국민 눈높이 자문’을 받은 것이라며 이를 “속칭 ‘키친 캐비닛’이라고 한다. 박 대통령이 최씨 의견을 들은 것도 같은
+                        취지였다”고 주장했다. 박 대통령에게 최씨는 미국 대통령들의 ‘사적 고문단’과 동일하다는 것이다. 박원호 서울대 정치학과 교수는 “두 용어
+                        모두 정치학 용어가 아닌 미국 정가의 은어”라며 “박 대통령의 경우에는 의견을 묻는 정도가 아니라 최씨가 ‘리얼 캐비닛’이었다는 것이 문제다.
+                        그런 말들이 미국에 있다고 해서 정당화될 수 있는 상황이 아니다”라고 지적했다. ‘키친 캐비닛’이나 예비내각을 뜻하는 ‘섀도우 캐비닛’도 아닌,
+                        실제 국정운영과 장차관 인사까지 좌지우지한 ‘내각 실세’처럼 최씨가 군림했다는 것이다.
+                    </div>
+                    <div class="text-column count-2 " style="display:flex;">
+                        박근혜 대통령이 헌법재판소에 낸 탄핵소추 답변서에는 난데없이 미국 정치권에서 쓰이는 ‘은어’가 등장한다. 박 대통령의 40년 지기 비선실세인
+                        최순실씨의 국정개입에 대해 ‘미국 대통령도 다 그렇게 한다’며 물타기를 하려는 취지인데, 정치학자들은 “차원이 너무 달라서 비교 자체가
+                        불가능하다”고 했다. 18일 국회가 공개한 답변서를 보면, 박 대통령 법률대리인들은 “대통령이 국정수행 과정에서 지인(최순실)의 의견을 들어
+                        일부 반영했다고 하더라도, 이는 사회통념상 허용될 수 있는 일”이라며 ‘백악관 버블’(미국 대통령이 백악관에 갇혀 외부와 고립되는 상황)을
+                        인용했다. 최씨의 역할이 ‘버블 안’에 갇힌 박 대통령을 바깥 민심과 연결하는 ‘출구’였다는 주장인 셈이다. 대리인단은 또 최씨가 대통령
+                        연설물을 고친 것은 ‘국민 눈높이 자문’을 받은 것이라며 이를 “속칭 ‘키친 캐비닛’이라고 한다. 박 대통령이 최씨 의견을 들은 것도 같은
+                        취지였다”고 주장했다. 박 대통령에게 최씨는 미국 대통령들의 ‘사적 고문단’과 동일하다는 것이다. 박원호 서울대 정치학과 교수는 “두 용어
+                        모두 정치학 용어가 아닌 미국 정가의 은어”라며 “박 대통령의 경우에는 의견을 묻는 정도가 아니라 최씨가 ‘리얼 캐비닛’이었다는 것이 문제다.
+                        그런 말들이 미국에 있다고 해서 정당화될 수 있는 상황이 아니다”라고 지적했다. ‘키친 캐비닛’이나 예비내각을 뜻하는 ‘섀도우 캐비닛’도 아닌,
+                        실제 국정운영과 장차관 인사까지 좌지우지한 ‘내각 실세’처럼 최씨가 군림했다는 것이다.
+                    </div>
+                    <div class="text-column count-2 " style="display:flex;">
+                        박근혜 대통령이 헌법재판소에 낸 탄핵소추 답변서에는 난데없이 미국 정치권에서 쓰이는 ‘은어’가 등장한다. 박 대통령의 40년 지기 비선실세인
+                        최순실씨의 국정개입에 대해 ‘미국 대통령도 다 그렇게 한다’며 물타기를 하려는 취지인데, 정치학자들은 “차원이 너무 달라서 비교 자체가
+                        불가능하다”고 했다. 18일 국회가 공개한 답변서를 보면, 박 대통령 법률대리인들은 “대통령이 국정수행 과정에서 지인(최순실)의 의견을 들어
+                        일부 반영했다고 하더라도, 이는 사회통념상 허용될 수 있는 일”이라며 ‘백악관 버블’(미국 대통령이 백악관에 갇혀 외부와 고립되는 상황)을
+                        인용했다. 최씨의 역할이 ‘버블 안’에 갇힌 박 대통령을 바깥 민심과 연결하는 ‘출구’였다는 주장인 셈이다. 대리인단은 또 최씨가 대통령
+                        연설물을 고친 것은 ‘국민 눈높이 자문’을 받은 것이라며 이를 “속칭 ‘키친 캐비닛’이라고 한다. 박 대통령이 최씨 의견을 들은 것도 같은
+                        취지였다”고 주장했다. 박 대통령에게 최씨는 미국 대통령들의 ‘사적 고문단’과 동일하다는 것이다. 박원호 서울대 정치학과 교수는 “두 용어
+                        모두 정치학 용어가 아닌 미국 정가의 은어”라며 “박 대통령의 경우에는 의견을 묻는 정도가 아니라 최씨가 ‘리얼 캐비닛’이었다는 것이 문제다.
+                        그런 말들이 미국에 있다고 해서 정당화될 수 있는 상황이 아니다”라고 지적했다. ‘키친 캐비닛’이나 예비내각을 뜻하는 ‘섀도우 캐비닛’도 아닌,
+                        실제 국정운영과 장차관 인사까지 좌지우지한 ‘내각 실세’처럼 최씨가 군림했다는 것이다.
+                    </div>
+                    <div class="text-column count-2 " style="display:flex;">
+                        박근혜 대통령이 헌법재판소에 낸 탄핵소추 답변서에는 난데없이 미국 정치권에서 쓰이는 ‘은어’가 등장한다. 박 대통령의 40년 지기 비선실세인
+                        최순실씨의 국정개입에 대해 ‘미국 대통령도 다 그렇게 한다’며 물타기를 하려는 취지인데, 정치학자들은 “차원이 너무 달라서 비교 자체가
+                        불가능하다”고 했다. 18일 국회가 공개한 답변서를 보면, 박 대통령 법률대리인들은 “대통령이 국정수행 과정에서 지인(최순실)의 의견을 들어
+                        일부 반영했다고 하더라도, 이는 사회통념상 허용될 수 있는 일”이라며 ‘백악관 버블’(미국 대통령이 백악관에 갇혀 외부와 고립되는 상황)을
+                        인용했다. 최씨의 역할이 ‘버블 안’에 갇힌 박 대통령을 바깥 민심과 연결하는 ‘출구’였다는 주장인 셈이다. 대리인단은 또 최씨가 대통령
+                        연설물을 고친 것은 ‘국민 눈높이 자문’을 받은 것이라며 이를 “속칭 ‘키친 캐비닛’이라고 한다. 박 대통령이 최씨 의견을 들은 것도 같은
+                        취지였다”고 주장했다. 박 대통령에게 최씨는 미국 대통령들의 ‘사적 고문단’과 동일하다는 것이다. 박원호 서울대 정치학과 교수는 “두 용어
+                        모두 정치학 용어가 아닌 미국 정가의 은어”라며 “박 대통령의 경우에는 의견을 묻는 정도가 아니라 최씨가 ‘리얼 캐비닛’이었다는 것이 문제다.
+                        그런 말들이 미국에 있다고 해서 정당화될 수 있는 상황이 아니다”라고 지적했다. ‘키친 캐비닛’이나 예비내각을 뜻하는 ‘섀도우 캐비닛’도 아닌,
+                        실제 국정운영과 장차관 인사까지 좌지우지한 ‘내각 실세’처럼 최씨가 군림했다는 것이다.
+                    </div>
+                </div>
+                <div class="article-stripe"></div>
+            </article>
 
-    <article class="type-text-column">
-        <div class="article-tit c2">
-            메인 타이틀
-        </div>
-        <div class="article-sub-tit c2">
-            서브 타이틀
-        </div>
-        <div style="display: flex; justify-content: space-around; align-content: space-around;">
-            <div class="text-column count-2 " style="display:flex;">
-                    박근혜 대통령이 헌법재판소에 낸 탄핵소추 답변서에는 난데없이 미국 정치권에서 쓰이는 ‘은어’가 등장한다. 박 대통령의 40년 지기 비선실세인 최순실씨의 국정개입에 대해 ‘미국 대통령도 다 그렇게 한다’며 물타기를 하려는 취지인데, 정치학자들은 “차원이 너무 달라서 비교 자체가 불가능하다”고 했다.
-                    18일 국회가 공개한 답변서를 보면, 박 대통령 법률대리인들은 “대통령이 국정수행 과정에서 지인(최순실)의 의견을 들어 일부 반영했다고 하더라도, 이는 사회통념상 허용될 수 있는 일”이라며 ‘백악관 버블’(미국 대통령이 백악관에 갇혀 외부와 고립되는 상황)을 인용했다. 최씨의 역할이 ‘버블 안’에 갇힌 박 대통령을 바깥 민심과 연결하는 ‘출구’였다는 주장인 셈이다. 대리인단은 또 최씨가 대통령 연설물을 고친 것은 ‘국민 눈높이 자문’을 받은 것이라며 이를 “속칭 ‘키친 캐비닛’이라고 한다. 박 대통령이 최씨 의견을 들은 것도 같은 취지였다”고 주장했다. 박 대통령에게 최씨는 미국 대통령들의 ‘사적 고문단’과 동일하다는 것이다.
-                    박원호 서울대 정치학과 교수는 “두 용어 모두 정치학 용어가 아닌 미국 정가의 은어”라며 “박 대통령의 경우에는 의견을 묻는 정도가 아니라 최씨가 ‘리얼 캐비닛’이었다는 것이 문제다. 그런 말들이 미국에 있다고 해서 정당화될 수 있는 상황이 아니다”라고 지적했다. ‘키친 캐비닛’이나 예비내각을 뜻하는 ‘섀도우 캐비닛’도 아닌, 실제 국정운영과 장차관 인사까지 좌지우지한 ‘내각 실세’처럼 최씨가 군림했다는 것이다.
-            </div>
-            <div class="text-column count-2 " style="display:flex;">
-                    박근혜 대통령이 헌법재판소에 낸 탄핵소추 답변서에는 난데없이 미국 정치권에서 쓰이는 ‘은어’가 등장한다. 박 대통령의 40년 지기 비선실세인 최순실씨의 국정개입에 대해 ‘미국 대통령도 다 그렇게 한다’며 물타기를 하려는 취지인데, 정치학자들은 “차원이 너무 달라서 비교 자체가 불가능하다”고 했다.
-                    18일 국회가 공개한 답변서를 보면, 박 대통령 법률대리인들은 “대통령이 국정수행 과정에서 지인(최순실)의 의견을 들어 일부 반영했다고 하더라도, 이는 사회통념상 허용될 수 있는 일”이라며 ‘백악관 버블’(미국 대통령이 백악관에 갇혀 외부와 고립되는 상황)을 인용했다. 최씨의 역할이 ‘버블 안’에 갇힌 박 대통령을 바깥 민심과 연결하는 ‘출구’였다는 주장인 셈이다. 대리인단은 또 최씨가 대통령 연설물을 고친 것은 ‘국민 눈높이 자문’을 받은 것이라며 이를 “속칭 ‘키친 캐비닛’이라고 한다. 박 대통령이 최씨 의견을 들은 것도 같은 취지였다”고 주장했다. 박 대통령에게 최씨는 미국 대통령들의 ‘사적 고문단’과 동일하다는 것이다.
-                    박원호 서울대 정치학과 교수는 “두 용어 모두 정치학 용어가 아닌 미국 정가의 은어”라며 “박 대통령의 경우에는 의견을 묻는 정도가 아니라 최씨가 ‘리얼 캐비닛’이었다는 것이 문제다. 그런 말들이 미국에 있다고 해서 정당화될 수 있는 상황이 아니다”라고 지적했다. ‘키친 캐비닛’이나 예비내각을 뜻하는 ‘섀도우 캐비닛’도 아닌, 실제 국정운영과 장차관 인사까지 좌지우지한 ‘내각 실세’처럼 최씨가 군림했다는 것이다.
-            </div>
-            <div class="text-column count-2 " style="display:flex;">
-                    박근혜 대통령이 헌법재판소에 낸 탄핵소추 답변서에는 난데없이 미국 정치권에서 쓰이는 ‘은어’가 등장한다. 박 대통령의 40년 지기 비선실세인 최순실씨의 국정개입에 대해 ‘미국 대통령도 다 그렇게 한다’며 물타기를 하려는 취지인데, 정치학자들은 “차원이 너무 달라서 비교 자체가 불가능하다”고 했다.
-                    18일 국회가 공개한 답변서를 보면, 박 대통령 법률대리인들은 “대통령이 국정수행 과정에서 지인(최순실)의 의견을 들어 일부 반영했다고 하더라도, 이는 사회통념상 허용될 수 있는 일”이라며 ‘백악관 버블’(미국 대통령이 백악관에 갇혀 외부와 고립되는 상황)을 인용했다. 최씨의 역할이 ‘버블 안’에 갇힌 박 대통령을 바깥 민심과 연결하는 ‘출구’였다는 주장인 셈이다. 대리인단은 또 최씨가 대통령 연설물을 고친 것은 ‘국민 눈높이 자문’을 받은 것이라며 이를 “속칭 ‘키친 캐비닛’이라고 한다. 박 대통령이 최씨 의견을 들은 것도 같은 취지였다”고 주장했다. 박 대통령에게 최씨는 미국 대통령들의 ‘사적 고문단’과 동일하다는 것이다.
-                    박원호 서울대 정치학과 교수는 “두 용어 모두 정치학 용어가 아닌 미국 정가의 은어”라며 “박 대통령의 경우에는 의견을 묻는 정도가 아니라 최씨가 ‘리얼 캐비닛’이었다는 것이 문제다. 그런 말들이 미국에 있다고 해서 정당화될 수 있는 상황이 아니다”라고 지적했다. ‘키친 캐비닛’이나 예비내각을 뜻하는 ‘섀도우 캐비닛’도 아닌, 실제 국정운영과 장차관 인사까지 좌지우지한 ‘내각 실세’처럼 최씨가 군림했다는 것이다.
-            </div>
-            <div class="text-column count-2 " style="display:flex;">
-                    박근혜 대통령이 헌법재판소에 낸 탄핵소추 답변서에는 난데없이 미국 정치권에서 쓰이는 ‘은어’가 등장한다. 박 대통령의 40년 지기 비선실세인 최순실씨의 국정개입에 대해 ‘미국 대통령도 다 그렇게 한다’며 물타기를 하려는 취지인데, 정치학자들은 “차원이 너무 달라서 비교 자체가 불가능하다”고 했다.
-                    18일 국회가 공개한 답변서를 보면, 박 대통령 법률대리인들은 “대통령이 국정수행 과정에서 지인(최순실)의 의견을 들어 일부 반영했다고 하더라도, 이는 사회통념상 허용될 수 있는 일”이라며 ‘백악관 버블’(미국 대통령이 백악관에 갇혀 외부와 고립되는 상황)을 인용했다. 최씨의 역할이 ‘버블 안’에 갇힌 박 대통령을 바깥 민심과 연결하는 ‘출구’였다는 주장인 셈이다. 대리인단은 또 최씨가 대통령 연설물을 고친 것은 ‘국민 눈높이 자문’을 받은 것이라며 이를 “속칭 ‘키친 캐비닛’이라고 한다. 박 대통령이 최씨 의견을 들은 것도 같은 취지였다”고 주장했다. 박 대통령에게 최씨는 미국 대통령들의 ‘사적 고문단’과 동일하다는 것이다.
-                    박원호 서울대 정치학과 교수는 “두 용어 모두 정치학 용어가 아닌 미국 정가의 은어”라며 “박 대통령의 경우에는 의견을 묻는 정도가 아니라 최씨가 ‘리얼 캐비닛’이었다는 것이 문제다. 그런 말들이 미국에 있다고 해서 정당화될 수 있는 상황이 아니다”라고 지적했다. ‘키친 캐비닛’이나 예비내각을 뜻하는 ‘섀도우 캐비닛’도 아닌, 실제 국정운영과 장차관 인사까지 좌지우지한 ‘내각 실세’처럼 최씨가 군림했다는 것이다.
-            </div>
-        </div>
-        <div class="article-stripe"></div>
-    </article>
-
-    <article class="type-card-box staff">
-        <div class="article-tit">
-            메인 타이틀
-        </div>
-        <div class="article-sub-tit">
-            서브 타이틀
-        </div>
-        <ul class="card-box">
-            <li class="card">
-                <div class="card-img">
-                    <img src="./img/common/people1.jpg" class="res">
+            <article class="type-card-box staff">
+                <div class="article-tit">
+                    메인 타이틀
                 </div>
-                <div class="card-tit">
-                    카드 타이틀
+                <div class="article-sub-tit">
+                    서브 타이틀
                 </div>
-                <div class="card-detail">
-                    <div class="card-sub-tit">
-                        카드 서브 타이틀
-                    </div>
-                    <div class="card-hot-link">
-                        포트폴리오 보러가기
-                    </div>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-img">
-                    <img src="./img/common/people2.jpg" class="res">
-                </div>
-                <div class="card-tit">
-                    카드 타이틀
-                </div>
-                <div class="card-detail">
-                    <div class="card-sub-tit">
-                        카드 서브 타이틀
-                    </div>
-                    <div class="card-hot-link">
-                        포트폴리오 보러가기
-                    </div>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-img">
-                    <img src="./img/common/people3.jpg" class="res">
-                </div>
-                <div class="card-tit">
-                    카드 타이틀
-                </div>
-                <div class="card-detail">
-                    <div class="card-sub-tit">
-                        카드 서브 타이틀
-                    </div>
-                    <div class="card-hot-link">
-                        포트폴리오 보러가기
-                    </div>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-img">
-                    <img src="./img/common/people4.jpg" class="res">
-                </div>
-                <div class="card-tit">
-                    카드 타이틀
-                </div>
-                <div class="card-detail">
-                    <div class="card-sub-tit">
-                        카드 서브 타이틀
-                    </div>
-                    <div class="card-hot-link">
-                        <!-- test svg-01 : if responsive model stroke-dasharray error
+                <ul class="card-box">
+                    <li class="card">
+                        <div class="card-img">
+                            <img src="./img/common/people1.jpg" class="res" />
+                        </div>
+                        <div class="card-tit">
+                            카드 타이틀
+                        </div>
+                        <div class="card-detail">
+                            <div class="card-sub-tit">
+                                카드 서브 타이틀
+                            </div>
+                            <div class="card-hot-link">
+                                포트폴리오 보러가기
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-img">
+                            <img src="./img/common/people2.jpg" class="res" />
+                        </div>
+                        <div class="card-tit">
+                            카드 타이틀
+                        </div>
+                        <div class="card-detail">
+                            <div class="card-sub-tit">
+                                카드 서브 타이틀
+                            </div>
+                            <div class="card-hot-link">
+                                포트폴리오 보러가기
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-img">
+                            <img src="./img/common/people3.jpg" class="res" />
+                        </div>
+                        <div class="card-tit">
+                            카드 타이틀
+                        </div>
+                        <div class="card-detail">
+                            <div class="card-sub-tit">
+                                카드 서브 타이틀
+                            </div>
+                            <div class="card-hot-link">
+                                포트폴리오 보러가기
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-img">
+                            <img src="./img/common/people4.jpg" class="res" />
+                        </div>
+                        <div class="card-tit">
+                            카드 타이틀
+                        </div>
+                        <div class="card-detail">
+                            <div class="card-sub-tit">
+                                카드 서브 타이틀
+                            </div>
+                            <div class="card-hot-link">
+                                <!-- test svg-01 : if responsive model stroke-dasharray error
                         <svg>
                             <line class="top" x1="0" y1="0" x2="200%" y2="0"></line>
                             <line class="bottom" x1="-200%" y1="100%" x2="100%" y2="100%"></line>
@@ -730,297 +724,315 @@
                             <line class="right" x1="180" y1="0" x2="180" y2="30"></line>
                         </svg>
                         -->
-                        포트폴리오 보러가기
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </article>
+                                포트폴리오 보러가기
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </article>
 
-    <article class="type-img-bg">
-        <div class="img-bg">
-            <div class="swiper-container slider-coopertaion">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide-coopertaion">
-                        <div class="thum">
-                            <img src="./img/main/coop-thum1.svg" class="res" alt="">
+            <article class="type-img-bg">
+                <div class="img-bg">
+                    <div class="swiper-container slider-coopertaion">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-coopertaion">
+                                <div class="thum">
+                                    <img src="./img/main/coop-thum1.svg" class="res" alt="" />
+                                </div>
+                                <div class="tit">
+                                    민다
+                                </div>
+                                <div class="sub-tit">
+                                    CEO 김윤희
+                                </div>
+                                <div class="txt">
+                                    전세계 숙소에서 트립까지, 해외 자유여행의 모든 것! 민다의 김윤희입니다. 플랫폼 사업의 특성상 많은 거래량과 개별 발생하는
+                                    수수료의 부담이 적지 않은 상황에서 페이플을 이용하게 되었습니다. 결재 프로세의 간단화로 인한 고객의 반응도 좋으며, 수수료
+                                    절감에도 큰 역활을 하고 있는 페이플은 저희의 주 파트너사 입니다.
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-coopertaion">
+                                <div class="thum">
+                                    <img src="./img/main/coop-thum2.jpg" class="res" alt="" />
+                                </div>
+                                <div class="tit">
+                                    셀러허브
+                                </div>
+                                <div class="sub-tit">
+                                    CEO 추연진
+                                </div>
+                                <div class="txt">
+                                    한방에 팔아줄게, 셀러 다모여! 안녕하세요. 입점형 쇼핑몰 통합솔루션 "셀러허브"입니다. 지금의 IT분야는 서비스의 다양화에 따른
+                                    다양한 결재방식에 대한 요구도 높아 지고 있다고 생각합니다. 특히나 여러가지 품목을 다루는 쇼핑몰은 그 경향이 두드러지고
+                                    있습니다. 페이플에서 제공하는 정기결재 및 링크 결재 등 당양한 결재 방식은 저희 고객사들에게도 많은 도움이 되고 있습니다.
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-coopertaion">
+                                <div class="thum">
+                                    <img src="./img/main/coop-thum3.png" class="res" alt="" />
+                                </div>
+                                <div class="tit">
+                                    니콘내콘
+                                </div>
+                                <div class="sub-tit">
+                                    CEO 박진희
+                                </div>
+                                <div class="txt">
+                                    모바일 쿠폰 중고거래 사이트. 남들은 정가로 살 때, 나는 할인가로 산다. 니콘내콘입니다. 많은 스타트업이 그러하듯이 저희도
+                                    아이디어 하나로 승부를 걸었습니다. 하지만 스타트업이라는 제약으로 결재 시스템의 구현에 많은 어려움을 겪게 되었습니다. 이에
+                                    문을 두드린곳이 페이플이였습니다. 일반 사용자는 물론 서비스제공자에게도 간편함을 제공하여 간단하게 결제 시스템의 구현이
+                                    가능하게 되었습니다. 저희에게 페이플은 스타트업의 동반자이며, 친구입니다.
+                                </div>
+                            </div>
                         </div>
-                        <div class="tit">
-                            민다
-                        </div>
-                        <div class="sub-tit">
-                            CEO 김윤희
-                        </div>
-                        <div class="txt">
-                            전세계 숙소에서 트립까지, 해외 자유여행의 모든 것! 민다의 김윤희입니다. 플랫폼 사업의 특성상 많은 거래량과 개별 발생하는 수수료의 부담이 적지 않은 상황에서 페이플을 이용하게 되었습니다. 결재 프로세의 간단화로 인한 고객의 반응도 좋으며, 수수료 절감에도 큰 역활을 하고 있는 페이플은 저희의 주 파트너사 입니다.
-                        </div>
+                        <div class="pager-coopertaion"></div>
                     </div>
-                    <div class="swiper-slide slide-coopertaion">
-                        <div class="thum">
-                            <img src="./img/main/coop-thum2.jpg" class="res" alt="">
-                        </div>
-                        <div class="tit">
-                            셀러허브
-                        </div>
-                        <div class="sub-tit">
-                            CEO 추연진
-                        </div>
-                        <div class="txt">
-                            한방에 팔아줄게, 셀러 다모여! 안녕하세요. 입점형 쇼핑몰 통합솔루션 "셀러허브"입니다. 지금의 IT분야는 서비스의 다양화에 따른 다양한 결재방식에 대한 요구도 높아 지고 있다고 생각합니다. 특히나 여러가지 품목을 다루는 쇼핑몰은 그 경향이 두드러지고 있습니다. 페이플에서 제공하는 정기결재 및 링크 결재 등 당양한 결재 방식은 저희 고객사들에게도 많은 도움이 되고 있습니다.
-                        </div>
-                    </div>
-                    <div class="swiper-slide slide-coopertaion">
-                        <div class="thum">
-                            <img src="./img/main/coop-thum3.png" class="res" alt="">
-                        </div>
-                        <div class="tit">
-                            니콘내콘
-                        </div>
-                        <div class="sub-tit">
-                            CEO 박진희
-                        </div>
-                        <div class="txt">
-                            모바일 쿠폰 중고거래 사이트. 남들은 정가로 살 때, 나는 할인가로 산다. 니콘내콘입니다. 많은 스타트업이 그러하듯이 저희도 아이디어 하나로 승부를 걸었습니다. 하지만 스타트업이라는 제약으로 결재 시스템의 구현에 많은 어려움을 겪게 되었습니다. 이에 문을 두드린곳이 페이플이였습니다. 일반 사용자는 물론 서비스제공자에게도 간편함을 제공하여 간단하게 결제 시스템의 구현이 가능하게 되었습니다. 저희에게 페이플은 스타트업의 동반자이며, 친구입니다. 
-                        </div>
-                    </div>
-                </div>		
-                <div class="pager-coopertaion"></div>
-            </div>
-        </div>
-        <div class="article-stripe"></div>
-    </article>
-    <article class="main-full-page">
-        <div class="stripe-m1"></div>
-    </article>
-    <article class="main-full-page">
-        <div class="stripe-m1"></div>
-    </article>
-    <article class="main-full-page">
-        <div class="stripe-m1"></div>
-    </article>
+                </div>
+                <div class="article-stripe"></div>
+            </article>
+            <article class="main-full-page">
+                <div class="stripe-m1"></div>
+            </article>
+            <article class="main-full-page">
+                <div class="stripe-m1"></div>
+            </article>
+            <article class="main-full-page">
+                <div class="stripe-m1"></div>
+            </article>
 
-    <article>
-        <div class="article-tit">
-            많은 고객사가 페이플을 선택했습니다
-        </div>
-        <div class="article-sub-tit">
-            페이플은 높은 결제 전환율, 쉬운 통합결제서비스 도입을 경험한 많은 고객사와 함께 성장하고 있습니다.   
-        </div>
-        
-        <div class="item_list__random">
-            <ul class="util_inner">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li>그리고<br/>당신</li>
-            </ul>
-        </div>
-    </article>
+            <article>
+                <div class="article-tit">
+                    많은 고객사가 페이플을 선택했습니다
+                </div>
+                <div class="article-sub-tit">
+                    페이플은 높은 결제 전환율, 쉬운 통합결제서비스 도입을 경험한 많은 고객사와 함께 성장하고 있습니다.
+                </div>
 
-    <article class="type_card">
-        <div class="article-tit">
-            언론보도
-        </div>
-        <div class="article-sub-tit">
-            페이플의 활약(?)을 언론 보도에서 만나 보세요
-        </div>
-        
-        <ul class="card_list__news">
-            <li>
-                <div class="gutter">
-                    <div class="bg_box">
-                        <div class="ratio_setter_hd"> </div>
-                    </div>
-                    
-                    <div class="info_box">
-                        <p class="tit txt_ellipsis">
-                            사소한 불편함을 해결해 나가는 게 혁신
-                        </p>
-                        <p class="from">
-                            - 문화일보
-                        </p>
-                        <p class="sub_tit txt_twoline">
-                            작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한 스타트업인 셈이죠."
-                        </p>
-                        <a href="" class="common_banner_link">
-                            <div class="icn_txt">자세히보기</div> 
-                            <i class="material-icons">chevron_right</i>
-                            <i class="material-icons act2">chevron_right</i>
-                        </a>
-                    </div>
+                <div class="item_list__random">
+                    <ul class="util_inner">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>그리고<br />당신</li>
+                    </ul>
                 </div>
-            </li>
-            <li>
-                <div class="gutter">
-                    <div class="bg_box">
-                        <div class="ratio_setter_hd"> </div>
-                    </div>
-                    
-                    <div class="info_box">
-                        <p class="tit txt_ellipsis">
-                            사소한 불편함을 해결해 나가는 게 혁신
-                        </p>
-                        <p class="from">
-                            - 문화일보
-                        </p>
-                        <p class="sub_tit txt_twoline">
-                            작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한 스타트업인 셈이죠."
-                        </p>
-                        <a href="" class="common_banner_link">
-                            <div class="icn_txt">자세히보기</div> 
-                            <i class="material-icons">chevron_right</i>
-                            <i class="material-icons act2">chevron_right</i>
-                        </a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="gutter">
-                    <div class="bg_box">
-                        <div class="ratio_setter_hd"> </div>
-                    </div>
-                    
-                    <div class="info_box">
-                        <p class="tit txt_ellipsis">
-                            사소한 불편함을 해결해 나가는 게 혁신
-                        </p>
-                        <p class="from">
-                            - 문화일보
-                        </p>
-                        <p class="sub_tit txt_twoline">
-                            작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한 스타트업인 셈이죠."
-                        </p>
-                        <a href="" class="common_banner_link">
-                            <div class="icn_txt">자세히보기</div> 
-                            <i class="material-icons">chevron_right</i>
-                            <i class="material-icons act2">chevron_right</i>
-                        </a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="gutter">
-                    <div class="bg_box">
-                        <div class="ratio_setter_hd"> </div>
-                    </div>
-                    
-                    <div class="info_box">
-                        <p class="tit txt_ellipsis">
-                            사소한 불편함을 해결해 나가는 게 혁신
-                        </p>
-                        <p class="from">
-                            - 문화일보
-                        </p>
-                        <p class="sub_tit txt_twoline">
-                            작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한 스타트업인 셈이죠."
-                        </p>
-                        <a href="" class="common_banner_link">
-                            <div class="icn_txt">자세히보기</div> 
-                            <i class="material-icons">chevron_right</i>
-                            <i class="material-icons act2">chevron_right</i>
-                        </a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="article-stripe c2"></div>
-    </article>
+            </article>
 
-    <article class="type-card-box staff">
-        <div class="article-tit">
-            언론보도
-        </div>
-        <div class="article-sub-tit">
-            이플의 활약(?)을 언론 보도에서 만나 보세요.
-        </div>
-        <ul class="card-box">
-            <li class="card">
-                <div class="card-img">
-                    <img src="./img/main/news_01.png" class="res">
+            <article class="type_card">
+                <div class="article-tit">
+                    언론보도
                 </div>
-                <div class="card-tit">
-                    사소한 불편함을 해결해 나가는 게 혁신
-                    <em>- 2019.06.24 아이뉴스24</em>
+                <div class="article-sub-tit">
+                    페이플의 활약(?)을 언론 보도에서 만나 보세요
                 </div>
-                <div class="card-detail">
-                    <div class="card-sub-tit ">
-                        "작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한 스타트업인 셈이죠." 
-                    </div>
-                    <div class="card-hot-link">
-                        <a target="_blank" href="http://www.inews24.com/view/1187866" >
-                            기사 보러 가기
-                        </a>
-                    </div>
+
+                <ul class="card_list__news">
+                    <li>
+                        <div class="gutter">
+                            <div class="bg_box">
+                                <div class="ratio_setter_hd"></div>
+                            </div>
+
+                            <div class="info_box">
+                                <p class="tit txt_ellipsis">
+                                    사소한 불편함을 해결해 나가는 게 혁신
+                                </p>
+                                <p class="from">
+                                    - 문화일보
+                                </p>
+                                <p class="sub_tit txt_twoline">
+                                    작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한 스타트업인
+                                    셈이죠."
+                                </p>
+                                <a href="" class="common_banner_link">
+                                    <div class="icn_txt">자세히보기</div>
+                                    <i class="material-icons">chevron_right</i>
+                                    <i class="material-icons act2">chevron_right</i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gutter">
+                            <div class="bg_box">
+                                <div class="ratio_setter_hd"></div>
+                            </div>
+
+                            <div class="info_box">
+                                <p class="tit txt_ellipsis">
+                                    사소한 불편함을 해결해 나가는 게 혁신
+                                </p>
+                                <p class="from">
+                                    - 문화일보
+                                </p>
+                                <p class="sub_tit txt_twoline">
+                                    작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한 스타트업인
+                                    셈이죠."
+                                </p>
+                                <a href="" class="common_banner_link">
+                                    <div class="icn_txt">자세히보기</div>
+                                    <i class="material-icons">chevron_right</i>
+                                    <i class="material-icons act2">chevron_right</i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gutter">
+                            <div class="bg_box">
+                                <div class="ratio_setter_hd"></div>
+                            </div>
+
+                            <div class="info_box">
+                                <p class="tit txt_ellipsis">
+                                    사소한 불편함을 해결해 나가는 게 혁신
+                                </p>
+                                <p class="from">
+                                    - 문화일보
+                                </p>
+                                <p class="sub_tit txt_twoline">
+                                    작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한 스타트업인
+                                    셈이죠."
+                                </p>
+                                <a href="" class="common_banner_link">
+                                    <div class="icn_txt">자세히보기</div>
+                                    <i class="material-icons">chevron_right</i>
+                                    <i class="material-icons act2">chevron_right</i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="gutter">
+                            <div class="bg_box">
+                                <div class="ratio_setter_hd"></div>
+                            </div>
+
+                            <div class="info_box">
+                                <p class="tit txt_ellipsis">
+                                    사소한 불편함을 해결해 나가는 게 혁신
+                                </p>
+                                <p class="from">
+                                    - 문화일보
+                                </p>
+                                <p class="sub_tit txt_twoline">
+                                    작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한 스타트업인
+                                    셈이죠."
+                                </p>
+                                <a href="" class="common_banner_link">
+                                    <div class="icn_txt">자세히보기</div>
+                                    <i class="material-icons">chevron_right</i>
+                                    <i class="material-icons act2">chevron_right</i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="article-stripe c2"></div>
+            </article>
+
+            <article class="type-card-box staff">
+                <div class="article-tit">
+                    언론보도
                 </div>
-            </li>
-            <li class="card">
-                <div class="card-img">
-                    <img src="./img/main/news_02.png" class="res">
+                <div class="article-sub-tit">
+                    이플의 활약(?)을 언론 보도에서 만나 보세요.
                 </div>
-                <div class="card-tit">
-                        SMS 인증방식 계좌간편결제…페이플은 어떤 회사?
-                        <em>- 2019.08.26 헤럴드경제</em>
-                </div>
-                <div class="card-detail">
-                    <div class="card-sub-tit txt_five_line">
-                            페이플은 계좌이체 방식의 간편결제 서비스를 제공한다. 계좌이체 출금동의 때 자동응답서비스(ARS) 방식의 번거로움을 줄인 ‘문자메시지(SMS) 방식 출금동의 서비스’로 금융위원회 제1차 혁신금융서비스에 지정됐다. 계좌연결 시간을 1분 가량 단축시켰다. 최종소비자(결제자)도 편하고, 고객사인 전자상거래업체(판매자) 입장에서는 결제이탈률을 크게 낮추는 요인이다.    
-                    </div>
-                    <div class="card-hot-link">
-                            <a target="_blank" href="http://news.heraldcorp.com/view.php?ud=20190826000115" >
-                                기사 보러 가기
-                            </a>
-                    </div>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-img">
-                    <img src="./img/main/news_03.png" class="res">
-                </div>
-                <div class="card-tit">
-                        금융규제 샌드박스, 이러면 탈락한다
-                        <em>- 2019.06.26 비즈니스워치</em>
-                </div>
-                <div class="card-detail">
-                    <div class="card-sub-tit txt_five_line">
-                            "페이플의 경우에는 기존의 ARS가 아닌 SMS 방식의 혁신적인 서비스가 있었다"며 "하지만 이번에 탈락한 서비스는 기존 금융사가 이미 하고 있는 서비스인데 진입요건(자본금)만 낮춰달라고 요구했다"고 설명했다. 혁신성 없이 단순히 진입장벽만 낮춰달라고 하면 떨어진다는 얘기다.
-                    </div>
-                    <div class="card-hot-link">
-                            <a target="_blank" href="http://news.bizwatch.co.kr/article/finance/2019/06/26/0024/naver" >
-                                기사 보러 가기
-                            </a>
-                    </div>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-img">
-                    <img src="./img/main/news_04.png" class="res">
-                </div>
-                <div class="card-tit">
-                        혁신금융 선도하는 핀테크업체, 제2의 '토스' 나올까
-                        <em>- 2019.05.19 News1</em>
-                </div>
-                <div class="card-detail">
-                    <div class="card-sub-tit txt_five_line">
-                            김현철 대표는 앞서 NHN한국사이버결제 등 전자결제업체 등에서 근무했던 경력이 'SMS 인증방식의 온라인 간편결제 서비스' 출시에 큰 도움이 됐다고 설명했다. 현행 전자금융거래법시행령에 따라 출금동의를 얻을 수 있는 방법은 서면·전자서명·ARS 방식 등으로 한정돼 있는데, 이에 불편함을 느낀 김 대표가 문자인증 방식을 생각해낸 것이다.
-                    </div>
-                    <div class="card-hot-link">
-                        <!-- test svg-01 : if responsive model stroke-dasharray error
+                <ul class="card-box">
+                    <li class="card">
+                        <div class="card-img">
+                            <img src="./img/main/news_01.png" class="res" />
+                        </div>
+                        <div class="card-tit">
+                            사소한 불편함을 해결해 나가는 게 혁신
+                            <em>- 2019.06.24 아이뉴스24</em>
+                        </div>
+                        <div class="card-detail">
+                            <div class="card-sub-tit ">
+                                "작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한 스타트업인
+                                셈이죠."
+                            </div>
+                            <div class="card-hot-link">
+                                <a target="_blank" href="http://www.inews24.com/view/1187866">
+                                    기사 보러 가기
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-img">
+                            <img src="./img/main/news_02.png" class="res" />
+                        </div>
+                        <div class="card-tit">
+                            SMS 인증방식 계좌간편결제…페이플은 어떤 회사?
+                            <em>- 2019.08.26 헤럴드경제</em>
+                        </div>
+                        <div class="card-detail">
+                            <div class="card-sub-tit txt_five_line">
+                                페이플은 계좌이체 방식의 간편결제 서비스를 제공한다. 계좌이체 출금동의 때 자동응답서비스(ARS) 방식의 번거로움을 줄인
+                                ‘문자메시지(SMS) 방식 출금동의 서비스’로 금융위원회 제1차 혁신금융서비스에 지정됐다. 계좌연결 시간을 1분 가량 단축시켰다.
+                                최종소비자(결제자)도 편하고, 고객사인 전자상거래업체(판매자) 입장에서는 결제이탈률을 크게 낮추는 요인이다.
+                            </div>
+                            <div class="card-hot-link">
+                                <a target="_blank" href="http://news.heraldcorp.com/view.php?ud=20190826000115">
+                                    기사 보러 가기
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-img">
+                            <img src="./img/main/news_03.png" class="res" />
+                        </div>
+                        <div class="card-tit">
+                            금융규제 샌드박스, 이러면 탈락한다
+                            <em>- 2019.06.26 비즈니스워치</em>
+                        </div>
+                        <div class="card-detail">
+                            <div class="card-sub-tit txt_five_line">
+                                "페이플의 경우에는 기존의 ARS가 아닌 SMS 방식의 혁신적인 서비스가 있었다"며 "하지만 이번에 탈락한 서비스는 기존 금융사가 이미
+                                하고 있는 서비스인데 진입요건(자본금)만 낮춰달라고 요구했다"고 설명했다. 혁신성 없이 단순히 진입장벽만 낮춰달라고 하면
+                                떨어진다는 얘기다.
+                            </div>
+                            <div class="card-hot-link">
+                                <a target="_blank" href="http://news.bizwatch.co.kr/article/finance/2019/06/26/0024/naver">
+                                    기사 보러 가기
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card-img">
+                            <img src="./img/main/news_04.png" class="res" />
+                        </div>
+                        <div class="card-tit">
+                            혁신금융 선도하는 핀테크업체, 제2의 '토스' 나올까
+                            <em>- 2019.05.19 News1</em>
+                        </div>
+                        <div class="card-detail">
+                            <div class="card-sub-tit txt_five_line">
+                                김현철 대표는 앞서 NHN한국사이버결제 등 전자결제업체 등에서 근무했던 경력이 'SMS 인증방식의 온라인 간편결제 서비스' 출시에 큰
+                                도움이 됐다고 설명했다. 현행 전자금융거래법시행령에 따라 출금동의를 얻을 수 있는 방법은 서면·전자서명·ARS 방식 등으로 한정돼
+                                있는데, 이에 불편함을 느낀 김 대표가 문자인증 방식을 생각해낸 것이다.
+                            </div>
+                            <div class="card-hot-link">
+                                <!-- test svg-01 : if responsive model stroke-dasharray error
                         <svg>
                             <line class="top" x1="0" y1="0" x2="200%" y2="0"></line>
                             <line class="bottom" x1="-200%" y1="100%" x2="100%" y2="100%"></line>
@@ -1028,215 +1040,235 @@
                             <line class="right" x1="180" y1="0" x2="180" y2="30"></line>
                         </svg>
                         -->
-                        <a target="_blank" href="http://news1.kr/articles/?3624229" >
-                            기사 보러 가기
-                        </a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </article>
-
-    <article >
-        <div class="article-tit">
-            언론보도
-        </div>
-        <div class="article-sub-tit">
-            페이플의 활약(?)을 언론 보도에서 만나 보세요.
-        </div>
-        <ul class="card_list__visual">
-            <li >
-                <div class="gutter">
-                    <div class="img_box">
-                        <img src="./img/main/news_01.png" class="res">
-
-                        <a class="hot_link__box" target="_blank" href="http://www.inews24.com/view/1187866" >
-                            기사 보러 가기
-                        </a>
-                    </div>
-                    <div class="main_tit txt_ellipsis">
-                        사소한 불편함을 해결해 나가는 게 혁신
-                        <em>- 2019.06.24 아이뉴스24</em>
-                    </div>
-                    <div class="info_box">
-                        <div class="sub_tit txt_five_line">
-                            "작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한 스타트업인 셈이죠." 
+                                <a target="_blank" href="http://news1.kr/articles/?3624229">
+                                    기사 보러 가기
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </li>
-            <li >
-                <div class="gutter">
-                    <div class="img_box">
-                        <img src="./img/main/news_02.png" class="res">
+                    </li>
+                </ul>
+            </article>
 
-                        <a class="hot_link__box" target="_blank" href="http://news.heraldcorp.com/view.php?ud=20190826000115" >
-                            기사 보러 가기
-                        </a>
-                    </div>
-                    <div class="main_tit txt_ellipsis">
-                        SMS 인증방식 계좌간편결제…페이플은 어떤 회사?
-                        <em>- 2019.08.26 헤럴드경제</em>
-                    </div>
-                    <div class="info_box">
-                        <div class="sub_tit txt_five_line">
-                            페이플은 계좌이체 방식의 간편결제 서비스를 제공한다. 계좌이체 출금동의 때 자동응답서비스(ARS) 방식의 번거로움을 줄인 ‘문자메시지(SMS) 방식 출금동의 서비스’로 금융위원회 제1차 혁신금융서비스에 지정됐다. 계좌연결 시간을 1분 가량 단축시켰다. 최종소비자(결제자)도 편하고, 고객사인 전자상거래업체(판매자) 입장에서는 결제이탈률을 크게 낮추는 요인이다.    
+            <article>
+                <div class="article-tit">
+                    언론보도
+                </div>
+                <div class="article-sub-tit">
+                    페이플의 활약(?)을 언론 보도에서 만나 보세요.
+                </div>
+                <ul class="card_list__visual">
+                    <li>
+                        <div class="gutter">
+                            <div class="img_box">
+                                <img src="./img/main/news_01.png" class="res" />
+
+                                <a class="hot_link__box" target="_blank" href="http://www.inews24.com/view/1187866">
+                                    기사 보러 가기
+                                </a>
+                            </div>
+                            <div class="main_tit txt_ellipsis">
+                                사소한 불편함을 해결해 나가는 게 혁신
+                                <em>- 2019.06.24 아이뉴스24</em>
+                            </div>
+                            <div class="info_box">
+                                <div class="sub_tit txt_five_line">
+                                    "작은 업체라 하더라도 그 잠재성은 아무도 모르잖아요. 스타트업과 같이 성장하고 싶었습니다. 페이플은 스타트업을 위한
+                                    스타트업인 셈이죠."
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </li>
-            <li >
-                <div class="gutter">
-                    <div class="img_box">
-                        <img src="./img/main/news_03.png" class="res">
+                    </li>
+                    <li>
+                        <div class="gutter">
+                            <div class="img_box">
+                                <img src="./img/main/news_02.png" class="res" />
 
-                        <a class="hot_link__box" target="_blank" href="http://news.bizwatch.co.kr/article/finance/2019/06/26/0024/naver" >
-                            기사 보러 가기
-                        </a>
-                    </div>
-                    <div class="main_tit txt_ellipsis">
-                        금융규제 샌드박스, 이러면 탈락한다
-                        <em>- 2019.06.26 비즈니스워치</em>
-                    </div>
-                    <div class="info_box">
-                        <div class="sub_tit txt_five_line">
-                            "페이플의 경우에는 기존의 ARS가 아닌 SMS 방식의 혁신적인 서비스가 있었다"며 "하지만 이번에 탈락한 서비스는 기존 금융사가 이미 하고 있는 서비스인데 진입요건(자본금)만 낮춰달라고 요구했다"고 설명했다. 혁신성 없이 단순히 진입장벽만 낮춰달라고 하면 떨어진다는 얘기다.
+                                <a class="hot_link__box" target="_blank" href="http://news.heraldcorp.com/view.php?ud=20190826000115">
+                                    기사 보러 가기
+                                </a>
+                            </div>
+                            <div class="main_tit txt_ellipsis">
+                                SMS 인증방식 계좌간편결제…페이플은 어떤 회사?
+                                <em>- 2019.08.26 헤럴드경제</em>
+                            </div>
+                            <div class="info_box">
+                                <div class="sub_tit txt_five_line">
+                                    페이플은 계좌이체 방식의 간편결제 서비스를 제공한다. 계좌이체 출금동의 때 자동응답서비스(ARS) 방식의 번거로움을 줄인
+                                    ‘문자메시지(SMS) 방식 출금동의 서비스’로 금융위원회 제1차 혁신금융서비스에 지정됐다. 계좌연결 시간을 1분 가량 단축시켰다.
+                                    최종소비자(결제자)도 편하고, 고객사인 전자상거래업체(판매자) 입장에서는 결제이탈률을 크게 낮추는 요인이다.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </li>
-            <li >
-                <div class="gutter">
-                    <div class="img_box">
-                        <img src="./img/main/news_04.png" class="res">
+                    </li>
+                    <li>
+                        <div class="gutter">
+                            <div class="img_box">
+                                <img src="./img/main/news_03.png" class="res" />
 
-                        <a class="hot_link__box" target="_blank" href="http://news1.kr/articles/?3624229" >
-                            기사 보러 가기
-                        </a>
-                    </div>
-                    <div class="main_tit txt_ellipsis">
-                        혁신금융 선도하는 핀테크업체, 제2의 '토스' 나올까
-                        <em>- 2019.05.19 News1</em>
-                    </div>
-                    <div class="info_box">
-                        <div class="sub_tit txt_five_line">
-                            김현철 대표는 앞서 NHN한국사이버결제 등 전자결제업체 등에서 근무했던 경력이 'SMS 인증방식의 온라인 간편결제 서비스' 출시에 큰 도움이 됐다고 설명했다. 현행 전자금융거래법시행령에 따라 출금동의를 얻을 수 있는 방법은 서면·전자서명·ARS 방식 등으로 한정돼 있는데, 이에 불편함을 느낀 김 대표가 문자인증 방식을 생각해낸 것이다.
+                                <a class="hot_link__box" target="_blank" href="http://news.bizwatch.co.kr/article/finance/2019/06/26/0024/naver">
+                                    기사 보러 가기
+                                </a>
+                            </div>
+                            <div class="main_tit txt_ellipsis">
+                                금융규제 샌드박스, 이러면 탈락한다
+                                <em>- 2019.06.26 비즈니스워치</em>
+                            </div>
+                            <div class="info_box">
+                                <div class="sub_tit txt_five_line">
+                                    "페이플의 경우에는 기존의 ARS가 아닌 SMS 방식의 혁신적인 서비스가 있었다"며 "하지만 이번에 탈락한 서비스는 기존 금융사가
+                                    이미 하고 있는 서비스인데 진입요건(자본금)만 낮춰달라고 요구했다"고 설명했다. 혁신성 없이 단순히 진입장벽만 낮춰달라고 하면
+                                    떨어진다는 얘기다.
+                                </div>
+                            </div>
                         </div>
+                    </li>
+                    <li>
+                        <div class="gutter">
+                            <div class="img_box">
+                                <img src="./img/main/news_04.png" class="res" />
+
+                                <a class="hot_link__box" target="_blank" href="http://news1.kr/articles/?3624229">
+                                    기사 보러 가기
+                                </a>
+                            </div>
+                            <div class="main_tit txt_ellipsis">
+                                혁신금융 선도하는 핀테크업체, 제2의 '토스' 나올까
+                                <em>- 2019.05.19 News1</em>
+                            </div>
+                            <div class="info_box">
+                                <div class="sub_tit txt_five_line">
+                                    김현철 대표는 앞서 NHN한국사이버결제 등 전자결제업체 등에서 근무했던 경력이 'SMS 인증방식의 온라인 간편결제 서비스' 출시에
+                                    큰 도움이 됐다고 설명했다. 현행 전자금융거래법시행령에 따라 출금동의를 얻을 수 있는 방법은 서면·전자서명·ARS 방식 등으로
+                                    한정돼 있는데, 이에 불편함을 느낀 김 대표가 문자인증 방식을 생각해낸 것이다.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="article-stripe c2"></div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="width-inner">
+                <div class="footer-logo">
+                    <img src="./img/common/logo_simple.svg" class="res" />
+                </div>
+                <div class="footer-info-box">
+                    <div class="footer-info">상호 : 주식회사 페이플</div>
+                    <div class="footer-info">대표자 : 김현철</div>
+                    <div class="footer-info">사업자번호 : 331-87-01049</div>
+                    <div class="footer-info-spt"></div>
+                    <div class="footer-info">
+                        주소 : 서울시 서초구 매헌로 24 NH디지털혁신캠퍼스 5층
+                    </div>
+                    <div class="footer-info">대표번호 : 1522-5013</div>
+                    <div class="footer-info">문의 : help@payple.kr</div>
+                    <div class="footer-info">
+                        전자금융업 등록번호 : 02-004-00145
+                    </div>
+                    <div class="footer-info">
+                        개인정보취급방침 (별도 페이지로 이동)
+                    </div>
+                    <div class="footer-info">
+                        전자금융거래 이용약관 (별도 페이지로 이동)
+                    </div>
+                    <div class="footer-info">
+                        혁신금융서비스 이용약관 (별도 페이지로 이동)
                     </div>
                 </div>
-            </li>
-        </ul>
-        <div class="article-stripe c2"></div>
-    </article>
-</section>
-
-<footer>
-    <div class="width-inner">
-        <div class="footer-logo">
-            <img src="./img/common/logo_simple.svg" class="res">
-        </div>
-        <div class="footer-info-box">
-            <div class="footer-info">상호 : 주식회사 페이플</div>
-            <div class="footer-info">대표자 : 김현철</div>
-            <div class="footer-info">사업자번호 : 331-87-01049</div>
-            <div class="footer-info-spt"></div>
-            <div class="footer-info">주소 : 서울시 서초구 매헌로 24 NH디지털혁신캠퍼스 5층</div>
-            <div class="footer-info">대표번호 : 1522-5013</div>
-            <div class="footer-info">문의 : help@payple.kr</div>
-            <div class="footer-info">전자금융업 등록번호 : 02-004-00145</div>
-            <div class="footer-info">개인정보취급방침 (별도 페이지로 이동)</div>
-            <div class="footer-info">전자금융거래 이용약관 (별도 페이지로 이동)</div>
-            <div class="footer-info">혁신금융서비스 이용약관 (별도 페이지로 이동)</div>
-        </div>
-        <div class="footer-copy">
-            COPYRIGHT©2018 PAYPLE. ALL RIGHT RESERVED
-        </div>
-    </div>
-</footer>
-
-
-<div class="modal-outer scroll-block">
-    <div class="modal-mask js-modal-close">
-    </div>
-    <!-- modal-video -->
-    <div class="modal modal-video xy-center" id="modal-video">
-        <div class="ratio-inner">
-			
-        </div>
-        <div class="close js-modal-close">
-            <i class="material-icons">clear</i>
-        </div>
-    </div>
-    <!-- modal-video end -->
-
-    <!-- modal-pass -->
-    <div class="modal modal-pass xy-center" id="modal-pass">
-        <div class="tit-area">
-            <div class="tit">비밀번호확인</div>
-            <div class="close js-modal-close">
-                <i class="material-icons">clear</i>
+                <div class="footer-copy">
+                    COPYRIGHT©2018 PAYPLE. ALL RIGHT RESERVED
+                </div>
             </div>
-        </div>
-        <div class="ctn-area">
-            <div class="txt">글 등록 시 입력한 글 비밀번호를 입력해주세요.</div>
-            <div class="modal-form-box">
-                <form name="">
-                    <input type="password" name="pass" autocomplete="new_password" validation="vali_text" alt="비밀번호" class="ipt">
-                    <input type="submit" name="" class="submit" value="확인">
-                    <div class="cancel js-modal-close">취소</div>
-                </form>
+        </footer>
+
+        <div class="modal-outer scroll-block">
+            <div class="modal-mask js-modal-close"></div>
+            <!-- modal-video -->
+            <div class="modal modal-video xy-center" id="modal-video">
+                <div class="ratio-inner"></div>
+                <div class="close js-modal-close">
+                    <i class="material-icons">clear</i>
+                </div>
             </div>
-            <div class="info">
-            비밀번호가 틀렸습니다. 다시 한번 입력해주세요.
+            <!-- modal-video end -->
+
+            <!-- modal-pass -->
+            <div class="modal modal-pass xy-center" id="modal-pass">
+                <div class="tit-area">
+                    <div class="tit">비밀번호확인</div>
+                    <div class="close js-modal-close">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="ctn-area">
+                    <div class="txt">
+                        글 등록 시 입력한 글 비밀번호를 입력해주세요.
+                    </div>
+                    <div class="modal-form-box">
+                        <form name="">
+                            <input type="password" name="pass" autocomplete="new_password" validation="vali_text" alt="비밀번호" class="ipt" />
+                            <input type="submit" name="" class="submit" value="확인" />
+                            <div class="cancel js-modal-close">취소</div>
+                        </form>
+                    </div>
+                    <div class="info">
+                        비밀번호가 틀렸습니다. 다시 한번 입력해주세요.
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- modal-pass end -->
+            <!-- modal-pass end -->
 
-    <!-- modal-terms -->
-    <div class="modal modal-document xy-center" id="modal-terms">
-        <div class="tit-area">
-            <div class="tit">홈페이지 이용약관</div>
-            <div class="close js-modal-close">
-                <i class="material-icons">clear</i>
+            <!-- modal-terms -->
+            <div class="modal modal-document xy-center" id="modal-terms">
+                <div class="tit-area">
+                    <div class="tit">홈페이지 이용약관</div>
+                    <div class="close js-modal-close">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+
+                <div class="ctn-area">
+                    <div class="modal-form-box">
+                        <textarea class="ipt document scroll-block" readonly>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea
+                        >
+                    </div>
+                </div>
             </div>
-        </div>
+            <!-- modal-terms end-->
 
-        <div class="ctn-area">
-            <div class="modal-form-box">
-                <textarea class="ipt document scroll-block" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+            <!-- modal-privacy -->
+            <div class="modal modal-document xy-center" id="modal-privacy">
+                <div class="tit-area">
+                    <div class="tit">개인정보의 수집 및 이용목적</div>
+                    <div class="close js-modal-close">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+
+                <div class="ctn-area">
+                    <div class="modal-form-box">
+                        <textarea class="ipt document scroll-block" readonly>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea
+                        >
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- modal-terms end-->
-
-    <!-- modal-privacy -->
-    <div class="modal modal-document xy-center" id="modal-privacy">
-        <div class="tit-area">
-            <div class="tit">개인정보의 수집 및 이용목적</div>
-            <div class="close js-modal-close">
-                <i class="material-icons">clear</i>
-            </div>
+            <!-- modal-privacy end -->
         </div>
 
-        <div class="ctn-area">
-            <div class="modal-form-box">
-                <textarea class="ipt document scroll-block" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
-            </div>
-        </div>
-    </div>
-    <!-- modal-privacy end -->
-</div>
+        <div
+            id="temp"
+            style="width:100px; height:100px; background:#444; display:none; position:fixed; z-index:900000; left:100px; bottom:100px; text-align:center; line-height:50px; color:#fff; cursor:pointer;"
+            video_value="PdJa997mCUY"
+        ></div>
 
-
-
-
-<div id="temp" style="width:100px; height:100px; background:#444; display:none; position:fixed; z-index:900000; left:100px; bottom:100px; text-align:center; line-height:50px; color:#fff; cursor:pointer;" video_value="PdJa997mCUY"></div>
-
-<script>
-    //$(".temp").click(function(){
-        //alert();
-        /*
+        <script>
+            //$(".temp").click(function(){
+            //alert();
+            /*
 
         if($(this).hasClass("active")) {
             $(this).removeClass("active");
@@ -1249,16 +1281,16 @@
             $('html, body').addClass("js_is_fixed");
         }
         */
-		
-    //});
-	
-        $(".scroll-block").bind("mousewheel DOMMouseScroll", function ( e ) {
-            var e0 = e.originalEvent,
-                delta = e0.wheelDelta || -e0.detail;
-            this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-            e.preventDefault();
-        });
-        /*
+
+            //});
+
+            $(".scroll-block").bind("mousewheel DOMMouseScroll", function(e) {
+                var e0 = e.originalEvent,
+                    delta = e0.wheelDelta || -e0.detail;
+                this.scrollTop += (delta < 0 ? 1 : -1) * 30;
+                e.preventDefault();
+            });
+            /*
         window.blockMenuHeaderScroll = false;
         $(window).on('touchstart', function(e)
         {
@@ -1279,8 +1311,6 @@
             }
         });
         */
-</script>
-
-</body>
+        </script>
+    </body>
 </html>
-
