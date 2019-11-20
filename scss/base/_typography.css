@@ -3,9 +3,6 @@
 .txt_adjust {
    letter-spacing: -1px;
 }
-.txt_bold {
-   font-weight: 900;
-}
 .txt_ellipsis {
    overflow: hidden;
    text-overflow: ellipsis;
@@ -32,68 +29,76 @@
 .align_center {
    text-align: center;
 }
+.align_justify {
+   text-align: justify;
+   word-break: break-all !important;
+}
+
 
 .deco_line_bottom {
    border-bottom:1px solid #7852e8;
    padding:1.2rem 0;
 }
 
-.font_lg_main {
-   font-size:2.4rem;
-   line-height: 2;
-   word-break: keep-all;
-}
-.font_lg_sub {
-   font-size:1.4rem;
+.font {
    line-height: 1.6;
    word-break: keep-all;
-   color:#777;
 }
-.font_md_main {
-   font-size:1.6rem;
-   line-height: 1.6;
-   word-break: keep-all;
-   padding:0 0 2.4rem;
+.fsz_24 {
+   font-size: 2.4rem;
 }
-.font_md_sub {
-   font-size:1rem;
-   line-height: 1.6;
-   word-break: keep-all;
-   padding:0 0 1.6rem;
-   color:#999;
+.fsz_22 {
+   font-size: 2.2rem;
 }
-.font_md_txt {
-   font-size:1.2rem;
-   line-height: 1.6;
-   word-break: keep-all;
-   padding:0 0 1.6rem;
-   color:#777;
+.fsz_20 {
+   font-size: 2rem;
 }
-.font_sm_main {
-   font-size:12px;
-   line-height: 16px;
-   color:#555;
-   white-space: nowrap;
+.fsz_18 {
+   font-size: 1.8rem;
 }
-@media screen and (min-width: 0px) and (max-width: 720px) {
-   
+.fsz_16 {
+   font-size: 1.6rem;
 }
-.fsz_smlest {
-    font-size:14px;
+.fsz_14 {
+   font-size: 1.4rem;
 }
-.fsz_sm {
-    font-size:13px;
+.fsz_12 {
+   font-size: 1.2rem;
 }
-.fsz_md {
-    font-size:14px;
+.fsz_10 {
+   font-size: 1rem;
 }
-.fsz_lg {
-    font-size:16px;
-}
-.fsz_lgest {
-    font-size:18px;
+.fsz_08 {
+   font-size: 0.8rem;
 }
 
+.has_font_spacer_b_20 {
+   padding:0 0 2rem;
+}
+.has_font_spacer_b_16 {
+   padding:0 0 1.6rem;
+}
+.has_font_spacer_b_12 {
+   padding:0 0 1.2rem;
+}
+.has_font_spacer_b_08 {
+   padding:0 0 0.8rem;
+}
+.has_font_spacer_b_04 {
+   padding:0 0 0.4rem;
+}
+
+.has_font_spacer_y_12 {
+   padding:0 1.2rem;
+}
+.has_font_spacer_y_08 {
+   padding:0 0.8rem;
+}
+
+
+.fcl_main {
+   color:#7852e8;
+}
 .fcl_error {
     color:crimson;
 }
@@ -102,4 +107,24 @@
 }
 .fcl_sub {
     color:#999;
+}
+.fcl_txt {
+   color:#777;
+}
+
+.fw_md {
+   font-weight: 500;
+}
+.fw_bd {
+   font-weight: 700;
+}
+.fw_bk {
+   font-weight: 900;
+}
+
+.logo_in_text__lg {
+   height:2.4rem;
+   width:auto;
+   vertical-align: middle;
+   margin:0 0 0.6rem;
 }

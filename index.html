@@ -29,7 +29,10 @@
 
         <!--font setting -->
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,500,700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+            rel="stylesheet"
+        />
         <link href="./css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!-- font setting end-->
 
@@ -47,7 +50,8 @@
         <!-- js setting -->
     </head>
 
-    <body class="_js-is-limit"><!-- 임시 막기 -->
+    <body class="_js-is-limit">
+        <!-- 임시 막기 -->
         <div class="loader">
             <div class="left-area"></div>
             <div class="right-area"></div>
@@ -132,14 +136,24 @@
         </header>
 
         <link href="./css/main.css" rel="stylesheet" type="text/css" />
-        <link href="./scss/layout/_article.css" rel="stylesheet" type="text/css" />
-        <link href="./scss/layout/_card_stripe_thumbnail.css" rel="stylesheet" type="text/css" />
-        <link href="./scss/components/_button.css" rel="stylesheet" type="text/css" />
         <link href="./scss/base/_typography.css" rel="stylesheet" type="text/css" />
-        
+        <link href="./scss/base/_js_action.css" rel="stylesheet" type="text/css" />
+
+        <link href="./scss/components/_button.css" rel="stylesheet" type="text/css" />
+
+        <link href="./scss/layout/_display.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/layout/_resbox.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/layout/_position.css" rel="stylesheet" type="text/css" />
+
+        <link href="./scss/module/_article.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/module/_card_stripe_thumbnail.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/module/_card_name_plate.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/module/_card_icon_thumbnail.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/module/_swiper_phone_style.css" rel="stylesheet" type="text/css" />
 
         <section>
             <article class="type_full_page">
+                <div class="article_stripe"></div>
                 <div class="width_limiter">
                     <div class="slider_main_pc_frame">
                         <div class="ratio_setter">
@@ -206,73 +220,184 @@
                 </div>
             </article>
 
-            <article class="type-card-box">
-                <div class="article-tit">
-                    <img class="logo_in_text__lg" src="img/common/logo_full.svg" alt="" />
-                    무엇이 다를까요?
+            <article>
+                <div class="article_stripe"></div>
+
+                <div class="tit_box__article width_limiter ">
+                    <h3 class="main_tit__article">
+                        <img class="logo_in_text__lg" src="img/common/logo_full.svg" alt="" />
+                        무엇이 다를까요?
+                    </h3>
+                    <h4 class="sub_tit__article">
+                        페이플은 사용자의 편리한 결제를 방해하는 모든 요소를 제거한 신용카드, 계좌이체 통합결제서비스입니다.
+                    </h4>
                 </div>
-                <div class="article-sub-tit">
-                    페이플은 사용자의 편리한 결제를 방해하는 모든 요소를 제거한 신용카드, 계좌이체 통합결제서비스입니다.
+
+                <div class="width_limiter space_setter__article_content">
+                    <ul class="card_icon_thumbnail dp_flex flc_wrap flc_jc_sr flc_al_start">
+                        <li>
+                            <div class="icon_box">
+                                <i class="fa fa-magic" aria-hidden="true"></i>
+                            </div>
+                            <div class="font fsz_12 fcl_main fw_md has_font_spacer_b_12 align_center">
+                                Convenient
+                            </div>
+                            <div class="font fsz_10 fcl_txt align_justify">
+                                별도 회원가입과 앱 설치, 공인인증서가 필요없습니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon_box">
+                                <i class="fa fa-html5" aria-hidden="true"></i>
+                            </div>
+                            <div class="font fsz_12 fcl_main fw_md has_font_spacer_b_12 align_center">
+                                Standard
+                            </div>
+                            <div class="font fsz_10 fcl_txt align_justify">
+                                페이플은 다양한 플랫폼에 적용 가능한 웹표준을 준수한 결제화면을 제공합니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon_box">
+                                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            </div>
+                            <div class="font fsz_12 fcl_main fw_md has_font_spacer_b_12 align_center">
+                                Experience
+                            </div>
+                            <div class="font fsz_10 fcl_txt align_justify">
+                                사용자는 페이플을 통해 편리한 결제를 경험할 수 있고 이는 고객사의 높은 결제 전환율로 이어집니다.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon_box">
+                                <i class="fa fa-money" aria-hidden="true"></i>
+                            </div>
+                            <div class="font fsz_12 fcl_main fw_md has_font_spacer_b_12 align_center">
+                                Return
+                            </div>
+                            <div class="font fsz_10 fcl_txt align_justify">
+                                현금영수증 자동발행으로 신용카드보다 2배 높은 30% 소득공제가 가능합니다.
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="card-box">
-                    <li class="card">
-                        <div class="card-icn">
-                            <!-- <i class="fa fa-credit-card" aria-hidden="true"></i> -->
-                            <i class="fa fa-magic" aria-hidden="true"></i>
-                            <!-- <i class="fa fa-key" aria-hidden="true"></i> -->
-                            <!-- <i class="fa fa-cogs" aria-hidden="true"></i> -->
-                            <!-- <i class="fa fa-address-card-o" aria-hidden="true"></i> -->
-                        </div>
-                        <div class="card-tit">
-                            Convenient
-                        </div>
-                        <div class="card-ctn">
-                            별도 회원가입과 앱 설치, 공인인증서가 필요없습니다.
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="card-icn">
-                            <i class="fa fa-html5" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-tit">
-                            Standard
-                        </div>
-                        <div class="card-ctn">
-                            페이플은 다양한 플랫폼에 적용 가능한 웹표준을 준수한 결제화면을 제공합니다.
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="card-icn">
-                            <!-- <i class="fa fa-thumbs-up" aria-hidden="true"></i> -->
-                            <!-- <i class="fa fa-puzzle-piece" aria-hidden="true"></i> -->
-                            <i class="fa fa-line-chart" aria-hidden="true"></i>
-                            <!-- <i class="fa fa-cogs" aria-hidden="true"></i> -->
-                        </div>
-                        <div class="card-tit">
-                            Experience
-                        </div>
-                        <div class="card-ctn">
-                            사용자는 페이플을 통해 편리한 결제를 경험할 수 있고 이는 고객사의 높은 결제 전환율로 이어집니다.
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="card-icn">
-                            <!-- <i class="fa fa-refresh" aria-hidden="true"></i> -->
-                            <!-- <i class="fa fa-gift" aria-hidden="true"></i> -->
-                            <i class="fa fa-money" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-tit">
-                            Return
-                        </div>
-                        <div class="card-ctn">
-                            현금영수증 자동발행으로 신용카드보다 2배 높은 30% 소득공제가 가능합니다.
-                        </div>
-                    </li>
-                </ul>
             </article>
 
             <article>
-                <div class="article_stripe main_lighter_color"></div>
+                <div class="article_stripe"></div>
+
+                <div class="tit_box__article width_limiter ">
+                    <h3 class="main_tit__article">
+                        <img class="logo_in_text__lg" src="img/common/logo_full.svg" alt="" />
+                        의 간편결제 얼마나 간단할까요?
+                    </h3>
+                    <h4 class="sub_tit__article">
+                        페이플은 사용자의 편리한 결제를 방해하는 모든 요소를 제거한 신용카드, 계좌이체 통합결제서비스입니다.
+                    </h4>
+                </div>
+
+                <div class="width_limiter space_setter__article_content dp_flex flc_al_start">
+                    <div class="fli_bs_50">
+                        <div class="tab_ctn_box" tab_type="kk">
+                            <div class="swiper_phone_style skew_r_1 tab_ctn js_is_show">
+                                <div class="ratio_setter">
+                                    <div class="swiper-container slider_main_progress">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="res" src="img/main/slider_main_mo_frame_01.png" alt="" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="res" src="img/main/slider_main_mo_frame_02.png" alt="" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="res" src="img/main/slider_main_mo_frame_03.png" alt="" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="res" src="img/main/slider_main_mo_frame_04.png" alt="" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img_frame">
+                                    <img class="res" src="img/main/frame_mo_white.svg" alt="" />
+                                </div>
+                            </div>
+
+                            <div class="swiper_phone_style skew_l_1 tab_ctn">
+                                <div class="ratio_setter">
+                                    <div class="swiper-container slider_main_progress2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="res" src="img/main/slider_main_mo_frame_01.png" alt="" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="res" src="img/main/slider_main_mo_frame_02.png" alt="" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="res" src="img/main/slider_main_mo_frame_03.png" alt="" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="res" src="img/main/slider_main_mo_frame_04.png" alt="" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img_frame">
+                                    <img class="res" src="img/main/frame_mo_black.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fli_bs_50">
+                        <div class="card_stripe_thumbnail">
+                            <div class="tab_ctn_box" tab_type="kk">
+                                <div class="tab_ctn js_is_show">
+                                    <div class="thumbnail"></div>
+                                    <div class="ctn_box">
+                                        <h5 class="font fsz_16 has_font_spacer_b_20 ">
+                                            금융위원회 금융규제 샌드박스 혁신금융서비스
+                                        </h5>
+                                        <p class="font fsz_12 fcl_txt ">
+                                            계좌이체시 필요한 ARS 출금동의 절차로 인해 고객사의 결제 전환율은 높지 않았습니다. 그래서 우리는 이 부분에 집중했고 휴대폰
+                                            본인확인만으로 출금동의까지 가능한 “SMS 인증방식의 온라인 간편결제 서비스” 로 고객사의 결제 전환율을 높였습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn">
+                                    <div class="thumbnail" style="height:400px !important;"></div>
+                                    <div class="ctn_box">
+                                        <h5 class="font fsz_16 has_font_spacer_b_20 ">
+                                            ㅇㄴㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹ
+                                        </h5>
+                                        <p class="font fsz_12 fcl_txt ">
+                                            ㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <div class="btn_box align_center tab_btn_box" tab_type="kk">
+                                <div class="btn btn_md btn_rounded tab_btn">
+                                    계좌결제
+                                </div>
+                                <div class="btn btn_md btn_rounded cl_default tab_btn">
+                                    카드결제
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="article_stripe"></div>
+
                 <div class="tit_box__article width_limiter ">
                     <h3 class="main_tit__article">
                         펜테크 업계에서
@@ -283,16 +408,16 @@
                         페이플은 금융위원회 금융규제 샌드박스 혁신금융서비스 1차에 지정 서비스이며, 많은 금융권의 관심과 지지를 받고 있습니다.
                     </h4>
                 </div>
-                
-                <div class="width_limiter space_setter__article_content flex_model">
-                    <div class="left_area">
+
+                <div class="width_limiter space_setter__article_content dp_flex flc_al_center">
+                    <div class="fli_bs_50">
                         <div class="card_stripe_thumbnail">
                             <div class="thumbnail"></div>
                             <div class="ctn_box">
-                                <h5 class="font_md_main align_left">
+                                <h5 class="font fsz_16 has_font_spacer_b_20 ">
                                     금융위원회 금융규제 샌드박스 혁신금융서비스
                                 </h5>
-                                <p class="font_md_txt align_left">
+                                <p class="font fsz_12 fcl_txt ">
                                     계좌이체시 필요한 ARS 출금동의 절차로 인해 고객사의 결제 전환율은 높지 않았습니다. 그래서 우리는 이 부분에 집중했고 휴대폰
                                     본인확인만으로 출금동의까지 가능한 “SMS 인증방식의 온라인 간편결제 서비스” 로 고객사의 결제 전환율을 높였습니다.
                                 </p>
@@ -305,60 +430,62 @@
                         </div>
                     </div>
 
-                    <div class="right_area">
-                        <ul class="list__thumb_m_02">
+                    <div class="fli_bs_50">
+                        <ul class="card_name_plate">
                             <li>
                                 <div class="pin"></div>
                                 <div class="info_box">
-                                    <div class="main_tit">
+                                    <div class="fsz_12 fw_md has_font_spacer_b_04">
                                         NH디지털챌린지플러스 1기
                                     </div>
-                                    <div class="sub_tit">
+                                    <div class="fsz_10 fcl_sub has_font_spacer_y_12">
                                         2019년 4월
                                     </div>
                                 </div>
                                 <div class="bg_box">
-                                    <div class="ratio_setter_bn">
-                                        <img class="xy-center" src="img/common/nh_lab.png" alt="" />
+                                    <div class="ratio_setter_name_plate">
+                                        <img class="xy_center" src="img/common/nh_lab.png" alt="" />
+                                        <a class="full_link" href=""></a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="pin"></div>
                                 <div class="info_box">
-                                    <div class="main_tit">
+                                    <div class="fsz_12 fw_md has_font_spacer_b_04">
                                         한국핀테크지원센터 리더스랩 3기
                                     </div>
-                                    <div class="sub_tit">
+                                    <div class="fsz_10 fcl_sub has_font_spacer_y_12">
                                         2019년 1월
                                     </div>
                                 </div>
                                 <div class="bg_box">
-                                    <div class="ratio_setter_bn">
-                                        <img class="xy-center" src="img/common/fin_lab.png" alt="" />
+                                    <div class="ratio_setter_name_plate">
+                                        <img class="xy_center" src="img/common/fin_lab.png" alt="" />
+                                        <a class="full_link" href=""></a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="pin"></div>
                                 <div class="info_box">
-                                    <div class="main_tit">
+                                    <div class="fsz_12 fw_md has_font_spacer_b_04">
                                         우리은행 위비핀테크랩 3기
                                     </div>
-                                    <div class="sub_tit">
+                                    <div class="fsz_10 fcl_sub has_font_spacer_y_12">
                                         2018년 4월
                                     </div>
                                 </div>
                                 <div class="bg_box">
-                                    <div class="ratio_setter_bn">
-                                        <img class="xy-center" src="img/common/wr_lab.png" alt="" />
+                                    <div class="ratio_setter_name_plate">
+                                        <img class="xy_center" src="img/common/wr_lab.png" alt="" />
+                                        <a class="full_link" href=""></a>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
             </article>
 
             <article class="type-video-bg">

@@ -1,0 +1,13 @@
+.tab_ctn {
+    /* visibility: hidden;
+    opacity:0;
+    transition:all ease 0.2s;
+    backface-visibility: hidden; */
+    display: none;
+}
+.js_is_show {
+    /* visibility: visible;
+    opacity:1;
+    transition:all ease 0.2s; */
+    display: block;
+}

@@ -229,56 +229,7 @@
 
 
 
-/* article.type-card-box */
-	article.type-card-box {
-	}
-	article.type-card-box .card-box{
-		position:relative;
-		margin:6rem auto 0;
-		max-width:1200px;
-		font-size:0;
-	}
-	article.type-card-box .card {
-		display:inline-block;
-		vertical-align:top;
-		position:relative;
-		width:25%;
-		padding:0 2rem 0;
-	}
-	@media screen and (min-width: 480px) and (max-width: 839px) {
-		article.type-card-box {
-			padding:12vh 1rem 12vh;
-		}
-		article.type-card-box .card {
-			width:50%;
-			padding:0 2rem 4rem;
-		}
-	}
-	@media screen and (min-width: 0px) and (max-width: 479px) {
-		article.type-card-box .card {
-			width:100%;
-			padding:0 2rem 4rem;
-		}
-	}	
-	article.type-card-box .card .card-icn {
-		text-align:center;
-		font-size: 3.2rem;
-		margin:0 0 2rem;
-		color:#7852e8;
-	}
-	article.type-card-box .card .card-tit {
-		text-align:center;
-		font-size: 1.2rem;
-		margin:0 0 1.2rem;
-		font-weight:700;
-	}
-	article.type-card-box .card .card-ctn {
-		text-align:justify;
-		font-size: 1rem;
-		color:#999;
-		line-height:1.6em;
-	}
-/* article.type-card-box end */
+
 
 /* article.type-video-bg */
 	article.type-video-bg {

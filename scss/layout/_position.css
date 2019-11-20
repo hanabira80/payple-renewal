@@ -46,3 +46,10 @@
 .fl_right {
    float:right;
 }
+
+.skew_r_1 {
+   transform: perspective(2910px) rotateY(20deg) rotateX(5deg) rotate(-1deg);
+}
+.skew_l_1 {
+   transform: perspective(2910px) rotateY(-20deg) rotateX(-5deg) rotate(1deg);
+}

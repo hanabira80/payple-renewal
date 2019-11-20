@@ -176,6 +176,65 @@ $(document).ready(function(){
     });
     slider_main_pc.params.control = slider_main_mo;
     slider_main_mo.params.control = slider_main_pc;
+
+    var slider_main_progress = new Swiper('.slider_main_progress', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        observer: true,
+        observeParents: true,
+        autoplayDisableOnInteraction: false,
+        simulateTouch: false,
+        loop: true,
+        autoplay: 1000,
+        speed:500
+    });
+
+    
+    var slider_main_progress2 = new Swiper('.slider_main_progress2', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        observer: true,
+        observeParents: true,
+        autoplayDisableOnInteraction: false,
+        simulateTouch: false,
+        loop: true,
+        autoplay: 1000,
+        speed:500
+    });
+
+
+    $(".tab_btn").click(function() {
+        var parent = $(this).parent(".tab_btn_box");
+        var parent_type = parent.attr("tab_type");
+        var ctn_parent = $(".tab_ctn_box[tab_type =" + parent_type + "]");
+        var tab_idx = $(this).index();
+        parent.find(".tab_btn").addClass("cl_default");
+        parent
+            .find(".tab_btn")
+            .eq(tab_idx)
+            .removeClass("cl_default");
+        ctn_parent.each(function(){
+            $(this).find(".tab_ctn").removeClass("js_is_show");
+        })
+        ctn_parent.each(function(){
+            $(this).find(".tab_ctn") .eq(tab_idx) .addClass("js_is_show");
+        });
+        // slider_main_progress.update();
+        // slider_main_progress2.update();
+        
+        if (tab_idx == 0) {
+            slider_main_progress.destroy(false, false);
+            slider_main_progress2.destroy(false, false);
+            slider_main_progress.init();
+        }
+        if (tab_idx == 1) {
+            slider_main_progress.destroy(false, false);
+            slider_main_progress2.destroy(false, false);
+            slider_main_progress2.init();
+        }
+    });   
+
+    
     
     var slider_coopertaion = new Swiper('.slider-coopertaion', {
         pagination: '.pager-coopertaion',

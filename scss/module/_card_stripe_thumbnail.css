@@ -9,7 +9,9 @@
         0 30px 60px -12px rgba(50, 50, 93, 0.25), 
         0 18px 36px -18px rgba(0, 0, 0, 0.3), 
         0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-    width: 400px;
+    width: 80%;
+    margin:0 auto;
+    max-width:420px;
 }
 .card_stripe_thumbnail .thumbnail {
     padding-top:60%;
@@ -33,5 +35,5 @@
     transform-origin: 0 0;
 }
 .card_stripe_thumbnail .ctn_box {
-    padding:2rem 2rem;
+    padding:2rem 2rem 2rem;
 }
