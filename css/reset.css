@@ -49,18 +49,14 @@
 	body {
 		position:relative;
 		color:#444;
-		/*font-family: 'Dotum', 'Helvetica', 'AppleSDGothicNeo', sans-serif;*/
-		/*font-family: 'Nanum Gothic', 'Dotum', 'Helvetica', 'AppleSDGothicNeo', sans-serif;/**/
-		/*font-family: 'NanumSquare', 'Dotum', 'Helvetica', 'AppleSDGothicNeo', sans-serif;/**/
-		/*font-family: 'Nanum Barun Gothic', 'Dotum', 'Helvetica', 'AppleSDGothicNeo', sans-serif;/**/
-        /*font-family: 'NanumBarunGothicLight', 'Dotum', 'Helvetica', 'AppleSDGothicNeo', sans-serif;/**/
         font-family: 'Noto Sans KR', 'Dotum', 'Helvetica', 'AppleSDGothicNeo', sans-serif;
         font-weight:300;
 		-webkit-text-size-adjust: none;
 	}
 	*, *:before, *:after {
 		margin:0;
-        padding:0;
+		padding:0;
+		font-weight:300;
         position:relative;
 		box-sizing: border-box;
 		-ms-box-sizing: border-box;

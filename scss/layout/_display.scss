@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.dp_b {
+   display:block;
+}
+.dp_ib_t {
+   display: inline-block;
+   vertical-align: top;
+}
+.dp_ib_m {
+   display: inline-block;
+   vertical-align: middle;
+}
+.dp_ib_b {
+   display: inline-block;
+   vertical-align: bottom;
+}
+.dp_table {
+   display:table;
+   width:100%;
+   border-collapse: collapse;
+}
+.dp_tr {
+   display: table-row;
+}
+.dp_tc {
+   display: table-cell;
+   vertical-align: middle;
+}
+.dp_none {
+   width: 0.1px;
+   height: 0.1px;
+   opacity: 0;
+   overflow: hidden;
+   position: absolute;
+   z-index: -1;
+}

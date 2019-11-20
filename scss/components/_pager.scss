@@ -1,0 +1,62 @@
+.pager_module {
+    text-align: center;
+    font-size: 0px;
+}
+
+.pager_module .prev_box,
+.pager_module .num_box,
+.pager_module .next_box {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pager_module .btn_pager {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.pager_module .btn_pager i {
+    color: #555;
+}
+
+.pager_module .btn_pager.disabled {
+    cursor: default;
+}
+
+.pager_module .btn_pager.disabled i {
+    color: #ccc
+}
+
+.pager_module .num_box {
+    padding: 0 12px;
+}
+
+.pager_module .num_box li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 32px;
+    color: #555;
+    cursor: pointer;
+    text-align: center;
+    font-kerning: normal;
+    margin: 0 4px;
+}
+
+.pager_module .num_box li.on {
+    background-color: #33C4C9;
+    border-color: #33C4C9;
+    color: #fff;
+    box-shadow:
+        0 4px 5px 0 rgba(51, 196, 201, .14),
+        0 1px 10px 0 rgba(51, 196, 201, .12),
+        0 2px 4px -1px rgba(51, 196, 201, .2);
+}

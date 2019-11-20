@@ -132,6 +132,11 @@
         </header>
 
         <link href="./css/main.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/layout/_article.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/layout/_card_stripe_thumbnail.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/components/_button.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/base/_typography.css" rel="stylesheet" type="text/css" />
+        
 
         <section>
             <article class="type_full_page">
@@ -266,118 +271,37 @@
                 </ul>
             </article>
 
-            <article class="type-card-box">
-                <div class="article-tit">
-                    펜테크 업계에서
-                    <img class="logo_in_text__lg" src="img/common/logo_full.svg" alt="" />
-                    을 주목합니다.
+            <article>
+                <div class="article_stripe main_lighter_color"></div>
+                <div class="tit_box__article width_limiter ">
+                    <h3 class="main_tit__article">
+                        펜테크 업계에서
+                        <img class="logo_in_text__lg" src="img/common/logo_full.svg" alt="" />
+                        을 주목합니다.
+                    </h3>
+                    <h4 class="sub_tit__article">
+                        페이플은 금융위원회 금융규제 샌드박스 혁신금융서비스 1차에 지정 서비스이며, 많은 금융권의 관심과 지지를 받고 있습니다.
+                    </h4>
                 </div>
-                <div class="article-sub-tit">
-                    페이플은 금융위원회 금융규제 샌드박스 혁신금융서비스 1차에 지정 서비스이며, 많은 금융권의 관심과 지지를 받고 있습니다.
-                </div>
-                <style>
-                    .rooted-increment {
-                        background-color: #fff;
-                        border-radius: 8px;
-                        -webkit-box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3),
-                            0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-                        box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-                        width: 400px;
-                        text-align: center;
-                    }
-                    .rooted-increment .cover {
-                        height: 200px;
-                        background-color: #58adee;
-                        border-top-left-radius: 4px;
-                        border-top-right-radius: 4px;
-                        background-image: url(img/main/sand_box.png);
-                        background-size: 80% auto;
-                        background-position: left 60%;
-                        background-repeat: no-repeat;
-                        overflow: hidden;
-                    }
-                    .rooted-increment .cover:after {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 200px;
-                        left: 0;
-                        top: 100%;
-                        background-color: #fff;
-                        transform: skewY(-12deg);
-                        transform-origin: 0 0;
-                    }
-                    .common-IntroText {
-                        font-weight: 300;
-                        font-size: 21px;
-                        line-height: 32px;
-                        color: #424770;
-                        padding: 0 30px;
-                        text-align: left;
-                    }
-                    @media (min-width: 670px) {
-                        .common-IntroText {
-                            font-size: 24px;
-                            line-height: 36px;
-                        }
-                    }
-
-                    .rooted-increment h2 {
-                        margin: 0 0 20px;
-                        color: #32325d;
-                        padding: 0 30px;
-                        text-align: left;
-                    }
-                    .common-BodyText {
-                        font-weight: 400;
-                        font-size: 17px;
-                        line-height: 28px;
-                        color: #525f7f;
-                        padding: 0 30px;
-                        text-align: left;
-                    }
-                    .common-Button {
-                        white-space: nowrap;
-                        display: inline-block;
-
-                        margin: 30px 0;
-                        height: 40px;
-                        line-height: 40px;
-                        padding: 0 14px;
-                        -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-                        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-                        background: #fff;
-                        border-radius: 4px;
-                        font-size: 15px;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                        letter-spacing: 0.025em;
-                        color: #6772e5;
-                        text-decoration: none;
-                        -webkit-transition: all 0.15s ease;
-                        transition: all 0.15s ease;
-                    }
-                    .common-Button--default {
-                        color: #fff;
-                        background: #6772e5;
-                    }
-                    .rooted-increment .common-Button--default {
-                    }
-                </style>
-                <div class="width_limiter space_setter flex_model">
+                
+                <div class="width_limiter space_setter__article_content flex_model">
                     <div class="left_area">
-                        <div class="rooted-increment common-Card">
-                            <div class="cover"></div>
-                            <h2 class="common-IntroText">
-                                금융위원회 금융규제 샌드박스 혁신금융서비스
-                            </h2>
-                            <p class="common-BodyText">
-                                계좌이체시 필요한 ARS 출금동의 절차로 인해 고객사의 결제 전환율은 높지 않았습니다. 그래서 우리는 이 부분에 집중했고 휴대폰
-                                본인확인만으로 출금동의까지 가능한 “SMS 인증방식의 온라인 간편결제 서비스” 로 고객사의 결제 전환율을 높였습니다.
-                            </p>
-                            <a href="" target="_blank" class="common-Button common-Button--default">
-                                금융규제 샌드박스란?
-                            </a>
+                        <div class="card_stripe_thumbnail">
+                            <div class="thumbnail"></div>
+                            <div class="ctn_box">
+                                <h5 class="font_md_main align_left">
+                                    금융위원회 금융규제 샌드박스 혁신금융서비스
+                                </h5>
+                                <p class="font_md_txt align_left">
+                                    계좌이체시 필요한 ARS 출금동의 절차로 인해 고객사의 결제 전환율은 높지 않았습니다. 그래서 우리는 이 부분에 집중했고 휴대폰
+                                    본인확인만으로 출금동의까지 가능한 “SMS 인증방식의 온라인 간편결제 서비스” 로 고객사의 결제 전환율을 높였습니다.
+                                </p>
+                                <div class="btn_box align_center">
+                                    <button class="btn btn_md btn_rounded ">
+                                        금융규제 샌드박스란?
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -434,6 +358,7 @@
                         </ul>
                     </div>
                 </div>
+                
             </article>
 
             <article class="type-video-bg">

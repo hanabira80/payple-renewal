@@ -1,0 +1,55 @@
+.btn_box {
+   padding:2.4rem 0.8rem;
+}
+button {
+   font-weight: normal;
+   font-style: normal;
+   text-align: center;
+   background: none;
+   outline: none;
+   border: none;
+   border-radius: 0;
+   padding: 0 0 0 0;
+   margin:0 0 0 0;
+   -webkit-appearance: none;
+}
+.btn {
+   display: inline-block;
+   vertical-align: middle;
+   cursor: pointer;
+   white-space: nowrap;
+   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+   background: #7852e8;
+   color: #fff;
+   text-decoration: none;   
+   margin:0.4rem 0.4rem;
+   -webkit-transition: all 0.15s ease;
+   transition: all 0.15s ease;
+}
+.cl_skyblue {
+   color: #fff;
+   background: #7E59E6;
+}
+.cl_default {
+   color: #fff;
+   background: #aaa;
+}
+.btn_full_width {
+   width:100%;
+}
+.btn_sm {
+   font-size:1rem;
+   padding:0.4rem 0.8rem;
+}
+.btn_md {
+   font-size:1.2rem;
+   padding:0.8rem 1.6rem;
+}
+.btn_lg {
+   font-size:1.4rem;
+   padding:1.2rem 2.4rem;
+}
+.btn_rounded {
+   border-radius: 4px 4px;
+}
+

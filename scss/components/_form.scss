@@ -1,0 +1,272 @@
+.form_box {
+    font-size: 0;
+    margin: 0 0 1rem;
+}
+
+.tit__form_box {
+    padding: 4px 4px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.tit__form_box .txt {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #282828;
+    line-height: 20px;
+}
+
+.info__form_box {
+    font-size: 12px;
+    padding: 4px 4px;
+    color: #999;
+}
+
+textarea {
+    font-size: 14px;
+    padding:8px 8px;
+    border: 1px solid #ccc;
+    transition: border ease 0.2s;
+    background: #fff;
+    width: 100%;
+}
+
+textarea:focus {
+    /*border:1px solid #33C4C9;*/
+    border: 1px solid #000;
+}
+
+select {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 28px 8px 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border ease 0.2s;
+    background: #fff url(/static/kr/img/music/icon__select.svg) no-repeat right center;
+    background-size: 20px 8px;
+}
+
+select.no_style {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+    padding: 0 16px 0 0;
+    border: none;
+    width: 100%;
+    background: #fff url(/static/kr/img/music/icon__select.svg) no-repeat right center;
+    background-size: 12px 4.8px;
+}
+
+.ipt {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border ease 0.2s;
+    background: #fff;
+}
+
+.ipt:focus {
+    border: 1px solid #000;
+}
+
+.ipt__sm {
+    padding: 6px 6px;
+}
+
+.upload {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 8px 8px 28px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border ease 0.2s;
+    background: #fff;
+    width:100%;
+    display: block;
+}
+
+.upload input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.upload .icon {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.check {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 26px;
+    line-height: 20px;
+    text-align: left;
+    cursor: pointer;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.check_reverse {
+    padding: 0 26px 0 0;
+}
+
+.check input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.check .icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    background: url(/static/kr/img/music/icon__check_box.svg) no-repeat left 0;
+    background-size: 20px 60px;
+}
+
+.check_reverse .icon {
+    left: auto;
+    right: 0;
+}
+
+.check input:checked+.icon {
+    background: url(/static/kr/img/music/icon__check_box.svg) no-repeat left -20px;
+    background-size: 20px 60px;
+}
+
+.check input:disabled+.icon {
+    background: url(/static/kr/img/music/icon__check_box.svg) no-repeat left -40px;
+    background-size: 20px 60px;
+}
+
+.radio {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 26px;
+    line-height: 20px;
+    text-align: left;
+    cursor: pointer;
+    min-width: 20px;
+    min-height: 20px;
+
+    font-size: 16px;
+}
+
+.radio_reverse {
+    padding: 0 26px 0 0;
+}
+
+.radio input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.radio .icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    background: url(/static/kr/img/music/icon__radio_box.svg) no-repeat left 0;
+    background-size: 20px 60px;
+}
+
+.radio_reverse .icon {
+    left: auto;
+    right: 0;
+}
+
+.radio input:checked+.icon {
+    background: url(/static/kr/img/music/icon__radio_box.svg) no-repeat left -20px;
+    background-size: 20px 60px;
+}
+
+.radio input:disabled+.icon {
+    background: url(/static/kr/img/music/icon__radio_box.svg) no-repeat left -40px;
+    background-size: 20px 60px;
+}
+
+
+
+.space_inner__ipt .ipt__ {}
+
+.space_inner__ipt .upload {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 8px 8px 36px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border ease 0.2s;
+    background: #fff;
+}
+
+.space_inner__ipt .upload:active {
+    /*border:1px solid #000;*/
+}
+
+.space_inner__ipt .upload_reverse {
+    padding: 0 36px 0 0;
+}
+
+.space_inner__ipt .upload .icon {
+    left: 8px;
+    top: 8px;
+    /*color:#34a9ff;*/
+}
+
+.space_inner__ipt .upload_reverse .icon {
+    left: auto;
+    right: 8px;
+}
+
+.space_inner__ipt .upload .tit {
+    color: #ccc;
+}
+
+.space_inner__ipt .upload .tit.on {
+    color: #555;
+}
+
+.space_inner__toggle {
+    padding: 6px 0;
+}
+
+.check {
+    font-size: 14px;
+    margin: 6px 6px;
+}
+
+.radio {
+    font-size: 14px;
+    margin: 6px 6px;
+}
+
+
+
+
+.space_inner__ipt {
+    padding: 4px 4px;
+}
