@@ -72,7 +72,7 @@
 	article.type_full_page {
 		height:100vh;
         padding:0 0;
-        /* max-height:720px; */
+        max-height:800px;
         /* background: #CFC5F8; */
     }
     article.type_full_page:before {
