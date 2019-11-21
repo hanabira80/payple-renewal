@@ -17,9 +17,6 @@
     padding-top:60%;
     background-color: #58adee;
     border-radius: 8px 8px 0 0;
-    background-image: url(/payple-renewal/img/main/sand_box.png);
-    background-size: 90% auto;
-    background-position: 5% 60%;
     background-repeat: no-repeat;
     overflow: hidden;
 }
@@ -36,4 +33,27 @@
 }
 .card_stripe_thumbnail .ctn_box {
     padding:2rem 2rem 2rem;
+}
+
+
+.card_stripe_thumbnail .thumbnail.cmz_sand_box {
+    background-image: 
+        url(/img/main/sand_box.png), 
+        url(/payple-renewal/img/main/sand_box.png);
+    background-size: 90% auto;
+    background-position: 5% 60%;
+}
+.card_stripe_thumbnail .thumbnail.cmz_card_payment {
+    background-image: 
+        url(/img/main/card_payment.png),
+        url(/payple-renewal/img/main/card_payment.png);
+    background-size: 72% auto;
+    background-position: 60% 40%;
+}
+.card_stripe_thumbnail .thumbnail.cmz_bankbook_payment {
+    background-image: 
+        url(/img/main/bankbook_payment.png),
+        url(/payple-renewal/img/main/bankbook_payment.png);
+    background-size: 80% auto;      
+    background-position: 20% 40%;  
 }

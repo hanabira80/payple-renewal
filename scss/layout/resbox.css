@@ -3,7 +3,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-image: url(/payple-renewal/img/common/empty.svg);
+    background-image: 
+        url(/img/common/empty.svg),
+        url(/payple-renewal/img/common/empty.svg);
 }
 
 /* .has_radius_md {
