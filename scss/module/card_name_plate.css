@@ -28,7 +28,7 @@
     transform: translate(-50%,-50%);
     position: absolute;
     z-index: 10;
-    background: #fff url(img/common/logo_simple.svg) no-repeat center center;
+    background: #fff url(/payple-renewal/img/common/logo_simple.svg) no-repeat center center;
     background-size: 60% 60%;
 }
 .card_name_plate .info_box {
