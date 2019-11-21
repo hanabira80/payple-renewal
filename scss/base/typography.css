@@ -19,6 +19,17 @@
    word-wrap: break-word;
    white-space: normal !important;
 }
+.txt_threeline {
+   display: -webkit-box;
+   overflow: hidden;
+   max-height: 4.2rem;
+   line-height: 1.4rem;
+   text-overflow: ellipsis;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   word-wrap: break-word;
+   white-space: normal !important;
+}
 
 .align_left {
    text-align: left;

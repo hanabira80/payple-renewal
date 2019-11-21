@@ -45,10 +45,10 @@
 }
 .card_stripe_thumbnail .thumbnail.cmz_card_payment {
     background-image: 
-        url(/img/main/card_payment.png),
-        url(/payple-renewal/img/main/card_payment.png);
-    background-size: 72% auto;
-    background-position: 60% 40%;
+        url(/img/main/card_payment.svg),
+        url(/payple-renewal/img/main/card_payment.svg);
+    background-size: 80% auto;
+    background-position: 20% 40%;
 }
 .card_stripe_thumbnail .thumbnail.cmz_bankbook_payment {
     background-image: 
