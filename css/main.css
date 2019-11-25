@@ -114,7 +114,7 @@
         z-index: 300;
     } */
     article.type_full_page .main_tit{
-        font-size:2.4rem;
+        font-size:3.6rem;
         font-weight: 300;
         position: absolute;
         top:26%;
@@ -122,16 +122,16 @@
         z-index: 200;
     }
     article.type_full_page .main_tit em{
-        font-size:2.8rem;
+        font-size:4rem;
     }
     article.type_full_page .sub_tit{
-        font-size:1.4rem;
+        font-size:1.8rem;
         line-height: 1.6;
         font-weight:300;
         position: absolute;
-        top: 50%;
+        top: 52%;
         left:4%;
-        width:30%;
+        width:40%;
         word-break: keep-all;
         z-index: 200;
 
@@ -153,16 +153,16 @@
 /**/
 .slider_main_pc_frame {
     position: absolute;
-    width:50%;
-    bottom:16%;
-    right:8%;
+    width:40%;
+    top:50%;
+    right:2%;
     max-width:700px;
     overflow: hidden;
     background: #fff;
     border-radius: 8px 8px;
     box-shadow: 0 15px 35px rgba(0,0,0,.1), 0 3px 10px rgba(0,0,0,.07);
     overflow:hidden;
-    transform: rotate(-1.2deg);
+	transform: rotate(-1.2deg) translate3d(0,-50%,0);
 }
 .slider_main_pc_frame .ratio_setter{
     padding-top:67%;
@@ -190,11 +190,11 @@
 
 .slider_main_mo_frame {
     position: absolute;
-    width:16%;
-    bottom:8%;
-    right:4%;
+    width:20%;
+    top:50%;
+    left:50%;
     max-width:400px;
-    transform: rotate(1.2deg);
+    transform: rotate(3deg) translate3d(0,-50%,0);
 }
 .slider_main_mo_frame .ratio_setter{
     padding-top:197%;
@@ -1362,4 +1362,29 @@ article.has_line:before {
     -webkit-transform: skewY(-8deg);
     transform: skewY(-8deg);
     background: #d4c9ff;
+}
+
+
+
+#app-illustrations div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 38px;
+    background: #fff;
+    -webkit-box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173,186,204,.25), 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
+	box-shadow: inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173,186,204,.25), 0 2px 6px rgba(0,21,64,.14), 0 10px 20px rgba(0,21,64,.05);
+	display: flex;
+    width: 267px;
+    height: 553px;
+}
+.small {
+	width: 225px;
+	height: 467px;
 }

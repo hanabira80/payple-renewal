@@ -5,7 +5,7 @@ article {
 }
 article .main_tit__article {
     text-align:center;
-    font-size:2.4rem;
+    font-size:3.2rem;
     line-height: 2;
     margin: 0 0 3.2rem;
     word-break: keep-all;
@@ -23,7 +23,7 @@ article .main_tit__article:after {
 }
 article .sub_tit__article {
     text-align:center;
-    font-size:1.4rem;
+    font-size:1.6rem;
     color:#777;
     line-height:1.6;
     width:80%;
@@ -36,7 +36,7 @@ article > .width_limiter {
     margin:0 auto;
 }
 article .space_setter__article_content {
-    padding:8rem 1.2rem;
+    padding:6rem 1.2rem;
 }
 
 /* article .article_stripe.white {
