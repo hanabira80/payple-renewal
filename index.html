@@ -151,6 +151,7 @@
         <link href="./scss/module/card_icon_thumbnail.css" rel="stylesheet" type="text/css" />
         <link href="./scss/module/swiper_phone_style.css" rel="stylesheet" type="text/css" />
         <link href="./scss/module/card_news.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/module/tab_step.css" rel="stylesheet" type="text/css" />
 
         <section>
             <article class="type_full_page">
@@ -300,7 +301,7 @@
 
                 <div class="width_limiter space_setter__article_content dp_flex flc_al_start">
                     <div class="fli_bs_50">
-                        <div class="tab_ctn_box" tab_type="kk">
+                        <!-- <div class="tab_ctn_box" tab_type="kk">
                             <div class="swiper_phone_style skew_r_1 tab_ctn js_is_show">
                                 <div class="ratio_setter">
                                     <div class="swiper-container slider_main_progress">
@@ -354,25 +355,119 @@
                                     <img class="res" src="img/main/frame_mo_black.svg" alt="" />
                                 </div>
                             </div>
+                        </div> -->
+                        <div>
+                                <div id="app-illustrations" style="display: inline-block; width:300px; vertical-align: top; ">
+                                        <style>
+                                            #app-illustrations div {
+                                                padding: 0 0.8rem;
+                                            }
+                                            #app-illustrations img {
+                                                /* border:1px solid #ccc; */
+                                            }
+                                        </style>
+                                        <div style="overflow:hidden;">
+                                                <div class="tab_ctn_img_step js_target_tab_ctn_img_step2_info">
+                                                    대기화면
+                                                </div>
+                                            <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2 is_show_ani" depth="1_1">
+                                                1-1
+                                                    <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                                </div>
+                                                <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="1_2">
+                                                    1-2
+                                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                                </div>
+                                                <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="2_1">
+                                                    2-1
+                                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                                </div>
+                                                <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="2_2">
+                                                    2-2
+                                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                                </div>
+                                                <div class="tab_ctn_tab_ctn_img_stepstep js_target_tab_ctn_img_step_2" depth="2_3">
+                                                    2-3
+                                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
                         </div>
                     </div>
                     <div class="fli_bs_50">
                         <div class="card_stripe_thumbnail">
                             <div class="thumbnail cmz_card_payment"></div>
-                            <div class="btn_box align_center tab_btn_box" tab_type="kk">
-                                <div class="btn btn_md btn_rounded tab_btn">
-                                    카드결제
+                            <div class="btn_box align_left tab_step_module">
+                                <div class="tab_btn_box_step_2 js_frag_tab_btn_step_2 is_show_ani" kind="0">
+                                    <div class="btn btn_md_sub btn_rounded btn_is_active js_trigger_tab_btn_step_2" depth="1_1">
+                                        정기결제
+                                    </div>
+                                    <div class="btn btn_md_sub btn_rounded js_trigger_tab_btn_step_2" depth="1_2">
+                                        앱카드결제
+                                    </div>
                                 </div>
-                                <div class="btn btn_md btn_rounded cl_default tab_btn">
-                                    게좌결제
+                                <div class="tab_btn_box_step_2 js_frag_tab_btn_step_2" kind="1">
+                                    <div class="btn btn_md_sub btn_rounded js_trigger_tab_btn_step_2" depth="2_1">
+                                        정기결제
+                                    </div>
+                                    <div class="btn btn_md_sub btn_rounded js_trigger_tab_btn_step_2" depth="2_2">
+                                        간편결제
+                                    </div>
+                                    <div class="btn btn_md_sub btn_rounded js_trigger_tab_btn_step_2" depth="2_3">
+                                        일회성결제
+                                    </div>
+                                </div>
+                                <div class="tab_btn_box_step_1">
+                                    <div class="btn btn_md btn_rounded btn_is_active js_trigger_tab_btn_step_1" kind="0">
+                                        카드결제
+                                    </div>
+                                    <div class="btn btn_md btn_rounded js_trigger_tab_btn_step_1" kind="1">
+                                        계좌결제
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="tab_ctn_box" tab_type="kk">
-                                <div class="tab_ctn js_is_show">
+                            <script>
+                                $(document).ready(function() {
+                                    $(".js_trigger_tab_btn_step_1").click(function() {
+                                        var kd = $(this).attr("kind");
+                                        console.log(kd);
+                                        if (!$(this).hasClass("btn_is_active")) {
+                                            $(".js_trigger_tab_btn_step_1").removeClass("btn_is_active");
+                                            $(".js_trigger_tab_btn_step_1")
+                                                .eq(kd)
+                                                .addClass("btn_is_active");
+                                            $(".js_frag_tab_btn_step_2").removeClass("is_show_ani");
+                                            $(".js_frag_tab_btn_step_2[kind=" + kd + "]").addClass("is_show_ani");
+                                            $(".js_trigger_tab_btn_step_2").removeClass("btn_is_active");
+                                            $(".js_target_tab_ctn_step_2").removeClass("is_show_ani");
+                                            $(".js_target_tab_ctn_step2_info").removeClass("is_show_ani");
+                                            $(".js_target_tab_ctn_step2_info[kind=" + kd + "]").addClass("is_show_ani");
+                                            $(".js_target_tab_ctn_img_step_2").removeClass("is_show_ani");
+                                            $(".js_target_tab_ctn_img_step2_info").addClass("is_show_ani");
+                                        } else {
+                                        }
+                                    });
+                                    $(".js_trigger_tab_btn_step_2").click(function() {
+                                        var dp = $(this).attr("depth");
+                                        console.log(dp);
+                                        $(".js_target_tab_ctn_step2_info").removeClass("is_show_ani");
+                                        $(".js_target_tab_ctn_img_step2_info").removeClass("is_show_ani");
+                                        $(".js_trigger_tab_btn_step_2").removeClass("btn_is_active");
+                                        $(".js_trigger_tab_btn_step_2[depth=" + dp + "]").addClass("btn_is_active");
+                                        $(".js_target_tab_ctn_step_2").removeClass("is_show_ani");
+                                        $(".js_target_tab_ctn_step_2[depth=" + dp + "]").addClass("is_show_ani");
+                                        $(".js_target_tab_ctn_img_step_2").removeClass("is_show_ani");
+                                        $(".js_target_tab_ctn_img_step_2[depth=" + dp + "]").addClass("is_show_ani");
+                                    });
+                                });
+                            </script>
+                            <div class="tab_ctn_box_step">
+                                <div class="tab_ctn_step js_target_tab_ctn_step2_info" kind="0">
                                     <div class="ctn_box">
                                         <h5 class="font fsz_16 has_font_spacer_b_20 ">
-                                            카드결제
+                                            카드 대기화면
                                         </h5>
                                         <p class="font fsz_12 fcl_txt ">
                                             매월 정기적인 결제가 필요한 온라인 사업자이신가요? 온라인 카드자동이체는 높은 수수료를 요구하죠 Payple
@@ -380,10 +475,65 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="tab_ctn">                                   
+                                <div class="tab_ctn_step js_target_tab_ctn_step2_info" kind="1">
                                     <div class="ctn_box">
                                         <h5 class="font fsz_16 has_font_spacer_b_20 ">
-                                            계좌등록 간편결제
+                                            계좌 대기화면
+                                        </h5>
+                                        <p class="font fsz_12 fcl_txt ">
+                                            매월 정기적인 결제가 필요한 온라인 사업자이신가요? 온라인 카드자동이체는 높은 수수료를 요구하죠 Payple
+                                            계좌자동이체로 편리하게 자동이체 신청받고 수수료도 절약하세요
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn_step js_target_tab_ctn_step_2 is_show_ani" depth="1_1">
+                                    <div class="ctn_box">
+                                        <h5 class="font fsz_16 has_font_spacer_b_20 ">
+                                            카드결제 - 정기
+                                        </h5>
+                                        <p class="font fsz_12 fcl_txt ">
+                                            매월 정기적인 결제가 필요한 온라인 사업자이신가요? 온라인 카드자동이체는 높은 수수료를 요구하죠 Payple
+                                            계좌자동이체로 편리하게 자동이체 신청받고 수수료도 절약하세요
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn_step js_target_tab_ctn_step_2" depth="1_2">
+                                    <div class="ctn_box">
+                                        <h5 class="font fsz_16 has_font_spacer_b_20 ">
+                                            카드 - 앱카드
+                                        </h5>
+                                        <p class="font fsz_12 fcl_txt ">
+                                            매번 결제정보를 입력하는 것은 불편합니다. 페이플 계좌간편결제는 결제비밀번호만 입력하면 됩니다. 고객에게 편리한
+                                            구매경험과 소득공제 30% 혜택을 제공해보세요.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn_step js_target_tab_ctn_step_2" depth="2_1">
+                                    <div class="ctn_box">
+                                        <h5 class="font fsz_16 has_font_spacer_b_20 ">
+                                            계좌 - 정기
+                                        </h5>
+                                        <p class="font fsz_12 fcl_txt ">
+                                            매번 결제정보를 입력하는 것은 불편합니다. 페이플 계좌간편결제는 결제비밀번호만 입력하면 됩니다. 고객에게 편리한
+                                            구매경험과 소득공제 30% 혜택을 제공해보세요.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn_step js_target_tab_ctn_step_2" depth="2_2">
+                                    <div class="ctn_box">
+                                        <h5 class="font fsz_16 has_font_spacer_b_20 ">
+                                            계좌 - 간편
+                                        </h5>
+                                        <p class="font fsz_12 fcl_txt ">
+                                            매번 결제정보를 입력하는 것은 불편합니다. 페이플 계좌간편결제는 결제비밀번호만 입력하면 됩니다. 고객에게 편리한
+                                            구매경험과 소득공제 30% 혜택을 제공해보세요.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn_step js_target_tab_ctn_step_2" depth="2_3">
+                                    <div class="ctn_box">
+                                        <h5 class="font fsz_16 has_font_spacer_b_20 ">
+                                            계좌 - 일회성
                                         </h5>
                                         <p class="font fsz_12 fcl_txt ">
                                             매번 결제정보를 입력하는 것은 불편합니다. 페이플 계좌간편결제는 결제비밀번호만 입력하면 됩니다. 고객에게 편리한
@@ -392,8 +542,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            
                         </div>
                     </div>
                 </div>
@@ -434,78 +582,76 @@
                         </div>
                     </div> -->
 
-                    
-                        <ul class="card_name_plate dp_flex flc_al_start flc_jc_sr flc_wrap">
-                            <li class="fli_bs_48">
-                                <div class="pin"></div>
-                                <div class="info_box">
-                                    <div class="fsz_12 fw_md has_font_spacer_b_04">
-                                        금융위원회 금융규제 샌드박스 1차
-                                    </div>
-                                    <div class="fsz_10 fcl_sub has_font_spacer_y_12">
-                                        2019년 4월
-                                    </div>
+                    <ul class="card_name_plate dp_flex flc_al_start flc_jc_sr flc_wrap">
+                        <li class="fli_bs_48">
+                            <div class="pin"></div>
+                            <div class="info_box">
+                                <div class="fsz_12 fw_md has_font_spacer_b_04">
+                                    금융위원회 금융규제 샌드박스 1차
                                 </div>
-                                <div class="bg_box">
-                                    <div class="ratio_setter_name_plate">
-                                        <img class="xy_center" src="img/common/fsc_gov.svg" alt="" />
-                                        <a class="full_link" href=""></a>
-                                    </div>
+                                <div class="fsz_10 fcl_sub has_font_spacer_y_12">
+                                    2019년 4월
                                 </div>
-                            </li>
-                            <li class="fli_bs_48">
-                                <div class="pin"></div>
-                                <div class="info_box">
-                                    <div class="fsz_12 fw_md has_font_spacer_b_04">
-                                        NH디지털챌린지플러스 1기
-                                    </div>
-                                    <div class="fsz_10 fcl_sub has_font_spacer_y_12">
-                                        2019년 4월
-                                    </div>
+                            </div>
+                            <div class="bg_box">
+                                <div class="ratio_setter_name_plate">
+                                    <img class="xy_center" src="img/common/fsc_gov.svg" alt="" />
+                                    <a class="full_link" href=""></a>
                                 </div>
-                                <div class="bg_box">
-                                    <div class="ratio_setter_name_plate">
-                                        <img class="xy_center" src="img/common/nh_lab.png" alt="" />
-                                        <a class="full_link" href=""></a>
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="fli_bs_48">
+                            <div class="pin"></div>
+                            <div class="info_box">
+                                <div class="fsz_12 fw_md has_font_spacer_b_04">
+                                    NH디지털챌린지플러스 1기
                                 </div>
-                            </li>
-                            <li class="fli_bs_48">
-                                <div class="pin"></div>
-                                <div class="info_box">
-                                    <div class="fsz_12 fw_md has_font_spacer_b_04">
-                                        한국핀테크지원센터 리더스랩 3기
-                                    </div>
-                                    <div class="fsz_10 fcl_sub has_font_spacer_y_12">
-                                        2019년 1월
-                                    </div>
+                                <div class="fsz_10 fcl_sub has_font_spacer_y_12">
+                                    2019년 4월
                                 </div>
-                                <div class="bg_box">
-                                    <div class="ratio_setter_name_plate">
-                                        <img class="xy_center" src="img/common/fin_lab.png" alt="" />
-                                        <a class="full_link" href=""></a>
-                                    </div>
+                            </div>
+                            <div class="bg_box">
+                                <div class="ratio_setter_name_plate">
+                                    <img class="xy_center" src="img/common/nh_lab.png" alt="" />
+                                    <a class="full_link" href=""></a>
                                 </div>
-                            </li>
-                            <li class="fli_bs_48">
-                                <div class="pin"></div>
-                                <div class="info_box">
-                                    <div class="fsz_12 fw_md has_font_spacer_b_04">
-                                        우리은행 위비핀테크랩 3기
-                                    </div>
-                                    <div class="fsz_10 fcl_sub has_font_spacer_y_12">
-                                        2018년 4월
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="fli_bs_48">
+                            <div class="pin"></div>
+                            <div class="info_box">
+                                <div class="fsz_12 fw_md has_font_spacer_b_04">
+                                    한국핀테크지원센터 리더스랩 3기
                                 </div>
-                                <div class="bg_box">
-                                    <div class="ratio_setter_name_plate">
-                                        <img class="xy_center" src="img/common/wr_lab.png" alt="" />
-                                        <a class="full_link" href=""></a>
-                                    </div>
+                                <div class="fsz_10 fcl_sub has_font_spacer_y_12">
+                                    2019년 1월
                                 </div>
-                            </li>
-                        </ul>
-                    
+                            </div>
+                            <div class="bg_box">
+                                <div class="ratio_setter_name_plate">
+                                    <img class="xy_center" src="img/common/fin_lab.png" alt="" />
+                                    <a class="full_link" href=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="fli_bs_48">
+                            <div class="pin"></div>
+                            <div class="info_box">
+                                <div class="fsz_12 fw_md has_font_spacer_b_04">
+                                    우리은행 위비핀테크랩 3기
+                                </div>
+                                <div class="fsz_10 fcl_sub has_font_spacer_y_12">
+                                    2018년 4월
+                                </div>
+                            </div>
+                            <div class="bg_box">
+                                <div class="ratio_setter_name_plate">
+                                    <img class="xy_center" src="img/common/wr_lab.png" alt="" />
+                                    <a class="full_link" href=""></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </article>
 
@@ -619,8 +765,8 @@
                                 제공합니다. <br />
                                 아임포트를 이용 중이신가요? 아임포트를 통해 별도 개발없이 페이플 간편계좌이체를 도입해보세요.
                             </h3>
-                            <div class="btn_box align_center">
-                                <a target="_blank" href="https://www.iamport.kr/pg" class="btn btn_md btn_rounded ">
+                            <div class="btn_box align_center ">
+                                <a target="_blank" href="https://www.iamport.kr/pg" class="btn btn_md btn_rounded cl_main">
                                     아임포트에서 페이플 가입하기
                                 </a>
                             </div>
@@ -642,7 +788,7 @@
                                 페이플은 프라이머 Season 5 - Batch 14 에 선발되었습니다.
                             </h3>
                             <div class="btn_box align_center">
-                                <a target="_blank" href="http://main.primer.kr/primerclub-all" class="btn btn_md btn_rounded ">
+                                <a target="_blank" href="http://main.primer.kr/primerclub-all" class="btn btn_md btn_rounded cl_main">
                                     프라이머 살펴보기
                                 </a>
                             </div>
@@ -773,31 +919,29 @@
                 <div id="app-illustrations" style="display: inline-block; width:300px; vertical-align: top;">
                     <style>
                         #app-illustrations div {
-                            padding:0 0.8rem;
+                            padding: 0 0.8rem;
                         }
                         #app-illustrations img {
                             /* border:1px solid #ccc; */
                         }
-                        </style>
+                    </style>
                     <div>
                         <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
                     </div>
                 </div>
-                
+
                 <div style="display: inline-block; width:300px;  vertical-align: over-flow:hidden;">
                     <div style="position:absolute; top:1%; left:1%; right:1%; bottom:1%;">
-                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" style=""/>
+                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" style="" />
                     </div>
-                <img class="res" src="img/main/frame_mo_black.svg" alt="" />
-                
-            </div>
+                    <img class="res" src="img/main/frame_mo_black.svg" alt="" />
+                </div>
                 <div style="display: inline-block; width:300px;  vertical-align: top;">
-                        <div style="position:absolute; top:1%; left:1%; right:1%; bottom:1%;">
-                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" style=""/>
-                        </div>
-                <img class="res" src="img/main/frame_mo_white.svg" alt="" />
-                
-            </div>
+                    <div style="position:absolute; top:1%; left:1%; right:1%; bottom:1%;">
+                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" style="" />
+                    </div>
+                    <img class="res" src="img/main/frame_mo_white.svg" alt="" />
+                </div>
             </article>
         </section>
         <!-- <div class="article-stripe c2"></div> -->

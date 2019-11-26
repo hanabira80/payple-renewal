@@ -1,0 +1,49 @@
+.tab_step_module {
+    padding: 2.4rem 0.8rem 6.8rem;
+}
+.tab_btn_box_step_1 {
+    background: #fff;
+}
+.tab_btn_box_step_2 {
+    position: absolute;
+    top:2.4rem;
+    left:0.8rem;
+    opacity:0;
+    transition: all ease 0.2s;
+}
+.tab_btn_box_step_2.is_show_ani {
+    top:7.2rem;
+    opacity:1;
+}
+.tab_ctn_box_step {
+    min-height:20rem;
+    overflow:hidden;
+}
+.tab_ctn_step {
+    position: absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    opacity:0;
+    transition: all ease 0.4s;
+    background: #fff;
+}
+.tab_ctn_step.is_show_ani {
+    top:0;
+    opacity:1;
+    z-index: 100;
+}
+.tab_ctn_img_step {
+    position: absolute;
+    top:0;
+    left:100%;
+    width:100%;
+    opacity:0;
+    transition: all ease 0.4s;
+    background: #fff;
+}
+.tab_ctn_img_step.is_show_ani {
+    left:0;
+    opacity:1;
+    z-index: 100;
+}

@@ -20,18 +20,23 @@ button {
    cursor: pointer;
    white-space: nowrap;
    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-   background: #7852e8;
    color: #fff;
+   background: #aaa;
    text-decoration: none;   
    margin:0.4rem 0.4rem;
-   -webkit-transition: all 0.15s ease;
-   transition: all 0.15s ease;
+   -webkit-transition: all 0.2s ease;
+   transition: all 0.2s ease;
+
 }
-.cl_skyblue {
+.btn_is_active {
    color: #fff;
-   background: #7E59E6;
+   background: #7852e8;
 }
-.cl_default {
+.cl_main {
+   color: #fff;
+   background: #7852e8;
+}
+.cl_diable {
    color: #fff;
    background: #aaa;
 }
@@ -42,13 +47,17 @@ button {
    font-size:1rem;
    padding:0.4rem 0.8rem;
 }
-.btn_md {
+.btn_md_sub {
    font-size:1.2rem;
+   padding:0.6rem 1.2rem;
+}
+.btn_md {
+   font-size:1.4rem;
    padding:0.8rem 1.6rem;
 }
 .btn_lg {
-   font-size:1.4rem;
-   padding:1.2rem 2.4rem;
+   font-size:1.8rem;
+   padding:1rem 2rem;
 }
 .btn_rounded {
    border-radius: 4px 4px;
