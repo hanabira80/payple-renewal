@@ -1059,110 +1059,127 @@
 
 
     background-image: url(../img/main/header-logos.png);
-    background-size: 1076px 1000px;
+	background-size: 1076px 1000px;
+	cursor:pointer;
+}
+.item_list__random li p{
+	display:none;
 }
 .item_list__random li:nth-child(1) {
-    animation: floatItem01 40s linear 0s infinite normal;
+    animation: floatItem01 46s linear 0s infinite normal;
     background-position: 0 0;
     margin:100px 0 0 0;
 }
 .item_list__random li:nth-child(2) {
-    animation: floatItem02 40s linear 2s infinite normal;
+    animation: floatItem02 46s linear 2s infinite normal;
     background-position: -154px 0;
     margin: 10px 0 0 25px;
 }
 .item_list__random li:nth-child(3) {
-    animation: floatItem03 40s linear 4s infinite normal;
+    animation: floatItem03 46s linear 4s infinite normal;
     background-position: -308px 0;
     margin: 120px 0 0 0;
 }
 .item_list__random li:nth-child(4) {
-    animation: floatItem01 40s linear 6s infinite normal;
+    animation: floatItem01 46s linear 6s infinite normal;
     background-position: -462px 0;
     margin: 49px 0 0 0;
 }
 .item_list__random li:nth-child(5) {
-    animation: floatItem02 40s linear 8s infinite normal;
+    animation: floatItem02 46s linear 8s infinite normal;
     background-position: -616px 0;
     margin: 153px 0 0 0;
 }
 .item_list__random li:nth-child(6) {
-    animation: floatItem01 40s linear 10s infinite normal;
+    animation: floatItem01 46s linear 10s infinite normal;
     background-position: -770px 0;
     margin: 19px 0 0 0;
 }
 .item_list__random li:nth-child(7) {
-    animation: floatItem01 40s linear 12s infinite normal;
+    animation: floatItem01 46s linear 12s infinite normal;
     background-position: 0 -154px;
     margin: 134px 0 0 23px;
 }
 .item_list__random li:nth-child(8) {
-    animation: floatItem02 40s linear 14s infinite normal;
+    animation: floatItem02 46s linear 14s infinite normal;
     background-position: -154px -154px;
     margin: 14px 0 0 9px;
 }
 .item_list__random li:nth-child(9) {
-    animation: floatItem03 40s linear 16s infinite normal;
+    animation: floatItem03 46s linear 16s infinite normal;
     background-position: -308px -154px;
     margin: 120px 0 0 -30px;
 }
 .item_list__random li:nth-child(10) {
-    animation: floatItem01 40s linear 18s infinite normal;
+    animation: floatItem01 46s linear 18s infinite normal;
     background-position: -462px -154px;
     margin: 33px 0 0 -27px;
 }
 .item_list__random li:nth-child(11) {
-    animation: floatItem02 40s linear 20s infinite normal;
+    animation: floatItem02 46s linear 20s infinite normal;
     background-position: -616px -154px;
     margin: 150px 0 0 0;
 }
 .item_list__random li:nth-child(12) {
-    animation: floatItem03 40s linear 22s infinite normal;
+    animation: floatItem03 46s linear 22s infinite normal;
     background-position: -770px -154px;
     margin: 31px 0 0 -40px;
 }
 .item_list__random li:nth-child(13) {
-    animation: floatItem01 40s linear 24s infinite normal;
+    animation: floatItem01 46s linear 24s infinite normal;
     background-position: 0px -308px;
     margin: 113px 0 0 0;
 }
 .item_list__random li:nth-child(14) {
-    animation: floatItem02 40s linear 26s infinite normal;
+    animation: floatItem02 46s linear 26s infinite normal;
     background-position: -154px -308px;
     margin: 10px 0 0 0;
 }
 .item_list__random li:nth-child(15) {
-    animation: floatItem03 40s linear 28s infinite normal;
+    animation: floatItem03 46s linear 28s infinite normal;
     background-position: -308px -308px;
     margin: 120px 0 0 0;
 }
 .item_list__random li:nth-child(16) {
-    animation: floatItem01 40s linear 30s infinite normal;
+    animation: floatItem01 46s linear 30s infinite normal;
     background-position: -462px -308px;
     margin: 20px 0 0 0;
 }
 .item_list__random li:nth-child(17) {
-    animation: floatItem02 40s linear 32s infinite normal;
+    animation: floatItem02 46s linear 32s infinite normal;
     background-position: -616px -308px;
     margin: 140px 0 0 0;
 }
 .item_list__random li:nth-child(18) {
-    animation: floatItem03 40s linear 34s infinite normal;
+    animation: floatItem03 46s linear 34s infinite normal;
     background-position: -770px -308px;
     margin: 20px 0 0 0;
 }
 .item_list__random li:nth-child(19) {
-    animation: floatItem01 40s linear 36s infinite normal;
+    animation: floatItem01 46s linear 36s infinite normal;
     background-position: 0 -462px;
     margin: 100px 0 0 0;
 }
 .item_list__random li:nth-child(20) {
-    animation: floatItem02 40s linear 38s infinite normal;
+    animation: floatItem02 46s linear 38s infinite normal;
     background-position: -154px -462px;
     margin: -5px 0 0 0;
-    background: #fff;
 }
-
+.item_list__random li:nth-child(21) {
+    animation: floatItem03 46s linear 40s infinite normal;
+    background-position: -308px -462px;
+    margin: 94px 0 0 -40px;
+}
+.item_list__random li:nth-child(22) {
+    animation: floatItem01 46s linear 42s infinite normal;
+    background-position: -462px -462px;
+    margin: 110px 0 0 -30px;
+}
+.item_list__random li:nth-child(23) {
+    animation: floatItem01 46s linear 44s infinite normal;
+	background: #fff;
+	margin: 10px 0 0 -20px;
+}
 
 
 
