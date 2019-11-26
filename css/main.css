@@ -1063,7 +1063,39 @@
 	cursor:pointer;
 }
 .item_list__random li p{
-	display:none;
+	top:177%;
+	left: 50%;
+    padding: 5px 12px;
+    background: #fff;
+    -webkit-box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    border-radius: 50px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    color: #566b78;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translate(-50%,-10px);
+    transform: translate(-50%,-10px);
+    opacity: 0;
+    -webkit-transition-property: opacity,-webkit-transform;
+    transition-property: opacity,-webkit-transform;
+    transition-property: opacity,transform;
+    transition-property: opacity,transform,-webkit-transform;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.item_list__random li:hover p{
+    opacity: .9;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
 }
 .item_list__random li:nth-child(1) {
     animation: floatItem01 46s linear 0s infinite normal;
