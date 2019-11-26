@@ -52,7 +52,7 @@
 }
 
 .font {
-   line-height: 1.6;
+   line-height: 1.8;
    word-break: keep-all;
 }
 .fsz_24 {
@@ -134,8 +134,8 @@ b, .fw_md {
 }
 
 .logo_in_text__lg {
-   height:3.6rem;
+   height:2.8rem;
    width:auto;
    vertical-align: middle;
-   margin:0 0 0.6rem;
+   margin:0 0.2rem 0.1rem 0;
 }

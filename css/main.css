@@ -126,7 +126,7 @@
     }
     article.type_full_page .sub_tit{
         font-size:1.8rem;
-        line-height: 1.6;
+        line-height: 1.8;
         font-weight:300;
         position: absolute;
         top: 52%;
@@ -1395,7 +1395,7 @@
 .common-BodyText {
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 24px;
+    line-height: 1.8;
     color: #525f7f;
 }
 .featured-article-subtitle, .featured-article-title {
