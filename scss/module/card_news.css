@@ -41,6 +41,7 @@
     font-size:1.2rem;
     padding:0 0.4rem;
     text-align:center;
+    line-height: 1.8;
 }
 .card_list__news .common_banner_link {
     display: inline-block;
