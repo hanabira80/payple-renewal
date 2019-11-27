@@ -122,6 +122,9 @@
 .fcl_txt {
    color:#777;
 }
+.fcl_bold {
+   color:#000;
+}
 
 b, .fw_md {
    font-weight: 500;

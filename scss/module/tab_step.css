@@ -1,5 +1,5 @@
 .tab_step_module {
-    padding: 2.4rem 0.8rem 6.8rem;
+    padding: 2.4rem 0.8rem 4.8rem;
 }
 .tab_btn_box_step_1 {
     background: #fff;
@@ -16,8 +16,9 @@
     opacity:1;
 }
 .tab_ctn_box_step {
-    min-height:20rem;
+    min-height:24rem;
     overflow:hidden;
+    border-radius: 0 0 8px 8px;
 }
 .tab_ctn_step {
     position: absolute;
