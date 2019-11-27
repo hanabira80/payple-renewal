@@ -152,6 +152,7 @@
         <link href="./scss/module/swiper_phone_style.css" rel="stylesheet" type="text/css" />
         <link href="./scss/module/card_news.css" rel="stylesheet" type="text/css" />
         <link href="./scss/module/tab_step.css" rel="stylesheet" type="text/css" />
+        <link href="./scss/module/device_model.css" rel="stylesheet" type="text/css" />
 
         <section>
             <article class="type_full_page">
@@ -184,7 +185,30 @@
                         </div>
                     </div>
 
-                    <div class="slider_main_mo_frame">
+                    <ul class="device_list main_slider_mo">
+                        <li class="phone_big">
+                            <div class="swiper-container slider_main_mo">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_01.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_02.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_03.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_04.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- <div class="slider_main_mo_frame">
                         <div class="ratio_setter">
                             <div class="swiper-container slider_main_mo">
                                 <div class="swiper-wrapper">
@@ -209,7 +233,7 @@
                         <div class="img_frame">
                             <img class="res" src="img/main/frame_mo_white.svg" alt="" />
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="main_tit">쉽고 편리한 결제로<br /><em>구매 전환율</em>을 높이세요.</div>
 
@@ -357,42 +381,33 @@
                             </div>
                         </div> -->
                         <div>
-                                <div id="app-illustrations" style="display: inline-block; width:300px; vertical-align: top; ">
-                                        <style>
-                                            #app-illustrations div {
-                                                padding: 0 0.8rem;
-                                            }
-                                            #app-illustrations img {
-                                                /* border:1px solid #ccc; */
-                                            }
-                                        </style>
-                                        <div style="overflow:hidden;">
-                                                <div class="tab_ctn_img_step js_target_tab_ctn_img_step2_info">
-                                                    대기화면
-                                                </div>
-                                            <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2 is_show_ani" depth="1_1">
-                                                1-1
-                                                    <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
-                                                </div>
-                                                <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="1_2">
-                                                    1-2
-                                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
-                                                </div>
-                                                <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="2_1">
-                                                    2-1
-                                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
-                                                </div>
-                                                <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="2_2">
-                                                    2-2
-                                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
-                                                </div>
-                                                <div class="tab_ctn_tab_ctn_img_stepstep js_target_tab_ctn_img_step_2" depth="2_3">
-                                                    2-3
-                                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
-                                                </div>
-                                            
-                                        </div>
+                            <div id="app-illustrations" style="display: inline-block; width:300px; vertical-align: top; ">
+                                <div style="overflow:hidden;">
+                                    <div class="tab_ctn_img_step js_target_tab_ctn_img_step2_info">
+                                        대기화면
                                     </div>
+                                    <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2 is_show_ani" depth="1_1">
+                                        1-1
+                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                    </div>
+                                    <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="1_2">
+                                        1-2
+                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                    </div>
+                                    <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="2_1">
+                                        2-1
+                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                    </div>
+                                    <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="2_2">
+                                        2-2
+                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                    </div>
+                                    <div class="tab_ctn_tab_ctn_img_stepstep js_target_tab_ctn_img_step_2" depth="2_3">
+                                        2-3
+                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="fli_bs_50">
@@ -400,7 +415,7 @@
                             <div class="thumbnail cmz_card_payment"></div>
                             <div class="btn_box align_left tab_step_module">
                                 <div class="tab_btn_box_step_2 js_frag_tab_btn_step_2 is_show_ani" kind="0">
-                                    <div class="btn btn_md_sub btn_rounded btn_is_active js_trigger_tab_btn_step_2" depth="1_1">
+                                    <div class="btn btn_md_sub btn_rounded cl_scs js_trigger_tab_btn_step_2" depth="1_1">
                                         정기결제
                                     </div>
                                     <div class="btn btn_md_sub btn_rounded js_trigger_tab_btn_step_2" depth="1_2">
@@ -408,7 +423,7 @@
                                     </div>
                                 </div>
                                 <div class="tab_btn_box_step_2 js_frag_tab_btn_step_2" kind="1">
-                                    <div class="btn btn_md_sub btn_rounded js_trigger_tab_btn_step_2" depth="2_1">
+                                    <div class="btn btn_md_sub btn_rounded js_trigger_tab_btn_step_2 " depth="2_1">
                                         정기결제
                                     </div>
                                     <div class="btn btn_md_sub btn_rounded js_trigger_tab_btn_step_2" depth="2_2">
@@ -419,7 +434,7 @@
                                     </div>
                                 </div>
                                 <div class="tab_btn_box_step_1">
-                                    <div class="btn btn_md btn_rounded btn_is_active js_trigger_tab_btn_step_1" kind="0">
+                                    <div class="btn btn_md btn_rounded js_trigger_tab_btn_step_1 cl_info" kind="0">
                                         카드결제
                                     </div>
                                     <div class="btn btn_md btn_rounded js_trigger_tab_btn_step_1" kind="1">
@@ -433,14 +448,14 @@
                                     $(".js_trigger_tab_btn_step_1").click(function() {
                                         var kd = $(this).attr("kind");
                                         console.log(kd);
-                                        if (!$(this).hasClass("btn_is_active")) {
-                                            $(".js_trigger_tab_btn_step_1").removeClass("btn_is_active");
+                                        if (!$(this).hasClass("cl_info")) {
+                                            $(".js_trigger_tab_btn_step_1").removeClass("cl_info");
                                             $(".js_trigger_tab_btn_step_1")
                                                 .eq(kd)
-                                                .addClass("btn_is_active");
+                                                .addClass("cl_info");
                                             $(".js_frag_tab_btn_step_2").removeClass("is_show_ani");
                                             $(".js_frag_tab_btn_step_2[kind=" + kd + "]").addClass("is_show_ani");
-                                            $(".js_trigger_tab_btn_step_2").removeClass("btn_is_active");
+                                            $(".js_trigger_tab_btn_step_2").removeClass("cl_scs");
                                             $(".js_target_tab_ctn_step_2").removeClass("is_show_ani");
                                             $(".js_target_tab_ctn_step2_info").removeClass("is_show_ani");
                                             $(".js_target_tab_ctn_step2_info[kind=" + kd + "]").addClass("is_show_ani");
@@ -454,8 +469,8 @@
                                         console.log(dp);
                                         $(".js_target_tab_ctn_step2_info").removeClass("is_show_ani");
                                         $(".js_target_tab_ctn_img_step2_info").removeClass("is_show_ani");
-                                        $(".js_trigger_tab_btn_step_2").removeClass("btn_is_active");
-                                        $(".js_trigger_tab_btn_step_2[depth=" + dp + "]").addClass("btn_is_active");
+                                        $(".js_trigger_tab_btn_step_2").removeClass("cl_scs");
+                                        $(".js_trigger_tab_btn_step_2[depth=" + dp + "]").addClass("cl_scs");
                                         $(".js_target_tab_ctn_step_2").removeClass("is_show_ani");
                                         $(".js_target_tab_ctn_step_2[depth=" + dp + "]").addClass("is_show_ani");
                                         $(".js_target_tab_ctn_img_step_2").removeClass("is_show_ani");

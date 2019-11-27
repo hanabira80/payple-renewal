@@ -26,7 +26,14 @@ button {
    margin:0.4rem 0.4rem;
    -webkit-transition: all 0.2s ease;
    transition: all 0.2s ease;
-
+}
+.btn:hover {
+   /* -webkit-transform: translateY(-1px);
+   transform: translateY(-1px); */
+   -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+   box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+   -webkit-box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+   box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 .btn_is_active {
    color: #fff;
@@ -35,6 +42,26 @@ button {
 .cl_main {
    color: #fff;
    background: #7852e8;
+}
+.cl_act {
+   color: #fff;
+   background: #7852e8;
+}
+.cl_scs {
+   color: #fff;
+   background: #24b47e;
+}
+.cl_dng {
+   color: #fff;
+   background: #7852e8;
+}
+.cl_wan {
+   color: #fff;
+   background: #7852e8;
+}
+.cl_info {
+   color: #fff;
+   background: #6772e5;
 }
 .cl_diable {
    color: #fff;
