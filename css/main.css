@@ -1052,7 +1052,9 @@
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-
+.item_list__random li:hover {
+	z-index: 200;
+}
 .item_list__random li:hover p{
     opacity: .9;
     -webkit-transform: translate(-50%,0);
