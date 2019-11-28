@@ -33,7 +33,7 @@
     }
 }
 .device_list {
-    pointer-events: none;
+    /* pointer-events: none; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -157,6 +157,6 @@
     height:86%;
 }
 .tab_ctn_img_step_info {
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
 }
 /* customize area end ``*/

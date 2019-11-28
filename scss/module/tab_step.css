@@ -1,5 +1,5 @@
 .tab_step_module {
-    padding: 2.4rem 0.8rem 4.8rem;
+    padding: 2rem 0.8rem 4rem;
 }
 .tab_btn_box_step_1 {
     background: #fff;
@@ -12,11 +12,11 @@
     transition: all ease 0.2s;
 }
 .tab_btn_box_step_2.is_show_ani {
-    top:7.2rem;
+    top:6rem;
     opacity:1;
 }
 .tab_ctn_box_step {
-    min-height:24rem;
+    min-height:18rem;
     overflow:hidden;
     border-radius: 0 0 8px 8px;
 }

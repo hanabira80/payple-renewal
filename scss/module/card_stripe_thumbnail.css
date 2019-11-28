@@ -14,7 +14,7 @@
     max-width:420px;
 }
 .card_stripe_thumbnail .thumbnail {
-    padding-top:60%;
+    padding-top:44%;
     background-color: #58adee;
     border-radius: 8px 8px 0 0;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
     left: 0;
     top: 100%;
     background-color: #fff;
-    transform: skewY(-12deg);
+    transform: skewY(-8deg);
     transform-origin: 0 0;
 }
 .card_stripe_thumbnail .ctn_box {
@@ -47,8 +47,8 @@
     background-image: 
         url(/img/main/card_payment.svg),
         url(/payple-renewal/img/main/card_payment.svg);
-    background-size: 80% auto;
-    background-position: 20% 40%;
+    background-size: 60% auto;
+    background-position: 40% 40%;
 }
 .card_stripe_thumbnail .thumbnail.cmz_bankbook_payment {
     background-image: 

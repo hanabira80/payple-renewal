@@ -52,7 +52,7 @@
 }
 
 .font {
-   line-height: 1.8;
+   line-height: 1.6;
    word-break: keep-all;
 }
 .fsz_24 {
@@ -113,8 +113,8 @@
 .fcl_error {
     color:crimson;
 }
-.fcl_success {
-    color:dodgerblue;
+.fcl_scs {
+   color: #24b47e;
 }
 .fcl_sub {
     color:#999;
