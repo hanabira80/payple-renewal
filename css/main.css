@@ -1373,7 +1373,7 @@ article.has_line:before {
     position: absolute;
     width: 100%;
     height: 20%;
-    top: 40%;
+    top: 50%;
     -webkit-transform: skewY(-8deg);
     transform: skewY(-8deg);
     background: #d4c9ff;

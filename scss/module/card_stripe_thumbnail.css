@@ -10,7 +10,6 @@
         0 18px 36px -18px rgba(0, 0, 0, 0.3), 
         0 -12px 36px -8px rgba(0, 0, 0, 0.025);
     width: 80%;
-    margin:0 auto;
     max-width:420px;
 }
 .card_stripe_thumbnail .thumbnail {
