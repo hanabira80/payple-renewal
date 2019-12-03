@@ -257,7 +257,7 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
-    $(".loader").addClass("js-is-hidden").delay(600).queue(function(){
-        $("body").removeClass("js-is-limit").dequeue();
+    $(".loader").addClass("js_is_hidden").delay(600).queue(function(){
+        $("body").removeClass("js_is_limit").dequeue();
     });
 });
