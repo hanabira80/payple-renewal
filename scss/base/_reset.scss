@@ -1,54 +1,21 @@
+@charset "utf-8";
+/* base set */
 html {
     position: relative;
     box-sizing: border-box;
     -ms-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-size: 14px;
+    font-size: calc(#{$pc_max_width} / 100 );
     color: #333;
 }
 
-@media screen and (min-width: 840px) and (max-width: 960px) {
-}
-
-@media screen and (min-width: 720px) and (max-width: 839px) {
-}
-
-@media screen and (min-width: 600px) and (max-width: 719px) {
+@media screen and (min-width: 0px) and (max-width: $mo_max_width) {
     html {
-        font-size: 13.6px;
+        font-size: 1vw;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 599px) {
-    html {
-        font-size: 13.3px;
-    }
-}
-
-@media screen and (min-width: 400px) and (max-width: 479px) {
-    html {
-        font-size: 13px;
-    }
-}
-
-@media screen and (min-width: 360px) and (max-width: 399px) {
-    html {
-        font-size: 12.6px;
-    }
-}
-
-@media screen and (min-width: 330px) and (max-width: 359px) {
-    html {
-        font-size: 12.3px;
-    }
-}
-
-@media screen and (min-width: 0px) and (max-width: 329px) {
-    html {
-        font-size: 12px;
-    }
-}
 
 body {
     position: relative;
@@ -57,7 +24,7 @@ body {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -webkit-text-size-adjust: none;
-    font-family: "Dotum", "Helvetica", "Apple SD Gothic Neo", sans-serif;
+    font-family: 'Dotum', 'Helvetica', 'Apple SD Gothic Neo', sans-serif;
     font-kerning: normal;
     padding: 0 0 200px;
 }
@@ -125,7 +92,7 @@ img.cover {
 
 img::selection,
 img::-moz-selection {
-    background: transparent;
+    background: transparent
 }
 
 .disable_select {
@@ -225,6 +192,10 @@ input:focus {
 
 /* form reset end */
 
+
+
+
+
 /* fix for iPhone focus zoom
 @media screen and (-webkit-min-device-pixel-ratio:0) {
    select, textarea, input, .ipt{
@@ -235,7 +206,7 @@ input:focus {
 /* form set end */
 
 /* marketing script visibility hidden */
-iframe[name="google_conversion_frame"] {
+iframe[name='google_conversion_frame'] {
     float: left;
     height: 0 !important;
     width: 0 !important;

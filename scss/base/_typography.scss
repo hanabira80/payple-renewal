@@ -11,8 +11,8 @@
 .txt_twoline {
    display: -webkit-box;
    overflow: hidden;
-   max-height: 2.8rem;
-   line-height: 1.4rem;
+   max-height: 2.8em;
+   line-height: 1.4em;
    text-overflow: ellipsis;
    -webkit-line-clamp: 2;
    -webkit-box-orient: vertical;
@@ -22,8 +22,8 @@
 .txt_threeline {
    display: -webkit-box;
    overflow: hidden;
-   max-height: 4.2rem;
-   line-height: 1.4rem;
+   max-height: 4.2em;
+   line-height: 1.4em;
    text-overflow: ellipsis;
    -webkit-line-clamp: 3;
    -webkit-box-orient: vertical;
@@ -48,7 +48,7 @@
 
 .deco_line_bottom {
    border-bottom:1px solid #7852e8;
-   padding:1.2rem 0;
+   padding:1.2em 0;
 }
 
 .font {
