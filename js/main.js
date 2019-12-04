@@ -58,11 +58,11 @@ function parallaxScroll(){
     //console.log(winHeight);
     //console.log(scrolled);
     if ( 10 > scrolled ) {
-        $("header").removeClass("js-is-fix");
+        $("header").removeClass("js_is_active");
         $("header .scroll-nav").removeClass("js-is-active");
     }
     if ( 10 <= scrolled ) {
-        $("header").addClass("js-is-fix");
+        $("header").addClass("js_is_active");
         $("header .scroll-nav").addClass("js-is-active");
         //$("header .scroll-nav .percent").addClass("js-is-percent");
         /*$("header .scroll-nav .percent").stop().animate({
@@ -126,14 +126,14 @@ $(document).ready(function(){
     //     changeTab(tabKind);
     // });
 
-    $(".header-menu-icn").click(function(){
-        if ($(this).hasClass("js-is-active")){
-            $(this).removeClass("js-is-active");
-            $(".header-menu-box").removeClass("js-is-active");				
+    $(".header_menu_icn").click(function(){
+        if ($(this).hasClass("js_is_active")){
+            $(this).removeClass("js_is_active");
+            $(".header-menu-box").removeClass("js_is_active");				
         }
         else {
-            $(this).addClass("js-is-active");
-            $(".header-menu-box").addClass("js-is-active");
+            $(this).addClass("js_is_active");
+            $(".header_menu_box").addClass("js_is_active");
         }
         //$(this).toggleClass("js-is-active");
     });
