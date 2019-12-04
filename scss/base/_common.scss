@@ -1,4 +1,11 @@
 
+body {
+    position:relative;
+    color:#444;
+    font-family: 'Noto Sans KR', 'Dotum', 'Helvetica', 'AppleSDGothicNeo', sans-serif;
+    font-weight:300;
+    -webkit-text-size-adjust: none;
+}
 body.js-is-limit {
     height:100vh;
     overflow:hidden;
