@@ -143,13 +143,14 @@ header .header_menu .txt{
         text-align: right;
         padding:0.8rem 0.4rem;
     }
-    header.js-is-fix .header_menu .txt{
-        // font-size:1.25rem;
-        // line-height:2rem;
-        /*border-bottom:1px dashed #999;*/
+    header.js_scroll_action .header_menu .txt{
+        color:#fff;
     }
-    header.js-is-fix .header_menu:last-child .txt{
-        /*border-bottom:none;*/
+    header .header_menu.js_is_mo_active .txt i{
+        transition: all ease 0.3s;
+    }
+    header .header_menu.js_is_mo_active .txt i{
+        transform: rotate(-90deg);
     }
 }
 @media screen and (min-width: 840px) {
@@ -209,6 +210,25 @@ header .header_sub_menu_box {
         transform: translate3d(-50%,0,0);
     }
 }
+@media screen and (min-width: 0px) and (max-width: 840px) {
+    header .header_sub_menu_box {
+        position: relative;
+        top:auto;
+        left:auto;
+        white-space: nowrap;
+        text-align: center;
+        opacity:0;
+        visibility: hidden;
+        transition: all ease 0.3s;
+        max-height:0;
+        transform: translate3d(0,0,0);
+    }
+    header .header_sub_menu_box.js_is_mo_active {
+        opacity:1;
+        visibility: visible;
+        max-height:300px;
+    }
+}
 header .header_menu .space_setter {
     margin:1rem 0 0;
     background: #fff;
@@ -217,9 +237,20 @@ header .header_menu .space_setter {
     padding:0.8rem 0;
 }
     header.js_scroll_action .header_menu .space_setter {
-        margin:1rem 0 0;
         background: rgba(20, 20, 20, 0.8);
     }
+@media screen and (min-width: 0px) and (max-width: 840px) {
+    header .header_menu .space_setter {
+        margin:0 0;
+        background:transparent;
+        box-shadow: none;
+        border-radius: 0;
+        padding:0.8rem 0;
+    }
+    header.js_scroll_action .header_menu .space_setter {
+        background:transparent;
+    }
+}
 header .header_sub_menu_box li{
     padding:0.8rem 1.2rem;
     transition: all ease 0.3s;
@@ -231,6 +262,11 @@ header .header_sub_menu_box li{
         font-weight:500
     }
 }
+@media screen and (min-width: 0px) and (max-width: 840px) {
+    header .header_sub_menu_box li{
+        text-align: right;
+    }
+}
 header.js_scroll_action .header_sub_menu_box li {
     color:#999;
 }
@@ -238,6 +274,11 @@ header.js_scroll_action .header_sub_menu_box li {
     header.js_scroll_action .header_sub_menu_box li:hover{
         color:#fff;
         font-weight:500
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 840px) {
+    header.js_scroll_action .header_sub_menu_box li {
+        color:#ddd;
     }
 }
 /* header_menu_box end */
