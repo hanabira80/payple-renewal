@@ -1,4 +1,16 @@
-@charset "utf-8";
+body {
+   font-family: 'Noto Sans KR', 'Dotum', 'Helvetica', 'AppleSDGothicNeo', sans-serif;
+   color: $txt_cl_500;
+   font-weight:300;
+}
+.ff_jp {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.icon_text {
+   display:inline-block;
+   vertical-align:middle;
+ }
+
 .material-icons,
 .material-icons-outlined,
 .material-icons.material-icons--outlined,
@@ -58,16 +70,3 @@
 .material-icons.md-40 { font-size: 40px; }
 .material-icons.md-44 { font-size: 44px; }
 .material-icons.md-48 { font-size: 48px; }
-
-.icon_text {
-  display:inline-block;
-  vertical-align:middle;
-  /*margin:0 8px;*/
-}
-
-body.ko {
-  font-family: 'NanumSquare', 'Dotum', 'Helvetica', 'Apple SD Gothic Neo', sans-serif;
-}
-body.jp {
-  font-family: 'Noto Sans JP', 'Dotum', 'Helvetica', 'Apple SD Gothic Neo', sans-serif;
-}

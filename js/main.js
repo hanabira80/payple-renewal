@@ -32,7 +32,7 @@ function moMenuAction() {
         }
         //$(this).toggleClass("js-is-active");
     });
-    $('.header_main_menu').click(function(){
+    $('.js_trigger_mo_menu').click(function(){
         $(this).parent('.header_menu').toggleClass('js_is_mo_active');
         $(this).siblings('.header_sub_menu_box').toggleClass('js_is_mo_active');
     });

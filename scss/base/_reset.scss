@@ -6,16 +6,7 @@ html {
     -ms-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-size: calc(#{$pc_max_width} / 100 );
-    color: #333;
 }
-
-@media screen and (min-width: 0px) and (max-width: $mo_max_width) {
-    html {
-        font-size: 1vw;
-    }
-}
-
 
 body {
     position: relative;
@@ -26,7 +17,6 @@ body {
     -webkit-text-size-adjust: none;
     font-family: 'Dotum', 'Helvetica', 'Apple SD Gothic Neo', sans-serif;
     font-kerning: normal;
-    padding: 0 0 200px;
 }
 
 *,
@@ -42,9 +32,25 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $fw_default;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a.full {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+a.div {
+    display:block;
 }
 
 li,
@@ -58,6 +64,7 @@ em {
 }
 
 table {
+    width:100%;
     border-collapse: collapse;
 }
 
@@ -71,19 +78,22 @@ img.res {
     height: auto;
 }
 
-img.res_contain {
+img.cover {
     width: auto;
     height: 100%;
-}
-
-img.cover {
-    max-width: 100%;
-    max-height: 100%;
 }
 
 img::selection,
 img::-moz-selection {
     background: transparent
+}
+
+::selection {
+    background: $pm_cl_100;
+}
+
+::-moz-selection {
+    background: $pm_cl_100;
 }
 
 .disable_select {
@@ -93,15 +103,6 @@ img::-moz-selection {
     -webkit-user-select: none;
     -webkit-touch-callout: none;
 }
-
-::selection {
-    background: transparent;
-}
-
-::-moz-selection {
-    background: transparent;
-}
-
 /* base set end */
 
 /* form reset */
@@ -111,12 +112,6 @@ textarea {
     text-align: left;
     overflow: auto;
     resize: none;
-    //    min-height:4rem;
-    padding: 8px 8px;
-    outline: none;
-}
-
-textarea:focus {
     outline: none;
 }
 
@@ -160,7 +155,7 @@ input {
     outline: none;
     border: none;
     border-radius: 0;
-    padding: 0 0 0 0;
+    padding: 0;
     -webkit-appearance: none;
 }
 
@@ -180,21 +175,7 @@ input:focus {
 ::-ms-input-placeholder {
     color: #ccc;
 }
-
 /* form reset end */
-
-
-
-
-
-/* fix for iPhone focus zoom
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-   select, textarea, input, .ipt{
-      font-size: 16px;
-   }
-}
-/* fix for iPhone focus zoom end */
-/* form set end */
 
 /* marketing script visibility hidden */
 iframe[name='google_conversion_frame'] {

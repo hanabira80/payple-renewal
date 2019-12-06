@@ -55,9 +55,11 @@ article.type_full_page .sub_tit{
 }
 
 .left_box {
-    
+    flex-basis: 48%;
 }
-
+.right_box {
+    flex-basis: 48%;
+}
 
 
 

@@ -58,7 +58,7 @@
                 <div class="header_menu_area dp_flex">
                     <div class="header_menu_box dp_flex">
                         <nav class="header_menu">
-                            <div class="header_main_menu">
+                            <div class="div js_trigger_mo_menu">
                                 <div class="txt">
                                     <i class="material-icons"> keyboard_arrow_left </i>
                                     <div class="icon_text">카드결제</div>
@@ -81,7 +81,7 @@
                             </div>
                         </nav>
                         <nav class="header_menu">
-                            <div class="header_main_menu">
+                            <div class="div js_trigger_mo_menu">
                                 <div class="txt">
                                     <i class="material-icons">
                                         keyboard_arrow_left
@@ -113,7 +113,9 @@
                         </nav>
                         <nav class="header_menu">
                             <a href="" class="div">
-                                <div class="txt">URL 링크 결제</div>
+                                <div class="txt">
+                                    <div class="icon_text">계좌이체</div>
+                                </div>
                                 <div class="border"></div>
                             </a>
                         </nav>
@@ -122,25 +124,33 @@
                     <div class="header_menu_box dp_flex right">
                         <nav class="header_menu">
                             <a href="" class="div">
-                                <div class="txt">가입문의하기</div>
+                                <div class="txt">
+                                    <div class="icon_text">가입문의하기</div>
+                                </div>
                                 <div class="border"></div>
                             </a>
                         </nav>
                         <nav class="header_menu">
                             <a href="" class="div">
-                                <div class="txt">API링크</div>
+                                <div class="txt">
+                                    <div class="icon_text">API링크</div>
+                                </div>
                                 <div class="border"></div>
                             </a>
                         </nav>
                         <nav class="header_menu">
                             <a href="" class="div">
-                                <div class="txt">고객사 로그인</div>
+                                <div class="txt">
+                                    <div class="icon_text">고객사 로그인</div>
+                                </div>
                                 <div class="border"></div>
                             </a>
                         </nav>
                         <nav class="header_menu">
                             <a href="" class="div">
-                                <div class="txt">결제내역 조회</div>
+                                <div class="txt">
+                                    <div class="icon_text">결제내역 조회</div>
+                                </div>
                                 <div class="border"></div>
                             </a>
                         </nav>
@@ -678,49 +688,51 @@
                 </div>
 
                 <div class="width_limiter space_setter__article_content">
-                    <div class="featured-article">
-                        <div class="featured-article-image">
-                            <img src="img/main/partner_iamport.png" alt="Abstract shapes" />
-                        </div>
-                        <div class="featured-article-content">
-                            <h4 class="featured-article-type">파트너사</h4>
-                            <h2 class="common-IntroText featured-article-title">
-                                아임포트
-                            </h2>
-                            <h3 class="common-BodyText featured-article-subtitle">
-                                아임포트는 개발자들이 결제연동 개발이 아닌 본연의 서비스를 만드는데 집중할 수 있도록 빠르고 편리한 결제연동 API 서비스를
-                                제공합니다. <br />
-                                아임포트를 이용 중이신가요? 아임포트를 통해 별도 개발없이 페이플 간편계좌이체를 도입해보세요.
-                            </h3>
-                            <div class="btn_box align_center ">
-                                <a target="_blank" href="https://www.iamport.kr/pg" class="btn btn_md btn_rounded cl_main">
-                                    아임포트에서 페이플 가입하기
-                                </a>
+                    <ul class="card_res_row_thumbnail">
+                        <li>
+                            <div class="thumbnail">
+                                <img src="img/main/partner_iamport.png" alt="" />
                             </div>
-                        </div>
-                    </div>
+                            <div class="ctn_box">
+                                <h4 class="font fsz_10 fcl_sub has_font_spacer_b_8 ">파트너사</h4>
+                                <h2 class="font fsz_16 fcl_main fw_md has_font_spacer_b_12">
+                                    아임포트
+                                </h2>
+                                <h3 class="font fsz_12 fcl_txt align_justify">
+                                    아임포트는 개발자들이 결제연동 개발이 아닌 본연의 서비스를 만드는데 집중할 수 있도록 빠르고 편리한 결제연동 API 서비스를
+                                    제공합니다. <br />
+                                    아임포트를 이용 중이신가요? 아임포트를 통해 별도 개발없이 페이플 간편계좌이체를 도입해보세요.
+                                </h3>
+                                <div class="btn_box align_center ">
+                                    <a target="_blank" href="https://www.iamport.kr/pg" class="btn btn_md btn_rounded cl_main">
+                                        아임포트에서 페이플 가입하기
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
 
-                    <div class="featured-article">
-                        <div class="featured-article-image">
-                            <img src="img/main/partner_primer.png" alt="Abstract shapes" />
-                        </div>
-                        <div class="featured-article-content">
-                            <h4 class="featured-article-type">투자사</h4>
-                            <h2 class="common-IntroText featured-article-title">
-                                프라이머
-                            </h2>
-                            <h3 class="common-BodyText featured-article-subtitle">
-                                프라이머는 창업가들의 DNA를 새로운 잠재 창업자들에게 전달하고 복제하여, 후배 창업가들의 성공을 돕는 국내 최초의 스타트업
-                                액셀러레이터입니다. <br />
-                                페이플은 프라이머 Season 5 - Batch 14 에 선발되었습니다.
-                            </h3>
-                            <div class="btn_box align_center">
-                                <a target="_blank" href="http://main.primer.kr/primerclub-all" class="btn btn_md btn_rounded cl_main">
-                                    프라이머 살펴보기
-                                </a>
+                        <li>
+                            <div class="thumbnail">
+                                <img src="img/main/partner_primer.png" alt="" />
                             </div>
-                        </div>
-                    </div>
+                            <div class="ctn_box">
+                                <h4 class="font fsz_10 fcl_sub has_font_spacer_b_8 ">투자사</h4>
+                                <h2 class="font fsz_16 fcl_main fw_md has_font_spacer_b_12">
+                                    프라이머
+                                </h2>
+                                <h3 class="font fsz_12 fcl_txt align_justify">
+                                    프라이머는 창업가들의 DNA를 새로운 잠재 창업자들에게 전달하고 복제하여, 후배 창업가들의 성공을 돕는 국내 최초의 스타트업
+                                    액셀러레이터입니다. <br />
+                                    페이플은 프라이머 Season 5 - Batch 14 에 선발되었습니다.
+                                </h3>
+                                <div class="btn_box align_center">
+                                    <a target="_blank" href="http://main.primer.kr/primerclub-all" class="btn btn_md btn_rounded cl_main">
+                                        프라이머 살펴보기
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </article>
 
@@ -841,7 +853,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="item_list__random">
+                <div class="item_list__random" style="display:none !important">
                     <ul class="util_inner">
                         <li>
                             <p class="company_name">민다</p>
@@ -910,7 +922,7 @@
             </div>
         </div>
 
-        <div class="modal-outer scroll-block">
+        <div class="modal-outer scroll-block" style="display: none !important;">
             <div class="modal-mask js-modal-close"></div>
             <!-- modal-video -->
             <div class="modal modal-video xy-center" id="modal-video">

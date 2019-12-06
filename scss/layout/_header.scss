@@ -77,7 +77,7 @@ header .header_logo_box {
 header .header_menu_area {
     width:calc(100% - 160px);
 }
-@media screen and (min-width: 0px) and (max-width: 840px) {
+@media screen and (min-width: 0px) and (max-width: $header_device_change) {
     header .header_menu_area {
         position:absolute;
         right:0%;
@@ -105,7 +105,7 @@ header .header_menu_area {
 header .header_menu_box.right {
     margin: 0 0 0 auto;
 }
-@media screen and (min-width: 0px) and (max-width: 840px) {
+@media screen and (min-width: 0px) and (max-width: $header_device_change) {
     header .header_menu_box {
         width:60%;
         margin: 0 0 0 auto;
@@ -120,7 +120,7 @@ header .header_menu {
 header .header_menu:last-child {
     margin: 0 0 0 0;
 }
-@media screen and (min-width: 0px) and (max-width: 840px) {
+@media screen and (min-width: 0px) and (max-width: $header_device_change) {
     header .header_menu {
         flex-basis: 100%;
         margin:0 0 0 0;
@@ -137,7 +137,12 @@ header .header_menu .txt{
         font-size:14px;
         color:#fff;
     }
-@media screen and (min-width: 0px) and (max-width: 840px) {
+@media screen and (min-width: $header_device_change) {
+    header .header_menu .txt i{
+        display: none;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: $header_device_change) {
     header .header_menu .txt{
         font-size:16px;
         text-align: right;
@@ -147,13 +152,14 @@ header .header_menu .txt{
         color:#fff;
     }
     header .header_menu.js_is_mo_active .txt i{
+        display: inline-block;
         transition: all ease 0.3s;
     }
     header .header_menu.js_is_mo_active .txt i{
         transform: rotate(-90deg);
     }
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: $header_device_change) {
     header .header_menu:hover .txt{
         color:#7852e8;
     }
@@ -162,10 +168,7 @@ header .header_menu .txt .icon{
     display:none;
     font-size:0;
 }
-header .header_menu .txt .icon i{
- 
-}
-@media screen and (min-width: 0px) and (max-width: 840px) {
+@media screen and (min-width: 0px) and (max-width: $header_device_change) {
     header .header_menu .txt .icon{
         display:inline-block;
         vertical-align:middle;
@@ -181,13 +184,13 @@ header .header_menu .border{
     height:2px;
     transition: all ease 0.3s;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: $header_device_change) {
     header .header_menu:hover .border{
         width:100%;
         transition: all ease 0.3s;
     }
 }
-@media screen and (min-width: 0px) and (max-width: 840px) {
+@media screen and (min-width: 0px) and (max-width: $header_device_change) {
     header .header_menu .border{
         display:none;
     }
@@ -203,14 +206,14 @@ header .header_sub_menu_box {
     transition: all ease 0.3s;
     transform: translate3d(-50%,20%,0);
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: $header_device_change) {
     header .header_menu:hover .header_sub_menu_box{
         opacity:1;
         visibility: visible;
         transform: translate3d(-50%,0,0);
     }
 }
-@media screen and (min-width: 0px) and (max-width: 840px) {
+@media screen and (min-width: 0px) and (max-width: $header_device_change) {
     header .header_sub_menu_box {
         position: relative;
         top:auto;
@@ -239,7 +242,7 @@ header .header_menu .space_setter {
     header.js_scroll_action .header_menu .space_setter {
         background: rgba(20, 20, 20, 0.8);
     }
-@media screen and (min-width: 0px) and (max-width: 840px) {
+@media screen and (min-width: 0px) and (max-width: $header_device_change) {
     header .header_menu .space_setter {
         margin:0 0;
         background:transparent;
@@ -256,13 +259,13 @@ header .header_sub_menu_box li{
     transition: all ease 0.3s;
     font-size:14px;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: $header_device_change) {
     header .header_sub_menu_box li:hover{
         color:#7852e8;
         font-weight:500
     }
 }
-@media screen and (min-width: 0px) and (max-width: 840px) {
+@media screen and (min-width: 0px) and (max-width: $header_device_change) {
     header .header_sub_menu_box li{
         text-align: right;
     }
@@ -270,13 +273,13 @@ header .header_sub_menu_box li{
 header.js_scroll_action .header_sub_menu_box li {
     color:#999;
 }
-@media screen and (min-width: 840px) {
+@media screen and (min-width: $header_device_change) {
     header.js_scroll_action .header_sub_menu_box li:hover{
         color:#fff;
         font-weight:500
     }
 }
-@media screen and (min-width: 0px) and (max-width: 840px) {
+@media screen and (min-width: 0px) and (max-width: $header_device_change) {
     header.js_scroll_action .header_sub_menu_box li {
         color:#ddd;
     }
@@ -299,7 +302,7 @@ header .header_menu_icn {
         height:4rem;
         transition: width ease 0.3s, height ease 0.3s;
     }
-@media screen and (min-width: 0px) and (max-width: 840px) {
+@media screen and (min-width: 0px) and (max-width: $header_device_change) {
     header .header_menu_icn {
         visibility:visible;
         opacity:1;

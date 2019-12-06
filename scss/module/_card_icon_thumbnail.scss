@@ -12,21 +12,16 @@
     flex-basis: calc(25% - 2rem);
     background: #fff;
 }
-/* @media screen and (min-width: 480px) and (max-width: 839px) {
-    article.type-card-box {
-        padding:12vh 1rem 12vh;
+@media screen and (min-width: 480px) and (max-width: 979px) {
+    .card_icon_thumbnail li {
+        flex-basis: calc(50% - 2rem);
     }
-    article.type-card-box .card {
-        width:50%;
-        padding:0 2rem 4rem;
+}
+ @media screen and (min-width: 0px) and (max-width: 479px) {
+    .card_icon_thumbnail li {
+        flex-basis: calc(100% - 2rem);
     }
-} */
-/* @media screen and (min-width: 0px) and (max-width: 479px) {
-    article.type-card-box .card {
-        width:100%;
-        padding:0 2rem 4rem;
-    }
-}	 */
+}
 .card_icon_thumbnail .icon_box {
     text-align:center;
     margin:0 0 1.6rem;

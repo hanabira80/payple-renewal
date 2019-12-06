@@ -10,6 +10,11 @@ article .main_tit__article {
     margin: 0 0 3.2rem;
     word-break: keep-all;
 }
+@media screen and (min-width: 0px) and (max-width: 980px) {
+    article .main_tit__article {
+        font-size:20px;
+    }
+}
 article .main_tit__article:after {
     content:"";
     display: block;
@@ -30,6 +35,11 @@ article .sub_tit__article {
     max-width:600px;
     margin:0 auto;
     word-break: keep-all;
+}
+@media screen and (min-width: 0px) and (max-width: 980px) {
+    article .sub_tit__article {
+        font-size:18px;
+    }
 }
 article > .width_limiter {
     max-width:1280px;

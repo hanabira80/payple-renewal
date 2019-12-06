@@ -9,7 +9,27 @@
         -1px -1px 5px 0 rgba(26,26,67,.05), 
         -6px 10px 60px -12px rgba(50,50,93,.5), 
         -9px 10px 36px -18px rgba(0,0,0,.6);
-    margin:0 0 4rem;
+    margin:0 1rem 4rem;
+    flex-basis: calc(50% - 2rem);
+}
+@media screen and (min-width: 600px) and (max-width: 979px) {
+    .card_name_plate {
+        flex-direction: column;
+    }
+    .card_name_plate li{
+        width:52%;
+    }
+    .card_name_plate li:nth-last-child(even){
+        align-self:flex-start;
+    }
+    .card_name_plate li:nth-last-child(odd){
+        align-self:flex-end;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 599px) {
+    .card_name_plate li{
+        flex-basis: calc(100% - 2rem);
+    }
 }
 .card_name_plate li:last-child{
     margin:0 0 0;
