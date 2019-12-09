@@ -1,36 +1,35 @@
-@import 
-"../scss/base/setting",
-"../scss/base/reset",
-"../scss/base/common",
-"../scss/base/font",
-"../scss/base/typography.scss",
-"../scss/base/js_action.scss",
+@import "../scss/base/setting";
+@import "../scss/base/common";
+@import "../scss/base/reset";
+@import "../scss/base/font";
+@import "../scss/base/typography";
+@import "../scss/base/js_action";
 //
-// "../scss/vendors/_swiper.scss",
+@import "../scss/vendors/swiper";
 //
-"../scss/layout/display.scss",
-"../scss/layout/position.scss",
-"../scss/layout/resbox.scss",
-"../scss/layout/loader.scss",
-"../scss/layout/header.scss",
-"../scss/layout/footer.scss",
-"../scss/layout/article.scss",
+@import "../scss/layout/display";
+@import "../scss/layout/position";
+@import "../scss/layout/resbox";
+@import "../scss/layout/loader";
+@import "../scss/layout/header";
+@import "../scss/layout/footer";
+@import "../scss/layout/article";
 //
-"../scss/components/animation.scss",
-"../scss/components/button.scss",
-"../scss/components/form.scss",
-"../scss/components/pager.scss",
-"../scss/components/link.scss",
+@import "../scss/components/animation";
+@import "../scss/components/button";
+@import "../scss/components/form";
+@import "../scss/components/pager";
+@import "../scss/components/link";
 //
-"../scss/module/card_icon_thumbnail.scss",
-"../scss/module/card_name_plate.scss",
-"../scss/module/card_news.scss",
-"../scss/module/card_stripe_thumbnail.scss",
-"../scss/module/device_model.scss",
-"../scss/module/swiper_phone_style.scss",
-"../scss/module/tab_step.scss",
-"../scss/module/legacy_banner.scss",
-"../scss/module/item_random.scss",
-"../scss/module/_card_res_row_thumbnail.scss",
+@import "../scss/module/card_icon_thumbnail";
+@import "../scss/module/card_name_plate";
+@import "../scss/module/card_news";
+@import "../scss/module/card_stripe_thumbnail";
+@import "../scss/module/device_model";
+@import "../scss/module/swiper_phone_style";
+@import "../scss/module/tab_step";
+@import "../scss/module/legacy_banner";
+@import "../scss/module/item_random";
+@import "../scss/module/card_res_row_thumbnail";
 //
-"../scss/pages/_main.scss"
+@import "../scss/pages/main"
