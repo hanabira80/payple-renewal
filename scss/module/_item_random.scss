@@ -10,18 +10,39 @@
     top: 0;
     bottom: 0;
     width: calc(50% - 960px);
-    background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0.5) 66%, rgba(255,255,255,0) 100%);
+    z-index: 100;
+}
+.item_list__random:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom: 0;
+    width: calc(50% - 960px);
+    background: rgb(255,255,255);
+background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0) 100%);
+    z-index: 100;
 }
 .item_list__random .util_inner {
     white-space: nowrap;
     overflow: hidden;
-    height: 360px;
-    width: 1920px;
+    height: 400px;
+    width: 2560px;
     left: 50%;
-    margin-left: -960px;
+    margin-left: -1280px;
 }
-
+.item_list__random .util_inner:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 20%;
+    top: -6%;
+    -webkit-transform: skewY(-8deg);
+    transform: skewY(-8deg);
+    background: #d4c9ff;
+}
 .item_list__random li {
     display: inline-block;
     vertical-align: top;
@@ -201,44 +222,44 @@
 
 @keyframes floatItem01 {
     0% {
-        transform: translate(130vw, 0.8rem);
+        transform: translate(2640px, 0.8rem);
         opacity: 1;
     }
     25% {
-        transform: translate(90vw, -0.8rem);
+        transform: translate(2560px, -0.8rem);
         opacity: 1;
     }
     50% {
-        transform: translate(50vw, 0.8rem);
+        transform: translate(1280px, 0.8rem);
         opacity: 1;
     }
     75% {
-        transform: translate(10vw, -0.8rem);
+        transform: translate(0px, -0.8rem);
         opacity: 1;
     }
     99% {
         opacity: 1;
     }
     100% {
-        transform: translate(-30vw, 0.8rem);
+        transform: translate(-80px, 0.8rem);
         opacity: 0;
     }
 }
 @keyframes floatItem02 {
     0% {
-        transform: translate(130vw, -0.4rem) scale(0.8);
+        transform: translate(2800px, -0.4rem) scale(0.8);
         opacity: 1;
     }
     25% {
-        transform: translate(90vw, 0.8rem) scale(0.8);
+        transform: translate(2560px, 0.8rem) scale(0.8);
         opacity: 1;
     }
     50% {
-        transform: translate(50vw, -0.2rem) scale(0.8);
+        transform: translate(1280px, -0.2rem) scale(0.8);
         opacity: 1;
     }
     75% {
-        transform: translate(10vw, 0.4rem) scale(0.8);
+        transform: translate(0px, 0.4rem) scale(0.8);
         opacity: 1;
     }
     99% {
@@ -251,15 +272,15 @@
 }
 @keyframes floatItem03 {
     0% {
-        transform: translate(130vw, -0.8rem) scale(0.6);
+        transform: translate(2800px, -0.8rem) scale(0.6);
         opacity: 1;
     }
     25% {
-        transform: translate(90vw, 0.4rem) scale(0.6);
+        transform: translate(2560px, 0.4rem) scale(0.6);
         opacity: 1;
     }
     50% {
-        transform: translate(50vw, -0.4rem) scale(0.6);
+        transform: translate(1280px, -0.4rem) scale(0.6);
         opacity: 1;
     }
     75% {

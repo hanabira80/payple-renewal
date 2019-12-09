@@ -82,6 +82,7 @@ article:nth-child(even) .article_stripe {
     background-color: #fff;
     transform: skewY(-4deg);
     transform-origin: 0 0;
+    z-index: 200;
 }
 article:nth-child(odd) {
     background: #fff;
@@ -95,6 +96,7 @@ article:nth-child(odd) .article_stripe {
     background-color: #f5f5f5;
     transform: skewY(-4deg);
     transform-origin: 0 0;
+    z-index: 200;
 }
 article:last-child .article_stripe {
     position: absolute;
