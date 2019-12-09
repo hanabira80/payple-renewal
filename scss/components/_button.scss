@@ -1,92 +1,91 @@
 .btn_box {
-   // padding:2.4rem 0.8rem;
-   font-size:0;
+    // padding:2.4rem 0.8rem;
+    font-size: 0;
 }
 button {
-   font-weight: normal;
-   font-style: normal;
-   text-align: center;
-   background: none;
-   outline: none;
-   border: none;
-   border-radius: 0;
-   padding: 0 0 0 0;
-   margin:0 0 0 0;
-   -webkit-appearance: none;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    -webkit-appearance: none;
 }
 .btn {
-   display: inline-block;
-   vertical-align: middle;
-   cursor: pointer;
-   white-space: nowrap;
-   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-   color: #fff;
-   background: #aaa;
-   text-decoration: none;   
-   margin:0.4rem 0.4rem;
-   -webkit-transition: all 0.2s ease;
-   transition: all 0.2s ease;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    background: #aaa;
+    text-decoration: none;
+    margin: 0.4rem 0.4rem;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 .btn:hover {
-   /* -webkit-transform: translateY(-1px);
-   transform: translateY(-1px); */
-   -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
-   box-shadow: 0 13px 27px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
-   -webkit-box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
-   box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 .btn_is_active {
-   color: #fff;
-   background: #7852e8;
+    color: #fff;
+    background: #7852e8;
 }
 .cl_main {
-   color: #fff;
-   background: #7852e8;
+    color: #fff;
+    background: #7852e8;
 }
 .cl_act {
-   color: #fff;
-   background: #7852e8;
+    color: #fff;
+    background: #7852e8;
 }
 .cl_scs {
-   color: #fff;
-   background: #24b47e;
+    color: #fff;
+    background: #24b47e;
 }
 .cl_dng {
-   color: #fff;
-   background: #7852e8;
+    color: #fff;
+    background: #7852e8;
 }
 .cl_wan {
-   color: #fff;
-   background: #7852e8;
+    color: #fff;
+    background: #7852e8;
 }
 .cl_info {
-   color: #fff;
-   background: #6772e5;
+    color: #fff;
+    background: #6772e5;
 }
 .cl_diable {
-   color: #fff;
-   background: #aaa;
+    color: #fff;
+    background: #aaa;
 }
 .btn_full_width {
-   width:100%;
+    width: 100%;
 }
 .btn_sm {
-   font-size:1rem;
-   padding:0.4rem 0.8rem;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
 }
 .btn_md_sub {
-   font-size:1.2rem;
-   padding:0.6rem 1.2rem;
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
 }
 .btn_md {
-   font-size:1.4rem;
-   padding:0.8rem 1.6rem;
+    font-size: 1.4rem;
+    padding: 0.8rem 1.6rem;
 }
 .btn_lg {
-   font-size:1.8rem;
-   padding:1rem 2rem;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
 }
 .btn_rounded {
-   border-radius: 4px 4px;
+    border-radius: 4px 4px;
 }
-

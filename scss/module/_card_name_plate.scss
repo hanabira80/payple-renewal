@@ -1,84 +1,73 @@
-.card_name_plate {
-    /* max-width:520px;
-    margin:0 auto; */
-}
-.card_name_plate li{
-    /* transform: perspective(2910px) rotateY(20deg) rotateX(5deg) rotate(-1deg); */
+.card_name_plate li {
+    // transform: perspective(2910px) rotateY(20deg) rotateX(5deg) rotate(-1deg);
     border-radius: 8px 8px;
-    box-shadow: 
-        -1px -1px 5px 0 rgba(26,26,67,.05), 
-        -6px 10px 60px -12px rgba(50,50,93,.5), 
-        -9px 10px 36px -18px rgba(0,0,0,.6);
-    margin:0 1rem 4rem;
+    box-shadow: -1px -1px 5px 0 rgba(26, 26, 67, 0.05), -6px 10px 60px -12px rgba(50, 50, 93, 0.5), -9px 10px 36px -18px rgba(0, 0, 0, 0.6);
+    margin: 0 1rem 4rem;
     flex-basis: calc(50% - 2rem);
 }
 @media screen and (min-width: 600px) and (max-width: 979px) {
     .card_name_plate {
         flex-direction: column;
     }
-    .card_name_plate li{
-        width:52%;
+    .card_name_plate li {
+        width: 52%;
     }
-    .card_name_plate li:nth-last-child(even){
-        align-self:flex-start;
+    .card_name_plate li:nth-last-child(even) {
+        align-self: flex-start;
     }
-    .card_name_plate li:nth-last-child(odd){
-        align-self:flex-end;
+    .card_name_plate li:nth-last-child(odd) {
+        align-self: flex-end;
     }
 }
 @media screen and (min-width: 0px) and (max-width: 599px) {
-    .card_name_plate li{
+    .card_name_plate li {
         flex-basis: calc(100% - 2rem);
     }
 }
-.card_name_plate li:last-child{
-    margin:0 0 0;
+.card_name_plate li:last-child {
+    margin: 0 0 0;
 }
 
 .card_name_plate .pin {
     width: 2.8em;
     height: 2.8em;
     border-radius: 100%;
-    box-shadow: 
-        0 6px 12px -2px rgba(50,50,93,.25), 
-        0 3px 7px -3px rgba(0,0,0,.3);
+    box-shadow: 0 6px 12px -2px rgba(50, 50, 93, 0.25), 0 3px 7px -3px rgba(0, 0, 0, 0.3);
     background-color: #fff;
     top: 0;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
     z-index: 10;
     background-color: #fff;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 60% 60%;
-    background-image: 
-        url(/img/common/logo_simple.svg),
-        url(/payple-renewal/img/common/logo_simple.svg);
+    background-image: url(/img/common/logo_simple.svg), url(/payple-renewal/img/common/logo_simple.svg);
 }
 .card_name_plate .info_box {
-    padding:1.6rem 1.2rem 1.2rem;
+    padding: 1.6rem 1.2rem 1.2rem;
 }
 .card_name_plate .bg_box {
     background-image: none;
     border-radius: 0 0 8px 8px;
-    overflow:hidden;
+    overflow: hidden;
 }
 .card_name_plate .bg_box img {
     position: absolute;
-    width:40%;
-    height:auto;
+    width: 40%;
+    height: auto;
 }
 
 .card_name_plate li:nth-child(1) .bg_box {
-    background: #DDECF6;
+    background: #ddecf6;
 }
 .card_name_plate li:nth-child(2) .bg_box {
-    background: #002CA8;
+    background: #002ca8;
 }
 .card_name_plate li:nth-child(3) .bg_box {
-    background: #A1D7E9;
+    background: #a1d7e9;
 }
 .card_name_plate li:nth-child(4) .bg_box {
-    background: #FDCD43;
+    background: #fdcd43;
 }

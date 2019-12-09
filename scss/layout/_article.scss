@@ -1,55 +1,55 @@
 article {
-    padding:10vh 0;
+    padding: 10vh 0;
     background: #fff;
-    overflow:hidden;
+    overflow: hidden;
 }
 article .main_tit__article {
-    text-align:center;
-    font-size:3.2rem;
+    text-align: center;
+    font-size: 3.2rem;
     line-height: 2;
     margin: 0 0 3.2rem;
     word-break: keep-all;
 }
 @media screen and (min-width: 0px) and (max-width: 980px) {
     article .main_tit__article {
-        font-size:20px;
+        font-size: 20px;
     }
 }
 article .main_tit__article:after {
-    content:"";
+    content: "";
     display: block;
     position: absolute;
-    bottom:0;
-    left:50%;
-    height:2px;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
     background: #7852e8;
-    width:8rem;
-    margin-left:-4rem;
+    width: 8rem;
+    margin-left: -4rem;
 }
 article .sub_tit__article {
-    text-align:center;
-    font-size:1.6rem;
-    color:#777;
-    line-height:1.8;
-    width:80%;
-    max-width:600px;
-    margin:0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #777;
+    line-height: 1.8;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
     word-break: keep-all;
 }
 @media screen and (min-width: 0px) and (max-width: 980px) {
     article .sub_tit__article {
-        font-size:18px;
+        font-size: 18px;
     }
 }
 article > .width_limiter {
-    max-width:1280px;
-    margin:0 auto;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 article .space_setter__article_content {
-    padding:6rem 1.2rem;
+    padding: 6rem 1.2rem;
 }
 
-/* article .article_stripe.white {
+article .article_stripe.white {
     position: absolute;
     width: 100%;
     height: 200px;
@@ -68,8 +68,7 @@ article .article_stripe.main_lighter_color {
     background-color: #d4c9ff;
     transform: skewY(-4deg);
     transform-origin: 0 0;
-} */
-
+}
 
 article:nth-child(even) {
     background: #f5f5f5;

@@ -1,55 +1,53 @@
-@charset "utf-8";
-
 .x_center {
-   left: 50%;
-   transform: translate(-50%,0);
-   -ms-transform: translate(-50%,0);
-   -moz-transform: translate(-50%,0);
-   -webkit-transform: translate(-50%,0);
+    left: 50%;
+    transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
 }
 .y_center {
-   top: 50%;
-   transform: translate(0,-50%);
-   -ms-transform: translate(0,-50%);
-   -moz-transform: translate(0,-50%);
-   -webkit-transform: translate(0,-50%);
+    top: 50%;
+    transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
 }
 .xy_center {
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   -ms-transform: translate(-50%,-50%);
-   -moz-transform: translate(-50%,-50%);
-   -webkit-transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .ps_ab {
-   position: absolute;
+    position: absolute;
 }
 .ps_right {
-   right:0;
+    right: 0;
 }
 .ps_left {
-   left:0;
+    left: 0;
 }
 
 .fl_box {
-   overflow:hidden;
+    overflow: hidden;
 }
 .fl_box:after {
-   content:"";
-   clear:both
+    content: "";
+    clear: both;
 }
 .fl_left {
-   float:left;
+    float: left;
 }
 .fl_right {
-   float:right;
+    float: right;
 }
 
 .skew_r_1 {
-   transform: perspective(2910px) rotateY(20deg) rotateX(5deg) rotate(-1deg);
+    transform: perspective(2910px) rotateY(20deg) rotateX(5deg) rotate(-1deg);
 }
 .skew_l_1 {
-   transform: perspective(2910px) rotateY(-20deg) rotateX(-5deg) rotate(1deg);
+    transform: perspective(2910px) rotateY(-20deg) rotateX(-5deg) rotate(1deg);
 }

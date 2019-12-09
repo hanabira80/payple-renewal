@@ -1,45 +1,43 @@
-/* link_box__double_arrow_ani */
 .link_box__double_arrow_ani {
-    display:block;
+    display: block;
     cursor: pointer;
-    font-size:0;
-    color:#7852e8;
+    font-size: 0;
+    color: #7852e8;
     transition: all ease 0.2s;
 }
 .link_box__double_arrow_ani .icon_text {
-    font-size:1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
-.link_box__double_arrow_ani i{
-    font-size:1.4rem;
+.link_box__double_arrow_ani i {
+    font-size: 1.4rem;
 }
-.link_box__double_arrow_ani i.act2{
-    margin-left:-1rem;
+.link_box__double_arrow_ani i.act2 {
+    margin-left: -1rem;
 }
-@media screen and (min-width: 720px) {	
-    .link_box__double_arrow_ani i{
-        font-size:1.4rem;
-        opacity:0;
+@media screen and (min-width: 720px) {
+    .link_box__double_arrow_ani i {
+        font-size: 1.4rem;
+        opacity: 0;
         transition: all ease 0.2s;
-        transition-delay:0.1s;
-        margin-left:1rem;
+        transition-delay: 0.1s;
+        margin-left: 1rem;
     }
-    .link_box__double_arrow_ani i.act2{
-        margin-left:1rem;
-        transition-delay:0s;
+    .link_box__double_arrow_ani i.act2 {
+        margin-left: 1rem;
+        transition-delay: 0s;
     }
     .link_box__double_arrow_ani:hover {
-        color:#7852e8;
+        color: #7852e8;
     }
-    .link_box__double_arrow_ani:hover i{
-        opacity:1;
-        margin-left:0;
-        transition-delay:0s;
+    .link_box__double_arrow_ani:hover i {
+        opacity: 1;
+        margin-left: 0;
+        transition-delay: 0s;
     }
-    .link_box__double_arrow_ani:hover i.act2{
-        opacity:1;
-        margin-left:-1rem;
-        transition-delay:0.1s;
+    .link_box__double_arrow_ani:hover i.act2 {
+        opacity: 1;
+        margin-left: -1rem;
+        transition-delay: 0.1s;
     }
 }
-/* link_box__double_arrow_ani end */

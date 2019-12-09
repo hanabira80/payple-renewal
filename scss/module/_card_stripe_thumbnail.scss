@@ -1,19 +1,13 @@
 .card_stripe_thumbnail {
     background-color: #fff;
     border-radius: 8px;
-    -webkit-box-shadow: 
-        0 30px 60px -12px rgba(50, 50, 93, 0.25),
-        0 18px 36px -18px rgba(0, 0, 0, 0.3),
-        0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-    box-shadow: 
-        0 30px 60px -12px rgba(50, 50, 93, 0.25), 
-        0 18px 36px -18px rgba(0, 0, 0, 0.3), 
-        0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    -webkit-box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
     width: 80%;
-    max-width:420px;
+    max-width: 420px;
 }
 .card_stripe_thumbnail .thumbnail {
-    padding-top:44%;
+    padding-top: 44%;
     background-color: #58adee;
     border-radius: 8px 8px 0 0;
     background-repeat: no-repeat;
@@ -31,28 +25,21 @@
     transform-origin: 0 0;
 }
 .card_stripe_thumbnail .ctn_box {
-    padding:2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem;
 }
 
-
 .card_stripe_thumbnail .thumbnail.cmz_sand_box {
-    background-image: 
-        url(/img/main/sand_box.png), 
-        url(/payple-renewal/img/main/sand_box.png);
+    background-image: url(/img/main/sand_box.png), url(/payple-renewal/img/main/sand_box.png);
     background-size: 90% auto;
     background-position: 5% 60%;
 }
 .card_stripe_thumbnail .thumbnail.cmz_card_payment {
-    background-image: 
-        url(/img/main/card_payment.svg),
-        url(/payple-renewal/img/main/card_payment.svg);
+    background-image: url(/img/main/card_payment.svg), url(/payple-renewal/img/main/card_payment.svg);
     background-size: 60% auto;
     background-position: 40% 40%;
 }
 .card_stripe_thumbnail .thumbnail.cmz_bankbook_payment {
-    background-image: 
-        url(/img/main/bankbook_payment.png),
-        url(/payple-renewal/img/main/bankbook_payment.png);
-    background-size: 80% auto;      
-    background-position: 20% 40%;  
+    background-image: url(/img/main/bankbook_payment.png), url(/payple-renewal/img/main/bankbook_payment.png);
+    background-size: 80% auto;
+    background-position: 20% 40%;
 }

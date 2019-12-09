@@ -1,57 +1,54 @@
-/* article.type_full_page */
 article.type_full_page {
-    height:100vh;
-    padding:0 0;
-    max-height:800px;
+    height: 100vh;
+    padding: 0 0;
+    max-height: 800px;
 }
-article.type_full_page .main_tit{
-    font-size:3.6rem;
-    font-weight: 300;    
+article.type_full_page .main_tit {
+    font-size: 3.6rem;
+    font-weight: 300;
 }
-article.type_full_page .main_tit em{
-    font-size:4rem;
+article.type_full_page .main_tit em {
+    font-size: 4rem;
 }
-article.type_full_page .sub_tit{
-    font-size:1.8rem;
+article.type_full_page .sub_tit {
+    font-size: 1.8rem;
     line-height: 1.8;
-    font-weight:300;
+    font-weight: 300;
     word-break: keep-all;
 }
-/* article.type_full_page end */
 
-/**/
 .slider_main_pc_frame {
     // position: absolute;
     // width:40%;
     // top:24%;
     // right:14%;
-    max-width:700px;
+    max-width: 700px;
     overflow: hidden;
     background: #fff;
     border-radius: 8px 8px;
-    box-shadow: 0 15px 35px rgba(0,0,0,.1), 0 3px 10px rgba(0,0,0,.07);
-    overflow:hidden;
-    /* transform: rotate(-1.2deg) translate3d(0,-50%,0); */
-    /* transform: rotate(-1.2deg); */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 3px 10px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    transform: rotate(-1.2deg) translate3d(0, -50%, 0);
+    transform: rotate(-1.2deg);
 }
-.slider_main_pc_frame .ratio_setter{
-    padding-top:83%;
+.slider_main_pc_frame .ratio_setter {
+    padding-top: 83%;
 }
-.slider_main_pc_frame .img_frame{
+.slider_main_pc_frame .img_frame {
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:8%;
-    border-bottom:1px solid #ccc;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8%;
+    border-bottom: 1px solid #ccc;
 }
 .slider_main_pc {
     position: absolute;
-    top:8%;
-    bottom:0%;
-    left:0%;
-    right:0%;
-    overflow:hidden;
+    top: 8%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
 }
 
 .left_box {
@@ -60,17 +57,3 @@ article.type_full_page .sub_tit{
 .right_box {
     flex-basis: 48%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

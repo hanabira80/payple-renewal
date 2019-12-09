@@ -1,39 +1,38 @@
 html {
-    font-size:14px;
-    font-weight:300;
+    font-size: 14px;
+    font-weight: 300;
 }
 @media screen and (min-width: 600px) and (max-width: 719px) {
     html {
-        font-size:13.6px;
+        font-size: 13.6px;
     }
 }
 @media screen and (min-width: 480px) and (max-width: 599px) {
     html {
-        font-size:13.3px;
+        font-size: 13.3px;
     }
 }
 @media screen and (min-width: 400px) and (max-width: 479px) {
     html {
-        font-size:13px;
+        font-size: 13px;
     }
 }
 @media screen and (min-width: 360px) and (max-width: 399px) {
     html {
-        font-size:12.6px;
+        font-size: 12.6px;
     }
 }
 @media screen and (min-width: 330px) and (max-width: 359px) {
     html {
-        font-size:12.3px;
+        font-size: 12.3px;
     }
 }
 @media screen and (min-width: 0px) and (max-width: 329px) {
     html {
-        font-size:12px;
+        font-size: 12px;
     }
 }
 body.js_is_limit {
-    height:100vh;
-    overflow:hidden;
+    height: 100vh;
+    overflow: hidden;
 }
-

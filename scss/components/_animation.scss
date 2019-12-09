@@ -1,61 +1,115 @@
 .has_animation_type_01 {
-   animation: ani_01 6s ease 3s infinite;
-   -ms-animation: ani_01 6s ease 3s infinite;
-   -webkit-animation: ani_01 6s ease 3s infinite;
+    animation: ani_01 6s ease 3s infinite;
+    -ms-animation: ani_01 6s ease 3s infinite;
+    -webkit-animation: ani_01 6s ease 3s infinite;
 }
 @keyframes ani_01 {
-   0% {margin-top:0px;}
-   5% {-webkit-transform: rotate(20deg);}
-   10% {-webkit-transform: rotate(-20deg);}
-   15% {-webkit-transform: rotate(0deg);}
-   20% {margin-top: 0px;}
-   25% {margin-top: -12px;}
-   30% {margin-top: 0px;}
-   35% {margin-top: -6px;}
-   40% {margin-top: 0px;}
+    0% {
+        margin-top: 0px;
+    }
+    5% {
+        -webkit-transform: rotate(20deg);
+    }
+    10% {
+        -webkit-transform: rotate(-20deg);
+    }
+    15% {
+        -webkit-transform: rotate(0deg);
+    }
+    20% {
+        margin-top: 0px;
+    }
+    25% {
+        margin-top: -12px;
+    }
+    30% {
+        margin-top: 0px;
+    }
+    35% {
+        margin-top: -6px;
+    }
+    40% {
+        margin-top: 0px;
+    }
 }
 @-ms-keyframes ani_01 {
-   0% {margin-top:0px;}
-   5% {-webkit-transform: rotate(20deg);}
-   10% {-webkit-transform: rotate(-20deg);}
-   15% {-webkit-transform: rotate(0deg);}
-   20% {margin-top: 0px;}
-   25% {margin-top: -12px;}
-   30% {margin-top: 0px;}
-   35% {margin-top: -6px;}
-   40% {margin-top: 0px;}
+    0% {
+        margin-top: 0px;
+    }
+    5% {
+        -webkit-transform: rotate(20deg);
+    }
+    10% {
+        -webkit-transform: rotate(-20deg);
+    }
+    15% {
+        -webkit-transform: rotate(0deg);
+    }
+    20% {
+        margin-top: 0px;
+    }
+    25% {
+        margin-top: -12px;
+    }
+    30% {
+        margin-top: 0px;
+    }
+    35% {
+        margin-top: -6px;
+    }
+    40% {
+        margin-top: 0px;
+    }
 }
 @-webkit-keyframes ani_01 {
-   0% {margin-top:0px;}
-   5% {-webkit-transform: rotate(20deg);}
-   10% {-webkit-transform: rotate(-20deg);}
-   15% {-webkit-transform: rotate(0deg);}
-   20% {margin-top: 0px;}
-   25% {margin-top: -12px;}
-   30% {margin-top: 0px;}
-   35% {margin-top: -6px;}
-   40% {margin-top: 0px;}
+    0% {
+        margin-top: 0px;
+    }
+    5% {
+        -webkit-transform: rotate(20deg);
+    }
+    10% {
+        -webkit-transform: rotate(-20deg);
+    }
+    15% {
+        -webkit-transform: rotate(0deg);
+    }
+    20% {
+        margin-top: 0px;
+    }
+    25% {
+        margin-top: -12px;
+    }
+    30% {
+        margin-top: 0px;
+    }
+    35% {
+        margin-top: -6px;
+    }
+    40% {
+        margin-top: 0px;
+    }
 }
 .has_animation_type_02 {
-   animation: ani_02 3s ease 0s infinite;
-   -ms-animation: ani_02 3s ease 0s infinite;
-   -webkit-animation: ani_02 3s ease 0s infinite;
+    animation: ani_02 3s ease 0s infinite;
+    -ms-animation: ani_02 3s ease 0s infinite;
+    -webkit-animation: ani_02 3s ease 0s infinite;
 }
 @keyframes ani_02 {
-   100% {
-       transform: rotate(360deg);
-   }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 @-ms-keyframes ani_02 {
-   100% {
-       transform: rotate(360deg);
-   }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 @-webkit-keyframes ani_02 {
-   100% {
-       transform: rotate(360deg);
-   }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .marquee {
-   overflow: hidden;
+    overflow: hidden;
 }

@@ -25,7 +25,7 @@
 
 textarea {
     font-size: 14px;
-    padding:8px 8px;
+    padding: 8px 8px;
     border: 1px solid #ccc;
     transition: border ease 0.2s;
     background: #fff;
@@ -33,7 +33,7 @@ textarea {
 }
 
 textarea:focus {
-    /*border:1px solid #33C4C9;*/
+    border: 1px solid #33c4c9;
     border: 1px solid #000;
 }
 
@@ -85,7 +85,7 @@ select.no_style {
     width: 100%;
     transition: border ease 0.2s;
     background: #fff;
-    width:100%;
+    width: 100%;
     display: block;
 }
 
@@ -146,12 +146,12 @@ select.no_style {
     right: 0;
 }
 
-.check input:checked+.icon {
+.check input:checked + .icon {
     background: url(/static/kr/img/music/icon__check_box.svg) no-repeat left -20px;
     background-size: 20px 60px;
 }
 
-.check input:disabled+.icon {
+.check input:disabled + .icon {
     background: url(/static/kr/img/music/icon__check_box.svg) no-repeat left -40px;
     background-size: 20px 60px;
 }
@@ -199,19 +199,15 @@ select.no_style {
     right: 0;
 }
 
-.radio input:checked+.icon {
+.radio input:checked + .icon {
     background: url(/static/kr/img/music/icon__radio_box.svg) no-repeat left -20px;
     background-size: 20px 60px;
 }
 
-.radio input:disabled+.icon {
+.radio input:disabled + .icon {
     background: url(/static/kr/img/music/icon__radio_box.svg) no-repeat left -40px;
     background-size: 20px 60px;
 }
-
-
-
-.space_inner__ipt .ipt__ {}
 
 .space_inner__ipt .upload {
     font-size: 14px;
@@ -224,7 +220,7 @@ select.no_style {
 }
 
 .space_inner__ipt .upload:active {
-    /*border:1px solid #000;*/
+    border: 1px solid #000;
 }
 
 .space_inner__ipt .upload_reverse {
@@ -234,7 +230,7 @@ select.no_style {
 .space_inner__ipt .upload .icon {
     left: 8px;
     top: 8px;
-    /*color:#34a9ff;*/
+    color: #34a9ff;
 }
 
 .space_inner__ipt .upload_reverse .icon {
@@ -263,9 +259,6 @@ select.no_style {
     font-size: 14px;
     margin: 6px 6px;
 }
-
-
-
 
 .space_inner__ipt {
     padding: 4px 4px;
