@@ -59,6 +59,7 @@
     padding:0 0 4rem;
     text-shadow: -1px -1px 1px rgba(0,0,0,.1), 1px 1px 1px rgba(255,255,255,.5);
     letter-spacing: -0.36rem;
+    color:#222;
 }
 .main_view .main_tit em {
     font-size: 4rem;
@@ -71,6 +72,7 @@
     word-break: keep-all;
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(255,255,255,.5);
     letter-spacing: -0.08rem;
+    color:#222;
 }
 @media screen and (min-width: 420px) and (max-width: 979px) {
     .main_view .main_tit {
@@ -168,4 +170,56 @@
     left: 0%;
     right: 0%;
     overflow: hidden;
+}
+
+
+
+.main_introduce {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_area__main_introduce {
+    width:46%;
+    display: flex;
+    justify-content: flex-end;
+}
+.right_area__main_introduce {
+    width:46%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 619px) {
+    .main_introduce {
+        flex-direction: column-reverse;
+    }
+    .left_area__main_introduce {
+        width:100%;
+        justify-content: center;
+    }
+    .right_area__main_introduce {
+        width:100%;
+        padding: 0 0 4rem;
+    }
+    .right_area__main_introduce .card_stripe_thumbnail {
+        max-width:none;
+        box-shadow: none;
+        border:1px solid #eee;
+        background: #f5f5f5;
+    }
+    .right_area__main_introduce .card_stripe_thumbnail .thumbnail{
+        display:none;
+    }
+    .right_area__main_introduce .card_stripe_thumbnail .tab_ctn_box_step {
+        display:none;
+    }
+    .right_area__main_introduce .card_stripe_thumbnail .tab_btn_box_step_1 {
+        background: #f5f5f5;
+    }
+    .right_area__main_introduce .card_stripe_thumbnail .tab_btn_box_step_2 {
+        width:100%;
+        left:auto;
+    }
+    .right_area__main_introduce .card_stripe_thumbnail .tab_step_module {
+        padding:1rem 0.8rem 4.8rem;
+    }
 }

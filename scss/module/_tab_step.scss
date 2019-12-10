@@ -20,6 +20,11 @@
     overflow:hidden;
     border-radius: 0 0 8px 8px;
 }
+@media screen and (min-width: 0px) and (max-width: 740px) {
+    .tab_ctn_box_step {
+        min-height:24rem;
+    }
+}
 .tab_ctn_step {
     position: absolute;
     top:50%;

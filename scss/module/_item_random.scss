@@ -10,19 +10,19 @@
     top: 0;
     bottom: 0;
     width: calc(50% - 960px);
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0.5) 66%, rgba(255,255,255,0) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 33%, rgba(255, 255, 255, 0.5) 66%, rgba(255, 255, 255, 0) 100%);
     z-index: 100;
 }
 .item_list__random:after {
     content: "";
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
     bottom: 0;
     width: calc(50% - 960px);
-    background: rgb(255,255,255);
-background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 33%, rgba(255, 255, 255, 0) 100%);
     z-index: 100;
 }
 .item_list__random .util_inner {
@@ -63,7 +63,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
 
     opacity: 0;
 
-    background-image: url(../img/main/header-logos.png);
+    background-image: url(../img/main/header-logos.svg);
     background-size: 1076px 1000px;
     cursor: pointer;
 }
@@ -193,25 +193,26 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
     margin: 110px 0 0 -30px;
 }
 .item_list__random li:nth-child(23) {
-    background: #d4c9ff;
-    color:#fff;
+    // background: #d4c9ff;
+    background: #7852e8;
+    color: #fff;
     margin: 10px 0 0 -20px;
     font-weight: 700;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
-$j : 0;
-$total : 23;
-$rate : 1.5s;
+$j: 0;
+$total: 23;
+$rate: 1.5s;
 @for $i from 1 through $total {
     @if $j > 2 {
-        $j : 0;
+        $j: 0;
     }
-    $j : $j + 1;
-    $t : $i * $rate;
-    $loop : $total + 1;
-    $loop_t : $total * $rate;
+    $j: $j + 1;
+    $t: $i * $rate;
+    $loop: $total + 1;
+    $loop_t: $total * $rate;
 
     .item_list__random li:nth-child(#{$i}) {
         animation: floatItem0#{$j} $loop_t linear $t infinite normal;

@@ -3,8 +3,9 @@
     border-radius: 8px;
     -webkit-box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-    width: 80%;
+    width: 100%;
     max-width: 420px;
+    min-width: 280px;
 }
 .card_stripe_thumbnail .thumbnail {
     padding-top: 44%;
@@ -16,9 +17,9 @@
 .card_stripe_thumbnail .thumbnail:after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 120%;
     height: 200px;
-    left: 0;
+    left: -10%;
     top: 100%;
     background-color: #fff;
     transform: skewY(-8deg);
