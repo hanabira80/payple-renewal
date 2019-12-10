@@ -12,7 +12,7 @@ function parallaxScroll(){
         $("header").addClass("js_scroll_action");
         $("header .scroll_nav .percent").css("transform","scale3d("+rate+",1,1)");
     }
-    if (totalHeight - winHeight - 40 <= scrolled) {
+    if (totalHeight - winHeight - 100 <= scrolled) {
         $("footer .footer-logo").addClass("js-is-active");
     }
     else {
