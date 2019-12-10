@@ -28,7 +28,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
 .item_list__random .util_inner {
     white-space: nowrap;
     overflow: hidden;
-    height: 400px;
+    height: 320px;
     width: 2560px;
     left: 50%;
     margin-left: -1280px;
@@ -39,8 +39,8 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
     width: 200%;
     height: 20%;
     top: -6%;
-    -webkit-transform: skewY(-8deg);
-    transform: skewY(-8deg);
+    -webkit-transform: skewY(-6deg);
+    transform: skewY(-6deg);
     background: #d4c9ff;
 }
 .item_list__random li {
