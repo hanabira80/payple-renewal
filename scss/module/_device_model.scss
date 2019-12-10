@@ -67,6 +67,12 @@
     width: 267px;
     height: 553px;
 }
+@media screen and (min-width: 0px) and (max-width: 419px) {
+    .device_list li.phone_big {
+        width: 225px;
+        height: 467px;
+    }
+}
 .device_list li.phone_xl_big {
     width:360px;
     height:747px;
@@ -85,16 +91,29 @@
     position: absolute;
     top:50%;
     margin-top:-276px;
-    right:0;
+    right:1rem;
     // transform: rotate(3deg);
     z-index: 200;
 }
+@media screen and (min-width: 0px) and (max-width: 979px) {
+    .main_slider_mo {
+        position:relative;
+        top:20%;
+        margin-top:0;
+        right:auto;
+        left:1rem;
+    }
+}
 .main_slider_mo .swiper-container {
     width:90%;
-    border-radius: 8px;
+    border-radius: 20px;
     overflow:hidden;
     border:1px solid #eee;
 }
+@media screen and (min-width: 0px) and (max-width: 979px) {
+
+}
+
 .tab_ctn_box_img_step .area_setter {
     width:90%;
     border-radius: 8px;
