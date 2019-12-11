@@ -58,11 +58,16 @@ function del_popup() {
     $(".modal").removeClass("js-is-active");
 }
 
-
+function this_year() {
+    var today = new Date();
+    var year = today.getFullYear();
+    $(".current_year").html(year);
+}
 
 $(document).ready(function(){
     parallaxScroll();
     moMenuAction();
+    this_year();
 
     $(window).bind('scroll',function(e){
         parallaxScroll();
