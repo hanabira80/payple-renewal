@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BETA : 페이플 간편결제</title>
+        <link rel="icon" type="image/png" href="img/common/favicon.png" sizes="32x32" />
+        <meta http-equiv="Content-Type" content="charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- mobile setting -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta name="theme-color" content="#7852e8" />
+        <meta name="msapplication-navbutton-color" content="#7852e8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#7852e8" />
+        <!-- mobile setting end-->
+
+        <!-- cache setting -->
+        <meta http-equiv="Cache-Control" content="no-store" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <!-- cache setting end-->
+
+        <!-- open graph protocol -->
+        <meta id="og_type" property="og:type" content="website" />
+        <meta id="og_title" property="og:title" content="" />
+        <meta id="og_description" property="og:description" content="" />
+        <meta id="og_image" property="og:image" content="" />
+        <meta id="og_url" property="og:url" content="" />
+        <!-- open graph protocol end -->
+
+        <!--font setting -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,500,700&display=swap" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+            rel="stylesheet"
+        />
+        <!-- font setting end-->
+
+        <!-- css setting -->
+        <link href="./css/style.min.css" rel="stylesheet" type="text/css" />
+        <!-- css setting end -->
+
+        <!-- js setting -->
+        <script src="./js/jquery.js"></script>
+        <!-- js setting -->
+    </head>
+
+    <body class="_js-is-limit">
+        <header>
+            <div class="header-bg">
+                <div class="scroll_nav">
+                    <div class="percent"></div>
+                </div>
+            </div>
+            <div class="width_limiter dp_flex flc_al_center">
+                <div class="header_logo_box">
+                    <a href="" class="full"></a>
+                </div>
+                <div class="header_menu_area dp_flex">
+                    <div class="header_menu_box dp_flex">
+                        <nav class="header_menu">
+                            <div class="div js_trigger_mo_menu">
+                                <div class="txt">
+                                    <i class="material-icons"> keyboard_arrow_left </i>
+                                    <div class="icon_text">카드결제</div>
+                                </div>
+                                <div class="border"></div>
+                            </div>
+                            <div class="header_sub_menu_box ">
+                                <ul class="space_setter">
+                                    <li>
+                                        <a href="">
+                                            정기결제
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            앱카드결제
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <nav class="header_menu">
+                            <div class="div js_trigger_mo_menu">
+                                <div class="txt">
+                                    <i class="material-icons">
+                                        keyboard_arrow_left
+                                    </i>
+
+                                    <div class="icon_text">계좌이체</div>
+                                </div>
+                                <div class="border"></div>
+                            </div>
+                            <div class="header_sub_menu_box ">
+                                <ul class="space_setter">
+                                    <li>
+                                        <a href="">
+                                            정기결제
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            간편결제
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            일회성결제
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <nav class="header_menu">
+                            <a href="" class="div">
+                                <div class="txt">
+                                    <div class="icon_text">URL 링크결제</div>
+                                </div>
+                                <div class="border"></div>
+                            </a>
+                        </nav>
+                    </div>
+
+                    <div class="header_menu_box dp_flex right">
+                        <nav class="header_menu">
+                            <a href="" class="div">
+                                <div class="txt">
+                                    <div class="icon_text">가입문의하기</div>
+                                </div>
+                                <div class="border"></div>
+                            </a>
+                        </nav>
+                        <nav class="header_menu">
+                            <a href="" class="div">
+                                <div class="txt">
+                                    <div class="icon_text">API</div>
+                                </div>
+                                <div class="border"></div>
+                            </a>
+                        </nav>
+                        <nav class="header_menu">
+                            <a href="" class="div">
+                                <div class="txt">
+                                    <div class="icon_text">고객사 로그인</div>
+                                </div>
+                                <div class="border"></div>
+                            </a>
+                        </nav>
+                        <nav class="header_menu">
+                            <a href="" class="div">
+                                <div class="txt">
+                                    <div class="icon_text">결제내역 조회</div>
+                                </div>
+                                <div class="border"></div>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header_menu_icn y_center">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                    <div class="bar bar4"></div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <article class="has_line">
+                <div class="article_stripe"></div>
+                <div class="tit_box__article width_limiter ">
+                    <h3 class="main_tit__article">
+                        <img class="logo_in_text__lg" src="img/common/logo_full.svg" alt="" />
+                        무엇이 다를까요?
+                    </h3>
+                    <h4 class="sub_tit__article">
+                        페이플은 사용자의 편리한 결제를 방해하는 모든 요소를 제거한 신용카드, 계좌이체 통합결제서비스입니다.
+                    </h4>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="width-inner">
+                <div class="footer-logo">
+                    <img src="./img/common/logo_simple.svg" class="res" />
+                </div>
+                <div class="footer-info-box">
+                    <div class="footer-info">
+                        상호 : 주식회사 페이플
+                    </div>
+                    <div class="footer-info">
+                        대표자 : 김현철
+                    </div>
+                    <div class="footer-info">
+                        사업자번호 : 331-87-01049
+                    </div>
+                    <div class="footer-info-spt"></div>
+                    <div class="footer-info">
+                        주소 : 서울시 서초구 매헌로 24 NH디지털혁신캠퍼스 5층
+                    </div>
+                    <div class="footer-info">
+                        대표번호 : 1522-5013
+                    </div>
+                    <div class="footer-info">
+                        문의 : help@payple.kr
+                    </div>
+                    <div class="footer-info">
+                        전자금융업 등록번호 : 02-004-00145
+                    </div>
+                    <div class="footer-info cl">
+                        개인정보취급방침
+                    </div>
+                    <div class="footer-info cl">
+                        전자금융거래 이용약관
+                    </div>
+                    <div class="footer-info cl">
+                        혁신금융서비스 이용약관
+                    </div>
+                </div>
+                <div class="footer-copy">COPYRIGHT©<span class="current_year"></span> PAYPLE. ALL RIGHT RESERVED</div>
+            </div>
+        </footer>
+
+        <div class="loader">
+            <div class="left_area"></div>
+            <div class="right_area"></div>
+            <div class="cube_grid xy_center">
+                <div class="cube cube1"></div>
+                <div class="cube cube2"></div>
+                <div class="cube cube3"></div>
+                <div class="cube cube4"></div>
+                <div class="cube cube5"></div>
+                <div class="cube cube6"></div>
+                <div class="cube cube7"></div>
+                <div class="cube cube8"></div>
+                <div class="cube cube9"></div>
+                <i class="material-icons icon">
+                    alarm
+                </i>
+            </div>
+        </div>
+
+        <div class="modal-outer scroll-block" style="display: none !important;">
+            <div class="modal-mask js-modal-close"></div>
+            <!-- modal-video -->
+            <div class="modal modal-video xy-center" id="modal-video">
+                <div class="ratio-inner"></div>
+                <div class="close js-modal-close">
+                    <i class="material-icons">clear</i>
+                </div>
+            </div>
+            <!-- modal-video end -->
+
+            <!-- modal-pass -->
+            <div class="modal modal-pass xy-center" id="modal-pass">
+                <div class="tit-area">
+                    <div class="tit">비밀번호확인</div>
+                    <div class="close js-modal-close">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+                <div class="ctn-area">
+                    <div class="txt">
+                        글 등록 시 입력한 글 비밀번호를 입력해주세요.
+                    </div>
+                    <div class="modal-form-box">
+                        <form name="">
+                            <input type="password" name="pass" autocomplete="new_password" validation="vali_text" alt="비밀번호" class="ipt" />
+                            <input type="submit" name="" class="submit" value="확인" />
+                            <div class="cancel js-modal-close">취소</div>
+                        </form>
+                    </div>
+                    <div class="info">
+                        비밀번호가 틀렸습니다. 다시 한번 입력해주세요.
+                    </div>
+                </div>
+            </div>
+            <!-- modal-pass end -->
+
+            <!-- modal-terms -->
+            <div class="modal modal-document xy-center" id="modal-terms">
+                <div class="tit-area">
+                    <div class="tit">홈페이지 이용약관</div>
+                    <div class="close js-modal-close">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+
+                <div class="ctn-area">
+                    <div class="modal-form-box">
+                        <textarea class="ipt document scroll-block" readonly>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea
+                        >
+                    </div>
+                </div>
+            </div>
+            <!-- modal-terms end-->
+
+            <!-- modal-privacy -->
+            <div class="modal modal-document xy-center" id="modal-privacy">
+                <div class="tit-area">
+                    <div class="tit">개인정보의 수집 및 이용목적</div>
+                    <div class="close js-modal-close">
+                        <i class="material-icons">clear</i>
+                    </div>
+                </div>
+
+                <div class="ctn-area">
+                    <div class="modal-form-box">
+                        <textarea class="ipt document scroll-block" readonly>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea
+                        >
+                    </div>
+                </div>
+            </div>
+            <!-- modal-privacy end -->
+        </div>
+        <script src="./js/common.js"></script>
+    </body>
+</html>
