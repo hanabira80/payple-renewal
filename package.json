@@ -1,16 +1,19 @@
 {
   "name": "payple-renewal",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "body-scroll-lock": "^2.6.4",
     "perfect-scrollbar": "^1.4.0",
     "swiper": "^5.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/js -w -d dist/js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,7 @@
   "bugs": {
     "url": "https://github.com/hanabira80/payple-renewal/issues"
   },
-  "homepage": "https://github.com/hanabira80/payple-renewal#readme"
+  "homepage": "https://github.com/hanabira80/payple-renewal#readme",
+  "keywords": [],
+  "description": ""
 }
