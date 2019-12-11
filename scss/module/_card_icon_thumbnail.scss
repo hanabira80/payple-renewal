@@ -3,17 +3,17 @@
     box-shadow: 0 15px 30px -6px rgba(50, 50, 93, 0.25), 0 9px 18px -9px rgba(0, 0, 0, 0.3), 0 -6px 18px -4px rgba(0, 0, 0, 0.025);
     border-radius: 8px 8px;
     margin: 1rem 1rem;
-    flex-basis: calc(25% - 2rem);
+    width: calc(25% - 2rem);
     background: #fff;
 }
 @media screen and (min-width: 480px) and (max-width: 979px) {
     .card_icon_thumbnail li {
-        flex-basis: calc(50% - 2rem);
+        width: calc(50% - 2rem);
     }
 }
 @media screen and (min-width: 0px) and (max-width: 479px) {
     .card_icon_thumbnail li {
-        flex-basis: calc(100% - 2rem);
+        width: calc(100% - 2rem);
     }
 }
 .card_icon_thumbnail .icon_box {
