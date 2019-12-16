@@ -39,3 +39,46 @@ body.js_is_limit {
 section {
     min-height: 100vh;
 }
+.subpage_visual {
+    height:32rem;
+    background: url(../img/sub/sub_bg_01.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.subpage_visual .backdrop {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0.2) !important;
+}
+.subpage_visual .tit {
+    font-size:4rem;
+    position: absolute;
+    color:#fff;
+//     font-family: 'Do Hyeon', sans-serif;
+// font-family: 'Jua', sans-serif;
+// font-family: 'Sunflower', sans-serif;
+
+// font-family: 'Black And White Picture', sans-serif;
+// font-family: 'East Sea Dokdo', cursive;
+// font-family: 'Hi Melody', cursive;
+// font-family: 'Gamja Flower', cursive;
+// font-family: 'Poor Story', cursive;
+// font-family: 'Gaegu', cursive;
+// font-family: 'Gugi', cursive;
+// font-family: 'Black Han Sans', sans-serif;
+// font-family: 'Nanum Pen Script', cursive;
+font-family: 'Single Day', cursive;
+    color:MistyRose   ;
+}
+.subpage_visual canvas {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    width:40%;
+}
