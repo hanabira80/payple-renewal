@@ -2569,8 +2569,6 @@ article.full_page {
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
-  -webkit-transition: all linear 0.2s;
-  transition: all linear 0.2s;
   padding: 0 0 0 0;
 }
 
