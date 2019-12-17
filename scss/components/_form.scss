@@ -37,12 +37,14 @@ textarea:focus {
 }
 
 textarea.textarea__document {
-    font-size: 14px;
-    padding: 8px 8px;
+    font-size: 16px;
+    padding: 16px 16px;
     width: 100%;
     min-height:80vh;
     border-radius: 4px 4px;
-    box-shadow:0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3)
+    box-shadow:0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3);
+    max-width:980px;
+    margin:0 auto;
 }
 
 select {
