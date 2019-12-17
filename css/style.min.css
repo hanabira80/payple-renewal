@@ -55,9 +55,10 @@ section {
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
-.subpage_visual .backdrop {
+.backdrop {
   position: absolute;
   top: 0;
   left: 0;
@@ -70,17 +71,37 @@ section {
   font-size: 4rem;
   position: absolute;
   color: #fff;
-  font-family: 'Single Day', cursive;
-  color: MistyRose;
+  color: ghostwhite;
 }
 
-.subpage_visual canvas {
+.subpage_visual .circle {
+  -webkit-animation: grow 3s linear;
+          animation: grow 3s linear;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 40%;
+  height: 50px;
+  width: 50px;
+}
+
+@-webkit-keyframes grow {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(5, 5, 5);
+            transform: scale3d(5, 5, 5);
+    -webkit-perspective: 3000;
+            perspective: 3000;
+  }
+}
+
+@keyframes grow {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(5, 5, 5);
+            transform: scale3d(5, 5, 5);
+    -webkit-perspective: 3000;
+            perspective: 3000;
+  }
 }
 
 html {
@@ -209,6 +230,14 @@ textarea {
   overflow: auto;
   resize: none;
   outline: none;
+}
+
+textarea:-moz-read-only {
+  cursor: default;
+}
+
+textarea:read-only {
+  cursor: default;
 }
 
 select {
@@ -2207,6 +2236,20 @@ footer {
   background: #141414;
 }
 
+footer:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  left: 0;
+  top: 0;
+  background-color: #141414;
+  -webkit-transform: skewY(-4deg);
+          transform: skewY(-4deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
 footer .width-inner {
   position: relative;
   max-width: 1000px;
@@ -2411,16 +2454,7 @@ article:nth-child(odd) .article_stripe {
 }
 
 article:last-child .article_stripe {
-  position: absolute;
-  width: 100%;
-  height: 200px;
-  left: 0;
-  top: 100%;
-  background-color: #141414;
-  -webkit-transform: skewY(-4deg);
-          transform: skewY(-4deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  display: none;
 }
 
 article.has_line:before {
@@ -2432,6 +2466,23 @@ article.has_line:before {
   -webkit-transform: skewY(-8deg);
   transform: skewY(-8deg);
   background: #d4c9ff;
+}
+
+article.full_page {
+  min-height: 100vh;
+  background-image: url(../img/sub/sub_bg_01.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  padding: 0 0 0 0;
+}
+
+article.sub_01_02 {
+  background-image: url(../img/sub/sub_bg_01_02.png);
 }
 
 .has_animation_type_01 {
@@ -2660,17 +2711,26 @@ button {
 
 textarea {
   font-size: 14px;
-  padding: 8px 8px;
-  border: 1px solid #ccc;
-  -webkit-transition: border ease 0.2s;
-  transition: border ease 0.2s;
+  padding: 12px 12px;
+  border: 1px solid transparent;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
   background: #fff;
   width: 100%;
 }
 
 textarea:focus {
-  border: 1px solid #33c4c9;
-  border: 1px solid #000;
+  border: 1px solid #7852e8;
+}
+
+textarea.textarea__document {
+  font-size: 14px;
+  padding: 8px 8px;
+  width: 100%;
+  min-height: 80vh;
+  border-radius: 4px 4px;
+  -webkit-box-shadow: 0 6px 12px -2px rgba(50, 50, 93, 0.25), 0 3px 7px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 6px 12px -2px rgba(50, 50, 93, 0.25), 0 3px 7px -3px rgba(0, 0, 0, 0.3);
 }
 
 select {
@@ -4287,8 +4347,12 @@ select.no_style {
 .left_area__main_view {
   width: 50%;
   min-width: 620px;
-  padding: 0 2%;
+  padding: 0 1rem;
   z-index: 280;
+}
+
+.left_area__main_view.t2 {
+  width: 70%;
 }
 
 @media screen and (min-width: 420px) and (max-width: 979px) {
@@ -4340,6 +4404,10 @@ select.no_style {
   color: #222;
 }
 
+.main_view .main_tit.cl2 {
+  color: #fff;
+}
+
 .main_view .main_tit em {
   font-size: 4rem;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1), 1px 1px 1px rgba(255, 255, 255, 0.5);
@@ -4353,6 +4421,10 @@ select.no_style {
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(255, 255, 255, 0.5);
   letter-spacing: -0.08rem;
   color: #222;
+}
+
+.main_view .sub_tit.cl2 {
+  color: #fff;
 }
 
 @media screen and (min-width: 420px) and (max-width: 979px) {

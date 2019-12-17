@@ -117,7 +117,9 @@ textarea {
     resize: none;
     outline: none;
 }
-
+textarea:read-only {
+    cursor:default;
+}
 select {
     display: inline-block;
     vertical-align: middle;

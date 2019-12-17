@@ -25,16 +25,24 @@
 
 textarea {
     font-size: 14px;
-    padding: 8px 8px;
-    border: 1px solid #ccc;
-    transition: border ease 0.2s;
+    padding: 12px 12px;
+    border: 1px solid transparent;
+    transition: all ease 0.2s;
     background: #fff;
     width: 100%;
 }
 
 textarea:focus {
-    border: 1px solid #33c4c9;
-    border: 1px solid #000;
+    border: 1px solid #7852e8;
+}
+
+textarea.textarea__document {
+    font-size: 14px;
+    padding: 8px 8px;
+    width: 100%;
+    min-height:80vh;
+    border-radius: 4px 4px;
+    box-shadow:0 6px 12px -2px rgba(50,50,93,.25), 0 3px 7px -3px rgba(0,0,0,.3)
 }
 
 select {

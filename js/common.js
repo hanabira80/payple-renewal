@@ -13,8 +13,8 @@ function parallaxScroll(){
         $("header .scroll_nav .percent").css("transform","scale3d("+rate+",1,1)");
     }
     if (0 <= scrolled && winHeight >= scrolled) {
-        $(".subpage_visual").css("background-position","50% "+ scrolled/7*-1 +"px");
-        $(".subpage_visual .backdrop").css("background","rgba(0,0,0,"+ scrolled/winHeight*0.8 +")")
+        $(".full_page").css("background-position","50% "+ scrolled/7*-1 +"px");
+        $(".backdrop").css("background","rgba(0,0,0,"+ scrolled/winHeight*0.8 +")")
     }
     if (totalHeight - winHeight - 100 <= scrolled) {
         $("footer .footer-logo").addClass("js-is-active");

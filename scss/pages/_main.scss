@@ -16,8 +16,11 @@
 .left_area__main_view {
     width:50%;
     min-width:620px;
-    padding:0 2%;
+    padding:0 1rem;
     z-index: 280;
+}
+.left_area__main_view.t2 {
+    width: 70%;
 }
 @media screen and (min-width: 420px) and (max-width: 979px) {
     .left_area__main_view {
@@ -61,6 +64,9 @@
     letter-spacing: -0.36rem;
     color:#222;
 }
+.main_view .main_tit.cl2 {
+    color:#fff;
+}
 .main_view .main_tit em {
     font-size: 4rem;
     text-shadow: -1px -1px 1px rgba(0,0,0,.1), 1px 1px 1px rgba(255,255,255,.5);
@@ -73,6 +79,9 @@
     text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(255,255,255,.5);
     letter-spacing: -0.08rem;
     color:#222;
+}
+.main_view .sub_tit.cl2 {
+    color:#fff;
 }
 @media screen and (min-width: 420px) and (max-width: 979px) {
     .main_view .main_tit {
