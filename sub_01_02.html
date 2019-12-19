@@ -171,7 +171,8 @@
                 </div>
             </div>
         </header>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/tomorrow-night-eighties.min.css" />
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/shades-of-purple.min.css" />
+        <!-- shades-of-purple, tomorrow-night-blue, tomorrow-night-eighties,atelier-sulphurpool-dark -->
         <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
         <script src="js/clipboard.js"></script>
 
@@ -383,18 +384,50 @@
                     </h4>
                 </div>
                 <div class="width_limiter space_setter__article_content">
-                    <pre>
+                    <div class="code_box">
                         <div class="btn_box align_right">
                             <div class="btn btn_sm cl_scs btn_rounded js_btn_copy" data-clipboard-target="#foo"><i class="material-icons"> edit </i> 코드복사 </div>
                         </div>
+                    <pre>
+                        
                         <code class="javascript" id="foo">
-$(document).ready(function() {
-    $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-    });
-});
+<!-- 가맹점 인증 -->
+POST /php/auth.php HTTP/1.1
+Host: testcpay.payple.kr
+Content-Type: application/json
+Cache-Control: no-cache
+{
+  "cst_id": "test",
+  "custKey": "abcd1234567890",
+  "PCD_REGULER_FLAG": "Y"
+}
+
+<!-- 결제요청  -->
+POST /php/RePayAct.php?ACT_=PAYM HTTTP/1.1
+Host: testcpay.payple.kr
+Content-Type: application/json
+Cache-Control: no-cache
+{
+   "PCD_CST_ID": "test",	// 또는 인코딩된 "PCD_CST_ID": "UFVNNVZpZk4reWo5UFRualUwcGV4dz09"
+   "PCD_CUST_KEY": "abcd1234567890", // 또는 인코딩된 "PCD_CUST_KEY": "T3JzRkp5L1FTcEFDa1FQdHo5Um1UZz09"
+   "PCD_AUTH_KEY": "a688ccb3555c25cd722483f03e23065c3d0251701ad6da895eb2d830bc06e34d",
+   "PCD_PAY_TYPE": "transfer",							
+   "PCD_PAYER_NO": "2324",
+   "PCD_PAYER_ID": "NS9qNTgzU2xRNHR2RmFBWWFBTWk5UT09",
+   "PCD_PAY_GOODS": "정기구독",
+   "PCD_PAY_YEAR": "2018",	
+   "PCD_PAY_MONTH": "04",	
+   "PCD_PAY_TOTAL": "1000",
+   "PCD_PAY_OID": "test201804000001",
+   "PCD_TAXSAVE_FLAG": "Y",
+   "PCD_TAXSAVE_TRADE": "personal",
+   "PCD_TAXSAVE_IDNUM": "01022224444",
+   "PCD_REGULER_FLAG": "Y",
+   "PCD_PAYER_EMAIL": "dev@payple.kr"
+}
                         </code>
                     </pre>
+                </div>
                 </div>
                 <script>
                     hljs.initHighlightingOnLoad();
