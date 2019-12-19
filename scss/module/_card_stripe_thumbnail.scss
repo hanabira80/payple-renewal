@@ -30,17 +30,17 @@
 }
 
 .card_stripe_thumbnail .thumbnail.cmz_sand_box {
-    background-image: url(/img/main/sand_box.png), url(/img/main/sand_box.png);
+    background-image: url(/img/main/sand_box.png), url(../img/main/sand_box.png);
     background-size: 90% auto;
     background-position: 5% 60%;
 }
 .card_stripe_thumbnail .thumbnail.cmz_card_payment {
-    background-image: url(/img/main/card_payment.svg), url(/img/main/card_payment.svg);
+    background-image: url(/img/main/card_payment.svg), url(../img/main/card_payment.svg);
     background-size: 60% auto;
     background-position: 40% 40%;
 }
 .card_stripe_thumbnail .thumbnail.cmz_bankbook_payment {
-    background-image: url(/img/main/bankbook_payment.png), url(/img/main/bankbook_payment.png);
+    background-image: url(/img/main/bankbook_payment.png), url(../img/main/bankbook_payment.png);
     background-size: 80% auto;
     background-position: 20% 40%;
 }
