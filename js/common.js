@@ -68,10 +68,18 @@ function this_year() {
     $(".current_year").html(year);
 }
 
+function copyCode() {
+    new ClipboardJS('.js_btn_copy');
+    $('.js_btn_copy').click(function(){
+        alert('내용이 복사 되었습니다.')
+    });
+}
+
 $(document).ready(function(){
     parallaxScroll();
     moMenuAction();
     this_year();
+    copyCode();
 
     $(window).bind('scroll',function(e){
         parallaxScroll();
