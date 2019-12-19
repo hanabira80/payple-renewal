@@ -7,10 +7,12 @@ function parallaxScroll(){
     
     if ( 10 > scrolled ) {
         $("header").removeClass("js_scroll_action");
+        $('.tool_tip__type_animation_01').removeClass('ani_hide');
     }
     if ( 10 <= scrolled ) {
         $("header").addClass("js_scroll_action");
         $("header .scroll_nav .percent").css("transform","scale3d("+rate+",1,1)");
+        $('.tool_tip__type_animation_01').addClass('ani_hide');
     }
     if (0 <= scrolled && winHeight >= scrolled) {
         $(".full_page").css("background-position","50% "+ scrolled/7*-1 +"px");

@@ -62,12 +62,18 @@
     background: #7852e8;
     border-radius: 3px;
     color:#ffffff;
-    font-size: 13px;
-    letter-spacing: -0.04em;
+    font-size: 1rem;
     white-space: nowrap;
-    line-height: 1em;
+    line-height: 1.8em;
     animation: md_ani_01 3s ease 0s infinite;
     box-shadow: 0 4px 35px 0 rgba(23,55,87,.1), 0 5px 15px 0 rgba(0,0,0,.07);
+    opacity:1;
+    transition: all ease 0.3s;
+    visibility: visible;
+}
+.tool_tip__type_animation_01.ani_hide {
+    opacity:0;
+    visibility: hidden;
 }
 .tool_tip__type_animation_01 a{
     font-size: inherit;
@@ -208,7 +214,7 @@
                                 </div>
                                 <div class="border"></div>
                             </a>
-                            <div class="tool_tip__type_animation_01">
+                            <div class="tool_tip__type_animation_01 ff_sf">
                                 페이플에서 진행된 결제 내역이 궁금하신가요?<br/>
                                 여기서 확인하세요 
                             </div>
@@ -269,7 +275,83 @@
                             </li>
                         </ul>
                     </div> -->
+                    
                 </div>
+                <style>
+                    .temp_remote {
+                        position:absolute;
+                        top:200px;
+                        right:0;
+                        background: #fff;
+                        padding:1rem 1rem;
+                        border-radius: 0 0 0 4px;
+                        transform:translate3d(100%,0,0);
+                        transition: all ease 0.3s;
+                    }
+                    .temp_remote.active {
+                        transform:translate3d(0,0,0);
+                    }
+                    .temp_active, .temp_close {
+                        display:none;
+                        position:absolute;
+                        right:100%;
+                        top:0;
+                        width:40px;
+                        height:40px;
+                        line-height: 40px;
+                        text-align: center;
+                        color:hotpink;
+                        background: #fff;
+                        border-radius: 4px 0 0  4px;
+                        font-size:0;
+                        cursor: pointer;
+                    }
+                    .temp_active i, .temp_close i{
+                        font-size:32px;
+                    }
+                    .temp_remote .temp_active{
+                        display:block;
+                    }
+                    .temp_remote .temp_close{
+                        display:none;
+                    }
+                    .temp_remote.active .temp_active{
+                        display:none;
+                    }
+                    .temp_remote.active .temp_close{
+                        display:block;
+                    }
+                    .temp_templete li {
+                        padding:0.4rem 0;
+                        cursor: pointer;
+                        text-align: right;
+                        border-bottom:1px solid #eee;
+                    }
+                </style>
+                <div class="temp_remote">
+                    <div class="temp_active"> <i class="material-icons"> settings_applications </i> </div>
+                    <div class="temp_close"> <i class="material-icons"> close </i> </div>
+                    <ul class="temp_templete">
+                        <li>1번 이미지</li>
+                        <li>2번 이미지</li>
+                        <li>3번 이미지</li>
+                        <li>4번 이미지</li>
+                        <li>5번 이미지</li>
+                        <li>6번 이미지</li>
+                        <li>7번 이미지</li>
+                        <li>8번 이미지</li>
+                        <li>9번 이미지</li>
+                        <li>10번 이미지</li>
+                        <li>11번 이미지</li>
+                    </ul>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        $('.temp_active, .temp_close').click(function(){
+                            $('.temp_remote').toggleClass('active');
+                        });
+                    });
+                </script>
             </article>
             <!-- <article class="">
                 <div class="article_stripe"></div>
@@ -336,7 +418,7 @@
                             <iframe
                                 width="1280"
                                 height="720"
-                                src="//www.youtube.com/embed/7IVnpHSbjZo?VQ=HD720&autoplay=0&loop=1&rel=0&showinfo=0&controls= 0&enablejsapi=1&wmode=transparent&hd=1"
+                                src="//www.youtube.com/embed/2ecOqK93-NE?VQ=HD720&autoplay=0&loop=1&rel=0&showinfo=0&controls= 0&enablejsapi=1&wmode=transparent&hd=1"
                                 wmode="Opaque"
                                 frameborder="0"
                                 allowfullscreen=""
@@ -350,7 +432,7 @@
                 <div class="article_stripe"></div>
                 <div class="tit_box__article width_limiter ">
                     <h3 class="main_tit__article">
-                        상점만의 간편결제로 재방문 결제율을 높여보세요
+                        적용화면
                     </h3>
                     <h4 class="sub_tit__article">
                         페이플 고객사에 실제 적용되어 있는 카드 정기결제 화면입니다.
