@@ -1928,18 +1928,22 @@ header .scroll_nav .percent {
 
 header .header_logo_box {
   width: 120px;
-  height: 32px;
+  height: 30px;
   cursor: pointer;
   margin: 0 40px 0 0;
-  background-image: url(../img/common/logo_full.svg);
+  background-image: url(../img/common/logo_full_all.svg);
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 120px auto;
+  background-position: center top;
+  background-size: 120px 60px;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 header.js_scroll_action .header_logo_box {
-  background-image: url(../img/common/logo_full_white.svg);
-  background-size: 80px auto;
+  width: 80px;
+  height: 20px;
+  background-position: center bottom;
+  background-size: 80px 40px;
 }
 
 header .header_menu_area {
@@ -2699,8 +2703,8 @@ button {
 }
 
 .btn:hover {
-  -webkit-transform: translateY(-1px);
-  transform: translateY(-1px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
   -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
   -webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);

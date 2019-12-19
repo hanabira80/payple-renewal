@@ -5,6 +5,7 @@
   "dependencies": {
     "body-scroll-lock": "^2.6.4",
     "perfect-scrollbar": "^1.4.0",
+    "prismjs": "^1.17.1",
     "swiper": "^5.2.1"
   },
   "devDependencies": {
