@@ -120,7 +120,8 @@ article.has_line:before {
 
 
 article.full_page {
-    min-height: 100vh;
+    height: 100vh;
+    // max-height:900px;
     background-image: url(../img/sub/sub_bg_01.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -131,5 +132,5 @@ article.full_page {
     padding: 0 0 0 0;
 }
 article.sub_01_02 {
-    background-image: url(../img/sub/sub_bg_01_02.png);
+    background-image: url(../img/sub/sub_bg_01_1.png);
 }

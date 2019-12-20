@@ -54,57 +54,69 @@
         </figure>
         <style>
             .tool_tip__type_animation_01 {
-    position:absolute;
-    top:calc(100% + 12px);
-    left:50%;
-    transform:translate3d(-50%,0,0);
-    padding:10px 10px;
-    background: #7852e8;
-    border-radius: 3px;
-    color:#ffffff;
-    font-size: 1rem;
-    white-space: nowrap;
-    line-height: 1.8em;
-    animation: md_ani_01 3s ease 0s infinite;
-    box-shadow: 0 4px 35px 0 rgba(23,55,87,.1), 0 5px 15px 0 rgba(0,0,0,.07);
-    opacity:1;
-    transition: all ease 0.3s;
-    visibility: visible;
-}
-.tool_tip__type_animation_01.ani_hide {
-    opacity:0;
-    visibility: hidden;
-}
-.tool_tip__type_animation_01 a{
-    font-size: inherit;
-    color: inherit;
-    text-decoration: none;
-}
-.tool_tip__type_animation_01 a:hover{
-    color: inherit;
-}
-.tool_tip__type_animation_01:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top:-8px;
-    left: calc(50% - 8px);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 8px 8px 8px;
-    border-color:  transparent transparent #7852e8 transparent;
-}
-@keyframes md_ani_01 {
-    0% {transform:translate3d(-50%,0,0)}
-    8% {transform:translate3d(-50%,12px,0)}
-    16% {transform:translate3d(-50%,0,0)}
-    24% {transform:translate3d(-50%,6px,0)}
-    /* 16% {transform:translate3d(-50%,0,0)}
+                position: absolute;
+                top: calc(100% + 12px);
+                left: 50%;
+                transform: translate3d(-50%, 0, 0);
+                padding: 10px 10px;
+                background: #7852e8;
+                border-radius: 8px;
+                color: #ffffff;
+                font-size: 1rem;
+                white-space: nowrap;
+                line-height: 1.8em;
+                animation: md_ani_01 3s ease 0s infinite;
+                box-shadow: 0 4px 35px 0 rgba(23, 55, 87, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.07);
+                opacity: 1;
+                transition: all ease 0.3s;
+                visibility: visible;
+            }
+            .tool_tip__type_animation_01.ani_hide {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .tool_tip__type_animation_01 a {
+                font-size: inherit;
+                color: inherit;
+                text-decoration: none;
+            }
+            .tool_tip__type_animation_01 a:hover {
+                color: inherit;
+            }
+            .tool_tip__type_animation_01:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -8px;
+                left: calc(50% - 8px);
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 8px 8px 8px;
+                border-color: transparent transparent #7852e8 transparent;
+            }
+            @keyframes md_ani_01 {
+                0% {
+                    transform: translate3d(-50%, 0, 0);
+                }
+                8% {
+                    transform: translate3d(-50%, 12px, 0);
+                }
+                16% {
+                    transform: translate3d(-50%, 0, 0);
+                }
+                24% {
+                    transform: translate3d(-50%, 6px, 0);
+                }
+                /* 16% {transform:translate3d(-50%,0,0)}
     20% {transform:translate3d(-50%,4px,0)} */
-    32% {transform:translate3d(-50%,0,0)}
-    99% {transform:translate3d(-50%,0,0)}
-}
+                32% {
+                    transform: translate3d(-50%, 0, 0);
+                }
+                99% {
+                    transform: translate3d(-50%, 0, 0);
+                }
+            }
         </style>
         <header>
             <div class="header-bg">
@@ -215,8 +227,8 @@
                                 <div class="border"></div>
                             </a>
                             <div class="tool_tip__type_animation_01 ff_sf">
-                                페이플에서 진행된 결제 내역이 궁금하신가요?<br/>
-                                여기서 확인하세요 
+                                페이플에서 진행된 결제 내역이 궁금하신가요?<br />
+                                여기서 확인하세요
                             </div>
                         </nav>
                     </div>
@@ -275,80 +287,161 @@
                             </li>
                         </ul>
                     </div> -->
-                    
                 </div>
                 <style>
                     .temp_remote {
-                        position:absolute;
-                        top:200px;
-                        right:0;
+                        position: absolute;
+                        top: 180px;
+                        right: 0;
                         background: #fff;
-                        padding:1rem 1rem;
+                        padding: 1rem 1rem;
                         border-radius: 0 0 0 4px;
-                        transform:translate3d(100%,0,0);
+                        transform: translate3d(100%, 0, 0);
                         transition: all ease 0.3s;
                     }
                     .temp_remote.active {
-                        transform:translate3d(0,0,0);
+                        transform: translate3d(0, 0, 0);
                     }
-                    .temp_active, .temp_close {
-                        display:none;
-                        position:absolute;
-                        right:100%;
-                        top:0;
-                        width:40px;
-                        height:40px;
+                    .temp_active,
+                    .temp_close {
+                        display: none;
+                        position: absolute;
+                        right: 100%;
+                        top: 0;
+                        width: 40px;
+                        height: 40px;
                         line-height: 40px;
                         text-align: center;
-                        color:hotpink;
+                        color: hotpink;
                         background: #fff;
-                        border-radius: 4px 0 0  4px;
-                        font-size:0;
+                        border-radius: 4px 0 0 4px;
+                        font-size: 0;
                         cursor: pointer;
                     }
-                    .temp_active i, .temp_close i{
-                        font-size:32px;
+                    .temp_active i,
+                    .temp_close i {
+                        font-size: 32px;
                     }
-                    .temp_remote .temp_active{
-                        display:block;
+                    .temp_remote .temp_active {
+                        display: block;
                     }
-                    .temp_remote .temp_close{
-                        display:none;
+                    .temp_remote .temp_close {
+                        display: none;
                     }
-                    .temp_remote.active .temp_active{
-                        display:none;
+                    .temp_remote.active .temp_active {
+                        display: none;
                     }
-                    .temp_remote.active .temp_close{
-                        display:block;
+                    .temp_remote.active .temp_close {
+                        display: block;
                     }
                     .temp_templete li {
-                        padding:0.4rem 0;
+                        padding: 0.4rem 0;
                         cursor: pointer;
                         text-align: right;
-                        border-bottom:1px solid #eee;
+                        border-bottom: 1px solid #eee;
+                        line-height:20px;
+                    }
+                    .temp_templete li i{
+                        opacity:0;
+                    }
+                    .temp_templete li.active {
+                        color:#7852e8;
+                        font-weight:500;
+                    }
+                    .temp_templete li.active i{
+                        opacity:1;
+                        margin:0 0.8rem 0.4rem 0;
                     }
                 </style>
                 <div class="temp_remote">
-                    <div class="temp_active"> <i class="material-icons"> settings_applications </i> </div>
-                    <div class="temp_close"> <i class="material-icons"> close </i> </div>
+                    <div class="temp_active"><i class="material-icons"> build </i></div>
+                    <div class="temp_close"><i class="material-icons"> close </i></div>
                     <ul class="temp_templete">
-                        <li>1번 이미지</li>
-                        <li>2번 이미지</li>
-                        <li>3번 이미지</li>
-                        <li>4번 이미지</li>
-                        <li>5번 이미지</li>
-                        <li>6번 이미지</li>
-                        <li>7번 이미지</li>
-                        <li>8번 이미지</li>
-                        <li>9번 이미지</li>
-                        <li>10번 이미지</li>
-                        <li>11번 이미지</li>
+                        <li class="active">
+                            <i class="material-icons">
+                                check </i
+                            >1번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >2번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >3번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >4번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >5번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >6번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >7번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >8번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >9번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >10번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >11번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >12번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >13번 이미지
+                        </li>
+                        <li>
+                            <i class="material-icons">
+                                check </i
+                            >14번 이미지
+                        </li>
                     </ul>
                 </div>
                 <script>
-                    $(document).ready(function(){
-                        $('.temp_active, .temp_close').click(function(){
-                            $('.temp_remote').toggleClass('active');
+                    $(document).ready(function() {
+                        $(".temp_active, .temp_close").click(function() {
+                            $(".temp_remote").toggleClass("active");
+                        });
+                        $('.temp_templete li').click(function() {
+                            var i = $(this).index() + 1;
+                            console.log(i);
+                            $('.temp_templete li').removeClass('active');
+                            $(this).addClass('active');
+                            $('article.full_page').css(
+                                'background-image','url(../img/sub/sub_bg_01_'+ i +'.png)'
+                            );
                         });
                     });
                 </script>
@@ -520,9 +613,11 @@
                 <div class="width_limiter space_setter__article_content">
                     <div class="code_box">
                         <div class="btn_box align_right">
-                            <div class="btn btn_sm cl_scs btn_rounded js_btn_copy" data-clipboard-target="#foo"><i class="material-icons"> edit </i> 코드복사 </div>
+                            <div class="btn btn_sm cl_scs btn_rounded js_btn_copy" data-clipboard-target="#foo">
+                                <i class="material-icons"> edit </i> 코드복사
+                            </div>
                         </div>
-                    <pre>
+                        <pre>
                         
                         <code class="javascript" id="foo">
 <!-- 가맹점 인증 -->
@@ -561,7 +656,7 @@ Cache-Control: no-cache
 }
                         </code>
                     </pre>
-                </div>
+                    </div>
                 </div>
                 <script>
                     hljs.initHighlightingOnLoad();
