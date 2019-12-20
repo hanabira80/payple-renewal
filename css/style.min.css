@@ -1365,9 +1365,9 @@ pre code {
   width: 100%;
   -webkit-box-shadow: -27.1px 62.5px 125px -25px rgba(50, 50, 93, 0.5), -16.2px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
           box-shadow: -27.1px 62.5px 125px -25px rgba(50, 50, 93, 0.5), -16.2px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
-  background: #fff;
   border-radius: 4px 4px;
   max-height: 40rem;
+  padding: 3.2rem 2rem !important;
 }
 
 .dp_b {
