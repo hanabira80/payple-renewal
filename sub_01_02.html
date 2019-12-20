@@ -37,6 +37,7 @@
             href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Black+Han+Sans|Do+Hyeon|East+Sea+Dokdo|Gaegu|Gamja+Flower|Gugi|Hi+Melody|Jua|Nanum+Pen+Script|Poor+Story|Single+Day|Sunflower:300&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" />
         <!-- font setting end-->
 
         <!-- css setting -->
@@ -241,10 +242,9 @@
                 </div>
             </div>
         </header>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/tomorrow-night-eighties.min.css" />
-        <!-- shades-of-purple, tomorrow-night-blue, tomorrow-night-eighties,atelier-sulphurpool-dark,dracula,night-owl -->
-        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-        <script src="js/clipboard.js"></script>
+        
+
+
 
         <section>
             <article class="full_page sub_01_02">
@@ -339,94 +339,38 @@
                         cursor: pointer;
                         text-align: right;
                         border-bottom: 1px solid #eee;
-                        line-height:20px;
+                        line-height: 20px;
                     }
-                    .temp_templete li i{
-                        opacity:0;
+                    .temp_templete li i {
+                        opacity: 0;
                     }
                     .temp_templete li.active {
-                        color:#7852e8;
-                        font-weight:500;
+                        color: #7852e8;
+                        font-weight: 500;
                     }
-                    .temp_templete li.active i{
-                        opacity:1;
-                        margin:0 0.8rem 0.4rem 0;
+                    .temp_templete li.active i {
+                        opacity: 1;
+                        margin: 0 0.8rem 0.4rem 0;
                     }
                 </style>
                 <div class="temp_remote">
                     <div class="temp_active"><i class="material-icons"> build </i></div>
                     <div class="temp_close"><i class="material-icons"> close </i></div>
                     <ul class="temp_templete">
-                        <li class="active">
-                            <i class="material-icons">
-                                check </i
-                            >1번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >2번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >3번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >4번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >5번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >6번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >7번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >8번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >9번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >10번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >11번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >12번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >13번 이미지
-                        </li>
-                        <li>
-                            <i class="material-icons">
-                                check </i
-                            >14번 이미지
-                        </li>
+                        <li class="active"><i class="material-icons"> check </i>1번 이미지</li>
+                        <li><i class="material-icons"> check </i>2번 이미지</li>
+                        <li><i class="material-icons"> check </i>3번 이미지</li>
+                        <li><i class="material-icons"> check </i>4번 이미지</li>
+                        <li><i class="material-icons"> check </i>5번 이미지</li>
+                        <li><i class="material-icons"> check </i>6번 이미지</li>
+                        <li><i class="material-icons"> check </i>7번 이미지</li>
+                        <li><i class="material-icons"> check </i>8번 이미지</li>
+                        <li><i class="material-icons"> check </i>9번 이미지</li>
+                        <li><i class="material-icons"> check </i>10번 이미지</li>
+                        <li><i class="material-icons"> check </i>11번 이미지</li>
+                        <li><i class="material-icons"> check </i>12번 이미지</li>
+                        <li><i class="material-icons"> check </i>13번 이미지</li>
+                        <li><i class="material-icons"> check </i>14번 이미지</li>
                     </ul>
                 </div>
                 <script>
@@ -434,14 +378,12 @@
                         $(".temp_active, .temp_close").click(function() {
                             $(".temp_remote").toggleClass("active");
                         });
-                        $('.temp_templete li').click(function() {
+                        $(".temp_templete li").click(function() {
                             var i = $(this).index() + 1;
                             console.log(i);
-                            $('.temp_templete li').removeClass('active');
-                            $(this).addClass('active');
-                            $('article.full_page').css(
-                                'background-image','url(img/sub/sub_bg_01_'+ i +'.png)'
-                            );
+                            $(".temp_templete li").removeClass("active");
+                            $(this).addClass("active");
+                            $("article.full_page").css("background-image", "url(img/sub/sub_bg_01_" + i + ".png)");
                         });
                     });
                 </script>
@@ -604,63 +546,58 @@
                 <div class="article_stripe"></div>
                 <div class="tit_box__article width_limiter ">
                     <h3 class="main_tit__article">
-                        코드 확인
+                        간편한 결제모듈 연동
                     </h3>
                     <h4 class="sub_tit__article">
-                        [코드확인]
+                        페이플은 모든 개발환경을 지원하기 위해 자바스크립트 방식의 API를 제공합니다.
                     </h4>
                 </div>
                 <div class="width_limiter space_setter__article_content">
+                    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/atelier-sulphurpool-dark.min.css" />
+                    <!-- shades-of-purple, tomorrow-night-blue, tomorrow-night-eighties,atelier-sulphurpool-dark,dracula,night-owl -->
+                    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
                     <div class="code_box">
-                        <div class="btn_box align_right">
-                            <div class="btn btn_sm cl_scs btn_rounded js_btn_copy" data-clipboard-target="#foo">
-                                <i class="material-icons"> edit </i> 코드복사
-                            </div>
-                        </div>
                         <pre>
-                        
-                        <code class="javascript" id="foo">
-<!-- 가맹점 인증 -->
-POST /php/auth.php HTTP/1.1
-Host: testcpay.payple.kr
-Content-Type: application/json
-Cache-Control: no-cache
-{
-  "cst_id": "test",
-  "custKey": "abcd1234567890",
-  "PCD_REGULER_FLAG": "Y"
-}
+                            <code class="language-js"><!-- payple js 호출 -->
+<script src="https://cpay.payple.kr/js/cpay.payple.1.0.1.js"></script>
 
-<!-- 결제요청  -->
-POST /php/RePayAct.php?ACT_=PAYM HTTTP/1.1
-Host: testcpay.payple.kr
-Content-Type: application/json
-Cache-Control: no-cache
-{
-   "PCD_CST_ID": "test",	// 또는 인코딩된 "PCD_CST_ID": "UFVNNVZpZk4reWo5UFRualUwcGV4dz09"
-   "PCD_CUST_KEY": "abcd1234567890", // 또는 인코딩된 "PCD_CUST_KEY": "T3JzRkp5L1FTcEFDa1FQdHo5Um1UZz09"
-   "PCD_AUTH_KEY": "a688ccb3555c25cd722483f03e23065c3d0251701ad6da895eb2d830bc06e34d",
-   "PCD_PAY_TYPE": "transfer",							
-   "PCD_PAYER_NO": "2324",
-   "PCD_PAYER_ID": "NS9qNTgzU2xRNHR2RmFBWWFBTWk5UT09",
-   "PCD_PAY_GOODS": "정기구독",
-   "PCD_PAY_YEAR": "2018",	
-   "PCD_PAY_MONTH": "04",	
-   "PCD_PAY_TOTAL": "1000",
-   "PCD_PAY_OID": "test201804000001",
-   "PCD_TAXSAVE_FLAG": "Y",
-   "PCD_TAXSAVE_TRADE": "personal",
-   "PCD_TAXSAVE_IDNUM": "01022224444",
-   "PCD_REGULER_FLAG": "Y",
-   "PCD_PAYER_EMAIL": "dev@payple.kr"
-}
-                        </code>
-                    </pre>
+<!-- 가맹점 주문페이지 '결제하기' 버튼 액션 -->
+<script>
+    $(document).ready(function() {
+        $("#payAction").on("click", function(event) {
+            var obj = new Object();
+
+            obj.PCD_CPAY_VER = "1.0.1";
+            obj.PCD_PAY_TYPE = "card";
+            obj.PCD_PAY_WORK = pay_work;
+            obj.PCD_CARD_VER = "01";
+
+            PaypleCpayAuthCheck(obj);
+            event.preventDefault();
+        });
+    });
+</script></code>
+                        </pre>
+                        <div class="btn_box align_center">
+                            <a
+                                class="btn btn_md btn_rounded cl_info"
+                                href="https://github.com/PAYPLECORP/manual_card"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fa fa-github" aria-hidden="true"></i> API 문서 자세히 보기
+                            </a>
+                        </div>
                     </div>
                 </div>
+
                 <script>
+    
+                    document.querySelectorAll("code").forEach(function(element) {
+                        element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+                    });
                     hljs.initHighlightingOnLoad();
-                </script>
+                                </script>
             </article>
 
             <article class="has_line">

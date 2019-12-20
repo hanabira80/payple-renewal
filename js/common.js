@@ -81,7 +81,7 @@ $(document).ready(function(){
     parallaxScroll();
     moMenuAction();
     this_year();
-    copyCode();
+    //copyCode();
 
     $(window).bind('scroll',function(e){
         parallaxScroll();
