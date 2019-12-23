@@ -108,3 +108,22 @@ section {
         perspective: 3000;
     }
 }
+
+
+// /* naver_map_module */
+.map_canvas {
+    height: 408px;
+    background: #fff;
+    // border: 1px solid #fff;
+}
+.map_canvas .map_marker {
+    text-align: center;
+    padding: 0.4rem 0.4rem;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #777;
+    font-size: 0.8rem;
+    word-break: keep-all;
+}
+// /* naver_map_module end */

@@ -926,12 +926,12 @@
             </div>
         </div>
 
-        <div class="modal-outer scroll-block" style="display: none !important;">
-            <div class="modal-mask js-modal-close"></div>
+        <div class="modal_outer scroll-block">
+            <div class="modal_backdrop js_trigger__close_modal"></div>
             <!-- modal-video -->
-            <div class="modal modal-video xy-center" id="modal-video">
-                <div class="ratio-inner"></div>
-                <div class="close js-modal-close">
+            <div class="modal modal_video xy-center" id="modal_video">
+                <div class="ratio_setter_hd"></div>
+                <div class="close js_trigger__close_modal">
                     <i class="material-icons">clear</i>
                 </div>
             </div>
@@ -1004,11 +1004,43 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
         <div
             id="temp"
-            style="width:100px; height:100px; background:#444; display:none; position:fixed; z-index:900000; left:100px; bottom:100px; text-align:center; line-height:50px; color:#fff; cursor:pointer;"
-            video_value="PdJa997mCUY"
+            style="width:100px; height:100px; background:#444; display:block; position:fixed; z-index:900000; left:100px; bottom:100px; text-align:center; line-height:50px; color:#fff; cursor:pointer;"
+            onclick="loadModal('modal_video','video')" 
+            video_value="2ecOqK93-NE"
         ></div>
 
         <script>
+
+        function loadModal(el,type) {
+            // $(".modal_outer").addClass("js_is_active");
+            var modalOutter = $(".modal_outer");
+            var modalTarget = $("#"+ el +"");
+             
+            //var findModal= modalTarget.find('.modal');
+            var findCloseTrigger = $('.js_trigger__close_modal');
+
+            if (type == 'video') {
+                video_val = $(this).attr("video_value");
+				$(".modal_video .ratio_setter_hd").html("<iframe src='https://www.youtube.com/embed/"+video_val+"?controls=0&showinfo=0&rel=0&autoplay=1&loop=0' frameborder='0' allowfullscreen></iframe>")
+			}
+
+            modalOutter.addClass('js_is_active');
+            modalTarget.addClass('js_is_active');
+            // findModal.addClass('js_is_active');
+            findCloseTrigger.click(function() {
+                // $(".modal_outer").removeClass("js_is_active");
+                modalOutter.removeClass('js_is_active');
+                modalTarget.removeClass('js_is_active');
+                // findModal.removeClass('js_is_active');
+                if (type == 'video') {
+                    $(".modal_video .ratio_setter_hd").html("");
+                }
+            });
+            
+        }
+
+		
+	
             //$(".temp").click(function(){
             //alert();
             /*
