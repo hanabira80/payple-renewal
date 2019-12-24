@@ -1,0 +1,19 @@
+<!-- payple js 호출 -->
+<script src="https://cpay.payple.kr/js/cpay.payple.1.0.1.js"></script>
+
+<!-- 가맹점 주문페이지 '결제하기' 버튼 액션 -->
+<script>
+    $(document).ready(function() {
+        $("#payAction").on("click", function(event) {
+            var obj = new Object();
+
+            obj.PCD_CPAY_VER = "1.0.1";
+            obj.PCD_PAY_TYPE = "card";
+            obj.PCD_PAY_WORK = pay_work;
+            obj.PCD_CARD_VER = "01";
+
+            PaypleCpayAuthCheck(obj);
+            event.preventDefault();
+        });
+    });
+</script>

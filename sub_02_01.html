@@ -37,6 +37,7 @@
             href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Black+Han+Sans|Do+Hyeon|East+Sea+Dokdo|Gaegu|Gamja+Flower|Gugi|Hi+Melody|Jua|Nanum+Pen+Script|Poor+Story|Single+Day|Sunflower:300&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" />
         <!-- font setting end-->
 
         <!-- css setting -->
@@ -49,128 +50,7 @@
     </head>
 
     <body class="_js-is-limit">
-        <figure style="display:none;">
-            <img src="img/common/front_img.png" alt="">
-        </figure>
-        <header>
-            <div class="header-bg">
-                <div class="scroll_nav">
-                    <div class="percent"></div>
-                </div>
-            </div>
-            <div class="width_limiter dp_flex flc_al_center">
-                <div class="header_logo_box">
-                    <a href="" class="full"></a>
-                </div>
-                <div class="header_menu_area dp_flex">
-                    <div class="header_menu_box dp_flex">
-                        <nav class="header_menu">
-                            <div class="div js_trigger_mo_menu">
-                                <div class="txt">
-                                    <i class="material-icons"> keyboard_arrow_left </i>
-                                    <div class="icon_text">카드결제</div>
-                                </div>
-                                <div class="border"></div>
-                            </div>
-                            <div class="header_sub_menu_box ">
-                                <ul class="space_setter">
-                                    <li>
-                                        <a href="">
-                                            정기결제
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            앱카드결제
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                        <nav class="header_menu">
-                            <div class="div js_trigger_mo_menu">
-                                <div class="txt">
-                                    <i class="material-icons">
-                                        keyboard_arrow_left
-                                    </i>
-
-                                    <div class="icon_text">계좌이체</div>
-                                </div>
-                                <div class="border"></div>
-                            </div>
-                            <div class="header_sub_menu_box ">
-                                <ul class="space_setter">
-                                    <li>
-                                        <a href="">
-                                            정기결제
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            간편결제
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            일회성결제
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                        <nav class="header_menu">
-                            <a href="" class="div">
-                                <div class="txt">
-                                    <div class="icon_text">URL 링크결제</div>
-                                </div>
-                                <div class="border"></div>
-                            </a>
-                        </nav>
-                    </div>
-
-                    <div class="header_menu_box dp_flex right">
-                        <nav class="header_menu">
-                            <a href="" class="div">
-                                <div class="txt">
-                                    <div class="icon_text">가입문의하기</div>
-                                </div>
-                                <div class="border"></div>
-                            </a>
-                        </nav>
-                        <nav class="header_menu">
-                            <a href="" class="div">
-                                <div class="txt">
-                                    <div class="icon_text">API</div>
-                                </div>
-                                <div class="border"></div>
-                            </a>
-                        </nav>
-                        <nav class="header_menu">
-                            <a href="" class="div">
-                                <div class="txt">
-                                    <div class="icon_text">고객사 로그인</div>
-                                </div>
-                                <div class="border"></div>
-                            </a>
-                        </nav>
-                        <nav class="header_menu">
-                            <a href="" class="div">
-                                <div class="txt">
-                                    <div class="icon_text">결제내역 조회</div>
-                                </div>
-                                <div class="border"></div>
-                            </a>
-                        </nav>
-                    </div>
-                </div>
-                <div class="header_menu_icn y_center">
-                    <div class="bar bar1"></div>
-                    <div class="bar bar2"></div>
-                    <div class="bar bar3"></div>
-                    <div class="bar bar4"></div>
-                </div>
-            </div>
-        </header>
+        <div id="header"></div>
 
         <section>
             <article class="full_page sub_01_02">
@@ -179,154 +59,315 @@
                 <div class="width_limiter main_view">
                     <div class="left_area__main_view t2">
                         <div class="main_tit ">
-                            재방문 고객의 편리한 결제를 위한<br/>
-                            계좌등록 간편결제
+                            정기배송, 구독 서비스를 위한<br />
+                            카드 정기결제
                         </div>
                         <div class="sub_tit ">
-                            매번 결제정보를 입력하는 것은 불편합니다<br/>
-                            페이플 계좌간편결제는 결제비밀번호만 입력하면 됩니다<br/>
-                            고객에게 편리한 구매경험과 소득공제 30% 혜택을 제공해보세요<br/>
+                            정기배송, 구독 서비스를 운영 중이신가요?<br />
+                            편리한 페이플 카드 정기결제를 이용해보세요.<br />
+                            사용자의 카드등록만으로 정기결제가 가능합니다.<br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="temp_remote">
+                    <div class="temp_active"><i class="material-icons"> build </i></div>
+                    <div class="temp_close"><i class="material-icons"> close </i></div>
+                    <ul class="temp_templete">
+                        <li class="active"><i class="material-icons"> check </i>1번 이미지</li>
+                        <li><i class="material-icons"> check </i>2번 이미지</li>
+                        <li><i class="material-icons"> check </i>3번 이미지</li>
+                        <li><i class="material-icons"> check </i>4번 이미지</li>
+                        <li><i class="material-icons"> check </i>5번 이미지</li>
+                        <li><i class="material-icons"> check </i>6번 이미지</li>
+                        <li><i class="material-icons"> check </i>7번 이미지</li>
+                        <li><i class="material-icons"> check </i>8번 이미지</li>
+                        <li><i class="material-icons"> check </i>9번 이미지</li>
+                        <li><i class="material-icons"> check </i>10번 이미지</li>
+                        <li><i class="material-icons"> check </i>11번 이미지</li>
+                        <li><i class="material-icons"> check </i>12번 이미지</li>
+                        <li><i class="material-icons"> check </i>13번 이미지</li>
+                        <li><i class="material-icons"> check </i>14번 이미지</li>
+                    </ul>
+                </div>
+            </article>
+            
+            <article class="">
+                <div class="article_stripe"></div>
+                <div class="tit_box__article width_limiter ">
+                    <h3 class="main_tit__article">
+                        카드정보 입력만으로 편리하게 카드등록
+                    </h3>
+                    <h4 class="sub_tit__article">
+                        정기결제를 위한 카드등록은 쉽습니다. 사용자의 카드정보 입력으로 카드정보 확인과 함께 카드등록이 완료됩니다.
+                    </h4>
+                </div>
+                <div class="width_limiter space_setter__article_content">
+                    <div class="video_box has_frame">
+                        <div class="ratio_setter_hd">
+                            <iframe
+                                width="1280"
+                                height="720"
+                                src="//www.youtube.com/embed/2ecOqK93-NE?VQ=HD720&autoplay=0&loop=1&rel=0&showinfo=0&controls= 0&enablejsapi=1&wmode=transparent&hd=1"
+                                wmode="Opaque"
+                                frameborder="0"
+                                allowfullscreen=""
+                            ></iframe>
                         </div>
                     </div>
                 </div>
             </article>
-            <article class="has_line">
-                <div class="article_stripe"></div>
-                <div class="tit_box__article width_limiter ">
-                    <h3 class="main_tit__article">
-                        1분이면 계좌등록과 결제 끝
-                    </h3>
-                    <h4 class="sub_tit__article">
-                        개인정보취급방침에 대한 안내입니다.
-                    </h4>
-                </div>
-                <div class="width_limiter space_setter__article_content">
-                    
-                </div>
-            </article>
 
             <article class="has_line">
                 <div class="article_stripe"></div>
                 <div class="tit_box__article width_limiter ">
                     <h3 class="main_tit__article">
-                        1분이면 계좌등록과 결제 끝
+                        적용화면
                     </h3>
                     <h4 class="sub_tit__article">
-                        개인정보취급방침에 대한 안내입니다.
+                        페이플 고객사에 실제 적용되어 있는 카드 정기결제 화면입니다.
+                    </h4>
+                </div>
+                <div class="width_limiter space_setter__article_content dp_flex flc_nowrap flc_jc_center flc_al_center">
+                    <div class="pc_frame">
+                        <div class="ratio_setter">
+                            <div class="img_frame">
+                                <img class="res" src="img/main/frame_pc_header.svg" alt="" />
+                            </div>
+                            <div class="swiper-container slider_main_pc">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_pc_frame_02.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_pc_frame_03.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_pc_frame_04.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_pc_frame_05.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="device_list dp_flex flc_nowrap flc_jc_center flc_al_center">
+                        <li class="phone_big">
+                            <div class="swiper-container slider_main_mo">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_02.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_03.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_04.png" alt="" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="">
+                <div class="article_stripe"></div>
+                <div class="tit_box__article width_limiter ">
+                    <h3 class="main_tit__article">
+                        간편한 결제모듈 연동
+                    </h3>
+                    <h4 class="sub_tit__article">
+                        페이플은 모든 개발환경을 지원하기 위해 자바스크립트 방식의 API를 제공합니다.
                     </h4>
                 </div>
                 <div class="width_limiter space_setter__article_content">
-                    
+                    <div class="code_box">
+                        <pre>
+                            <code class="language-js" id="code_include"></code>
+                        </pre>
+                        <div class="btn_box align_center">
+                            <a
+                                class="btn btn_md btn_rounded cl_info"
+                                href="https://github.com/PAYPLECORP/manual_card"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fa fa-github" aria-hidden="true"></i> API 문서 자세히 보기
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </article>
 
             <article class="has_line">
                 <div class="article_stripe"></div>
-                <div class="tit_box__article width_limiter ">
-                    <h3 class="main_tit__article">
-                        1분이면 계좌등록과 결제 끝
-                    </h3>
-                    <h4 class="sub_tit__article">
-                        개인정보취급방침에 대한 안내입니다.
-                    </h4>
-                </div>
-                <div class="width_limiter space_setter__article_content">
-                    
-                </div>
-            </article>
 
-            <article class="has_line">
-                <div class="article_stripe"></div>
                 <div class="tit_box__article width_limiter ">
                     <h3 class="main_tit__article">
-                        1분이면 계좌등록과 결제 끝
+                        다른 결제방식이 필요하신가요?
+                        <!-- <img class="logo_in_text__lg" src="img/common/logo_full.svg" alt="" />
+                        의 다양한 결제 방식을 확인해보세요. -->
                     </h3>
                     <h4 class="sub_tit__article">
-                        개인정보취급방침에 대한 안내입니다.
+                        페이플은 여러 분야, 다양한 방식의 결제에 대응하기 위한 다양한 서비스를 제공하고 있습니다.
                     </h4>
                 </div>
-                <div class="width_limiter space_setter__article_content">
-                    
-                </div>
-            </article>
 
-            <article class="has_line">
-                <div class="article_stripe"></div>
-                <div class="tit_box__article width_limiter ">
-                    <h3 class="main_tit__article">
-                        1분이면 계좌등록과 결제 끝
-                    </h3>
-                    <h4 class="sub_tit__article">
-                        개인정보취급방침에 대한 안내입니다.
-                    </h4>
-                </div>
-                <div class="width_limiter space_setter__article_content">
-                    
+                <div class="width_limiter space_setter__article_content main_introduce">
+                    <div class="left_area__main_introduce">
+                        <ul class="device_list tab_ctn_box_img_step">
+                            <li class="phone_big">
+                                <div class="area_setter">
+                                    <div class="tab_ctn_img_step tab_ctn_img_step_info js_target_tab_ctn_img_step2_info">
+                                        <div class="">
+                                            <p class="font fsz_12 fcl_main has_font_spacer_b_12 align_center">
+                                                필요한 결제방식을 선택해주세요.
+                                            </p>
+                                            <p class="font fsz_10 fcl_txt has_font_spacer_b_12 align_center">
+                                                실제 사용된 예시를 살펴 보실수 있습니다.
+                                            </p>
+                                            <img class="res" src="img/main/info_tab_btn_box_step_2.svg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2 is_show_ani" depth="1_1">
+                                        <img class="res" src="img/main/tab_ctn_img_step_001.png" alt="" />
+                                    </div>
+                                    <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="1_2">
+                                        <img class="res" src="img/main/tab_ctn_img_step_02.png" alt="" />
+                                    </div>
+                                    <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="2_1">
+                                        <img class="res" src="img/main/tab_ctn_img_step_03.png" alt="" />
+                                    </div>
+                                    <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="2_2">
+                                        <img class="res" src="img/main/tab_ctn_img_step_04.png" alt="" />
+                                    </div>
+                                    <div class="tab_ctn_img_step js_target_tab_ctn_img_step_2" depth="2_3">
+                                        <img class="res" src="img/main/tab_ctn_img_step_05.png" alt="" />
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right_area__main_introduce">
+                        <div class="card_stripe_thumbnail">
+                            <div class="thumbnail cmz_card_payment"></div>
+                            <div class="btn_box align_left tab_step_module">
+                                <div class="tab_btn_box_step_2 js_frag_tab_btn_step_2 is_show_ani" kind="0">
+                                    <div class="btn btn_sm btn_rounded cl_scs js_trigger_tab_btn_step_2" depth="1_1">
+                                        정기결제
+                                    </div>
+                                    <div class="btn btn_sm btn_rounded js_trigger_tab_btn_step_2" depth="1_2">
+                                        앱카드결제
+                                    </div>
+                                </div>
+                                <div class="tab_btn_box_step_2 js_frag_tab_btn_step_2" kind="1">
+                                    <div class="btn btn_sm btn_rounded js_trigger_tab_btn_step_2 " depth="2_1">
+                                        정기결제
+                                    </div>
+                                    <div class="btn btn_sm btn_rounded js_trigger_tab_btn_step_2" depth="2_2">
+                                        간편결제
+                                    </div>
+                                    <div class="btn btn_sm btn_rounded js_trigger_tab_btn_step_2" depth="2_3">
+                                        일회성결제
+                                    </div>
+                                </div>
+                                <div class="tab_btn_box_step_1">
+                                    <div class="btn btn_md_sub btn_rounded js_trigger_tab_btn_step_1 cl_info" kind="0">
+                                        카드결제
+                                    </div>
+                                    <div class="btn btn_md_sub btn_rounded js_trigger_tab_btn_step_1" kind="1">
+                                        계좌이체
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab_ctn_box_step">
+                                <div class="tab_ctn_step js_target_tab_ctn_step2_info" kind="0">
+                                    <div class="ctn_box">
+                                        <p class="font fsz_12 fcl_txt ">
+                                            <b class=" fcl_scs fsz_14 has_font_spacer_b_20">필요한 결제방식을 선택해주세요.</b><br />
+                                            <b class="fcl_bold">정기결제</b><br />
+                                            정기구독, 정기배송을 위한 결제입니다.<br />
+                                            <b class="fcl_bold">앱카드결제</b><br />
+                                            온라인 쇼핑몰을 위한 앱카드결제입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn_step js_target_tab_ctn_step2_info" kind="1">
+                                    <div class="ctn_box">
+                                        <p class="font fsz_12 fcl_txt ">
+                                            <b class=" fcl_scs fsz_14 has_font_spacer_b_20">필요한 결제방식을 선택해주세요.</b><br />
+                                            <b class="fcl_bold">정기결제</b><br />
+                                            정기구독, 정기배송을 위한 결제입니다.<br />
+                                            <b class="fcl_bold">간편결제</b><br />
+                                            재방문 회원을 위한 비밀번호 간편결제입니다.<br />
+                                            <b class="fcl_bold">일회성결제</b><br />
+                                            공인인증서없는 실시간계좌이체입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn_step js_target_tab_ctn_step_2 is_show_ani" depth="1_1">
+                                    <div class="ctn_box">
+                                        <p class="font fsz_12 fcl_txt ">
+                                            정기배송, 유료멤버십 서비스를 운영 중이신가요?<br />
+                                            편리한 페이플 카드정기결제로 결제전환율을 높여보세요.<br />
+                                            사용자가 최초 카드등록만 하면 모든 절차가 완료됩니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn_step js_target_tab_ctn_step_2" depth="1_2">
+                                    <div class="ctn_box">
+                                        <p class="font fsz_12 fcl_txt ">
+                                            정기결제와 함께 앱카드결제가 필요하신가요?<br />
+                                            한 번의 결제모듈 연동개발로 정기결제, 앱카드결제 모두 도입이 가능합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn_step js_target_tab_ctn_step_2" depth="2_1">
+                                    <div class="ctn_box">
+                                        <p class="font fsz_12 fcl_txt ">
+                                            정기배송, 유료멤버십 서비스를 운영 중이신가요?<br />
+                                            편리한 페이플 계좌정기결제(자동이체)로 결제전환율을 높여보세요.<br />
+                                            사용자가 최초 계좌등록만 하면 매월 사용자의 계좌에서 자동으로 출금됩니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn_step js_target_tab_ctn_step_2" depth="2_2">
+                                    <div class="ctn_box">
+                                        <p class="font fsz_12 fcl_txt ">
+                                            자체 간편결제가 필요하신가요? <br />
+                                            페이플이 고객사만의 간편결제가 되어 드립니다.<br />
+                                            고객사의 회원이 최초 계좌등록만 하면 이후에는 결제비밀번호만으로 결제가 완료됩니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab_ctn_step js_target_tab_ctn_step_2" depth="2_3">
+                                    <div class="ctn_box">
+                                        <p class="font fsz_12 fcl_txt ">
+                                            PG의 실시간계좌이체는 너무 불편하시죠?<br />
+                                            페이플 일회성 계좌이체는 앱 설치, 공인인증서가 필요없기 때문에 사용자가 편리하게 계좌이체로 결제할 수 있는
+                                            서비스입니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
-        
-        <footer>
-            <div class="width-inner">
-                <div class="footer-logo">
-                    <img src="./img/common/logo_simple.svg" class="res" />
-                </div>
-                <div class="footer-info-box">
-                    <div class="footer-info">
-                        상호 : 주식회사 페이플
-                    </div>
-                    <div class="footer-info">
-                        대표자 : 김현철
-                    </div>
-                    <div class="footer-info">
-                        사업자번호 : 331-87-01049
-                    </div>
-                    <div class="footer-info-spt"></div>
-                    <div class="footer-info">
-                        주소 : 서울시 서초구 매헌로 24 NH디지털혁신캠퍼스 5층
-                    </div>
-                    <div class="footer-info">
-                        대표번호 : 1522-5013
-                    </div>
-                    <div class="footer-info">
-                        문의 : help@payple.kr
-                    </div>
-                    <div class="footer-info">
-                        전자금융업 등록번호 : 02-004-00145
-                    </div>
-                    <div class="footer-info cl">
-                        개인정보취급방침
-                    </div>
-                    <div class="footer-info cl">
-                        전자금융거래 이용약관
-                    </div>
-                    <div class="footer-info cl">
-                        혁신금융서비스 이용약관
-                    </div>
-                </div>
-                <div class="footer-copy">COPYRIGHT©<span class="current_year"></span> PAYPLE. ALL RIGHT RESERVED</div>
-            </div>
-        </footer>
 
-        <div class="loader">
-            <div class="left_area"></div>
-            <div class="right_area"></div>
-            <div class="cube_grid xy_center">
-                <div class="cube cube1"></div>
-                <div class="cube cube2"></div>
-                <div class="cube cube3"></div>
-                <div class="cube cube4"></div>
-                <div class="cube cube5"></div>
-                <div class="cube cube6"></div>
-                <div class="cube cube7"></div>
-                <div class="cube cube8"></div>
-                <div class="cube cube9"></div>
-                <i class="material-icons icon">
-                    alarm
-                </i>
-            </div>
-        </div>
+        <div id="footer"></div>
+        <div id="modal"></div>
+        <div id="loader"></div>
 
+        <script src="./js/highlight.js"></script>
         <script src="./js/common.js"></script>
         <script src="./js/sub.js"></script>
     </body>

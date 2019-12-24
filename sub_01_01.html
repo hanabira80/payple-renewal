@@ -53,7 +53,7 @@
         <div id="header"></div>
 
         <section>
-            <article class="full_page sub_01_02">
+            <article class="full_page sub_01_01">
                 <div class="article_stripe"></div>
                 <div class="backdrop"></div>
                 <div class="width_limiter main_view">
@@ -68,97 +68,8 @@
                             사용자의 카드등록만으로 정기결제가 가능합니다.<br />
                         </div>
                     </div>
-                    <!-- <div class="right_area__main_view">
-                        <ul class="device_list main_slider_mo">
-                            <li class="phone_big">
-                                <div class="swiper-container slider_main_mo">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img class="res" src="img/main/slider_main_mo_frame_01.png" alt="" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img class="res" src="img/main/slider_main_mo_frame_02.png" alt="" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img class="res" src="img/main/slider_main_mo_frame_03.png" alt="" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img class="res" src="img/main/slider_main_mo_frame_04.png" alt="" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div> -->
                 </div>
-                <style>
-                    .temp_remote {
-                        position: absolute;
-                        top: 180px;
-                        right: 0;
-                        background: #fff;
-                        padding: 1rem 1rem;
-                        border-radius: 0 0 0 4px;
-                        transform: translate3d(100%, 0, 0);
-                        transition: all ease 0.3s;
-                    }
-                    .temp_remote.active {
-                        transform: translate3d(0, 0, 0);
-                    }
-                    .temp_active,
-                    .temp_close {
-                        display: none;
-                        position: absolute;
-                        right: 100%;
-                        top: 0;
-                        width: 40px;
-                        height: 40px;
-                        line-height: 40px;
-                        text-align: center;
-                        color: hotpink;
-                        background: #fff;
-                        border-radius: 4px 0 0 4px;
-                        font-size: 0;
-                        cursor: pointer;
-                    }
-                    .temp_active i,
-                    .temp_close i {
-                        font-size: 32px;
-                    }
-                    .temp_remote .temp_active {
-                        display: block;
-                    }
-                    .temp_remote .temp_close {
-                        display: none;
-                    }
-                    .temp_remote.active .temp_active {
-                        display: none;
-                    }
-                    .temp_remote.active .temp_close {
-                        display: block;
-                    }
-                    .temp_templete li {
-                        padding: 0.4rem 0;
-                        cursor: pointer;
-                        text-align: right;
-                        border-bottom: 1px solid #eee;
-                        line-height: 20px;
-                    }
-                    .temp_templete li i {
-                        opacity: 0;
-                    }
-                    .temp_templete li.active {
-                        color: #7852e8;
-                        font-weight: 500;
-                    }
-                    .temp_templete li.active i {
-                        opacity: 1;
-                        margin: 0 0.8rem 0.4rem 0;
-                    }
-                </style>
+
                 <div class="temp_remote">
                     <div class="temp_active"><i class="material-icons"> build </i></div>
                     <div class="temp_close"><i class="material-icons"> close </i></div>
@@ -179,70 +90,8 @@
                         <li><i class="material-icons"> check </i>14번 이미지</li>
                     </ul>
                 </div>
-                <script>
-                    $(document).ready(function() {
-                        $(".temp_active, .temp_close").click(function() {
-                            $(".temp_remote").toggleClass("active");
-                        });
-                        $(".temp_templete li").click(function() {
-                            var i = $(this).index() + 1;
-                            console.log(i);
-                            $(".temp_templete li").removeClass("active");
-                            $(this).addClass("active");
-                            $("article.full_page").css("background-image", "url(img/sub/sub_bg_01_" + i + ".png)");
-                        });
-                    });
-                </script>
             </article>
-            <!-- <article class="">
-                <div class="article_stripe"></div>
-                <div class="tit_box__article width_limiter ">
-                    <h3 class="main_tit__article">
-                        1분이면 계좌등록과 결제 끝
-                    </h3>
-                    <h4 class="sub_tit__article">
-                        [안내 문구 추가]
-                    </h4>
-                </div>
-                <div class="width_limiter space_setter__article_content">
-                    <ul class="card_img_big_title dp_flex flc_wrap flc_jc_sr">
-                        <li>
-                            <div class="icon_box">
-                                <img class="thumb" src="img/sub/002.jpg" alt="" />
-                            </div>
-                            <div class="font fsz_12 fw_md fcl_main has_font_spacer_b_12 ">
-                                Step. 1
-                            </div>
-                            <div class="font fsz_22 ff_gf fcl_bold align_center">
-                                계좌정보 입력하고
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon_box">
-                                <img class="thumb" src="img/sub/002.jpg" alt="" />
-                            </div>
-                            <div class="font fsz_12 fw_md fcl_main  has_font_spacer_b_16 ">
-                                Step. 2
-                            </div>
-                            <div class="font fsz_22 ff_gf fcl_bold align_center">
-                                인증만 하면
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon_box">
-                                <img class="thumb" src="img/sub/003.jpg" alt="" />
-                            </div>
-                            <div class="font fsz_12 fw_md fcl_main  has_font_spacer_b_16 ">
-                                Step. 3
-                            </div>
-                            <div class="font fsz_22 ff_gf fcl_bold align_center">
-                                결제와 계좌등록 완료
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </article> -->
-
+            
             <article class="">
                 <div class="article_stripe"></div>
                 <div class="tit_box__article width_limiter ">
@@ -305,27 +154,6 @@
                     </div>
 
                     <ul class="device_list dp_flex flc_nowrap flc_jc_center flc_al_center">
-                        <!-- <li class="tablet_land">
-                                <div class="swiper-container slider_main_mo">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img class="res" src="img/main/slider_main_mo_frame_01.png" alt="" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img class="res" src="img/main/slider_main_mo_frame_02.png" alt="" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img class="res" src="img/main/slider_main_mo_frame_03.png" alt="" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img class="res" src="img/main/slider_main_mo_frame_04.png" alt="" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img class="res" src="img/main/slider_main_mo_frame_05.png" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </li> -->
                         <li class="phone_big">
                             <div class="swiper-container slider_main_mo">
                                 <div class="swiper-wrapper">
@@ -359,32 +187,9 @@
                     </h4>
                 </div>
                 <div class="width_limiter space_setter__article_content">
-                    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/atelier-sulphurpool-dark.min.css" />
-                    <!-- shades-of-purple, tomorrow-night-blue, tomorrow-night-eighties,atelier-sulphurpool-dark,dracula,night-owl -->
-                    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
                     <div class="code_box">
                         <pre>
-                            <code class="language-js">
-<!-- payple js 호출 -->
-<script src="https://cpay.payple.kr/js/cpay.payple.1.0.1.js"></script>
-
-<!-- 가맹점 주문페이지 '결제하기' 버튼 액션 -->
-<script>
-    $(document).ready(function() {
-        $("#payAction").on("click", function(event) {
-            var obj = new Object();
-
-            obj.PCD_CPAY_VER = "1.0.1";
-            obj.PCD_PAY_TYPE = "card";
-            obj.PCD_PAY_WORK = pay_work;
-            obj.PCD_CARD_VER = "01";
-
-            PaypleCpayAuthCheck(obj);
-            event.preventDefault();
-        });
-    });
-</script>
-                            </code>
+                            <code class="language-js" id="code_include"></code>
                         </pre>
                         <div class="btn_box align_center">
                             <a
@@ -398,18 +203,6 @@
                         </div>
                     </div>
                 </div>
-
-                <script>
-                    document.querySelectorAll("code").forEach(function(element) {
-                        element.innerHTML = element.innerHTML
-                            .replace(/&/g, "&amp;")
-                            .replace(/</g, "&lt;")
-                            .replace(/>/g, "&gt;")
-                            .replace(/"/g, "&quot;")
-                            .replace(/'/g, "&#039;");
-                    });
-                    hljs.initHighlightingOnLoad();
-                </script>
             </article>
 
             <article class="has_line">
@@ -494,41 +287,6 @@
                                 </div>
                             </div>
 
-                            <script>
-                                $(document).ready(function() {
-                                    $(".js_trigger_tab_btn_step_1").click(function() {
-                                        var kd = $(this).attr("kind");
-                                        //console.log(kd);
-                                        if (!$(this).hasClass("cl_info")) {
-                                            $(".js_trigger_tab_btn_step_1").removeClass("cl_info");
-                                            $(".js_trigger_tab_btn_step_1")
-                                                .eq(kd)
-                                                .addClass("cl_info");
-                                            $(".js_frag_tab_btn_step_2").removeClass("is_show_ani");
-                                            $(".js_frag_tab_btn_step_2[kind=" + kd + "]").addClass("is_show_ani");
-                                            $(".js_trigger_tab_btn_step_2").removeClass("cl_scs");
-                                            $(".js_target_tab_ctn_step_2").removeClass("is_show_ani");
-                                            $(".js_target_tab_ctn_step2_info").removeClass("is_show_ani");
-                                            $(".js_target_tab_ctn_step2_info[kind=" + kd + "]").addClass("is_show_ani");
-                                            $(".js_target_tab_ctn_img_step_2").removeClass("is_show_ani");
-                                            $(".js_target_tab_ctn_img_step2_info").addClass("is_show_ani");
-                                        } else {
-                                        }
-                                    });
-                                    $(".js_trigger_tab_btn_step_2").click(function() {
-                                        var dp = $(this).attr("depth");
-                                        //console.log(dp);
-                                        $(".js_target_tab_ctn_step2_info").removeClass("is_show_ani");
-                                        $(".js_target_tab_ctn_img_step2_info").removeClass("is_show_ani");
-                                        $(".js_trigger_tab_btn_step_2").removeClass("cl_scs");
-                                        $(".js_trigger_tab_btn_step_2[depth=" + dp + "]").addClass("cl_scs");
-                                        $(".js_target_tab_ctn_step_2").removeClass("is_show_ani");
-                                        $(".js_target_tab_ctn_step_2[depth=" + dp + "]").addClass("is_show_ani");
-                                        $(".js_target_tab_ctn_img_step_2").removeClass("is_show_ani");
-                                        $(".js_target_tab_ctn_img_step_2[depth=" + dp + "]").addClass("is_show_ani");
-                                    });
-                                });
-                            </script>
                             <div class="tab_ctn_box_step">
                                 <div class="tab_ctn_step js_target_tab_ctn_step2_info" kind="0">
                                     <div class="ctn_box">
@@ -609,6 +367,7 @@
         <div id="modal"></div>
         <div id="loader"></div>
 
+        <script src="./js/highlight.js"></script>
         <script src="./js/common.js"></script>
         <script src="./js/sub.js"></script>
     </body>

@@ -127,3 +127,68 @@ section {
     word-break: keep-all;
 }
 // /* naver_map_module end */
+
+
+.temp_remote {
+    position: absolute;
+    top: 180px;
+    right: 0;
+    background: #fff;
+    padding: 1rem 1rem;
+    border-radius: 0 0 0 4px;
+    transform: translate3d(100%, 0, 0);
+    transition: all ease 0.3s;
+}
+.temp_remote.active {
+    transform: translate3d(0, 0, 0);
+}
+.temp_active,
+.temp_close {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: hotpink;
+    background: #fff;
+    border-radius: 4px 0 0 4px;
+    font-size: 0;
+    cursor: pointer;
+}
+.temp_active i,
+.temp_close i {
+    font-size: 32px;
+}
+.temp_remote .temp_active {
+    display: block;
+}
+.temp_remote .temp_close {
+    display: none;
+}
+.temp_remote.active .temp_active {
+    display: none;
+}
+.temp_remote.active .temp_close {
+    display: block;
+}
+.temp_templete li {
+    padding: 0.4rem 0;
+    cursor: pointer;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+    line-height: 20px;
+}
+.temp_templete li i {
+    opacity: 0;
+}
+.temp_templete li.active {
+    color: #7852e8;
+    font-weight: 500;
+}
+.temp_templete li.active i {
+    opacity: 1;
+    margin: 0 0.8rem 0.4rem 0;
+}
