@@ -141,6 +141,7 @@ section {
           transform: translate3d(100%, 0, 0);
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  z-index: 2000;
 }
 
 .temp_remote.active {
