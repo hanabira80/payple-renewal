@@ -77,7 +77,14 @@ function copyCode() {
     });
 }
 
+function includeHtml() {
+    $("#header").load("include/header.html");
+    $("#footer").load("include/footer.html");
+    $("#modal").load("include/modal.html");
+}
+
 $(document).ready(function(){
+    includeHtml();
     parallaxScroll();
     moMenuAction();
     this_year();
