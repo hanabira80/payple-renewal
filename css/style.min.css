@@ -2951,6 +2951,65 @@ article.sub_01_02 {
   overflow: hidden;
 }
 
+.has_ani_bounce_bottom {
+  -webkit-animation: bounce_bottom 3s ease 0s infinite;
+          animation: bounce_bottom 3s ease 0s infinite;
+}
+
+@-webkit-keyframes bounce_bottom {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  8% {
+    -webkit-transform: translate3d(-50%, 12px, 0);
+            transform: translate3d(-50%, 12px, 0);
+  }
+  16% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  24% {
+    -webkit-transform: translate3d(-50%, 6px, 0);
+            transform: translate3d(-50%, 6px, 0);
+  }
+  32% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  99% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes bounce_bottom {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  8% {
+    -webkit-transform: translate3d(-50%, 12px, 0);
+            transform: translate3d(-50%, 12px, 0);
+  }
+  16% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  24% {
+    -webkit-transform: translate3d(-50%, 6px, 0);
+            transform: translate3d(-50%, 6px, 0);
+  }
+  32% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  99% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+}
+
 .btn_box {
   font-size: 0;
 }
@@ -3455,6 +3514,45 @@ select.no_style {
     -webkit-transition-delay: 0.1s;
             transition-delay: 0.1s;
   }
+}
+
+.tool_tip {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+  padding: 10px 10px;
+  background: #7852e8;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  white-space: nowrap;
+  line-height: 1.8em;
+  -webkit-box-shadow: 0 4px 35px 0 rgba(23, 55, 87, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 0 4px 35px 0 rgba(23, 55, 87, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.07);
+  opacity: 1;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  visibility: visible;
+}
+
+.tool_tip.js_is_hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tool_tip__bottom:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: calc(50% - 8px);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #7852e8 transparent;
 }
 
 .card_icon_thumbnail li {

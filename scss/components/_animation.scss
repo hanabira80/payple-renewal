@@ -113,3 +113,29 @@
 .marquee {
     overflow: hidden;
 }
+
+
+.has_ani_bounce_bottom {
+    animation: bounce_bottom 3s ease 0s infinite;
+}
+
+@keyframes bounce_bottom {
+    0% {
+        transform: translate3d(-50%, 0, 0);
+    }
+    8% {
+        transform: translate3d(-50%, 12px, 0);
+    }
+    16% {
+        transform: translate3d(-50%, 0, 0);
+    }
+    24% {
+        transform: translate3d(-50%, 6px, 0);
+    }
+    32% {
+        transform: translate3d(-50%, 0, 0);
+    }
+    99% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
