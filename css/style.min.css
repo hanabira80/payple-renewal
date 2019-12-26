@@ -209,6 +209,16 @@ section {
   margin: 0 0.8rem 0.4rem 0;
 }
 
+.temp_size_01 {
+  width: 90%;
+  max-width: 800px;
+}
+
+.temp_size_02 {
+  width: 90%;
+  max-width: 400px;
+}
+
 html {
   position: relative;
   box-sizing: border-box;

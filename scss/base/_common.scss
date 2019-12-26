@@ -193,3 +193,14 @@ section {
     opacity: 1;
     margin: 0 0.8rem 0.4rem 0;
 }
+
+.temp_size_01 {
+    width:90%;
+    max-width:800px;
+}
+.temp_size_02 {
+    width:90%;
+    max-width:400px;
+}
+.temp_size_02:after {
+}
