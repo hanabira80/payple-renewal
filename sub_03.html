@@ -59,13 +59,13 @@
                 <div class="width_limiter main_view">
                     <div class="left_area__main_view t2">
                         <div class="main_tit ">
-                            온라인 쇼핑몰의 실시간계좌이체<br /> 
-                            결제수단은 불편합니다.
+                            연동 개발이 필요없는<br />
+                            URL 링크결제
                         </div>
                         <div class="sub_tit ">
-                            ActiveX 설치, 공인인증서, 보안카드를 요구하기 때문이죠.<br />
-Payple 은 어떠한 것도 요구하지 않습니다.<br />
-최초결제는 ARS. 이후결제는 SMS 인증번호만으로 결제 가능합니다.
+                            페이플 관리자화면에서 링크를 만들어 쇼핑몰에 붙이기만 하세요.<br />
+                            아니면 그냥 카톡으로 링크만 보내세요.<br />
+                            고객은 링크 클릭만으로 빠른 결제가 가능합니다. 
                         </div>
                     </div>
                 </div>
@@ -85,12 +85,13 @@ Payple 은 어떠한 것도 요구하지 않습니다.<br />
                         <li><i class="material-icons"> check </i>9번 이미지</li>
                         <li><i class="material-icons"> check </i>10번 이미지</li>
                         <li><i class="material-icons"> check </i>11번 이미지</li>
-                        <li><i class="material-icons"> check </i>12번 이미지</li>
+                        <li><i class="material-icons"> check </i>12번 이미지</li class="active">
                         <li><i class="material-icons"> check </i>13번 이미지</li>
                         <li><i class="material-icons"> check </i>14번 이미지</li>
                         <li><i class="material-icons"> check </i>15번 이미지</li>
-                        <li class="active"><i class="material-icons"> check </i>16번 이미지</li>
+                        <li><i class="material-icons"> check </i>16번 이미지</li>
                         <li><i class="material-icons"> check </i>17번 이미지</li>
+                        <li class="active"><i class="material-icons"> check </i>18번 이미지</li class="active">
                     </ul>
                 </div>
             </article>
@@ -111,7 +112,7 @@ Payple 은 어떠한 것도 요구하지 않습니다.<br />
                             <iframe
                                 width="1280"
                                 height="720"
-                                src="//www.youtube.com/embed/jjTWwv2tHk8?VQ=HD720&autoplay=0&loop=1&rel=0&showinfo=0&controls= 0&enablejsapi=1&wmode=transparent&hd=1"
+                                src="//www.youtube.com/embed/6lNcSNnyxw4?VQ=HD720&autoplay=0&loop=1&rel=0&showinfo=0&controls= 0&enablejsapi=1&wmode=transparent&hd=1"
                                 wmode="Opaque"
                                 frameborder="0"
                                 allowfullscreen=""
@@ -125,10 +126,10 @@ Payple 은 어떠한 것도 요구하지 않습니다.<br />
                 <div class="article_stripe"></div>
                 <div class="tit_box__article width_limiter ">
                     <h3 class="main_tit__article">
-                        적용화면
+                        3초만에 링크 만들고
                     </h3>
                     <h4 class="sub_tit__article">
-                        페이플 고객사에 실제 적용되어 있는 계좌이체 일회성결제 화면입니다. 
+                        관리자화면에서 링크를 만드는데 걸리는 시간은 3초입니다.
                     </h4>
                 </div>
                 <div class="width_limiter space_setter__article_content dp_flex flc_nowrap flc_jc_center flc_al_center">
@@ -161,32 +162,43 @@ Payple 은 어떠한 것도 요구하지 않습니다.<br />
                 </div>
             </article>
 
-            <article class="">
+            <article class="has_line">
                 <div class="article_stripe"></div>
                 <div class="tit_box__article width_limiter ">
                     <h3 class="main_tit__article">
-                        간편한 결제모듈 연동
+                        보내면 끝
                     </h3>
                     <h4 class="sub_tit__article">
-                        페이플은 모든 개발환경을 지원하기 위해 자바스크립트 방식의 API를 제공합니다.
+                        고객에게 링크를 보내기만 하세요. 결제가 쉬워집니다. 
                     </h4>
                 </div>
-                <div class="width_limiter space_setter__article_content">
-                    <div class="code_box">
-                        <pre>
-                            <code class="language-js" id="code_include"  page_num="02_02"></code>
-                        </pre>
-                        <div class="btn_box align_center">
-                            <a
-                                class="btn btn_md btn_rounded cl_info"
-                                href="https://github.com/PAYPLECORP/manual_card"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <i class="fa fa-github" aria-hidden="true"></i> API 문서 자세히 보기
-                            </a>
+                <div class="width_limiter space_setter__article_content dp_flex flc_nowrap flc_jc_center flc_al_center">
+                    <div class="pc_frame">
+                        <div class="ratio_setter">
+                            <div class="img_frame">
+                                <img class="res" src="img/main/frame_pc_header.svg" alt="" />
+                            </div>
+                            <div class="swiper-container slider_main_pc">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_pc_frame_01.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <ul class="device_list dp_flex flc_nowrap flc_jc_center flc_al_center">
+                        <li class="phone_big">
+                            <div class="swiper-container slider_main_mo">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="res" src="img/main/slider_main_mo_frame_01.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </article>
 

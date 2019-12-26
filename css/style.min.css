@@ -132,7 +132,7 @@ section {
 
 .temp_remote {
   position: absolute;
-  top: 180px;
+  top: 120px;
   right: 0;
   background: #fff;
   padding: 1rem 1rem;
@@ -3017,7 +3017,7 @@ article.sub_02_03 {
 }
 
 article.sub_03_01 {
-  background-image: url(../img/sub/sub_bg_01_16.png);
+  background-image: url(../img/sub/sub_bg_01_18.png);
 }
 
 .has_animation_type_01 {
