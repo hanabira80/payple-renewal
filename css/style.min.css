@@ -5030,8 +5030,8 @@ select.no_style {
 
 .card_res_row_thumbnail .thumb_box img {
   position: absolute;
-  width: 80%;
-  left: 20%;
+  width: 70%;
+  left: 25%;
   top: 50%;
   -webkit-transform: translate3d(0, -50%, 0);
           transform: translate3d(0, -50%, 0);
@@ -5066,6 +5066,10 @@ select.no_style {
 
 .card_res_row_thumbnail li:nth-child(2) .thumb_box {
   background: #2d47a8;
+}
+
+.card_res_row_thumbnail li:nth-child(3) .thumb_box {
+  background: #fff0f5;
 }
 
 .main_view {
