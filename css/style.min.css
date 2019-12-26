@@ -219,9 +219,8 @@ section {
   max-width: 400px;
 }
 
-.temp_size_02:after {
-  position: absolute;
-  top: 100%;
+.temp_size_02 img {
+  z-index: 10;
 }
 
 html {
