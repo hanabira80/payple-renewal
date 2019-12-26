@@ -26,8 +26,15 @@ function parallaxScroll(){
     }
 }
 
+function includeHtml() {
+    $("#header").load("include/header.html");
+    $("#footer").load("include/footer.html");
+    $("#modal").load("include/modal.html");
+}
+
 function moMenuAction() {
-    $(".header_menu_icn").click(function(){
+    //$(".header_menu_icn").click(function(){
+    $(document).on('click','.header_menu_icn',function(){
         if ($(this).hasClass("js_is_active")){
             $(this).removeClass("js_is_active");
             $(".header_menu_area").removeClass("js_is_active");				
@@ -77,11 +84,7 @@ function copyCode() {
     });
 }
 
-function includeHtml() {
-    $("#header").load("include/header.html");
-    $("#footer").load("include/footer.html");
-    $("#modal").load("include/modal.html");
-}
+
 
 function tempMainView() {
     $(".temp_active, .temp_close").click(function() {
@@ -109,9 +112,12 @@ function codeHighlight() {
 }
 
 function codeLoad() {
-    $("#code_include").load("include/code_include.html", function(){
-        codeHighlight();
-    });
+    $("#code_include").each(function(){
+        var i = $(this).attr('page_num');
+        $(this).load("include/code_include_"+i+".html", function(){
+            codeHighlight();
+        });
+    })
 }
 
 function serviceIntroTab() {
