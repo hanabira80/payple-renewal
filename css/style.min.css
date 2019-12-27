@@ -44,6 +44,10 @@ body.js_is_limit {
   overflow: hidden;
 }
 
+body.js_modal_sctive {
+  overflow: hidden;
+}
+
 section {
   min-height: 100vh;
 }
@@ -2610,13 +2614,12 @@ footer .footer-copy {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100vh;
   bottom: 0;
   font-size: 0;
   text-align: center;
   visibility: hidden;
   opacity: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
   -ms-transition: all ease 0.2s;
@@ -2624,6 +2627,8 @@ footer .footer-copy {
           transition-delay: 0.3s;
   -ms-transition-delay: 0.3s;
   z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .modal_outer.js_is_active {
@@ -2669,6 +2674,10 @@ footer .footer-copy {
   max-height: 80vh;
   max-width: 1000px;
   overflow-y: auto;
+  border-radius: 8px 8px;
+  -webkit-box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  padding: 0.8rem 0;
 }
 
 .modal.js_is_active {
@@ -2685,26 +2694,21 @@ footer .footer-copy {
   -ms-transition-delay: 0.3s;
 }
 
-.modal .tit-area {
-  position: relative;
+.modal_header {
   font-size: 0;
-  overflow: hidden;
-  background: #fa5ba5;
-  border-radius: 4px 4px 0 0;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
   padding: 0 40px 0 0;
 }
 
-.modal .tit-area .tit {
-  position: relative;
-  overflow: hidden;
-  line-height: 40px;
-  padding: 0 0 0 12px;
-  color: #fff;
-  font-weight: 700;
-  font-size: 14px;
+.modal_header .tit {
+  line-height: 20px;
+  padding: 10px 0 10px 10px;
+  color: #333;
+  font-size: 1.2rem;
 }
 
-.modal .tit-area .close {
+.modal_header .btn_close {
   position: absolute;
   top: 0;
   right: 0;
@@ -2714,17 +2718,13 @@ footer .footer-copy {
   cursor: pointer;
 }
 
-.modal .tit-area .close .material-icons {
-  color: #fff;
+.modal_header .btn_close .material-icons {
   font-size: 20px;
 }
 
-.modal .ctn-area {
-  position: relative;
-  border: 1px solid #bbb;
-  border-top: none;
+.modal_body {
   background: #fff;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 8px 8px;
 }
 
 .modal-video {
@@ -2767,24 +2767,24 @@ footer .footer-copy {
   color: #fff;
 }
 
-.modal-pass {
+.modal_pass {
   min-width: 310px;
   max-width: 360px;
 }
 
-.modal-pass .ctn-area .txt {
+.modal_pass .modal_body .txt {
   text-align: center;
   padding: 16px 0 0;
   font-size: 14px;
 }
 
-.modal-pass .ctn-area .modal-form-box {
+.modal_pass .modal_body .modal-form-box {
   text-align: center;
   padding: 16px 0;
   font-size: 0;
 }
 
-.modal-pass .ctn-area .modal-form-box .ipt {
+.modal_pass .modal_body .modal-form-box .ipt {
   border: 1px solid #ddd;
   font-size: 14px;
   width: 120px;
@@ -2794,11 +2794,11 @@ footer .footer-copy {
   border-radius: 2px;
 }
 
-.modal-pass .ctn-area .modal-form-box .ipt:focus {
+.modal_pass .modal_body .modal-form-box .ipt:focus {
   border: 1px solid #fa5ba5;
 }
 
-.modal-pass .ctn-area .modal-form-box .submit {
+.modal_pass .modal_body .modal-form-box .submit {
   background: #fa5ba5;
   color: #fff;
   font-size: 14px;
@@ -2809,7 +2809,7 @@ footer .footer-copy {
   border-radius: 2px;
 }
 
-.modal-pass .ctn-area .modal-form-box .cancel {
+.modal_pass .modal_body .modal-form-box .cancel {
   display: inline-block;
   vertical-align: middle;
   background: #444;
@@ -2822,7 +2822,7 @@ footer .footer-copy {
   border-radius: 2px;
 }
 
-.modal-pass .ctn-area .info {
+.modal_pass .modal_body .info {
   display: none;
   color: crimson;
   text-align: center;
@@ -2835,15 +2835,15 @@ footer .footer-copy {
   max-width: 600px;
 }
 
-.modal-document .ctn-area {
+.modal-document .modal_body {
   background: #f1f1f1;
 }
 
-.modal-document .ctn-area .modal-form-box {
+.modal-document .modal_body .modal-form-box {
   padding: 1rem 1rem;
 }
 
-.modal-document .ctn-area .modal-form-box .ipt.document {
+.modal-document .modal_body .modal-form-box .ipt.document {
   width: 100%;
   height: 30vh;
   line-height: 1.6em;
@@ -2852,7 +2852,7 @@ footer .footer-copy {
   border: 1px solid transparent;
 }
 
-.modal-document .ctn-area .modal-form-box .ipt.document:focus {
+.modal-document .modal_body .modal-form-box .ipt.document:focus {
   border: 1px solid transparent;
 }
 
