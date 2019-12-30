@@ -4,14 +4,14 @@
 <div class="modal_outer" id="modal_contact">
     <div class="modal_backdrop js_trigger__close_modal"></div>
 
-    <div class="modal aa">
+    <div class="modal">
         <div class="modal_header">
             <div class="tit">서비스 가입문의</div>
             <div class="btn_close js_trigger__close_modal">
                 <i class="material-icons">clear</i>
             </div>
         </div>
-        <div class="modal_body mCustomScrollbar" data-mcs-theme="minimal-dark" style="font-size:12px;">
+        <div class="modal_body aa" style="font-size:12px;">
             <form>
                 <div class="">
                     <div class="tit">상호명 <span>*</span></div>
@@ -237,9 +237,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
             );
         }
         
-            // $(".aa").mCustomScrollbar({
-            //     theme: "minimal-dark"
-            // });
+            $(".aa").mCustomScrollbar({
+                theme: "minimal-dark",
+                setTo:0
+            });
             
         
 
