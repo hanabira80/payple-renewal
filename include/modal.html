@@ -13,60 +13,55 @@
         </div>
         <div class="modal_body aa" style="font-size:12px;">
             <form>
-                <style>
-                    .kk {
-                        position:absolute;
-                        left:1rem;
-                        top:50%;
-                        transform:translate3d(0,-50%,0);
-                        transition:all ease 0.3s;
-                    }
-                    .ipt:focus ~ .kk {
-                        top:0;
-                        transform:translate3d(0,-100%,0);
-                    }
-                    .ipt:valid ~ .kk {
-                        top:0;
-                        transform:translate3d(0,-100%,0);
-}
-                    </style>
-                <div class="">
-                    <div class="tit">상호명 <span>*</span></div>
+                <div class="form_box__float">
                     <div class="ctn">
-                        <input type="text" class="ipt" required />
-                        <div class="kk">상호명</div>
+                        <input type="text" class="input__float" required />
+                        <div class="tit__input__float">상호명<span class="icn_required">*</span></div>
                     </div>
                 </div>
 
-                <div class="">
-                    <div class="tit">상호명 <span>*</span></div>
+                <div class="form_box__float">
                     <div class="ctn">
-                        <input type="text" class="" required />
+                        <input type="text" class="input__float" required placeholder="www.naver.com"/>
+                        <div class="tit__input__float">결제를 도입할 웹사이트<span class="icn_required">*</span class="icn_required"></div>
                     </div>
                 </div>
 
-                <div class="">
-                    <div class="tit">상호명 <span>*</span></div>
+                <div class="form_box__float">
                     <div class="ctn">
-                        <input type="text" class="" required />
+                        <input type="text" class="input__float" required />
+                        <div class="tit__input__float">주요 판매상품<span class="icn_required">*</span class="icn_required"></div>
                     </div>
                 </div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
-                <div style="line-height: 100px;">2</div>
+
+                <div class="form_box__float">
+                    <div class="ctn">
+                        <input type="text" class="input__float" required />
+                        <div class="tit__input__float">담당자명<span class="icn_required">*</span class="icn_required"></div>
+                    </div>
+                </div>
+
+                <div class="form_box__float">
+                    <div class="ctn">
+                        <input type="text" class="input__float" required />
+                        <div class="tit__input__float">담당자 휴대폰번호<span class="icn_required">*</span class="icn_required"></div>
+                    </div>
+                </div>
+
+                <div class="form_box__float">
+                    <div class="ctn">
+                        <input type="text" class="input__float" required />
+                        <div class="tit__input__float">담당자 이메일<span class="icn_required">*</span class="icn_required"></div>
+                    </div>
+                </div>
+
+                <div class="form_box__float">
+                    <div class="ctn">
+                        <input type="text" class="input__float" required />
+                        <div class="tit__input__float">기타 문의내용<span class="icn_required">*</span class="icn_required"></div>
+                    </div>
+                </div>
+                
 
                 <div class="btn_box align_right">
                     <button class="btn btn_primary btn_sm" type="submit">취소</button>
@@ -84,7 +79,28 @@
             </div>
         </div>
         <div class="modal_body" style="font-size:12px;">
+            <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
+                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                <span class="swal2-success-line-tip"></span> <span class="swal2-success-line-long"></span>
+                <div class="swal2-success-ring"></div>
+                <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+            </div>
             <form>
+                <div class="">
+                    <div class="tit">상호명 <span>*</span></div>
+                    <div class="ctn">
+                        <input type="text" class="" required />
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="tit">상호명 <span>*</span></div>
+                    <div class="ctn">
+                        <input type="text" class="" required />
+                    </div>
+                </div>
+
                 <div class="">
                     <div class="tit">상호명 <span>*</span></div>
                     <div class="ctn">
@@ -254,25 +270,20 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     "?controls=0&showinfo=0&rel=0&autoplay=1&loop=0' frameborder='0' allowfullscreen></iframe>"
             );
         }
-        
-            $(".aa").mCustomScrollbar({
-                theme: "minimal-dark",
-                scrollInertia: 60,
-                scrollAmount: 60,
-                callbacks:{
-      onUpdate: function(){
-        setTop:"0px"
-      }
-}
-                
-            });
-            
-        
+
+        $(".aa").mCustomScrollbar({
+            theme: "minimal-dark",
+            scrollInertia: 60,
+            scrollAmount: 60,
+            callbacks: {
+                onUpdate: function() {
+                    setTop: "0px";
+                }
+            }
+        });
 
         modalTarget.addClass("js_is_active");
-        findModal.addClass("js_is_active",function(){
-            
-        });
+        findModal.addClass("js_is_active", function() {});
         findCloseTrigger.click(function() {
             modalTarget.removeClass("js_is_active");
             findModal.removeClass("js_is_active");
