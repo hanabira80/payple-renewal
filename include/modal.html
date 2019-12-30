@@ -13,10 +13,28 @@
         </div>
         <div class="modal_body aa" style="font-size:12px;">
             <form>
+                <style>
+                    .kk {
+                        position:absolute;
+                        left:1rem;
+                        top:50%;
+                        transform:translate3d(0,-50%,0);
+                        transition:all ease 0.3s;
+                    }
+                    .ipt:focus ~ .kk {
+                        top:0;
+                        transform:translate3d(0,-100%,0);
+                    }
+                    .ipt:valid ~ .kk {
+                        top:0;
+                        transform:translate3d(0,-100%,0);
+}
+                    </style>
                 <div class="">
                     <div class="tit">상호명 <span>*</span></div>
                     <div class="ctn">
-                        <input type="text" class="" required />
+                        <input type="text" class="ipt" required />
+                        <div class="kk">상호명</div>
                     </div>
                 </div>
 
