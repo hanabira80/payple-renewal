@@ -1,10 +1,91 @@
 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
+<div class="modal_outer" id="modal_contact">
+    <div class="modal_backdrop js_trigger__close_modal"></div>
+
+    <div class="modal aa">
+        <div class="modal_header">
+            <div class="tit">서비스 가입문의</div>
+            <div class="btn_close js_trigger__close_modal">
+                <i class="material-icons">clear</i>
+            </div>
+        </div>
+        <div class="modal_body mCustomScrollbar" data-mcs-theme="minimal-dark" style="font-size:12px;">
+            <form>
+                <div class="">
+                    <div class="tit">상호명 <span>*</span></div>
+                    <div class="ctn">
+                        <input type="text" class="" required />
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="tit">상호명 <span>*</span></div>
+                    <div class="ctn">
+                        <input type="text" class="" required />
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="tit">상호명 <span>*</span></div>
+                    <div class="ctn">
+                        <input type="text" class="" required />
+                    </div>
+                </div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+                <div style="line-height: 100px;">2</div>
+
+                <div class="btn_box align_right">
+                    <button class="btn btn_primary btn_sm" type="submit">취소</button>
+                    <button class="btn btn_primary btn_sm" type="submit">가입문의 하기</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal_header">
+            <div class="tit">서비스 가입문의</div>
+            <div class="btn_close js_trigger__close_modal">
+                <i class="material-icons">clear</i>
+            </div>
+        </div>
+        <div class="modal_body" style="font-size:12px;">
+            <form>
+                <div class="">
+                    <div class="tit">상호명 <span>*</span></div>
+                    <div class="ctn">
+                        <input type="text" class="" required />
+                    </div>
+                </div>
+
+                <div class="btn_box align_right">
+                    <button class="btn btn_primary btn_sm" type="submit">취소</button>
+                    <button class="btn btn_primary btn_sm" type="submit">가입문의 하기</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <div class="modal_outer" id="modal_video" video_val="J0HBPyak0qQ">
     <div class="modal_backdrop js_trigger__close_modal"></div>
-    <!-- modal-video -->
+
     <div class="modal modal_video">
         <div class="ratio_setter_hd"></div>
         <div class="btn_close js_trigger__close_modal">
@@ -15,7 +96,7 @@
 
 <div class="modal_outer" id="modal_pass">
     <div class="modal_backdrop js_trigger__close_modal"></div>
-    <!-- modal-video -->
+
     <div class="modal">
         <div class="modal_header">
             <div class="tit">비밀번호확인</div>
@@ -23,18 +104,23 @@
                 <i class="material-icons">clear</i>
             </div>
         </div>
-        <div class="modal_body">
-            <div class="txt">
-                글 등록 시 입력한 글 비밀번호를 입력해주세요.
-            </div>
-            <div class="info">
-                비밀번호가 틀렸습니다. 다시 한번 입력해주세요.
-            </div>
+        <div class="modal_body" style="font-size:12px;">
+            <form>
+                <div class="">
+                    <div class="tit">상호명 <i class="fa fa-asterisk" aria-hidden="true"></i></div>
+                    <div class="ctn">
+                        <input type="text" class="" required />
+                    </div>
+                </div>
+
+                <div class="btn_box">
+                    <button class="btn btn_primary btn_sm" type="submit">취소</button>
+                    <button class="btn btn_primary btn_sm" type="submit">가입문의 하기</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
-
-
 
 <!-- <div class="modal_outer scroll-block">
     <div class="modal_backdrop js_trigger__close_modal"></div>
@@ -119,24 +205,29 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
    
 </div> -->
 
-<div
+<!-- <div
     id="temp"
     style="width:100px; height:100px; background:#444; display:block; position:fixed; z-index:900000; left:100px; bottom:100px; text-align:center; line-height:50px; color:#fff; cursor:pointer;"
     onclick="loadModal('modal_pass','')"
+></div> -->
+<div
+    id="temp"
+    style="width:100px; height:100px; background:#444; display:block; position:fixed; z-index:900000; left:100px; bottom:100px; text-align:center; line-height:50px; color:#fff; cursor:pointer;"
+    onclick="loadModal('modal_contact','')"
 ></div>
 <div
     id="temp"
     style="width:100px; height:100px; background:#eee; display:block; position:fixed; z-index:900000; left:100px; bottom:0px; text-align:center; line-height:50px; color:#fff; cursor:pointer;"
-    onclick="loadModal('modal_video','video')" 
+    onclick="loadModal('modal_video','video')"
     video_val="J0HBPyak0qQ"
 ></div>
 
 <script>
     function loadModal(el, type) {
         var modalTarget = $("#" + el + "");
-        var findModal= modalTarget.find('.modal');
+        var findModal = modalTarget.find(".modal");
         var findCloseTrigger = modalTarget.find(".js_trigger__close_modal");
-        $('body').addClass('js_modal_sctive');
+        $("body").addClass("js_modal_sctive");
         if (type == "video") {
             video_val = $(this).attr("video_value");
             $(".modal_video .ratio_setter_hd").html(
@@ -145,22 +236,26 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     "?controls=0&showinfo=0&rel=0&autoplay=1&loop=0' frameborder='0' allowfullscreen></iframe>"
             );
         }
-
-        $("#aa").mCustomScrollbar({
-            theme: "dark"
-        });
+        
+            // $(".aa").mCustomScrollbar({
+            //     theme: "minimal-dark"
+            // });
+            
+        
 
         modalTarget.addClass("js_is_active");
-        findModal.addClass('js_is_active');
+        findModal.addClass("js_is_active",function(){
+            
+        });
         findCloseTrigger.click(function() {
             modalTarget.removeClass("js_is_active");
-            findModal.removeClass('js_is_active');
+            findModal.removeClass("js_is_active");
             if (type == "video") {
-                setTimeout(function () {
+                setTimeout(function() {
                     $(".modal_video .ratio_setter_hd").html("");
-                },400);
+                }, 400);
             }
-            $('body').removeClass('js_modal_sctive');
+            $("body").removeClass("js_modal_sctive");
         });
     }
 

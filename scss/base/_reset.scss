@@ -87,7 +87,6 @@ img.cover {
     height: 100%;
 }
 
-
 img::selection,
 img::-moz-selection {
     background: transparent;
@@ -118,7 +117,7 @@ textarea {
     outline: none;
 }
 textarea:read-only {
-    cursor:default;
+    cursor: default;
 }
 select {
     display: inline-block;
@@ -151,22 +150,21 @@ button {
     -webkit-appearance: none;
     cursor: pointer;
 }
+// input {
+//     display: inline-block;
+//     vertical-align: middle;
+//     text-align: left;
+//     background: none;
+//     outline: none;
+//     border: none;
+//     border-radius: 0;
+//     padding: 0;
+//     -webkit-appearance: none;
+// }
 
-input {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-    background: none;
-    outline: none;
-    border: none;
-    border-radius: 0;
-    padding: 0;
-    -webkit-appearance: none;
-}
-
-input:focus {
-    outline: none;
-}
+// input:focus {
+//     outline: none;
+// }
 
 ::placeholder {
     color: #ccc;

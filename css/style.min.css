@@ -395,22 +395,6 @@ button {
   cursor: pointer;
 }
 
-input {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  background: none;
-  outline: none;
-  border: none;
-  border-radius: 0;
-  padding: 0;
-  -webkit-appearance: none;
-}
-
-input:focus {
-  outline: none;
-}
-
 ::-webkit-input-placeholder {
   color: #ccc;
   opacity: 1;
@@ -2671,13 +2655,13 @@ footer .footer-copy {
   transition: all ease 0.2s;
   -ms-transition: all ease 0.2s;
   background: #fff;
-  max-height: 80vh;
+  width: 90%;
   max-width: 1000px;
   overflow-y: auto;
   border-radius: 8px 8px;
   -webkit-box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
-  padding: 0.8rem 0;
+  padding: 40px 0;
 }
 
 .modal.js_is_active {
@@ -2699,12 +2683,17 @@ footer .footer-copy {
   background: #fff;
   border-radius: 8px 8px 0 0;
   padding: 0 40px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .modal_header .tit {
   line-height: 20px;
-  padding: 10px 0 10px 10px;
+  padding: 10px 10px;
   color: #333;
+  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -2725,6 +2714,8 @@ footer .footer-copy {
 .modal_body {
   background: #fff;
   border-radius: 0 0 8px 8px;
+  overflow-y: auto;
+  max-height: calc(80vh - 80px);
 }
 
 .modal-video {
@@ -2854,6 +2845,11 @@ footer .footer-copy {
 
 .modal-document .modal_body .modal-form-box .ipt.document:focus {
   border: 1px solid transparent;
+}
+
+#modal_contact .modal {
+  width: 90%;
+  max-width: 600px;
 }
 
 article {
