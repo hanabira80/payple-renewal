@@ -40,14 +40,12 @@
     font-size: 16px;
 }
 .input__float:focus ~ .tit__input__float {
-    top: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -200%, 0);
     font-size: 12px;
     color: #7852e8;
 }
 .input__float:valid ~ .tit__input__float {
-    top: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -200%, 0);
     font-size: 12px;
     color: #24b47e;
 }
