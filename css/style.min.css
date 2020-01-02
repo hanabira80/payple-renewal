@@ -2632,8 +2632,7 @@ footer .footer-copy {
           transition-delay: 0.3s;
   -ms-transition-delay: 0.3s;
   z-index: 1000;
-  overflow-x: hidden;
-  overflow-y: auto;
+  cursor: pointer;
 }
 
 .modal_outer.js_is_active {
@@ -2676,6 +2675,7 @@ footer .footer-copy {
   transition: all ease 0.2s;
   -ms-transition: all ease 0.2s;
   background: #fff;
+  max-height: 80vh;
   width: 90%;
   max-width: 1000px;
   border-radius: 8px 8px;
@@ -2735,6 +2735,8 @@ footer .footer-copy {
 
 .modal_body {
   background: #fff;
+  overflow-y: auto;
+  max-height: calc(80vh - 100px);
 }
 
 .modal_footer {
@@ -2873,22 +2875,6 @@ footer .footer-copy {
 
 .modal-document .modal_body .modal-form-box .ipt.document:focus {
   border: 1px solid transparent;
-}
-
-.modal {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-.modal_body__step {
-  white-space: nowrap;
-  width: 200%;
-}
-
-.modal_body__step .step {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
 }
 
 #modal_contact .modal {
