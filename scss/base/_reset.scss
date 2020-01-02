@@ -115,6 +115,7 @@ textarea {
     overflow: auto;
     resize: none;
     outline: none;
+    border:none;
 }
 textarea:read-only {
     cursor: default;

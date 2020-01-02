@@ -5,115 +5,140 @@
     <div class="modal_backdrop js_trigger__close_modal"></div>
 
     <div class="modal">
-        <div class="modal_header">
-            <div class="tit">서비스 가입문의</div>
-            <div class="btn_close js_trigger__close_modal">
-                <i class="material-icons">clear</i>
+        <form>
+            <div class="modal_header">
+                <div class="tit">서비스 가입문의</div>
+                <div class="btn_close js_trigger__close_modal">
+                    <i class="material-icons">clear</i>
+                </div>
             </div>
-        </div>
-        <div class="modal_body aa" style="font-size:12px;">
-            <form>
-                <div class="form_box__float">
-                    <div class="ctn">
-                        <input type="text" class="input__float" required />
-                        <div class="tit__input__float">상호명<span class="icn_required">*</span></div>
+            <div class="modal_body modal_body__step">
+                <div class="step step_1">
+                    <div class="form_box__float">
+                        <div class="ctn">
+                            <label class="dp_b">
+                                <input type="text" class="form__float" required placeholder="상호명을 입력해주세요."/>
+                                <div class="tit__form__float">상호명<span class="icn_required">*</span></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form_box__float">
+                        <div class="ctn">
+                            <label class="dp_b">
+                                <input type="text" class="form__float" required placeholder="상호명을 입력해주세요."/>
+                                <div class="tit__form__float">상호명<span class="icn_required">*</span></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form_box__float">
+                        <div class="ctn">
+                            <label class="dp_b">
+                                <input type="text" class="form__float" required placeholder="상호명을 입력해주세요."/>
+                                <div class="tit__form__float">상호명<span class="icn_required">*</span></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form_box__float">
+                        <div class="ctn">
+                            <label class="dp_b">
+                                <input type="text" class="form__float" required placeholder="상호명을 입력해주세요."/>
+                                <div class="tit__form__float">상호명<span class="icn_required">*</span></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form_box__float">
+                        <div class="ctn">
+                            <label class="dp_b">
+                                <input type="text" class="form__float" required placeholder="상호명을 입력해주세요."/>
+                                <div class="tit__form__float">상호명<span class="icn_required">*</span></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form_box__float">
+                        <div class="ctn">
+                            <label class="dp_b">
+                                <input type="text" class="form__float" required placeholder="www.yourWebSite.com"/>
+                                <div class="tit__form__float">결제를 도입할 웹사이트<span class="icn_required">*</span class="icn_required"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form_box__float">
+                        <div class="ctn">
+                            <label class="dp_b">
+                                <input type="text" class="form__float" required placeholder="의류판매, 식품정기배송 등"/>
+                                <div class="tit__form__float">주요 판매상품<span class="icn_required">*</span class="icn_required"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form_box__float">
+                        <div class="ctn">
+                            <label class="dp_b">
+                                <input type="text" class="form__float" required />
+                                <div class="tit__form__float">담당자명<span class="icn_required">*</span class="icn_required"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form_box__float">
+                        <div class="ctn">
+                            <label class="dp_b">
+                                <input type="text" class="form__float" required placeholder="010-1234-5678"/>
+                                <div class="tit__form__float">담당자 휴대폰번호<span class="icn_required">*</span class="icn_required"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form_box__float">
+                        <div class="ctn">
+                            <label class="dp_b">
+                                <input type="text" class="form__float" required />
+                                <div class="tit__form__float">담당자 이메일<span class="icn_required">*</span class="icn_required"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form_box__float">
+                        <div class="ctn">
+                            <label class="dp_b">
+                                <textarea class="tarea__loat"></textarea>
+                                <div class="tit__form__float">기타 문의내용<span class="icn_required">*</span class="icn_required"></div>
+                            </label>
+                        </div>
                     </div>
                 </div>
 
-                <div class="form_box__float">
-                    <div class="ctn">
-                        <input type="text" class="input__float" required placeholder="www.naver.com"/>
-                        <div class="tit__input__float">결제를 도입할 웹사이트<span class="icn_required">*</span class="icn_required"></div>
-                    </div>
+                <div class="step step_2">
+                    <div class="success-checkmark">
+                        <div class="check-icon">
+                          <span class="icon-line line-tip"></span>
+                          <span class="icon-line line-long"></span>
+                          <div class="icon-circle"></div>
+                          <div class="icon-fix"></div>
+                        </div>
+                      </div>
+                      <center>
+                        <button id="restart">Restart Animation</button>
+                      </center>
+                      <script>
+                          $("button").click(function () {
+          $(".check-icon").hide();
+          setTimeout(function () {
+            $(".check-icon").show();
+          }, 10);
+        });
+                      </script>
                 </div>
-
-                <div class="form_box__float">
-                    <div class="ctn">
-                        <input type="text" class="input__float" required />
-                        <div class="tit__input__float">주요 판매상품<span class="icn_required">*</span class="icn_required"></div>
-                    </div>
-                </div>
-
-                <div class="form_box__float">
-                    <div class="ctn">
-                        <input type="text" class="input__float" required />
-                        <div class="tit__input__float">담당자명<span class="icn_required">*</span class="icn_required"></div>
-                    </div>
-                </div>
-
-                <div class="form_box__float">
-                    <div class="ctn">
-                        <input type="text" class="input__float" required />
-                        <div class="tit__input__float">담당자 휴대폰번호<span class="icn_required">*</span class="icn_required"></div>
-                    </div>
-                </div>
-
-                <div class="form_box__float">
-                    <div class="ctn">
-                        <input type="text" class="input__float" required />
-                        <div class="tit__input__float">담당자 이메일<span class="icn_required">*</span class="icn_required"></div>
-                    </div>
-                </div>
-
-                <div class="form_box__float">
-                    <div class="ctn">
-                        <input type="text" class="input__float" required />
-                        <div class="tit__input__float">기타 문의내용<span class="icn_required">*</span class="icn_required"></div>
-                    </div>
-                </div>
-                
-
-                <div class="btn_box align_right">
-                    <button class="btn btn_primary btn_sm" type="submit">취소</button>
-                    <button class="btn btn_primary btn_sm" type="submit">가입문의 하기</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div class="modal">
-        <div class="modal_header">
-            <div class="tit">서비스 가입문의</div>
-            <div class="btn_close js_trigger__close_modal">
-                <i class="material-icons">clear</i>
             </div>
-        </div>
-        <div class="modal_body" style="font-size:12px;">
-            <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
-                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
-                <span class="swal2-success-line-tip"></span> <span class="swal2-success-line-long"></span>
-                <div class="swal2-success-ring"></div>
-                <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
-                <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+
+            <div class="modal_footer btn_box align_right">
+                <button class="btn cl_disable btn_rounded btn_modal" type="button">취소</button>
+                <button class="btn cl_main btn_rounded btn_modal" type="submit">가입문의 하기</button>
+                <button class="btn cl_scs btn_rounded btn_modal" type="button">다음 스텝</button>
             </div>
-            <form>
-                <div class="">
-                    <div class="tit">상호명 <span>*</span></div>
-                    <div class="ctn">
-                        <input type="text" class="" required />
-                    </div>
-                </div>
-
-                <div class="">
-                    <div class="tit">상호명 <span>*</span></div>
-                    <div class="ctn">
-                        <input type="text" class="" required />
-                    </div>
-                </div>
-
-                <div class="">
-                    <div class="tit">상호명 <span>*</span></div>
-                    <div class="ctn">
-                        <input type="text" class="" required />
-                    </div>
-                </div>
-
-                <div class="btn_box align_right">
-                    <button class="btn btn_primary btn_sm" type="submit">취소</button>
-                    <button class="btn btn_primary btn_sm" type="submit">가입문의 하기</button>
-                </div>
-            </form>
-        </div>
+        </form>
     </div>
 </div>
 
@@ -262,6 +287,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         var findModal = modalTarget.find(".modal");
         var findCloseTrigger = modalTarget.find(".js_trigger__close_modal");
         $("body").addClass("js_modal_sctive");
+        $('.modal_outer').scrollTop(0);
         if (type == "video") {
             video_val = $(this).attr("video_value");
             $(".modal_video .ratio_setter_hd").html(
@@ -271,16 +297,16 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
             );
         }
 
-        $(".aa").mCustomScrollbar({
-            theme: "minimal-dark",
-            scrollInertia: 60,
-            scrollAmount: 60,
-            callbacks: {
-                onUpdate: function() {
-                    setTop: "0px";
-                }
-            }
-        });
+        // $(".aa").mCustomScrollbar({
+        //     theme: "minimal-dark",
+        //     scrollInertia: 60,
+        //     scrollAmount: 60,
+        //     callbacks: {
+        //         onUpdate: function() {
+        //             setTop: "0px";
+        //         }
+        //     }
+        // });
 
         modalTarget.addClass("js_is_active");
         findModal.addClass("js_is_active", function() {});
