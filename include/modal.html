@@ -288,6 +288,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         var findCloseTrigger = modalTarget.find(".js_trigger__close_modal");
         $("body").addClass("js_modal_sctive");
         $('.modal_outer').scrollTop(0);
+        $('.modal input').focus(function(){
+            $('.modal_outer').scrollTop(0);
+        });
         if (type == "video") {
             video_val = $(this).attr("video_value");
             $(".modal_video .ratio_setter_hd").html(
