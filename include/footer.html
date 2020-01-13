@@ -28,15 +28,48 @@
             </div>
             <div class="footer-info-spt"></div>
             <div class="footer-info cl">
-                개인정보취급방침
+                <a href="sub_privacy.html">
+                    개인정보취급방침
+                </a>
             </div>
             <div class="footer-info cl">
-                전자금융거래 이용약관
+                <a href="sub_ofs_terms.html">
+                    전자금융거래 이용약관
+                </a>
             </div>
             <div class="footer-info cl">
-                혁신금융서비스 이용약관
+                <a href="sub_rfs_terms.html">
+                    혁신금융서비스 이용약관
+                </a>
             </div>
         </div>
         <div class="footer-copy">COPYRIGHT©<span class="current_year"></span> PAYPLE. ALL RIGHT RESERVED</div>
     </div>
 </footer>
+
+<!-- Channel Plugin Scripts -->
+<script>
+    window.channelPluginSettings = {
+        pluginKey: "3c862d7c-1a65-423d-a969-f1d24e5d1055"
+    };
+    (function() {
+        var node = document.createElement("div");
+        node.id = "ch-plugin";
+        document.body.appendChild(node);
+        var async_load = function() {
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "//cdn.channel.io/plugin/ch-plugin-web.js";
+            s.charset = "UTF-8";
+            var x = document.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+        };
+        if (window.attachEvent) {
+            window.attachEvent("onload", async_load);
+        } else {
+            window.addEventListener("load", async_load, false);
+        }
+    })();
+</script>
+<!-- End Channel Plugin -->

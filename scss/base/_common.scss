@@ -36,7 +36,7 @@ body.js_is_limit {
     height: 100vh;
     overflow: hidden;
 }
-body.js_modal_sctive {
+body.js_modal_active {
     overflow:hidden;
 }
 section {
@@ -72,7 +72,7 @@ section {
     position: absolute;
     color: #fff;
     // font-family: 'Do Hyeon', sans-serif;
-    font-family: 'Jua', sans-serif;
+    //font-family: 'Jua', sans-serif;
     // font-family: 'Sunflower', sans-serif;
 
     // font-family: 'Black And White Picture', sans-serif;
@@ -86,6 +86,7 @@ section {
     // font-family: 'Nanum Pen Script', cursive;
     // font-family: "Single Day", cursive;
     color: ghostwhite;
+    font-weight:700;
 }
 // .subpage_visual canvas {
 //     position: absolute;
@@ -94,7 +95,13 @@ section {
 //     transform: translate(-50%, -50%);
 //     width: 40%;
 // }
-
+.subpage_visual .tit p{
+    text-align: center;
+    font-size:1.6rem;
+    color:#eee;
+    font-weight:300;
+    padding:1.2rem 0 0;
+}
 .subpage_visual .circle {
     animation: grow 3s linear;
     border: 1px solid rgba(255, 255, 255, 0.6);
@@ -146,6 +153,7 @@ form {
     transform: translate3d(100%, 0, 0);
     transition: all ease 0.3s;
     z-index: 2000;
+    display:none !important;
 }
 .temp_remote.active {
     transform: translate3d(0, 0, 0);

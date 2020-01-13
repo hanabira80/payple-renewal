@@ -18,7 +18,7 @@
     z-index: 1000;
     // overflow-x: hidden;
     // overflow-y: auto;
-    cursor: pointer;
+    // cursor: pointer;
     // display: flex;
     // justify-content: center;
     // align-items: center;
@@ -41,6 +41,7 @@
     left:0;
     right:0;
     bottom:0;
+    backdrop-filter: blur(4px) contrast(1);
 }
 .modal_backdrop.js_trigger__close_modal {
     cursor: pointer;
@@ -84,6 +85,7 @@
     // background: $pm_cl_100;
     border-radius: 8px 8px 0 0;
     padding:0 40px 0 0;
+    height:40px;
     position: absolute;
     top:0;
     left:0;
@@ -92,7 +94,7 @@
 }
 .modal_header .tit{
     line-height:20px;
-    padding:10px 10px 9px;
+    padding:9px 9px 9px;
     color: $txt_cl_700;
     font-weight:500;
     font-size:1.2rem;
@@ -114,6 +116,7 @@
     // border-radius: 0 0 8px 8px; 
     overflow-y: auto;
     max-height:calc(80vh - 100px);
+    padding: 2rem 1rem;
 }
 .modal_footer {
     position: absolute;

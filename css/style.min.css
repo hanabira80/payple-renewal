@@ -44,7 +44,7 @@ body.js_is_limit {
   overflow: hidden;
 }
 
-body.js_modal_sctive {
+body.js_modal_active {
   overflow: hidden;
 }
 
@@ -84,8 +84,16 @@ section {
   font-size: 4rem;
   position: absolute;
   color: #fff;
-  font-family: 'Jua', sans-serif;
   color: ghostwhite;
+  font-weight: 700;
+}
+
+.subpage_visual .tit p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #eee;
+  font-weight: 300;
+  padding: 1.2rem 0 0;
 }
 
 .subpage_visual .circle {
@@ -150,6 +158,7 @@ form {
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
   z-index: 2000;
+  display: none !important;
 }
 
 .temp_remote.active {
@@ -743,6 +752,19 @@ b,
 @media screen and (min-width: 0px) and (max-width: 980px) {
   .logo_in_text__lg {
     height: 28px;
+  }
+}
+
+.logo_in_text__md {
+  height: 20px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 0.2rem 0.1rem 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 980px) {
+  .logo_in_text__md {
+    height: 20px;
   }
 }
 
@@ -2632,7 +2654,6 @@ footer .footer-copy {
           transition-delay: 0.3s;
   -ms-transition-delay: 0.3s;
   z-index: 1000;
-  cursor: pointer;
 }
 
 .modal_outer.js_is_active {
@@ -2656,6 +2677,8 @@ footer .footer-copy {
   left: 0;
   right: 0;
   bottom: 0;
+  -webkit-backdrop-filter: blur(4px) contrast(1);
+          backdrop-filter: blur(4px) contrast(1);
 }
 
 .modal_backdrop.js_trigger__close_modal {
@@ -2704,6 +2727,7 @@ footer .footer-copy {
   background: #fff;
   border-radius: 8px 8px 0 0;
   padding: 0 40px 0 0;
+  height: 40px;
   position: absolute;
   top: 0;
   left: 0;
@@ -2713,7 +2737,7 @@ footer .footer-copy {
 
 .modal_header .tit {
   line-height: 20px;
-  padding: 10px 10px 9px;
+  padding: 9px 9px 9px;
   color: #333;
   font-weight: 500;
   font-size: 1.2rem;
@@ -2737,6 +2761,7 @@ footer .footer-copy {
   background: #fff;
   overflow-y: auto;
   max-height: calc(80vh - 100px);
+  padding: 2rem 1rem;
 }
 
 .modal_footer {
@@ -3410,7 +3435,7 @@ button {
   color: #24b47e;
 }
 
-.tarea__loat {
+.tarea__float {
   font-size: 16px;
   line-height: 20px;
   padding: 8px 8px;
@@ -3423,14 +3448,24 @@ button {
   height: 80px;
 }
 
-.tarea__loat:focus {
+.tarea__float:focus {
   border-bottom: 2px solid #7852e8;
 }
 
-.tarea__loat:focus ~ .tit__form__float {
+.tarea__float:focus ~ .tit__form__float {
   -webkit-transform: translate3d(0, -120%, 0) scale(0.8);
           transform: translate3d(0, -120%, 0) scale(0.8);
   color: #7852e8;
+}
+
+.tarea__float.is_filled {
+  border-bottom: 2px solid #24b47e !important;
+}
+
+.tarea__float ~ .tit__form__float.is_filled {
+  -webkit-transform: translate3d(0, -120%, 0) scale(0.8) !important;
+          transform: translate3d(0, -120%, 0) scale(0.8) !important;
+  color: #24b47e !important;
 }
 
 .icn_required {

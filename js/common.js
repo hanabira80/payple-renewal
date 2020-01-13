@@ -30,6 +30,9 @@ function includeHtml() {
     $("#header").load("include/header.html");
     $("#footer").load("include/footer.html");
     $("#modal").load("include/modal.html");
+    $("#txt_include_privacy").load("include/txt_include_privacy.html");
+    $("#txt_include_ofs").load("include/txt_include_ofs.html");
+    $("#txt_include_rfs").load("include/txt_include_rfs.html");
 }
 
 function moMenuAction() {
@@ -154,6 +157,39 @@ function serviceIntroTab() {
     });
 }
 
+function tarea__float() {
+    $(document).on('blur','.tarea__float',function(){
+    // $('.tarea__float').focus(function(){
+        if($('.tarea__float').val()) {
+            $('.tarea__float').addClass('is_filled');
+            $('.tarea__float').siblings('.tit__form__float').addClass('is_filled');
+        }
+        else {
+            $('.tarea__float').removeClass('is_filled');
+            $('.tarea__float').siblings('.tit__form__float').removeClass('is_filled');
+        }
+    })
+}
+
+function createCircle() {
+    const 
+    setEl = document.querySelector(".subpage_visual"),
+    setElHeight = setEl.offsetHeight,
+    setElWidth = setEl.offsetWidth,
+    circleEl = document.createElement('div');
+
+    circleEl.classList.add('circle')
+    circleEl.style.top = Math.random() * setElHeight + "px";
+    circleEl.style.left = Math.random() * setElWidth + "px";
+    setEl.appendChild(circleEl);
+    
+    setTimeout(() => {
+        circleEl.remove()
+    }, 3000)
+}
+
+
+
 $(document).ready(function(){
     includeHtml();
     parallaxScroll();
@@ -162,7 +198,9 @@ $(document).ready(function(){
     tempMainView();
     codeLoad();
     serviceIntroTab();
+    tarea__float();
     //copyCode();
+    setInterval(createCircle, 300);
 
     $(window).bind('scroll',function(e){
         parallaxScroll();

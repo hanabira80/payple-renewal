@@ -56,7 +56,7 @@
     color: #24b47e;
 }
 
-.tarea__loat {
+.tarea__float {
     font-size: 16px;
     line-height: 20px;
     padding: 8px 8px;
@@ -67,12 +67,19 @@
     border-radius: 4px 4px 0 0;
     height:80px;
 }
-.tarea__loat:focus {
+.tarea__float:focus {
     border-bottom: 2px solid #7852e8;
 }
-.tarea__loat:focus ~ .tit__form__float {
+.tarea__float:focus ~ .tit__form__float {
     transform: translate3d(0, -120%, 0) scale(0.8);   
     color: #7852e8;
+}
+.tarea__float.is_filled {
+    border-bottom: 2px solid #24b47e !important;
+}
+.tarea__float ~ .tit__form__float.is_filled {
+    transform: translate3d(0, -120%, 0) scale(0.8) !important;
+    color: #24b47e !important;
 }
 // .input__float:focus:invalid ~ .tit__input__float{
 //     transform: translate3d(0, -200%, 0);
