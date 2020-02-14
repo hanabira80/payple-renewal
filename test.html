@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- css setting -->
+    <link href="./css/style.min.css" rel="stylesheet" type="text/css" />
+    <!-- css setting end -->
+
+    <!-- js setting -->
+    <script src="./js/jquery.js"></script>
+    <!-- js setting -->
+</head>
+<body>
+    <div class="btn_box align_left ">
+        <div class="btn btn_sm btn_rounded cl_scs active" >
+            정기결제
+        </div>
+        <div class="btn btn_sm btn_rounded " >
+            앱카드결제
+        </div>
+        <div class="btn btn_sm btn_rounded " >
+            카드결제
+        </div>
+        <div class="btn btn_sm btn_rounded " >
+            앱결제
+        </div>
+    </div>
+    <div class="ctn_box">
+        <div class="ctn active" >
+            정기결제
+        </div>
+        <div class="ctn " >
+            앱카드결제
+        </div>
+        <div class="ctn " >
+            카드결제
+        </div>
+        <div class="ctn " >
+            앱결제
+        </div>
+    </div>
+    <div style="height:200px; background: #aaa;"></div>
+    <style>
+        .ctn_box {
+            margin:100px 0;
+            border:2px solid red;
+            width:600px;
+        }
+        .ctn {
+            font-size:24px;
+            text-align: center;
+            opacity:0;
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            transition: all ease 0.3s;
+            transform: translate3d(200px,0,0);
+            z-index: 1;
+        }
+        .ctn.active {
+            position:relative;
+            top:0;
+            left:0;
+            right:0;
+            opacity:1;
+            transform: translate3d(0,0,0);
+            z-index: 10;
+        }
+        .ctn:nth-child(1) {
+            line-height: 300px;
+            background: pink;
+        }
+        .ctn:nth-child(2) {
+            line-height: 600px;
+            background: skyblue;
+        }
+        .ctn:nth-child(3) {
+            line-height: 200px;
+            background: darkcyan;
+        }
+        .ctn:nth-child(4) {
+            line-height: 400px;
+            background: gold;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.btn').click(function(){
+                var idx = $(this).index();
+                $('.ctn').removeClass('active');
+                $('.ctn').eq(idx).addClass('active');
+            });
+        })
+    </script>
+</body>
+</html>
